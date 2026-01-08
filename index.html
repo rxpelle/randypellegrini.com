@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Randy Pellegrini | Official Site</title>
+    <meta
+      name="description"
+      content="Official author website for Randy Pellegrini. New releases, book details, and a simple storefront."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="logo" href="#top">Randy Pellegrini</a>
+        <nav class="nav">
+          <a href="#books">Books</a>
+          <a href="#about">About</a>
+          <a href="#newsletter">Updates</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="button small" href="#books">Buy Books</a>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Historical suspense and luminous conspiracies</p>
+            <h1>Randy Pellegrini</h1>
+            <p class="lead">
+              Stories about hidden knowledge, relentless pursuit, and the people
+              who keep a spark alive.
+            </p>
+            <div class="cta-row">
+              <a class="button" href="#books">Explore books</a>
+              <a class="button ghost" href="#newsletter">Get release alerts</a>
+            </div>
+            <div class="meta">
+              <span>Based in City, State</span>
+              <span>Speaking and interviews available</span>
+            </div>
+          </div>
+
+          <div class="hero-card reveal delay-1">
+            <div class="cover" role="img" aria-label="Book cover placeholder">
+              <span>Book Cover</span>
+            </div>
+            <div class="card-body">
+              <p class="card-title">Book Title One</p>
+              <p class="card-desc">
+                A relentless chase across plague-era Europe, where a single key
+                can rewrite the future.
+              </p>
+              <div class="card-actions">
+                <a class="text-link" href="#books">See details</a>
+                <a class="text-link" href="#books">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="books" class="section books">
+          <div class="section-header reveal">
+            <h2>Books</h2>
+            <p>
+              Each title is available in ebook, print, and signed editions.
+              Replace the links with your storefront URLs.
+            </p>
+          </div>
+          <div class="book-grid">
+            <article class="book-card reveal delay-1">
+              <div class="book-cover" role="img" aria-label="Book cover">
+                <span>Cover 01</span>
+              </div>
+              <div>
+                <h3>Book Title One</h3>
+                <p>
+                  A monk, a rogue warrior, and a hidden cipher ignite a
+                  continent-wide hunt.
+                </p>
+                <div class="button-row">
+                  <a class="button outline" href="#">Buy direct</a>
+                  <a class="button ghost" href="#">Retailers</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="book-card reveal delay-2">
+              <div class="book-cover alt" role="img" aria-label="Book cover">
+                <span>Cover 02</span>
+              </div>
+              <div>
+                <h3>Book Title Two</h3>
+                <p>
+                  The conspiracy deepens as the keys multiply and loyalty is
+                  tested.
+                </p>
+                <div class="button-row">
+                  <a class="button outline" href="#">Preorder</a>
+                  <a class="button ghost" href="#">Retailers</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <div class="about-card reveal">
+            <div class="portrait" role="img" aria-label="Author portrait">
+              <span>Author Photo</span>
+            </div>
+            <div>
+              <h2>About the Author</h2>
+              <p>
+                Randy Pellegrini writes immersive thrillers that blend history,
+                faith, and forbidden knowledge. Their work explores how ordinary
+                people become stewards of stories that refuse to die.
+              </p>
+              <p>
+                When not writing, they research medieval archives, collect
+                folktales, and map future story worlds.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="newsletter" class="section newsletter">
+          <div class="newsletter-card reveal">
+            <div>
+              <h2>Get release alerts</h2>
+              <p>
+                Join the list for new books, signed editions, and event
+                announcements. One email per month.
+              </p>
+            </div>
+            <form
+              class="signup"
+              method="post"
+              action="https://formspree.io/f/your-id"
+            >
+              <label class="sr-only" for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@email.com"
+                required
+              />
+              <button class="button" type="submit">Sign up</button>
+            </form>
+            <p class="form-note">
+              Replace the form action with your MailerLite, ConvertKit, or
+              Buttondown URL.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="section-header reveal">
+            <h2>Contact</h2>
+            <p>
+              For events, interviews, and rights inquiries, reach out directly.
+            </p>
+          </div>
+          <div class="contact-row reveal delay-1">
+            <a class="contact-card" href="mailto:randypellegrini@gmail.com">
+              <span>Email</span>
+              <strong>randypellegrini@gmail.com</strong>
+            </a>
+            <a class="contact-card" href="#">
+              <span>Instagram</span>
+              <strong>@authorhandle</strong>
+            </a>
+            <a class="contact-card" href="#">
+              <span>Goodreads</span>
+              <strong>Follow</strong>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Copyright 2025 Randy Pellegrini. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#books">Books</a>
+          <a href="#newsletter">Updates</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
