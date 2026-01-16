@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Books | The Plague Novel Saga | Randy Pellegrini</title>
+    <meta
+      name="description"
+      content="Complete collection of all 12 books in The Plague Novel Saga. Spanning 3,200 years from Bronze Age Egypt to the AI era, each novel explores genetic memory, knowledge preservation, and civilizational collapse."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .books-hero {
+        text-align: center;
+        padding: 40px 0;
+      }
+      .books-hero h1 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+        margin: 0 0 16px;
+      }
+      .books-hero .lead {
+        font-size: 1.15rem;
+        color: var(--ink-soft);
+        max-width: 680px;
+        margin: 0 auto 24px;
+      }
+      .book-detail {
+        background: var(--panel);
+        border-radius: 24px;
+        padding: 28px;
+        margin-bottom: 32px;
+        border: 1px solid rgba(27, 29, 31, 0.08);
+        box-shadow: 0 18px 40px rgba(27, 29, 31, 0.12);
+      }
+      .book-detail-grid {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+      .book-detail-cover {
+        height: 360px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #2a3c52, #6089a9);
+        color: #e8f0f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.08em;
+        font-weight: 600;
+        overflow: hidden;
+        position: relative;
+      }
+      .book-detail-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+      .book-detail-info h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 2rem;
+        margin: 0 0 8px;
+      }
+      .book-period {
+        color: var(--teal-dark);
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin: 0 0 12px;
+      }
+      .book-status {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: rgba(31, 108, 95, 0.12);
+        color: var(--teal-dark);
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .book-status.complete {
+        background: rgba(31, 108, 95, 0.12);
+        color: var(--teal-dark);
+      }
+      .book-status.in-progress {
+        background: rgba(195, 100, 44, 0.12);
+        color: var(--accent-dark);
+      }
+      .book-status.outlined {
+        background: rgba(27, 29, 31, 0.08);
+        color: var(--ink-soft);
+      }
+      .book-meta {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        margin: 12px 0 20px;
+        font-size: 0.95rem;
+        color: var(--ink-soft);
+      }
+      .book-meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .book-meta-label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink-soft);
+        opacity: 0.7;
+      }
+      .book-meta-value {
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .book-description {
+        line-height: 1.7;
+        color: var(--ink);
+        margin: 20px 0;
+      }
+      .book-description p {
+        margin: 0 0 14px;
+      }
+      .expand-toggle {
+        background: transparent;
+        border: none;
+        color: var(--teal-dark);
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        padding: 8px 0;
+        margin-top: 12px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .expand-toggle:hover {
+        text-decoration: underline;
+      }
+      .expand-toggle::after {
+        content: "▼";
+        font-size: 0.75rem;
+        transition: transform 0.3s ease;
+      }
+      .expand-toggle.expanded::after {
+        transform: rotate(180deg);
+      }
+      .full-plot {
+        display: none;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+      }
+      .full-plot.visible {
+        display: block;
+      }
+      .full-plot h3 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 1.3rem;
+        margin: 0 0 14px;
+        color: var(--teal-dark);
+      }
+      .character-links {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+      }
+      .character-links h4 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink-soft);
+        margin: 0 0 12px;
+      }
+      .character-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .character-tag {
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: rgba(27, 29, 31, 0.06);
+        color: var(--ink);
+        font-size: 0.9rem;
+        transition: background 0.2s ease;
+      }
+      .character-tag:hover {
+        background: rgba(31, 108, 95, 0.15);
+      }
+      .series-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 32px;
+        padding: 20px;
+        background: rgba(31, 108, 95, 0.08);
+        border-radius: 16px;
+      }
+      .series-nav a {
+        color: var(--teal-dark);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      @media (max-width: 768px) {
+        .book-detail-grid {
+          grid-template-columns: 1fr;
+        }
+        .book-detail-cover {
+          height: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="logo" href="index.html">Randy Pellegrini</a>
+        <nav class="nav">
+          <a href="books.html">Books</a>
+          <a href="series.html">The Series</a>
+          <a href="characters.html">Characters</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#newsletter">Updates</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="button small" href="#book1">Start Reading</a>
+      </header>
+
+      <main>
+        <section class="books-hero reveal">
+          <p class="eyebrow">The Complete Saga</p>
+          <h1>All 12 Books</h1>
+          <p class="lead">
+            3,200 years of human history. 138 generations. Two competing networks locked in an
+            existential battle over humanity's survival. Start with Book 1 (medieval) or Book 2
+            (modern), then explore the complete timeline.
+          </p>
+        </section>
+
+        <!-- Book 1 -->
+        <article id="book1" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover">
+              <img src="assets/book-cover.png" alt="The Aethelred Cipher" loading="lazy" />
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 1: The Aethelred Cipher</h2>
+              <p class="book-period">Medieval Germany, 1347-1350 CE</p>
+              <div class="book-status complete">✅ Complete | 120,000 words</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1347-1350 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 90</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Word Count</span>
+                  <span class="book-meta-value">120,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Complete</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  When a dying monk named Brother Heinrich thrusts an iron key into scribe Thomas of Eltville's hands during the chaos of a plague outbreak, Thomas inherits more than an artifact. He becomes the target of a millennia-old conspiracy that has been engineering bloodlines for over 2,500 years.
+                </p>
+                <p>
+                  The Black Death rages across Europe, killing half the population. But Thomas begins experiencing impossible "memories" that don't belong to him—ancient Egyptian hieroglyphs, medical knowledge centuries ahead of his time, and fragments of a genetic protocol designed to preserve human consciousness across generations.
+                </p>
+                <p>
+                  Lady Cecily FitzAlan, a noblewoman trapped in an arranged marriage, recognizes the same pattern when she discovers her family has been part of the Order's breeding program for 37 generations. Together, they must decipher the cipher hidden in Aethelred's Chronicle while the Order's agents close in, determined to recover both the key and eliminate anyone who has accessed defensive knowledge.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot1')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot1" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    The novel opens in Mainz, 1347, as the Black Death arrives. Thomas, a 28-year-old scribe working for the Archbishop, witnesses Brother Heinrich's death. The monk's final words—"Nefertari remembers"—mean nothing to Thomas until he begins experiencing vivid hallucinations: Egyptian temples, hieroglyphic formulas, and genetic diagrams that shouldn't exist for another 600 years.
+                  </p>
+                  <p>
+                    The iron key opens a hidden chamber in Mainz Cathedral containing Aethelred's Chronicle, a coded manuscript written by King Aethelred II of England 350 years earlier. But the chronicle is more than history—it's a genetic instruction manual disguised as royal documentation, designed to be deciphered only by those with specific inherited memory markers.
+                  </p>
+                  <p>
+                    Lady Cecily FitzAlan arrives in Mainz fleeing her family's estate. Her mother, dying of plague, revealed the truth: their bloodline has been carefully curated by the Order for 37 generations, bred to exhibit specific cognitive traits. Cecily was intended to marry a German noble whose lineage also traces back to the Order's founding in 1177 BCE.
+                  </p>
+                  <p>
+                    As Thomas and Cecily decode the chronicle, they uncover the Genesis Protocol—a defensive network founded by Egyptian scribe Nefertari during the Bronze Age Collapse. The protocol uses epigenetic markers to transmit survival knowledge across generations through DNA methylation patterns. But there's a competing system: the Order, founded by Amenhotep, believes collapse is inevitable and has spent 2,500 years engineering optimal survivors through selective breeding.
+                  </p>
+                  <p>
+                    The Order's modern agents—disguised as Church officials and noble advisors—track Thomas and Cecily across plague-ravaged Germany. Lead operative Wilhelm von Strasbourg has been hunting defensive carriers for 30 years, eliminating anyone who spontaneously activates genetic memory. He views himself not as a villain but as a necessary guardian: without centralized control, dangerous knowledge falls into untrained hands.
+                  </p>
+                  <p>
+                    The climax occurs in a burning monastery as Wilhelm corners them. Thomas experiences a full genetic memory cascade—1,200 years of defensive methodology flooding his consciousness simultaneously. He realizes the plague itself is an intelligence test: the Order doesn't cause collapses, they observe who survives naturally and recruit the best candidates. The defensive network's strategy is opposite: distribute pattern recognition methodology so broadly that collapse becomes survivable for everyone.
+                  </p>
+                  <p>
+                    Thomas must choose: destroy the chronicle to prevent the Order from recovering it, or preserve it knowing future generations will need the genetic activation keys it contains. Cecily realizes her engineered bloodline gives her advantages Thomas lacks—resistance to trauma, enhanced memory retention—but also makes her the Order's priority target.
+                  </p>
+                  <p>
+                    The novel ends with Thomas copying the cipher into his own illuminated manuscript, disguising it as a Bible commentary that will be preserved in monastery libraries for centuries. Cecily disappears into the network of defensive carriers, knowing the Order will hunt her bloodline forever. They part ways, each becoming the first link in new chains of genetic memory that will resurface in Book 2.
+                  </p>
+                  <p>
+                    The final scene reveals Wilhelm's perspective: he's not angry about their escape. The plague killed 50 million people. If Thomas and Cecily's descendants survive the next collapse, they'll have proven themselves worthy of preservation. The game is measured in centuries, not individual victories.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button" href="#">Buy on Amazon</a>
+                <a class="button ghost" href="#">Read Sample</a>
+              </div>
+
+              <div class="character-links">
+                <h4>Major Characters</h4>
+                <div class="character-tags">
+                  <a href="characters.html#thomas" class="character-tag">Thomas of Eltville</a>
+                  <a href="characters.html#cecily" class="character-tag">Lady Cecily FitzAlan</a>
+                  <a href="characters.html#heinrich" class="character-tag">Brother Heinrich</a>
+                  <a href="characters.html#wilhelm" class="character-tag">Wilhelm von Strasbourg</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 2 -->
+        <article id="book2" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #2c473d, #6a927f);">
+              <span>Book 2</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 2: The Genesis Protocol</h2>
+              <p class="book-period">Modern Era, 2018-2025 CE</p>
+              <div class="book-status in-progress">🔄 In Progress | 60,000 words</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">2018-2025 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 138</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Word Count</span>
+                  <span class="book-meta-value">60,000 (Target: 110,000)</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">In Progress</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Dr. Sarah Chen, a genetic researcher at Stanford, discovers an impossible pattern buried in human genomic data: specific DNA methylation markers that shouldn't exist naturally. They're too precise, too consistent across unrelated populations. When she traces the pattern back through historical genetic samples, she finds it extends continuously for 700 years, surviving plagues, wars, and population bottlenecks.
+                </p>
+                <p>
+                  GenVault Corporation offers her unlimited funding to continue the research, but Sarah realizes too late that GenVault isn't a biotech startup—it's the modern face of a 3,200-year-old conspiracy. She's Generation 138 in a bloodline that traces directly to Lady Cecily FitzAlan, and the "memories" she's been dismissing as stress-induced hallucinations are genetic activations designed by Nefertari in 1177 BCE.
+                </p>
+                <p>
+                  Marcus Webb, a former NSA analyst turned whistleblower, contacts Sarah with evidence that GenVault has been running covert breeding programs for decades. Together they uncover the truth: the Order believes the next collapse—triggered by AI, climate, or economic systems—is imminent, and they're finalizing their selection of optimal survivors through CRISPR-based genetic modifications.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot2')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot2" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    The novel opens with Sarah analyzing genetic data from the 1918 flu pandemic, looking for natural resistance markers. She finds them—but they're too perfect. The methylation patterns show intentional design, as if someone knew the pandemic was coming and prepared specific bloodlines to survive it.
+                  </p>
+                  <p>
+                    GenVault's recruitment seems like career salvation: unlimited resources, cutting-edge equipment, freedom to pursue any research direction. But Sarah notices inconsistencies. The company's database contains genetic samples dating back to the 1800s, meticulously organized by family lineage. When she queries her own DNA markers, the system flags her profile with a designation: "Genesis Carrier—Priority Alpha."
+                  </p>
+                  <p>
+                    Marcus Webb enters her life through an encrypted email: "They know who you are. They've been watching your bloodline for 37 generations." Marcus worked for the NSA's Pattern Analysis Division until he discovered GenVault's shadow network embedded in government genetic databases. He has proof that GenVault identifies defensive carriers at birth and either recruits them or neutralizes their genetic potential through pharmaceutical intervention.
+                  </p>
+                  <p>
+                    The conspiracy unfolds: GenVault is managed by the Order, which has evolved from medieval Church officials to modern corporate executives. They've perfected the breeding program Cecily FitzAlan escaped—now using genetic screening, arranged marriages disguised as dating apps, and CRISPR modifications to optimize human consciousness for collapse scenarios.
+                  </p>
+                  <p>
+                    Sarah experiences her first full genetic memory cascade during a high-stress lab accident. She sees Nefertari in 1177 BCE encoding the original protocol, Thomas in 1347 decoding the Aethelred Cipher, and dozens of intermediate carriers across centuries. The memories aren't metaphors—they're actual data transferred through DNA methylation patterns, a biological hard drive spanning 138 generations.
+                  </p>
+                  <p>
+                    The defensive network still exists, hidden within academic institutions, research labs, and open-source communities. They've been distributing pattern recognition methodology through scientific papers, university courses, and internet forums—"teaching people to see collapse patterns without revealing the conspiracy behind the curriculum."
+                  </p>
+                  <p>
+                    Act Three forces Sarah to choose: GenVault offers her a position leading their genetic optimization program. They're not lying about the coming collapse—climate data, economic models, and AI safety research all point to systemic failure within 20 years. The Order genuinely believes their approach—ensuring the best genetic candidates survive—is humanity's only option.
+                  </p>
+                  <p>
+                    But Marcus shows her the cost: GenVault has been sterilizing defensive carriers deemed "genetically incompatible" with Order bloodlines. Thousands of people across generations, eliminated from the gene pool to prevent "contamination." The Order calls it triage. Marcus calls it genocide.
+                  </p>
+                  <p>
+                    The climax occurs during a GenVault board meeting where Sarah presents her research—then exposes their breeding program on a live-streamed video feed. She releases all genetic data to the public internet, making the pattern recognition methodology available to anyone with a DNA test and pattern analysis software.
+                  </p>
+                  <p>
+                    The novel ends with Sarah going underground, joining the modern defensive network. But the final chapter reveals a GenVault executive's perspective: Sarah's leak changed nothing. Pattern recognition requires training most people won't pursue. When collapse comes, the Order's prepared candidates will still be the ones rebuilding civilization. The defensive network distributed the tools, but human nature—laziness, distraction, short-term thinking—remains the ultimate filter.
+                  </p>
+                  <p>
+                    Sarah realizes the horrifying truth: both networks might be right. The defensive approach is morally superior, but statistically, most people won't use the knowledge even when freely available. The Order's approach is ethically monstrous, but pragmatically effective. The real question isn't which philosophy wins—it's whether humanity deserves to survive if survival requires abandoning human choice.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2026</a>
+              </div>
+
+              <div class="character-links">
+                <h4>Major Characters</h4>
+                <div class="character-tags">
+                  <a href="characters.html#sarah" class="character-tag">Dr. Sarah Chen</a>
+                  <a href="characters.html#marcus" class="character-tag">Marcus Webb</a>
+                  <a href="characters.html#rodriguez" class="character-tag">Dr. Elena Rodriguez</a>
+                  <a href="characters.html#blackwood" class="character-tag">Jonathan Blackwood</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 3 -->
+        <article id="book3" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #4a2c2a, #8b5a3c);">
+              <span>Book 3</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 3: The Pattern Eye</h2>
+              <p class="book-period">Bronze Age Egypt, 1177 BCE</p>
+              <div class="book-status complete">✅ Complete | 115,000 words</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1177 BCE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 1</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Word Count</span>
+                  <span class="book-meta-value">115,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Complete</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  The Bronze Age Collapse is accelerating. The Sea Peoples are destroying cities across the Mediterranean. Trade routes are severed, literacy is vanishing, and the civilized world is collapsing into chaos. Nefertari, royal scribe in the court of Ramesses III, sees patterns others miss: the collapse isn't random—it's systemic, and it will happen again.
+                </p>
+                <p>
+                  While recording the empire's desperate defenses, Nefertari develops a revolutionary theory: if collapse patterns can be recognized, they can be prevented. But her colleague Amenhotep reaches the opposite conclusion: collapse is inevitable, and the only logical response is engineering who survives it through selective breeding.
+                </p>
+                <p>
+                  As Egypt teeters on the edge, Nefertari makes a desperate choice. Using Egyptian medical knowledge of bloodlines and inheritance, she encodes her pattern recognition methodology into genetic markers—creating humanity's first "memory inheritance" system. The Genesis Protocol is born, designed to transmit survival knowledge across generations through DNA itself.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot3')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot3" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    The novel opens in 1180 BCE as Nefertari documents the first waves of destruction. Hittite cities are burning. Mycenaean palaces are abandoned. Egyptian grain supplies are failing. But most scribes see disconnected disasters—Nefertari sees the underlying pattern: cascade failure across interconnected systems.
+                  </p>
+                  <p>
+                    She presents her findings to Pharaoh Ramesses III: the collapse is predictable, preventable if the network structure itself is redesigned. Distribute knowledge instead of hoarding it. Teach pattern recognition to farmers, not just priests. Make the system resilient through redundancy.
+                  </p>
+                  <p>
+                    Amenhotep, her mentor and rival, argues the opposite: complexity breeds fragility. The more interconnected civilization becomes, the more vulnerable to cascade failure. The solution isn't preventing collapse—it's engineering optimal survivors. Identify bloodlines with superior intelligence, trauma resistance, and adaptability. Breed them systematically. When collapse comes, these engineered elites will rebuild faster and better.
+                  </p>
+                  <p>
+                    Their philosophical debate becomes existential when Ramesses III is assassinated in a palace coup. Egypt's government fractures. Nefertari realizes she has months, not years, to encode her knowledge before literacy itself disappears.
+                  </p>
+                  <p>
+                    She develops the Pattern Eye—a seven-layered methodology for recognizing collapse patterns: network mapping, cascade modeling, threshold detection, feedback loops, emergent properties, meta-patterns, and pattern generation itself. But how to transmit this across generations when written language might not survive?
+                  </p>
+                  <p>
+                    The solution comes from Egyptian medical texts on family bloodlines. Priests had documented "inherited traits"—physical characteristics passing from parent to child. Nefertari theorizes that knowledge could be inherited the same way, encoded in the blood itself through what she calls "memory scarring."
+                  </p>
+                  <p>
+                    Using temple resources, she conducts the first experiment: exposing her own children to intense pattern recognition training, then documenting which traits appear in grandchildren without direct instruction. The results are subtle but consistent—enhanced pattern recognition abilities emerging "spontaneously" in third-generation descendants.
+                  </p>
+                  <p>
+                    Amenhotep discovers her research and sees its potential—but for his own program. If traits can be inherited through bloodlines, selective breeding becomes even more powerful. He begins the Order's founding program: identifying elite bloodlines and arranging marriages to concentrate desirable traits.
+                  </p>
+                  <p>
+                    The climax occurs as Egyptian government fully collapses. The Sea Peoples reach the Nile Delta. Nefertari must choose: destroy her research to prevent Amenhotep from weaponizing it, or preserve it knowing future generations will need pattern recognition to survive the next collapse.
+                  </p>
+                  <p>
+                    She chooses preservation but with a safeguard: encoding the methodology in layers. Basic pattern recognition is inheritable by anyone. Advanced capabilities require specific environmental triggers—trauma, stress, intense training. And the deepest layer, full memory cascade, requires both genetic markers AND external activation keys hidden in cultural artifacts.
+                  </p>
+                  <p>
+                    The novel ends with Nefertari sending her children north with refugee populations, each carrying fragments of the protocol. Amenhotep does the same, but his lineages are tightly controlled, engineered for concentration rather than distribution.
+                  </p>
+                  <p>
+                    Two networks are born from the same collapse: Genesis Protocol (defensive, distributed, egalitarian) and the Order (offensive, centralized, hierarchical). Both believe they're saving humanity. Both will chase each other through 3,200 years of history.
+                  </p>
+                  <p>
+                    The final scene shows Nefertari's death during the Sea Peoples' raid on her temple. But before she dies, she hides seven artifacts—iron keys, encoded manuscripts, genetic markers—that will activate full memory cascades in distant descendants. The Pattern Eye will resurface in medieval Germany, modern California, Roman Judea, and ten other historical moments. The game has begun.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button" href="#">Buy on Amazon</a>
+                <a class="button ghost" href="#">Read Sample</a>
+              </div>
+
+              <div class="character-links">
+                <h4>Major Characters</h4>
+                <div class="character-tags">
+                  <a href="characters.html#nefertari" class="character-tag">Nefertari</a>
+                  <a href="characters.html#amenhotep" class="character-tag">Amenhotep</a>
+                  <a href="characters.html#ramesses" class="character-tag">Ramesses III</a>
+                  <a href="characters.html#sekhmet" class="character-tag">Sekhmet</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 4 -->
+        <article id="book4" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #3d2817, #8b6f47);">
+              <span>Book 4</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 4: The Nazarene Protocol</h2>
+              <p class="book-period">Roman Judea, 26-70 CE</p>
+              <div class="book-status complete">✅ Complete | 105,000 words</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">26-70 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 48</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Word Count</span>
+                  <span class="book-meta-value">105,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Complete</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Miriam of Magdala has been called demon-possessed since childhood. She experiences "visions"—memories that aren't hers, knowledge she never learned, languages she's never studied. The rabbis call it madness. Her family calls it curse. But when a carpenter named Jesus from Nazareth recognizes genetic memory instead of demons, everything changes.
+                </p>
+                <p>
+                  Jesus isn't performing miracles through divine power—he's accessing 1,200 years of defensive network medical knowledge passed through his bloodline. His "healing" is advanced Egyptian medicine. His "prophecies" are pattern recognition trained through genetic memory. And his movement isn't religious—it's a knowledge distribution network designed to survive the coming Roman collapse.
+                </p>
+                <p>
+                  But the Order has embedded agents in the Sanhedrin and Roman government. They view Jesus as a threat: he's distributing pattern recognition methodology to peasants, fishermen, and tax collectors—exactly the demographic pollution the Order spent centuries eliminating from elite bloodlines. The crucifixion isn't about blasphemy. It's about protecting their breeding program.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot4')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot4" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    The novel opens with Miriam's perspective: she's experiencing what her era calls demon possession—spontaneous visions of Egyptian temples, medical procedures, hieroglyphic formulas. Local healers attempt exorcisms. Her family considers institutionalization. Until Jesus arrives in Magdala.
+                  </p>
+                  <p>
+                    He sees her genetic memory cascade immediately because he experiences the same thing. His bloodline traces to defensive carriers who fled Egypt during the Bronze Age Collapse, settled in Galilee, and preserved the Pattern Eye methodology through cultural traditions disguised as religious teaching.
+                  </p>
+                  <p>
+                    Jesus's "miracles" are recontextualized: he heals lepers using Egyptian dermatological knowledge. He predicts droughts through pattern recognition of agricultural cycles. He "feeds thousands" by teaching sustainable food distribution networks. His parables aren't spiritual metaphors—they're encoded pattern recognition training designed to pass through oral tradition.
+                  </p>
+                  <p>
+                    Miriam becomes his closest student, learning to control her genetic memory instead of being controlled by it. She realizes the defensive network has been embedding methodology in Jewish apocalyptic literature for centuries. Daniel's prophecies are collapse pattern templates. Ezekiel's visions are network mapping diagrams. Isaiah's suffering servant is a blueprint for distributed knowledge resilience.
+                  </p>
+                  <p>
+                    The Sanhedrin's high priest, Caiaphas, is an Order operative—his family has held the position for three generations through arranged marriages with Roman nobility. He reports to Rome but serves the Order's agenda: maintaining bloodline purity and preventing knowledge distribution to "unsuitable" populations.
+                  </p>
+                  <p>
+                    Pontius Pilate, the Roman prefect, isn't evil or weak—he's pragmatic. The Order has convinced him that Jesus's movement threatens Roman stability by teaching peasants to recognize and resist systemic exploitation patterns. From Rome's perspective, pattern recognition in subject populations is dangerous. Better to keep them ignorant, obedient, and dependent on centralized authority.
+                  </p>
+                  <p>
+                    Act Three builds to the crucifixion, but Miriam understands what Jesus is doing: turning his execution into a pattern recognition training exercise. "Forgive them, they know not what they do" isn't mercy—it's a reminder that the Order operatives genuinely believe they're protecting humanity. The moral ambiguity is intentional.
+                  </p>
+                  <p>
+                    After the crucifixion, Miriam leads the defensive network underground. The "apostles" aren't religious disciples—they're trained pattern recognition specialists embedding methodology into what will become Christianity. Paul's letters contain encoded collapse prediction formulas. The Gospels are genetic memory activation keys disguised as biography.
+                  </p>
+                  <p>
+                    The novel ends during the 70 CE destruction of Jerusalem. The Romans burn the Temple—but not before Miriam recovers defensive network archives hidden in its foundations. These documents will resurface in medieval monasteries, Islamic libraries, and Renaissance universities.
+                  </p>
+                  <p>
+                    The final chapter reveals Caiaphas's perspective: he wasn't trying to kill Jesus's message, he was trying to contain it. Give the movement to the Order-controlled Roman Church, let it spread through official channels, and slowly filter out the dangerous pattern recognition elements while preserving the obedience-inducing religious framework.
+                  </p>
+                  <p>
+                    Christianity becomes both networks' greatest success and greatest compromise: defensive methodology embedded in scripture, but controlled by Order-infiltrated institutional churches. The battle continues through every schism, reformation, and theological debate for the next 2,000 years.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button" href="#">Buy on Amazon</a>
+                <a class="button ghost" href="#">Read Sample</a>
+              </div>
+
+              <div class="character-links">
+                <h4>Major Characters</h4>
+                <div class="character-tags">
+                  <a href="characters.html#miriam" class="character-tag">Miriam of Magdala</a>
+                  <a href="characters.html#jesus" class="character-tag">Jesus of Nazareth</a>
+                  <a href="characters.html#caiaphas" class="character-tag">Caiaphas</a>
+                  <a href="characters.html#pilate" class="character-tag">Pontius Pilate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 5 -->
+        <article id="book5" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #1a2a3a, #4a6885);">
+              <span>Book 5</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 5: The Renaissance Protocol</h2>
+              <p class="book-period">Renaissance Italy, 1490-1520 CE</p>
+              <div class="book-status complete">✅ Complete | 98,000 words</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1490-1520 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 96</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Word Count</span>
+                  <span class="book-meta-value">98,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Complete</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Leonardo da Vinci's genius isn't divine inspiration—it's spontaneous activation of genetic memory accumulated over 96 generations. His anatomical knowledge comes from Egyptian medical texts. His engineering designs come from Bronze Age defensive fortification patterns. And his obsession with hidden meanings in art comes from recognizing that he's not the first genius to embed knowledge in cultural artifacts.
+                </p>
+                <p>
+                  Isabella Medici, a noblewoman and patron of the arts, recognizes the pattern when she discovers her family's private archives contain genetic engineering records dating to Roman times. The Medici banking empire wasn't built on financial acumen alone—it was guided by Order operatives using 2,700 years of economic collapse pattern data.
+                </p>
+                <p>
+                  As the Protestant Reformation threatens to destabilize Europe, both networks race to embed their methodologies in the printing press revolution. Whoever controls mass knowledge distribution controls the next 500 years of human evolution.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot5')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot5" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    The novel opens in Leonardo's Milan workshop, 1495. He's painting The Last Supper, but his real obsession is the anatomical notebooks—dissections revealing human physiology that shouldn't be knowable without modern medical equipment. Leonardo experiences what he calls "inherited sight"—visions of Egyptian surgery, Greek mathematics, Roman engineering—all flooding his consciousness during deep focus states.
+                  </p>
+                  <p>
+                    Isabella Medici enters his life as a patron commissioning portraits. But her real interest is recruiting Leonardo into the defensive network. The Medici family is split: some branches serve the Order, others protect defensive carriers. Isabella leads the defensive faction, using Medici wealth to fund artists, scientists, and inventors—all genetic memory carriers being activated simultaneously during the Renaissance.
+                  </p>
+                  <p>
+                    She reveals the truth: the Renaissance isn't a spontaneous cultural awakening. It's a coordinated genetic memory cascade triggered by the Order's miscalculation. They tried to concentrate elite bloodlines in European nobility through strategic marriages—but too many defensive carriers ended up in the same generation. The cultural explosion is a side effect of 50+ carriers activating simultaneously, sharing knowledge through art, literature, and scientific collaboration.
+                  </p>
+                  <p>
+                    The printing press changes everything. Gutenberg's invention—itself guided by defensive network methodology—means knowledge can spread faster than the Order can suppress it. But it also means misinformation spreads just as fast. Both networks realize whoever controls publishing infrastructure controls knowledge evolution.
+                  </p>
+                  <p>
+                    The Order's response is the Reformation: deliberately fracture Christianity to create chaos, forcing populations to choose sides. During religious chaos, people cling to authority figures who promise certainty. The Order embeds their operatives in both Catholic and Protestant leadership, ensuring they control the narrative regardless of which faction wins.
+                  </p>
+                  <p>
+                    Leonardo and Isabella develop the Renaissance Protocol: embed pattern recognition methodology directly into art, making it aesthetically beautiful so the Order can't suppress it without being seen as anti-culture. The Vitruvian Man isn't anatomy—it's a network mapping diagram. The Mona Lisa's landscape contains encoded collapse prediction formulas. Every artwork becomes a data storage device.
+                  </p>
+                  <p>
+                    But Leonardo's genius makes him vulnerable. The Order can't kill him—he's too famous, too valuable. Instead, they offer him unlimited resources through Francis I of France. Work for us, preserve your knowledge for future Order-controlled elites, and your legacy will be protected. Work against us, and everything you've created will be destroyed, misinterpreted, or buried.
+                  </p>
+                  <p>
+                    The climax occurs when Leonardo must choose where his notebooks go after death. Isabella wants them published widely, distributed to universities, made available to anyone who can learn. The Order wants them preserved in private collections, studied only by "qualified" (i.e., Order-controlled) institutions.
+                  </p>
+                  <p>
+                    Leonardo's solution is genius: fragment the notebooks. Scatter them across Europe through different inheritors. Encode the most dangerous knowledge in mirror writing and symbolic diagrams that require genetic memory to fully interpret. Make the notebooks public enough that they survive but obscure enough that casual readers miss the pattern recognition training hidden within.
+                  </p>
+                  <p>
+                    The novel ends with Isabella watching Leonardo's death in France, 1519. She knows the notebooks will resurface—but not for centuries, and only when future carriers recognize the activation keys Leonardo embedded. Meanwhile, the Protestant Reformation explodes into violence, exactly as the Order planned. Europe will burn for 100 years, killing millions, but the Order's bloodlines are protected in neutral territories, safely removed from the chaos they orchestrated.
+                  </p>
+                  <p>
+                    The final chapter reveals the Order's perspective through a Medici banker: they didn't try to stop the Renaissance because they couldn't. But they successfully channeled its energy into religious warfare, preventing the defensive network from unifying Europe under shared pattern recognition methodology. Once again, the Order turns defensive success into controlled chaos, ensuring collapse patterns continue unrecognized by general populations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button" href="#">Buy on Amazon</a>
+                <a class="button ghost" href="#">Read Sample</a>
+              </div>
+
+              <div class="character-links">
+                <h4>Major Characters</h4>
+                <div class="character-tags">
+                  <a href="characters.html#leonardo" class="character-tag">Leonardo da Vinci</a>
+                  <a href="characters.html#isabella-medici" class="character-tag">Isabella Medici</a>
+                  <a href="characters.html#cesare" class="character-tag">Cesare Borgia</a>
+                  <a href="characters.html#gutenberg" class="character-tag">Johannes Gutenberg</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Continue with remaining books 6-12 -->
+
+        <!-- Book 6 -->
+        <article id="book6" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #2d1810, #664229);">
+              <span>Book 6</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 6: The Enlightenment Machine</h2>
+              <p class="book-period">Enlightenment France, 1750-1789 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1750-1789 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 105</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">100,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  The French Revolution isn't spontaneous uprising—it's a defensive network operation designed to destabilize Order-controlled monarchies. But revolutionary fervor proves impossible to control, and the defensive network watches in horror as their liberation movement becomes the Terror.
+                </p>
+                <p>
+                  Denis Diderot's Encyclopédie is more than reference material—it's a systematic encoding of pattern recognition methodology distributed across tens of thousands of copies. Meanwhile, the Order responds by funding counter-revolutionary forces, proving that controlled monarchy is preferable to chaotic democratic experiments.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot6')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot6" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. This novel explores the defensive network's greatest tactical success turned strategic disaster: successfully toppling Order-controlled monarchies through Enlightenment philosophy, only to watch the revolution descend into mass violence that proves the Order's central argument—most people can't handle distributed power responsibly.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2027</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 7 -->
+        <article id="book7" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #1f1f1f, #4a4a4a);">
+              <span>Book 7</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 7: The Industrial Collapse</h2>
+              <p class="book-period">Victorian England, 1840-1875 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1840-1875 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 114</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">105,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  The Industrial Revolution creates unprecedented wealth concentration, and the Order seizes the opportunity. Factories aren't just production centers—they're breeding ground observation systems, tracking which bloodlines thrive under industrial capitalism and which collapse under its pressures.
+                </p>
+                <p>
+                  Ada Lovelace recognizes the pattern: her mathematical genius isn't innate, it's genetic memory from 3,000 years of accumulated knowledge. Her work on Babbage's Analytical Engine isn't just computation—it's encoding defensive methodology into machine logic itself.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot7')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot7" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. This novel explores the defensive network's attempt to embed pattern recognition into early computing, racing against the Order's realization that industrial capitalism provides perfect conditions for accelerated bloodline selection through "natural" economic pressures.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2027</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 8 -->
+        <article id="book8" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #2a1a1a, #5c3a3a);">
+              <span>Book 8</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 8: The War Protocol</h2>
+              <p class="book-period">World War II, 1938-1945 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1938-1945 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 125</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">110,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Nazi eugenics programs aren't Hitler's invention—they're corrupted versions of the Order's 3,000-year breeding methodology, stolen and weaponized by operatives who broke away from Order control. The Holocaust represents the Order's greatest nightmare: their techniques used without their philosophical framework.
+                </p>
+                <p>
+                  Meanwhile, the Manhattan Project scientists realize atomic physics unlocks not just bombs but genetic mutation—controlled evolution at technological speed. Both networks race to control nuclear technology before it controls them.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot8')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot8" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. This novel confronts both networks' complicity in 20th-century atrocities. The defensive network helped build weapons of mass destruction. The Order's methodology inspired genocidal eugenics. Neither can claim moral high ground when millions are dead.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2028</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 9 -->
+        <article id="book9" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #1a2f2f, #3d5f5f);">
+              <span>Book 9</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 9: The Cold War Equation</h2>
+              <p class="book-period">Cold War, 1962-1989 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1962-1989 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 132</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">95,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Nuclear deterrence is stable—too stable. Both networks realize mutually assured destruction has created a strategic stalemate. The Order can't trigger controlled collapse because nuclear war would be uncontrolled. The defensive network can't distribute knowledge freely because Cold War paranoia treats information sharing as treason.
+                </p>
+                <p>
+                  The solution: the internet. ARPANET begins as a military project but is hijacked by defensive network operatives who recognize distributed networks as the ultimate knowledge preservation system. The Order responds by funding centralized alternatives, betting they can control infrastructure even if they can't control information flow.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot9')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot9" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. This novel explores the technological pivot: both networks realize the next collapse won't be military or economic—it'll be informational. Whoever controls how humanity processes and distributes knowledge controls the species' future.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2028</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 10 -->
+        <article id="book10" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #0f1419, #2a3f4f);">
+              <span>Book 10</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 10: The Network Wars</h2>
+              <p class="book-period">Digital Revolution, 1995-2010 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">1995-2010 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 135</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">100,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  The internet was supposed to democratize knowledge, but social media turned it into an attention-harvesting machine. The defensive network watches in horror as their open information strategy is weaponized through misinformation, conspiracy theories, and algorithmic radicalization.
+                </p>
+                <p>
+                  Meanwhile, the Order quietly funds platform development, realizing that giving people "unlimited information" while controlling recommendation algorithms is more effective than censorship. Let them have all the knowledge—just make sure they're too distracted, polarized, and overwhelmed to use it.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot10')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot10" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. This novel explores the defensive network's strategic crisis: they won the information distribution battle but are losing the attention war. Knowledge is freely available, but human psychology makes it nearly impossible for most people to engage with it meaningfully.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2029</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 11 -->
+        <article id="book11" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #1a1a2e, #3a3a5c);">
+              <span>Book 11</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 11: The Collapse Threshold</h2>
+              <p class="book-period">Climate Crisis, 2040-2060 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">2040-2060 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 139</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">115,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Climate collapse triggers exactly the cascade patterns Nefertari predicted 3,200 years earlier: agricultural failure, refugee crises, economic breakdown, governmental collapse, violence spirals. Both networks prepared for this moment—but preparation doesn't mean prevention.
+                </p>
+                <p>
+                  The Order's prepared bloodlines retreat to climate-controlled enclaves, genetically optimized for resilience. The defensive network attempts mass pattern recognition education, teaching billions to recognize and interrupt collapse cascades. But pattern recognition can't overcome resource scarcity, and knowledge can't reverse ecological destruction.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot11')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot11" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. This novel forces both networks to confront their failures: the defensive network couldn't prevent collapse despite distributing knowledge for 3,200 years. The Order's optimized bloodlines can't rebuild civilization alone without the broader human diversity they spent centuries eliminating.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2029</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Book 12 -->
+        <article id="book12" class="book-detail reveal delay-1">
+          <div class="book-detail-grid">
+            <div class="book-detail-cover" style="background: linear-gradient(135deg, #0d0d0d, #2d2d2d);">
+              <span>Book 12</span>
+            </div>
+            <div class="book-detail-info">
+              <h2>Book 12: The Final Protocol</h2>
+              <p class="book-period">Post-Collapse, 2080-2100 CE</p>
+              <div class="book-status outlined">📋 Outlined | Planning stage</div>
+
+              <div class="book-meta">
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Time Period</span>
+                  <span class="book-meta-value">2080-2100 CE</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Generation</span>
+                  <span class="book-meta-value">Gen 140</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Target Word Count</span>
+                  <span class="book-meta-value">120,000</span>
+                </div>
+                <div class="book-meta-item">
+                  <span class="book-meta-label">Status</span>
+                  <span class="book-meta-value">Outlined</span>
+                </div>
+              </div>
+
+              <div class="book-description">
+                <p>
+                  Humanity survived—barely. Global population dropped from 10 billion to 2 billion. Both networks' descendants must rebuild, but after 3,200 years of conflict, a radical question emerges: what if both philosophies were wrong?
+                </p>
+                <p>
+                  Collapse couldn't be prevented (the Order was right). But optimal survivors can't rebuild alone (Genesis was right). The solution requires synthesizing both approaches: distributed knowledge AND selective preparation. Free choice AND intelligent design. The final protocol emerges not from victory but from exhausted compromise.
+                </p>
+
+                <button class="expand-toggle" onclick="togglePlot(this, 'plot12')">
+                  Read Full Plot Summary
+                </button>
+
+                <div id="plot12" class="full-plot">
+                  <h3>Full Plot Summary</h3>
+                  <p>
+                    Coming soon. The saga's conclusion explores whether humanity can learn from 3,200 years of genetic memory, philosophical warfare, and repeated collapses—or whether the pattern will simply repeat with new networks, new technologies, and the same fundamental conflict between freedom and control.
+                  </p>
+                </div>
+              </div>
+
+              <div class="button-row">
+                <a class="button ghost" href="#">Coming 2030</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="series-nav reveal">
+          <a href="series.html">← Explore the Complete Saga</a>
+          <a href="timeline.html">View Visual Timeline →</a>
+        </div>
+
+      </main>
+
+      <footer class="site-footer">
+        <p>Copyright 2025 Randy Pellegrini. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="books.html">Books</a>
+          <a href="series.html">Series</a>
+          <a href="characters.html">Characters</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="index.html#newsletter">Updates</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function togglePlot(button, plotId) {
+        const plotDiv = document.getElementById(plotId);
+        plotDiv.classList.toggle('visible');
+        button.classList.toggle('expanded');
+        button.textContent = plotDiv.classList.contains('visible')
+          ? 'Hide Full Plot Summary'
+          : 'Read Full Plot Summary';
+      }
+    </script>
+  </body>
+</html>

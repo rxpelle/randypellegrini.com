@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timeline | The Plague Novel Saga | Randy Pellegrini</title>
+    <meta
+      name="description"
+      content="Visual timeline of The Plague Novel Saga. Explore 3,277 years from Bronze Age Egypt (1177 BCE) to post-collapse future (2100 CE)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .timeline-hero {
+        text-align: center;
+        padding: 40px 0;
+      }
+      .timeline-hero h1 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+        margin: 0 0 16px;
+      }
+      .timeline-container {
+        position: relative;
+        padding: 60px 0;
+      }
+      .timeline-axis {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(to bottom, var(--teal), var(--accent));
+        transform: translateX(-50%);
+      }
+      .timeline-event {
+        position: relative;
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .timeline-event:nth-child(even) .event-content {
+        order: 2;
+      }
+      .timeline-event:nth-child(even) .event-marker {
+        order: 1;
+        text-align: left;
+      }
+      .event-marker {
+        text-align: right;
+        position: relative;
+      }
+      .event-year {
+        display: inline-block;
+        padding: 12px 24px;
+        background: var(--teal);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.3rem;
+        border-radius: 999px;
+        box-shadow: 0 8px 20px rgba(31, 108, 95, 0.3);
+        position: relative;
+        z-index: 2;
+      }
+      .event-year::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 4px;
+        background: var(--teal);
+      }
+      .timeline-event:nth-child(odd) .event-year::after {
+        right: -30px;
+      }
+      .timeline-event:nth-child(even) .event-year::after {
+        left: -30px;
+      }
+      .event-content {
+        background: var(--panel);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 12px 30px rgba(27, 29, 31, 0.12);
+        border: 1px solid rgba(27, 29, 31, 0.08);
+      }
+      .event-book {
+        display: inline-block;
+        padding: 6px 14px;
+        background: rgba(31, 108, 95, 0.12);
+        color: var(--teal-dark);
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .event-title {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 1.6rem;
+        margin: 0 0 8px;
+        color: var(--ink);
+      }
+      .event-subtitle {
+        color: var(--teal-dark);
+        font-weight: 600;
+        margin: 0 0 16px;
+      }
+      .event-description {
+        color: var(--ink-soft);
+        line-height: 1.7;
+        margin: 0 0 16px;
+      }
+      .event-meta {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+        padding-top: 16px;
+        border-top: 1px solid rgba(27, 29, 31, 0.1);
+      }
+      .event-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--ink-soft);
+      }
+      .event-meta-item strong {
+        color: var(--ink);
+      }
+      .collapse-marker {
+        background: rgba(195, 100, 44, 0.15);
+        border: 2px solid var(--accent);
+        padding: 20px;
+        border-radius: 12px;
+        margin: 16px 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .collapse-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--accent);
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+      .collapse-text {
+        flex: 1;
+      }
+      .collapse-text strong {
+        color: var(--accent-dark);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .legend-section {
+        background: var(--panel);
+        border-radius: 20px;
+        padding: 28px;
+        margin: 40px 0;
+        box-shadow: 0 12px 30px rgba(27, 29, 31, 0.12);
+      }
+      .legend-section h3 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 1.4rem;
+        margin: 0 0 20px;
+      }
+      .legend-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .legend-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .legend-icon.generation {
+        background: var(--teal);
+      }
+      .legend-icon.collapse {
+        background: var(--accent);
+      }
+      .legend-icon.artifact {
+        background: linear-gradient(135deg, var(--teal), var(--accent));
+      }
+      .stats-overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+      }
+      .stat-box {
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(27, 29, 31, 0.08);
+      }
+      .stat-number {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--teal-dark);
+        margin: 0 0 8px;
+      }
+      .stat-label {
+        color: var(--ink-soft);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      @media (max-width: 900px) {
+        .timeline-event {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .timeline-event:nth-child(even) .event-content,
+        .timeline-event:nth-child(even) .event-marker {
+          order: initial;
+        }
+        .event-marker {
+          text-align: center;
+        }
+        .timeline-axis {
+          display: none;
+        }
+        .event-year::after {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="logo" href="index.html">Randy Pellegrini</a>
+        <nav class="nav">
+          <a href="books.html">Books</a>
+          <a href="series.html">The Series</a>
+          <a href="characters.html">Characters</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#newsletter">Updates</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="button small" href="books.html">Explore Books</a>
+      </header>
+
+      <main>
+        <section class="timeline-hero reveal">
+          <p class="eyebrow">3,277 Years. 12 Books. One Pattern.</p>
+          <h1>The Complete Timeline</h1>
+          <p class="lead">
+            From Bronze Age Egypt (1177 BCE) to the post-collapse future (2100 CE), follow two
+            networks through every major collapse in human history. Each book reveals another layer
+            of the pattern—and another generation in the bloodlines.
+          </p>
+        </section>
+
+        <section class="stats-overview reveal delay-1">
+          <div class="stat-box">
+            <div class="stat-number">3,277</div>
+            <div class="stat-label">Years Covered</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">138</div>
+            <div class="stat-label">Generations</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Books</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Major Collapses</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">40+</div>
+            <div class="stat-label">Key Characters</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Continents</div>
+          </div>
+        </section>
+
+        <section class="legend-section reveal delay-1">
+          <h3>Timeline Legend</h3>
+          <div class="legend-grid">
+            <div class="legend-item">
+              <div class="legend-icon generation"></div>
+              <div>
+                <strong>Generation Marker</strong><br />
+                <span style="color: var(--ink-soft); font-size: 0.9rem;">Bloodline continuation from Gen 1</span>
+              </div>
+            </div>
+            <div class="legend-item">
+              <div class="legend-icon collapse"></div>
+              <div>
+                <strong>Collapse Event</strong><br />
+                <span style="color: var(--ink-soft); font-size: 0.9rem;">Major civilizational breakdown</span>
+              </div>
+            </div>
+            <div class="legend-item">
+              <div class="legend-icon artifact"></div>
+              <div>
+                <strong>Pattern Eye Artifact</strong><br />
+                <span style="color: var(--ink-soft); font-size: 0.9rem;">Genetic memory activation key</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="timeline-container">
+          <div class="timeline-axis"></div>
+
+          <!-- Book 3: The Pattern Eye -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1177 BCE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 3</span>
+              <h2 class="event-title">The Pattern Eye</h2>
+              <p class="event-subtitle">The Founding | Bronze Age Egypt</p>
+              <p class="event-description">
+                Egyptian scribe Nefertari recognizes the Bronze Age Collapse as systemic cascade
+                failure. She develops the Pattern Eye methodology and encodes it in genetic memory,
+                founding the Genesis Protocol. Her colleague Amenhotep reaches the opposite
+                conclusion, founding the Order. Two networks emerge from the same catastrophe.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>Bronze Age Collapse</strong>
+                  Sea Peoples invasions, trade network failure, literacy vanishes. 90% population
+                  decline across Eastern Mediterranean. Civilization resets to Iron Age.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 1 (Founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Key Characters:</strong> Nefertari, Amenhotep, Ramesses III
+                </div>
+                <div class="event-meta-item">
+                  <strong>Artifact:</strong> Original Pattern Eye temple texts
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 4: The Nazarene Protocol -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">26 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 4</span>
+              <h2 class="event-title">The Nazarene Protocol</h2>
+              <p class="event-subtitle">Roman Judea | Generation 48</p>
+              <p class="event-description">
+                Miriam of Magdala experiences genetic memory as "demon possession" until Jesus
+                recognizes it as inherited knowledge. His "miracles" are Egyptian medical techniques,
+                his parables are pattern recognition training. The movement embeds defensive
+                methodology in Christianity—but the Order infiltrates Church leadership.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>Roman Judea Collapse</strong>
+                  Jewish-Roman Wars, Temple destruction (70 CE), diaspora begins. Religious
+                  framework replaces political structure. Knowledge preservation shifts to scripture.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 48 (1,200 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Key Characters:</strong> Miriam, Jesus, Caiaphas, Pilate
+                </div>
+                <div class="event-meta-item">
+                  <strong>Artifact:</strong> Temple archive manuscripts
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 1: The Aethelred Cipher -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1347 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 1</span>
+              <h2 class="event-title">The Aethelred Cipher</h2>
+              <p class="event-subtitle">Medieval Germany | Generation 90</p>
+              <p class="event-description">
+                Scribe Thomas of Eltville inherits an iron key from dying monk Brother Heinrich.
+                With Lady Cecily FitzAlan (Order escapee), he decodes the Aethelred Chronicle—
+                discovering 2,500 years of genetic memory warfare. The Black Death provides perfect
+                cover for both networks' operations.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>Black Death Pandemic</strong>
+                  Bubonic plague kills 50 million (60% of Europe's population). Economic systems
+                  collapse, feudalism cracks, labor shortages trigger social upheaval. The Order
+                  observes natural selection at civilizational scale.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 90 (2,500 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Key Characters:</strong> Thomas, Cecily, Wilhelm, Heinrich
+                </div>
+                <div class="event-meta-item">
+                  <strong>Artifact:</strong> Iron key + Aethelred Chronicle
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 5: The Renaissance Protocol -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1495 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 5</span>
+              <h2 class="event-title">The Renaissance Protocol</h2>
+              <p class="event-subtitle">Renaissance Italy | Generation 96</p>
+              <p class="event-description">
+                Leonardo da Vinci's genius is spontaneous genetic memory activation—96 generations
+                of accumulated knowledge. Isabella Medici recruits him into the defensive network.
+                The printing press revolution forces both networks to adapt: whoever controls mass
+                knowledge distribution controls the next 500 years.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>Protestant Reformation Chaos</strong>
+                  Religious fracturing triggers century of warfare. Order deliberately destabilizes
+                  Christianity to regain control. 8 million die in religious wars while Order
+                  bloodlines stay neutral.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 96 (2,700 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Key Characters:</strong> Leonardo, Isabella Medici, Cesare Borgia
+                </div>
+                <div class="event-meta-item">
+                  <strong>Artifact:</strong> Encoded notebooks + art containing activation keys
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 6: The Enlightenment Machine -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1750 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 6</span>
+              <h2 class="event-title">The Enlightenment Machine</h2>
+              <p class="event-subtitle">Enlightenment France | Generation 105</p>
+              <p class="event-description">
+                Diderot's Encyclopédie systematically encodes pattern recognition across tens of
+                thousands of copies. The French Revolution is a defensive network operation to
+                destabilize Order-controlled monarchies—but revolutionary fervor proves impossible
+                to control, becoming the Terror.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>French Revolution Cascade</strong>
+                  Defensive network's greatest tactical success becomes strategic disaster. Proves
+                  Order's central argument: most people can't handle distributed power responsibly.
+                  40,000 executions during the Terror.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 105 (2,900 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 7: The Industrial Collapse -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1840 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 7</span>
+              <h2 class="event-title">The Industrial Collapse</h2>
+              <p class="event-subtitle">Victorian England | Generation 114</p>
+              <p class="event-description">
+                Ada Lovelace recognizes her mathematical genius as genetic memory. Her work on
+                Babbage's Analytical Engine embeds defensive methodology into machine logic itself.
+                The Order seizes industrial capitalism as bloodline observation system—factories
+                track which lineages thrive under industrial pressures.
+              </p>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 114 (3,000 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 8: The War Protocol -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1940 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 8</span>
+              <h2 class="event-title">The War Protocol</h2>
+              <p class="event-subtitle">World War II | Generation 125</p>
+              <p class="event-description">
+                Nazi eugenics are corrupted versions of Order methodology, stolen by operatives
+                who broke away. The Holocaust is the Order's nightmare: their techniques weaponized
+                without philosophical framework. Manhattan Project scientists realize nuclear physics
+                unlocks controlled evolution at technological speed.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>World War II Atrocities</strong>
+                  Both networks complicit: defensive network built atomic weapons, Order's methodology
+                  inspired genocidal eugenics. 70 million dead. Neither can claim moral high ground.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 125 (3,100 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 9: The Cold War Equation -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1962 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 9</span>
+              <h2 class="event-title">The Cold War Equation</h2>
+              <p class="event-subtitle">Cold War Era | Generation 132</p>
+              <p class="event-description">
+                Nuclear deterrence creates strategic stalemate. The Order can't trigger controlled
+                collapse—nuclear war would be uncontrolled. Defensive network can't distribute
+                knowledge freely—Cold War paranoia treats information sharing as treason. Solution:
+                the internet. ARPANET is hijacked by defensive operatives recognizing distributed
+                networks as ultimate knowledge preservation.
+              </p>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 132 (3,150 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 10: The Network Wars -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">1995 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 10</span>
+              <h2 class="event-title">The Network Wars</h2>
+              <p class="event-subtitle">Digital Revolution | Generation 135</p>
+              <p class="event-description">
+                The internet was supposed to democratize knowledge, but social media weaponizes it
+                through misinformation and algorithmic radicalization. The Order funds platform
+                development: giving people "unlimited information" while controlling recommendation
+                algorithms is more effective than censorship. Let them have knowledge—just make
+                sure they're too distracted to use it.
+              </p>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 135 (3,170 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 2: The Genesis Protocol -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">2020 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 2</span>
+              <h2 class="event-title">The Genesis Protocol</h2>
+              <p class="event-subtitle">Modern Era | Generation 138</p>
+              <p class="event-description">
+                Dr. Sarah Chen discovers the impossible pattern: human evolution has been guided
+                for 700+ years. GenVault Corporation is the Order's modern face, running CRISPR-based
+                genetic optimization. She's Gen 138 in Cecily's bloodline. Marcus Webb provides NSA
+                evidence of breeding programs. Sarah releases all data publicly—but realizes most
+                people won't use freely available knowledge.
+              </p>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 138 (3,200 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Key Characters:</strong> Sarah Chen, Marcus Webb, Elena Rodriguez
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> In Progress (60,000 words)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 11: The Collapse Threshold -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">2050 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 11</span>
+              <h2 class="event-title">The Collapse Threshold</h2>
+              <p class="event-subtitle">Climate Crisis | Generation 139</p>
+              <p class="event-description">
+                Climate collapse triggers the cascade patterns Nefertari predicted 3,200 years
+                earlier: agricultural failure, refugee crises, economic breakdown, governmental
+                collapse, violence spirals. Order's prepared bloodlines retreat to climate-controlled
+                enclaves. Defensive network attempts mass pattern recognition education—but pattern
+                recognition can't overcome resource scarcity.
+              </p>
+              <div class="collapse-marker">
+                <div class="collapse-icon">⚠</div>
+                <div class="collapse-text">
+                  <strong>Climate-Triggered Collapse</strong>
+                  Global population drops from 10 billion to 2 billion. Both networks prepared for
+                  this moment—but preparation doesn't mean prevention. The pattern completes itself
+                  despite 3,200 years of accumulated knowledge.
+                </div>
+              </div>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 139 (3,230 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book 12: The Final Protocol -->
+          <div class="timeline-event reveal delay-1">
+            <div class="event-marker">
+              <span class="event-year">2090 CE</span>
+            </div>
+            <div class="event-content">
+              <span class="event-book">Book 12</span>
+              <h2 class="event-title">The Final Protocol</h2>
+              <p class="event-subtitle">Post-Collapse Rebuild | Generation 140</p>
+              <p class="event-description">
+                Humanity survived—barely. Both networks' descendants must rebuild, but after 3,200
+                years of conflict, a radical question emerges: what if both philosophies were wrong?
+                Collapse couldn't be prevented (Order was right). But optimal survivors can't
+                rebuild alone (Genesis was right). The final protocol synthesizes both: distributed
+                knowledge AND selective preparation. Free choice AND intelligent design. The pattern
+                may simply repeat—or humanity finally learns.
+              </p>
+              <div class="event-meta">
+                <div class="event-meta-item">
+                  <strong>Generation:</strong> Gen 140 (3,270 years from founding)
+                </div>
+                <div class="event-meta-item">
+                  <strong>Status:</strong> Outlined, not yet written
+                </div>
+                <div class="event-meta-item">
+                  <strong>Resolution:</strong> Series conclusion—synthesis or repetition?
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <section class="legend-section reveal delay-2">
+          <h3>Pattern Recognition Across History</h3>
+          <p style="margin-bottom: 20px; line-height: 1.7;">
+            Every collapse in the timeline follows the same seven-stage pattern Nefertari identified
+            in 1177 BCE: optimization trap → early warnings → cascade initiation → positive feedback
+            → threshold breach → collapse & selection → rebuild & reset. The saga explores whether
+            this pattern is truly inevitable (Order's view) or preventable through distributed
+            pattern recognition (Genesis's view).
+          </p>
+          <p style="line-height: 1.7;">
+            Each book reveals another layer of the conspiracy while showing the same collapse
+            structure operating across different historical contexts. Bronze Age trade network
+            failure, medieval plague cascade, modern climate collapse—the underlying mathematics
+            remains constant even as surface details change.
+          </p>
+        </section>
+
+        <div class="section-cta reveal delay-2" style="text-align: center; margin-top: 48px;">
+          <a class="button" href="books.html">Explore All 12 Books</a>
+          <a class="button outline" href="characters.html" style="margin-left: 16px;">Meet the Characters</a>
+        </div>
+
+      </main>
+
+      <footer class="site-footer">
+        <p>Copyright 2025 Randy Pellegrini. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="books.html">Books</a>
+          <a href="series.html">Series</a>
+          <a href="characters.html">Characters</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="index.html#newsletter">Updates</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
