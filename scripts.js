@@ -1,4 +1,4 @@
-// The Plague Novel Saga - Interactive Features
+// The Architecture of Survival - Interactive Features
 // Author: Randy Pellegrini
 
 // Expandable Content Toggling
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navigator.share) {
       navigator.share({
         title: document.title,
-        text: 'Check out The Plague Novel Saga - a 12-book epic spanning 3,200 years',
+        text: 'Check out The Architecture of Survival - a 12-book epic spanning 3,200 years',
         url: window.location.href
       }).catch(err => console.log('Share cancelled'));
     } else {
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
 
-  console.log('🔮 The Plague Novel Saga - Website initialized');
+  console.log('🔮 The Architecture of Survival - Website initialized');
   console.log('📚 12 books | 3,200 years | 138 generations');
 });
 
