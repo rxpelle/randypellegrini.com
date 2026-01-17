@@ -345,6 +345,8 @@ a {
   font-weight: 600;
   letter-spacing: 0.08em;
   min-height: 240px;
+  overflow: hidden;
+  aspect-ratio: 1;
 }
 
 .portrait img {
@@ -352,6 +354,7 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
+  display: block;
 }
 
 .newsletter-card {
