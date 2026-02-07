@@ -1,0 +1,25 @@
+---
+layout: base.njk
+---
+<div class="article-container">
+  <div class="article-header reveal">
+    <p class="eyebrow">Blog Post {{ number }} of 6</p>
+    <h1>{{ heading | default(title) | safe }}</h1>
+    <p class="article-meta">By Randy Pellegrini</p>
+  </div>
+
+  <div class="article-body reveal delay-1">
+    {{ content | safe }}
+  </div>
+
+  <div class="article-cta reveal delay-2">
+    <h3>{{ ctaTitle | default("Read The Aethelred Cipher") }}</h3>
+    <p>{{ ctaText | safe }}</p>
+    <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">Get your copy &rarr;</a>
+  </div>
+
+  <div class="article-nav">
+    {% if prevPost %}<a href="{{ prevPost }}">&larr; {{ prevTitle }}</a>{% endif %}
+    {% if nextPost %}<a href="{{ nextPost }}">{{ nextTitle }} &rarr;</a>{% else %}<a href="/blog.html">All posts &rarr;</a>{% endif %}
+  </div>
+</div>

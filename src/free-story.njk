@@ -1,0 +1,139 @@
+---
+fullTitle: "The Edmund Fragments — Free Prequel Story | Randy Pellegrini"
+description: "Get 'The Edmund Fragments' free — a 5,000-word prequel to The Aethelred Cipher. Set in 1275, follow Brother Edmund as he discovers a conspiracy hidden in manuscript margins."
+ogTitle: "The Edmund Fragments — Free Prequel Story"
+ogDescription: "A 5,000-word prequel to The Aethelred Cipher. Set 72 years before the novel, follow the monk whose hidden manuscripts change everything."
+ogUrl: "https://randypellegrini.com/free-story.html"
+convertkit: true
+permalink: /free-story.html
+---
+{% extends "base.njk" %}
+
+{% block content %}
+<section class="magnet-hero">
+  <div class="reveal">
+    <p class="eyebrow">Free prequel story</p>
+    <h1>The Edmund Fragments</h1>
+    <p class="lead">
+      In 1275, a monk named Edmund drew circles and arrows in the margins of a theology book.
+      They weren't decoration. They were the first system dynamics diagrams &mdash; 700 years
+      before the field was invented.
+    </p>
+    <p class="lead" style="color: var(--ink-soft);">
+      He was murdered for it. But his manuscripts survived. Seventy-two years later, a young
+      scribe named Thomas of Eltville found them &mdash; and everything changed.
+    </p>
+    <p class="lead" style="color: var(--ink-soft);">
+      This is Edmund's story. The one the novel only hints at.
+    </p>
+
+    <div class="magnet-benefits">
+      <div class="magnet-benefit">
+        <div class="benefit-icon">1</div>
+        <p><strong>5,000 words</strong>A complete short story, not a teaser or excerpt.</p>
+      </div>
+      <div class="magnet-benefit">
+        <div class="benefit-icon">2</div>
+        <p><strong>Original prequel</strong>Events 72 years before The Aethelred Cipher that the novel references but never shows.</p>
+      </div>
+      <div class="magnet-benefit">
+        <div class="benefit-icon">3</div>
+        <p><strong>Instant delivery</strong>Sign up and it arrives in your inbox immediately.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="magnet-preview reveal delay-1">
+    <p class="preview-title">The Edmund Fragments</p>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <div class="preview-line"></div>
+    <p class="preview-quote">"This is the wheel that turns itself. Each revolution feeds the next."<br>&mdash; Brother Edmund, 1275</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="magnet-form-card reveal">
+    <h2>Get your free copy</h2>
+    <p>Enter your email and "The Edmund Fragments" will arrive in your inbox. You'll also get occasional updates about new books in the series. Unsubscribe anytime.</p>
+    <form
+      class="signup"
+      method="post"
+      action="https://app.kit.com/forms/{{ site.convertkitFormId }}/subscriptions"
+      data-sv-form="{{ site.convertkitFormId }}"
+      data-uid="{{ site.convertkitUid }}"
+      data-format="inline"
+      data-version="5"
+    >
+      <label class="sr-only" for="magnet-email">Email address</label>
+      <input
+        id="magnet-email"
+        name="email_address"
+        type="email"
+        placeholder="you@email.com"
+        required
+        aria-label="Email address"
+      />
+      <button class="button" type="submit" id="magnet-submit-btn">
+        <span id="magnet-button-text">Send me the story</span>
+      </button>
+    </form>
+    <p class="form-note">No spam. One email per month. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="article-body reveal" style="max-width: 720px; margin: 0 auto;">
+    <h2>What readers are saying about The Aethelred Cipher</h2>
+    <blockquote>"If you like Umberto Eco's The Name of the Rose but wish it had the pacing of a thriller, this is your book."</blockquote>
+    <p>
+      <em>The Edmund Fragments</em> is set in the same world as <em>The Aethelred Cipher</em>, the first book in
+      The Architecture of Survival &mdash; a 12-book series spanning 3,200 years from Bronze Age Egypt to the modern era.
+    </p>
+    <p>
+      The novel follows Thomas, Margarethe, and a fourteen-year-old girl named Maria as they uncover the full scope
+      of a centuries-old conspiracy during the Black Death of 1347 &mdash; and attempt to scatter its secrets across
+      Europe before they're silenced forever.
+    </p>
+    <div style="text-align: center; margin-top: 24px;">
+      <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">Get The Aethelred Cipher &rarr;</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block pageScript %}
+<script>
+  const form = document.querySelector('.magnet-form-card form');
+  const submitBtn = document.getElementById('magnet-submit-btn');
+  const buttonText = document.getElementById('magnet-button-text');
+
+  form.addEventListener('submit', () => {
+    submitBtn.disabled = true;
+    buttonText.textContent = 'Sending...';
+  });
+
+  if (window.ConvertkitForm) {
+    window.ConvertkitForm.setOptions({
+      onSuccess: () => {
+        buttonText.textContent = 'Check your email!';
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          buttonText.textContent = 'Send me the story';
+        }, 5000);
+      },
+      onError: () => {
+        submitBtn.disabled = false;
+        buttonText.textContent = 'Send me the story';
+      }
+    });
+  }
+</script>
+{% endblock %}

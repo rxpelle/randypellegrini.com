@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="logo" href="/">Randy Pellegrini</a>
+  <nav class="nav">
+    <a href="/books.html">Books</a>
+    <a href="/series.html">The Series</a>
+    <a href="/characters.html">Characters</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/#about">About</a>
+    <a href="/free-story.html">Free Story</a>
+  </nav>
+  <a class="button small" href="{{ headerCtaHref | default('/books.html') }}">{{ headerCta | default("Explore Books") }}</a>
+</header>
