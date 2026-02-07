@@ -1,4 +1,8 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   // Passthrough copy static assets
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/scripts.js");
