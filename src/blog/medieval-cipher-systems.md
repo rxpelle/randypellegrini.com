@@ -5,6 +5,7 @@ ogTitle: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscr
 ogDescription: "Discover how medieval monks used colored dots, physical templates, and manuscript marginalia to build sophisticated cipher systems centuries before modern cryptography."
 ogUrl: "https://randypellegrini.com/blog/medieval-cipher-systems.html"
 number: 1
+bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/medieval-cipher-systems.html
 excerpt: "The medieval world took its secrets seriously. And the technology they used was hiding right in front of us — literally, in the margins of manuscripts we've been studying for centuries."
 prevPost: "/blog.html"

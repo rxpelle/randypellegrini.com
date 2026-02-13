@@ -983,6 +983,19 @@ a {
   margin-bottom: 8px;
 }
 
+.blog-card .blog-book-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal-dark);
+  background: rgba(87, 166, 161, 0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
 .blog-card h3 {
   margin: 0 0 10px;
   font-size: 1.2rem;

@@ -6,6 +6,7 @@ ogTitle: "Why Civilizations Collapse in the Same Pattern"
 ogDescription: "From the Bronze Age Collapse to the fall of Rome to the Black Death, civilizations fail in the same six-step pattern. Explore the feedback loop that has shaped 3,200 years of history."
 ogUrl: "https://randypellegrini.com/blog/why-civilizations-collapse.html"
 number: 3
+bookTag: "The Series"
 permalink: /blog/why-civilizations-collapse.html
 excerpt: "In 1177 BCE, every major civilization in the Eastern Mediterranean collapsed simultaneously. The same pattern keeps repeating. This isn't a coincidence."
 prevPost: "/blog/how-the-black-death-spread.html"

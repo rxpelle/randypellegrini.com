@@ -5,6 +5,7 @@ ogTitle: "5 Real Medieval Conspiracies That Were Stranger Than Fiction"
 ogDescription: "From the Templar arrests to the Cadaver Synod to Venetian spies, five real medieval conspiracies that were stranger than anything in fiction and inspired The Aethelred Cipher."
 ogUrl: "https://randypellegrini.com/blog/real-medieval-conspiracies.html"
 number: 5
+bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/real-medieval-conspiracies.html
 excerpt: "A dead pope put on trial. A nationwide arrest coordinated without telephones. An intelligence service that made the CIA look primitive. All real. All medieval."
 prevPost: "/blog/blood-memory-science-meets-fiction.html"

@@ -5,6 +5,7 @@ ogTitle: "Blood Memory: Where Science Meets Fiction"
 ogDescription: "Can trauma be inherited through DNA? Explore the real science of epigenetics behind The Architecture of Survival series, from cherry blossom mice to the Dutch Hunger Winter."
 ogUrl: "https://randypellegrini.com/blog/blood-memory-science-meets-fiction.html"
 number: 4
+bookTag: "The Series"
 permalink: /blog/blood-memory-science-meets-fiction.html
 excerpt: "In 2013, researchers taught mice to fear cherry blossoms. Their grandchildren — never conditioned — feared them too. The science behind inherited memory is closer than you think."
 prevPost: "/blog/why-civilizations-collapse.html"

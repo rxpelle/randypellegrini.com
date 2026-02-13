@@ -6,10 +6,13 @@ ogTitle: "Writing a 12-Book, 3,200-Year Series"
 ogDescription: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind a 12-book saga."
 ogUrl: "https://randypellegrini.com/blog/writing-a-12-book-series.html"
 number: 6
+bookTag: "The Series"
 permalink: /blog/writing-a-12-book-series.html
 excerpt: "People ask two questions about this series. \"How do you plan a story that spans 3,200 years?\" And: \"Are you insane?\" Fair question. Let me answer both."
 prevPost: "/blog/real-medieval-conspiracies.html"
 prevTitle: "5 Real Medieval Conspiracies"
+nextPost: "/blog/the-corporations-that-knew.html"
+nextTitle: "The Corporations That Knew"
 ctaTitle: "Read The Aethelred Cipher"
 ctaText: '<em>The Aethelred Cipher</em> is available now. If you''re the kind of reader who likes to find a series at the beginning—when you can watch it grow, speculate about what''s coming, and say "I was here from the start"—this is your moment.'
 ---

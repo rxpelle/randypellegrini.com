@@ -6,6 +6,7 @@ ogTitle: "How the Black Death Actually Spread"
 ogDescription: "The Black Death killed up to 200 million people, but medieval people understood more about disease transmission than we give them credit for. Explore the real history of the deadliest pandemic."
 ogUrl: "https://randypellegrini.com/blog/how-the-black-death-spread.html"
 number: 2
+bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/how-the-black-death-spread.html
 excerpt: "Medieval people weren't as helpless or as ignorant about disease as we've been taught. Some of them understood things that wouldn't be \"discovered\" by modern science for five centuries."
 prevPost: "/blog/medieval-cipher-systems.html"
