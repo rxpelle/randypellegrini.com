@@ -11,6 +11,8 @@ permalink: /blog/writing-villain-might-be-right.html
 excerpt: "The most dangerous villain isn't the one who's wrong. It's the one who makes you realize you might agree with them. Here's how to write that character without losing the reader — or your nerve."
 prevPost: "/blog/complexity-kills.html"
 prevTitle: "Complexity Kills"
+nextPost: "/blog/the-observer-effect.html"
+nextTitle: "The Observer Effect"
 ctaTitle: "Read The Aethelred Cipher"
 ctaText: '<em>The Aethelred Cipher</em> is the first book in a series where the villains aren''t wrong—they''re just willing to do what the heroes won''t. The Order has been making the hard calculations for three thousand years. Thomas is the first person to challenge not just their methods, but their premise.'
 ---
