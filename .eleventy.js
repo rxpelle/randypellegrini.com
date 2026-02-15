@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/.nojekyll");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // Custom filter: zero-pad numbers (e.g. 1 -> "01")
   eleventyConfig.addFilter("padStart", function(num, length) {
