@@ -19,6 +19,188 @@ permalink: /series.html
         font-size: clamp(2.5rem, 4vw, 3.8rem);
         margin: 0 0 16px;
       }
+
+      /* Dark hero */
+      .dark-hero {
+        background: #1b1d1f;
+        color: #f4efe6;
+        margin: 0 -28px;
+        padding: 80px 28px;
+        text-align: center;
+      }
+      .dark-hero .eyebrow {
+        color: #c3642c;
+      }
+      .dark-hero h1 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        margin: 0 0 28px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.15;
+      }
+      .dark-hero .hook {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        max-width: 680px;
+        margin: 0 auto 16px;
+        color: rgba(244, 239, 230, 0.85);
+      }
+      .dark-hero .hook em {
+        color: #c3642c;
+        font-style: normal;
+        font-weight: 600;
+      }
+      .dark-hero .subhook {
+        font-size: 1.05rem;
+        color: rgba(244, 239, 230, 0.55);
+        max-width: 600px;
+        margin: 24px auto 0;
+      }
+
+      /* Pull quote breakers */
+      .pull-quote {
+        background: #1b1d1f;
+        color: #f4efe6;
+        margin: 0 -28px;
+        padding: 48px 28px;
+        text-align: center;
+      }
+      .pull-quote blockquote {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+        font-style: italic;
+        line-height: 1.5;
+        max-width: 700px;
+        margin: 0 auto;
+        border: none;
+        padding: 0;
+      }
+      .pull-quote .attribution {
+        font-family: "Public Sans", sans-serif;
+        font-size: 0.85rem;
+        font-style: normal;
+        color: rgba(244, 239, 230, 0.4);
+        margin-top: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+      }
+
+      /* What if section */
+      .what-if {
+        background: linear-gradient(135deg, #14433b, #1f6c5f);
+        color: #f4efe6;
+        margin: 0 -28px;
+        padding: 60px 28px;
+      }
+      .what-if h2 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        margin: 0 0 12px;
+        text-align: center;
+      }
+      .what-if .what-if-subtitle {
+        text-align: center;
+        color: rgba(244, 239, 230, 0.65);
+        margin: 0 auto 36px;
+        max-width: 600px;
+      }
+      .what-if-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .what-if-card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .what-if-card .label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #c3642c;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .what-if-card h4 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: 1.15rem;
+        margin: 0 0 10px;
+      }
+      .what-if-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: rgba(244, 239, 230, 0.75);
+        margin: 0;
+      }
+
+      /* Cascade stages */
+      .cascade-section {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .cascade-step {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 16px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(27, 29, 31, 0.08);
+        position: relative;
+      }
+      .cascade-step:last-child {
+        border-bottom: none;
+      }
+      .cascade-number {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      .cascade-step:nth-child(1) .cascade-number { background: #2a9d8f; }
+      .cascade-step:nth-child(2) .cascade-number { background: #3d8a6f; }
+      .cascade-step:nth-child(3) .cascade-number { background: #6b7b4c; }
+      .cascade-step:nth-child(4) .cascade-number { background: #9a6c2e; }
+      .cascade-step:nth-child(5) .cascade-number { background: #b5522a; }
+      .cascade-step:nth-child(6) .cascade-number { background: #a13520; }
+      .cascade-step:nth-child(7) .cascade-number { background: #7a1a1a; }
+      .cascade-title {
+        font-weight: 700;
+        font-size: 1.05rem;
+        margin-bottom: 4px;
+      }
+      .cascade-desc {
+        color: var(--ink-soft);
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
+      /* Reading order with covers */
+      .reading-covers {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin: 24px 0;
+      }
+      .reading-cover-img {
+        width: 120px;
+        height: 180px;
+        border-radius: 8px;
+        object-fit: contain;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      }
+
       .concept-section {
         background: var(--panel);
         border-radius: 24px;
@@ -263,39 +445,54 @@ permalink: /series.html
           grid-template-columns: 1fr;
           gap: 8px;
         }
+        .dark-hero,
+        .pull-quote,
+        .what-if {
+          margin-left: -18px;
+          margin-right: -18px;
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+        .reading-covers {
+          flex-direction: column;
+          align-items: center;
+        }
       }
 </style>
 {% endblock %}
 
 {% block content %}
-        <section class="series-hero reveal">
-          <p class="eyebrow">3,200 Years. One Unbroken Thread.</p>
-          <h1>The Architecture of Survival</h1>
-          <p class="lead">
-            In 2005, researchers at Emory University taught mice to fear the smell of cherry blossoms.
-            Their grandchildren—who had never encountered the scent—flinched at the first whiff.
-            Trauma, it turns out, is inheritable. So is knowledge. So is survival.
-            This series asks: what if someone figured that out three thousand years ago?
+        <!-- DARK HERO -->
+        <div class="dark-hero reveal">
+          <p class="eyebrow">The Architecture of Survival</p>
+          <h1>What if fear isn't the only thing hiding in your blood?</h1>
+          <p class="hook">
+            In 2005, researchers taught mice to fear cherry blossoms. Their grandchildren —
+            who had never encountered the scent — <em>flinched at the first whiff</em>.
+            Trauma is inheritable. So is knowledge. So is survival.
           </p>
-        </section>
+          <p class="subhook">
+            This series asks what happens when someone figured that out three thousand years ago.
+          </p>
+        </div>
 
-        <!-- High-Level Concept -->
+        <!-- HIGH-LEVEL CONCEPT -->
         <section class="concept-section reveal delay-1">
           <h2>It Starts with a Collapse</h2>
           <p>
-            Egypt, 1177 BCE. The Bronze Age is ending—not with a single catastrophe but with everything
+            Egypt, 1177 BCE. The Bronze Age is ending — not with a single catastrophe but with everything
             failing at once. Trade routes sever. Cities burn. Literacy vanishes. Ninety percent of the
             eastern Mediterranean population will die within fifty years.
           </p>
           <p>
             A royal scribe named Nefertari watches the world come apart, and she sees what others miss:
             it isn't random. The failures are connected. One system drags down the next, which drags down
-            the next, until the whole structure folds. She's witnessed the architecture of collapse—and
+            the next, until the whole structure folds. She's witnessed the architecture of collapse — and
             she realizes it will happen again. And again. And again.
           </p>
           <p>
             So she does something unprecedented. Using Egyptian medical knowledge of heredity, she begins
-            encoding pattern recognition—the ability to see collapse before it arrives—directly into
+            encoding pattern recognition — the ability to see collapse before it arrives — directly into
             bloodlines. A biological hard drive. A warning system written in DNA.
           </p>
           <p>
@@ -306,20 +503,29 @@ permalink: /series.html
           </p>
           <p>
             Two philosophies. Two networks. Three thousand two hundred years of war fought in the margins
-            of history—through arranged marriages and manuscript ciphers, through religious movements and
+            of history — through arranged marriages and manuscript ciphers, through religious movements and
             scientific revolutions, through pharmaceutical corporations and classified government programs.
             Every major historical event you learned in school? They were there.
           </p>
         </section>
 
-        <!-- Two Networks Comparison -->
+        <!-- PULL QUOTE 1 -->
+        <div class="pull-quote reveal">
+          <blockquote>
+            "Neither side is evil. That's what makes it terrifying. The Order engineer who
+            genuinely believes she's saving humanity by selecting who survives — she might be
+            right. The defensive operative who distributes knowledge freely — he might be naive.
+            The series doesn't tell you who to root for. It makes you decide."
+          </blockquote>
+        </div>
+
+        <!-- TWO NETWORKS -->
         <section class="reveal delay-1">
           <div class="concept-section">
             <h2>The Two Networks</h2>
             <p>
-              Here is the question the series refuses to answer for you: If civilizational collapse
-              is coming—and it always is—which approach saves more lives? Teach everyone to see the
-              pattern? Or engineer the survivors who'll rebuild from the ashes?
+              If civilizational collapse is coming — and it always is — which approach saves more lives?
+              Teach everyone to see the pattern? Or engineer the survivors who'll rebuild from the ashes?
             </p>
             <p>
               Both sides have three thousand years of evidence. Both have saved millions.
@@ -338,12 +544,12 @@ permalink: /series.html
               <p>
                 Civilizations don't collapse because of plagues or invasions. They collapse because
                 nobody sees the connections between failing systems until it's too late. Distribute the
-                ability to see those connections—to farmers, to fishermen, to everyone—and you interrupt
+                ability to see those connections — to farmers, to fishermen, to everyone — and you interrupt
                 the cascade before it reaches the point of no return.
               </p>
               <h4 style="margin-top: 20px;">How They Operate</h4>
               <ul>
-                <li>Embed pattern recognition methodology in every era's dominant medium—scripture, art, code, open-source software</li>
+                <li>Embed pattern recognition methodology in every era's dominant medium — scripture, art, code, open-source software</li>
                 <li>Teach broadly, trust human capacity, build redundancy into everything</li>
                 <li>Genetic memory carriers pass knowledge through bloodlines as a failsafe</li>
                 <li>When a carrier "activates," they experience ancestors' lives as vividly as their own memories</li>
@@ -362,11 +568,11 @@ permalink: /series.html
               <span class="network-label">Offensive Network</span>
               <p>
                 <strong>Founded:</strong> 1177 BCE by Amenhotep<br />
-                <strong>Core belief:</strong> "Collapse is INEVITABLE—engineer who survives."
+                <strong>Core belief:</strong> "Collapse is INEVITABLE — engineer who survives."
               </p>
               <p>
                 Complexity breeds fragility. The more interconnected civilization becomes, the harder
-                it falls. Teaching everyone pattern recognition sounds noble—but most people can't
+                it falls. Teaching everyone pattern recognition sounds noble — but most people can't
                 use complex systemic knowledge under crisis conditions. The pragmatic answer is
                 uncomfortable: identify the best candidates, concentrate their traits, and when
                 collapse comes, they rebuild faster than anyone else could.
@@ -374,32 +580,75 @@ permalink: /series.html
               <h4 style="margin-top: 20px;">How They Operate</h4>
               <ul>
                 <li>Selective breeding programs tracking bloodlines across millennia</li>
-                <li>Centralized knowledge control through institutional power—church, state, corporation</li>
+                <li>Centralized knowledge control through institutional power — church, state, corporation</li>
                 <li>Observe collapses as natural experiments, recruit the natural survivors</li>
                 <li>The Blood Register: an unbroken genealogical database spanning 3,200 years</li>
               </ul>
               <h4 style="margin-top: 20px;">Their Fingerprints on History</h4>
               <ul>
                 <li>The medieval Church's hierarchical control of knowledge and marriage records</li>
-                <li>Renaissance patronage wasn't generosity—it was talent identification and breeding</li>
-                <li>Operation Paperclip extracted more than Nazi scientists—it extracted bloodline data</li>
+                <li>Renaissance patronage wasn't generosity — it was talent identification and breeding</li>
+                <li>Operation Paperclip extracted more than Nazi scientists — it extracted bloodline data</li>
                 <li>Modern genetic engineering corporations carry the Order's DNA, literally and figuratively</li>
               </ul>
             </div>
           </div>
-
-          <div class="concept-section reveal delay-2">
-            <p style="text-align: center; font-size: 1.1rem; color: var(--teal-dark); font-weight: 600; margin-top: 24px;">
-              Neither side is evil. That's what makes it terrifying. The Order engineer who
-              genuinely believes she's saving humanity by selecting who survives—she might be
-              right. The defensive operative who distributes knowledge freely, trusting
-              that enough people will use it—he might be naive. The series doesn't tell you
-              who to root for. It makes you decide.
-            </p>
-          </div>
         </section>
 
-        <!-- Core Themes -->
+        <!-- WHAT IF IT'S REAL? -->
+        <div class="what-if reveal">
+          <h2>What If It's Real?</h2>
+          <p class="what-if-subtitle">
+            The fiction is speculative. The foundations aren't.
+          </p>
+          <div class="what-if-grid">
+            <div class="what-if-card">
+              <div class="label">Epigenetics</div>
+              <h4>Inherited Memory Is Real</h4>
+              <p>
+                The 2005 Emory University cherry blossom study proved trauma passes through
+                generations via DNA methylation. If fear can be inherited, why not knowledge?
+                Why not a warning?
+              </p>
+            </div>
+            <div class="what-if-card">
+              <div class="label">History</div>
+              <h4>Operation Paperclip Happened</h4>
+              <p>
+                The U.S. government really did extract 1,600 Nazi scientists after WWII.
+                Their research was absorbed into American institutions. What else came with them?
+              </p>
+            </div>
+            <div class="what-if-card">
+              <div class="label">Systems Theory</div>
+              <h4>Collapses Follow a Pattern</h4>
+              <p>
+                The Bronze Age Collapse, the fall of Rome, and the 2008 financial crisis share
+                identical structural signatures: optimization, fragility, cascade, threshold, reset.
+                The pattern is documented. The question is whether it's interruptible.
+              </p>
+            </div>
+            <div class="what-if-card">
+              <div class="label">Genetics</div>
+              <h4>The CCR5-Delta32 Mutation</h4>
+              <p>
+                A genetic variant that confers plague resistance follows specific bloodline patterns
+                across Europe. It appeared too suddenly for random mutation. Some geneticists still
+                can't explain its distribution.
+              </p>
+            </div>
+            <div class="what-if-card">
+              <div class="label">Industry</div>
+              <h4>Pharma Consolidation Is Real</h4>
+              <p>
+                A handful of corporations control the global pharmaceutical supply chain. GenVault
+                is fictional. The structure it mirrors is not.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CORE THEMES -->
         <section class="concept-section reveal delay-1">
           <h2>What the Series Is Really About</h2>
           <p>
@@ -419,7 +668,7 @@ permalink: /series.html
               <h4>Why Civilizations Die the Same Way</h4>
               <p>
                 Bronze Age. Rome. The Black Death. 2008. The structure is identical every time.
-                Optimization, fragility, cascade, collapse. Is it a pattern—or a law?
+                Optimization, fragility, cascade, collapse. Is it a pattern — or a law?
               </p>
             </div>
             <div class="theme-card">
@@ -454,11 +703,11 @@ permalink: /series.html
           </div>
         </section>
 
-        <!-- The Seven Keys -->
+        <!-- THE SEVEN KEYS -->
         <section class="concept-section reveal delay-1">
           <h2>The Seven Keys</h2>
           <p>
-            Nefertari didn't just observe collapse—she reverse-engineered it. Seven layers of pattern
+            Nefertari didn't just observe collapse — she reverse-engineered it. Seven layers of pattern
             recognition, each building on the last. Together they form the Pattern Eye: a methodology
             for seeing civilizational failure before it arrives. She encoded them in bronze artifacts,
             hid them across the Mediterranean, and embedded the training in bloodlines that would
@@ -486,7 +735,7 @@ permalink: /series.html
               <span class="key-number">3</span>
               <h4>Threshold Detection</h4>
               <p>
-                Every system has a point of no return—a threshold beyond which recovery becomes
+                Every system has a point of no return — a threshold beyond which recovery becomes
                 impossible. It looks stable right up until it doesn't. Key 3 finds the line.
               </p>
             </div>
@@ -524,19 +773,22 @@ permalink: /series.html
               </p>
             </div>
           </div>
-
-          <p style="margin-top: 24px;">
-            Most carriers never get past Key 2. Thomas of Eltville reached Key 5 during the
-            Black Death. Sarah Chen, during her full cascade activation, touched Key 7—and
-            understood why Nefertari made the choices she did, three thousand years earlier.
-          </p>
         </section>
 
-        <!-- Knowledge Encoding Evolution -->
+        <!-- PULL QUOTE 2 -->
+        <div class="pull-quote reveal">
+          <blockquote>
+            "Most carriers never get past Key 2. Thomas of Eltville reached Key 5 during the
+            Black Death. Sarah Chen touched Key 7 — and understood why Nefertari made her choices
+            three thousand years earlier."
+          </blockquote>
+        </div>
+
+        <!-- KNOWLEDGE ENCODING EVOLUTION -->
         <section class="concept-section reveal delay-1">
           <h2>Hidden in Every Era's Technology</h2>
           <p>
-            The networks don't just survive history—they shape it. Every major shift in how
+            The networks don't just survive history — they shape it. Every major shift in how
             humans store and transmit knowledge becomes a new battleground. The medium changes.
             The war doesn't.
           </p>
@@ -556,7 +808,7 @@ permalink: /series.html
                 <div class="timeline-year">26-70 CE</div>
                 <div class="timeline-desc">
                   <strong>Oral Tradition & Scripture</strong> — Jesus's parables aren't metaphors.
-                  They're pattern recognition exercises disguised as stories—designed to pass
+                  They're pattern recognition exercises disguised as stories — designed to pass
                   through oral tradition to people who can't read.
                 </div>
               </div>
@@ -587,7 +839,7 @@ permalink: /series.html
               <div class="timeline-item">
                 <div class="timeline-year">1953 CE</div>
                 <div class="timeline-desc">
-                  <strong>DNA & Computing</strong> — Crick discovers the double helix—and the
+                  <strong>DNA & Computing</strong> — Crick discovers the double helix — and the
                   mechanism for genetic memory. The network's funders ensure certain findings
                   never reach publication.
                 </div>
@@ -604,81 +856,91 @@ permalink: /series.html
           </div>
         </section>
 
-        <!-- Collapse Patterns -->
+        <!-- COLLAPSE PATTERNS -->
         <section class="concept-section reveal delay-1">
           <h2>The Same Structure, Every Time</h2>
           <p>
             The Bronze Age Collapse. The fall of Rome. The Black Death. The 2008 financial crisis.
             Strip away the surface details and the same seven-stage pattern emerges every time.
             This is what Nefertari saw. This is what both networks have been fighting about for
-            three thousand years: can the pattern be interrupted, or is it baked into the physics
-            of complex systems?
+            three thousand years.
           </p>
 
-          <h3>Stage 1: The Optimization Trap</h3>
-          <p>
-            Everything gets more efficient. Redundancy is eliminated. Supply chains tighten.
-            Knowledge specializes. Every node becomes essential. The system has never worked
-            better—and has never been more fragile.
-          </p>
-
-          <h3>Stage 2: Warning Signs Dismissed</h3>
-          <p>
-            Small failures occur. Isolated incidents, they're called. A pattern recognition
-            specialist in a Bronze Age temple sees the connections. A geneticist in a modern
-            lab notices impossible data. Nobody listens. They never do.
-          </p>
-
-          <h3>Stage 3: The First Domino</h3>
-          <p>
-            One critical node fails. Could be plague, invasion, financial collapse, engineered
-            bioweapon—the specific trigger matters less than the network's structure. Every
-            system that depended on that node begins to fail.
-          </p>
-
-          <h3>Stage 4: Positive Feedback</h3>
-          <p>
-            Now the collapse accelerates itself. Refugees spread chaos. Trade routes sever.
-            Food systems break. Governments lose legitimacy. Each failure triggers the next.
-            The spiral becomes self-sustaining.
-          </p>
-
-          <h3>Stage 5: The Threshold</h3>
-          <p>
-            The point of no return. Even if the original trigger is resolved, the cascade
-            continues under its own momentum. After this, there is no recovery—only survival
-            and rebuilding.
-          </p>
-
-          <h3>Stage 6: Selection</h3>
-          <p>
-            Massive death. Knowledge loss. Infrastructure destroyed. The Order's prepared
-            bloodlines retreat to safe zones. The defensive network's carriers attempt to
-            preserve what they can. Natural selection operates at civilization scale.
-          </p>
-
-          <h3>Stage 7: Reset</h3>
-          <p>
-            Survivors rebuild at lower complexity. The Order breeds the best candidates. The
-            defensive network re-embeds methodology in new cultural forms. Two hundred to five
-            hundred years later, the cycle begins again.
-          </p>
-
-          <p style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border);">
-            The genesis question: Can human beings interrupt Stage 3 before it hits Stage 5?
-            Or is the pattern something deeper than human choice—a property of complexity
-            itself? Nefertari believed intervention was possible. Amenhotep believed it was
-            a comforting illusion. Thirty-two centuries later, neither has been proven wrong.
-          </p>
+          <div class="cascade-section">
+            <div class="cascade-step">
+              <div class="cascade-number">1</div>
+              <div>
+                <div class="cascade-title">The Optimization Trap</div>
+                <div class="cascade-desc">Everything gets more efficient. Redundancy is eliminated. Supply chains tighten. The system has never worked better — and has never been more fragile.</div>
+              </div>
+            </div>
+            <div class="cascade-step">
+              <div class="cascade-number">2</div>
+              <div>
+                <div class="cascade-title">Warning Signs Dismissed</div>
+                <div class="cascade-desc">Small failures occur. Isolated incidents, they're called. A pattern recognition specialist sees the connections. Nobody listens. They never do.</div>
+              </div>
+            </div>
+            <div class="cascade-step">
+              <div class="cascade-number">3</div>
+              <div>
+                <div class="cascade-title">The First Domino</div>
+                <div class="cascade-desc">One critical node fails. Could be plague, invasion, financial collapse, engineered bioweapon. The specific trigger matters less than the network's structure.</div>
+              </div>
+            </div>
+            <div class="cascade-step">
+              <div class="cascade-number">4</div>
+              <div>
+                <div class="cascade-title">Positive Feedback</div>
+                <div class="cascade-desc">The collapse accelerates itself. Refugees spread chaos. Trade routes sever. Each failure triggers the next. The spiral becomes self-sustaining.</div>
+              </div>
+            </div>
+            <div class="cascade-step">
+              <div class="cascade-number">5</div>
+              <div>
+                <div class="cascade-title">The Threshold</div>
+                <div class="cascade-desc">The point of no return. Even if the original trigger is resolved, the cascade continues under its own momentum. After this, there is no recovery — only survival.</div>
+              </div>
+            </div>
+            <div class="cascade-step">
+              <div class="cascade-number">6</div>
+              <div>
+                <div class="cascade-title">Selection</div>
+                <div class="cascade-desc">Massive death. Knowledge loss. The Order's prepared bloodlines retreat to safe zones. The defensive network's carriers attempt to preserve what they can.</div>
+              </div>
+            </div>
+            <div class="cascade-step">
+              <div class="cascade-number">7</div>
+              <div>
+                <div class="cascade-title">Reset</div>
+                <div class="cascade-desc">Survivors rebuild at lower complexity. Two hundred to five hundred years later, the cycle begins again.</div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <!-- Reading Order -->
+        <!-- PULL QUOTE 3 -->
+        <div class="pull-quote reveal">
+          <blockquote>
+            "Can human beings interrupt Stage 3 before it hits Stage 5? Or is the pattern baked
+            into the physics of complex systems? Nefertari believed intervention was possible.
+            Amenhotep believed it was a comforting illusion. Thirty-two centuries later,
+            neither has been proven wrong."
+          </blockquote>
+        </div>
+
+        <!-- READING ORDER -->
         <section class="reading-order reveal delay-1">
           <h3>Where to Start</h3>
           <p>
             Each book works as a standalone novel. But together, they reveal connections
-            that no single book can contain—a three-thousand-year pattern hiding in plain sight.
+            that no single book can contain — a three-thousand-year pattern hiding in plain sight.
           </p>
+
+          <div class="reading-covers">
+            <img src="/assets/book-cover.png" alt="The Aethelred Cipher" class="reading-cover-img" loading="lazy" />
+            <img src="/assets/book2-cover.jpg" alt="The Genesis Protocol" class="reading-cover-img" loading="lazy" />
+          </div>
 
           <div class="reading-paths">
             <div class="path-option">
@@ -700,7 +962,7 @@ permalink: /series.html
               <h4>Chronological Order</h4>
               <p style="margin-bottom: 12px; color: var(--ink-soft); font-size: 0.9rem;">
                 Follow the networks from their founding to the final confrontation.
-                Best for re-reads—you'll catch things you missed the first time.
+                Best for re-reads — you'll catch things you missed the first time.
               </p>
               <ol>
                 <li>Book 3: The First Key (1177 BCE)</li>
@@ -720,7 +982,7 @@ permalink: /series.html
           </p>
         </section>
 
-        <!-- Series Stats -->
+        <!-- SERIES STATS -->
         <section class="concept-section reveal delay-1">
           <h2>The Saga So Far</h2>
 
