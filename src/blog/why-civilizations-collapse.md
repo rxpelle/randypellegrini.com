@@ -1,4 +1,5 @@
 ---
+date: 2025-02-11
 title: "Why Civilizations Collapse in the Same Pattern"
 heading: "Why Civilizations Collapse in the Same Pattern — Every Single Time"
 description: "From the Bronze Age Collapse to the fall of Rome to the Black Death, civilizations fail in the same six-step pattern. Explore the feedback loop that has shaped 3,200 years of history."

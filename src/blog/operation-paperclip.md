@@ -1,4 +1,5 @@
 ---
+date: 2025-03-18
 title: "Operation Paperclip Brought More Than Rocket Scientists"
 heading: "Operation Paperclip Brought More Than Rocket Scientists"
 description: "The real program that recruited Nazi scientists to America — and the pharmaceutical companies, genetic research programs, and ethical compromises that followed. The history behind Catherine Wells."

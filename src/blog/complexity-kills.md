@@ -1,4 +1,5 @@
 ---
+date: 2025-04-02
 title: "Complexity Kills: Why Modern Systems Fail Like Bronze Age Ones"
 heading: "Complexity Kills: Why Modern Systems Fail the Same Way Bronze Age Ones Did"
 description: "Supply chain theory, tight coupling, and the 2021 Suez Canal blockage as a Bronze Age Collapse in miniature. Why the most advanced systems are the most fragile."

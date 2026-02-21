@@ -1,6 +1,7 @@
 ---
 draft: true
 permalink: false
+date: 2025-04-27
 title: "DRAFT: The Women Who Noticed"
 heading: "The Women Who Noticed"
 description: "Why survival intelligence clusters in female lineages across history. Midwives, mothers, and the evolutionary pressure that made pattern recognition heritable."

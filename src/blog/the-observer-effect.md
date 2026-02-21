@@ -1,6 +1,7 @@
 ---
 draft: true
 permalink: false
+date: 2025-04-12
 title: "DRAFT: The Observer Effect: Why Seeing the Crisis Changes It"
 heading: "The Observer Effect: Why Seeing the Crisis Changes It"
 description: "Civilizational collapse isn't deterministic — it's probabilistic. People who see it coming change the outcome by seeing it. Quantum mechanics as a framework for understanding why early warning matters."

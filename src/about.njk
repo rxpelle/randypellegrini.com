@@ -1,0 +1,278 @@
+---
+fullTitle: "About Randy Pellegrini | Author of The Architecture of Survival"
+description: "Randy Pellegrini writes historical thrillers spanning 3,200 years. Learn about the author behind The Aethelred Cipher and The Architecture of Survival series."
+permalink: /about.html
+---
+
+{% extends "base.njk" %}
+
+{% block pageStyles %}
+<style>
+  .about-hero {
+    text-align: center;
+    padding: 40px 0 20px;
+  }
+  .about-hero h1 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    margin: 0 0 16px;
+  }
+  .about-hero .lead {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .about-content {
+    display: grid;
+    grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr);
+    gap: 36px;
+    background: var(--panel);
+    border-radius: 24px;
+    padding: 32px;
+    border: 1px solid rgba(27, 29, 31, 0.08);
+    box-shadow: var(--shadow);
+    margin-top: 32px;
+  }
+  .about-portrait {
+    border-radius: 18px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    background: linear-gradient(160deg, #d7c1a2, #b58b6a);
+  }
+  .about-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .about-text h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.8rem;
+    margin: 0 0 16px;
+    color: var(--teal-dark);
+  }
+  .about-text p {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin: 0 0 18px;
+  }
+  .about-section {
+    margin-top: 48px;
+  }
+  .about-section h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.6rem;
+    margin: 0 0 16px;
+  }
+  .about-section p {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin: 0 0 18px;
+    max-width: 760px;
+  }
+  .research-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+    max-width: 760px;
+  }
+  .research-item {
+    background: rgba(31, 108, 95, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(31, 108, 95, 0.15);
+  }
+  .research-item h4 {
+    font-size: 0.95rem;
+    margin: 0 0 6px;
+    color: var(--teal-dark);
+  }
+  .research-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .series-vision {
+    background: var(--panel);
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid rgba(27, 29, 31, 0.08);
+    margin: 32px 0;
+    max-width: 760px;
+  }
+  .series-vision h3 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.3rem;
+    margin: 0 0 16px;
+    color: var(--accent-dark);
+  }
+  .series-vision ol {
+    padding-left: 24px;
+    margin: 0;
+  }
+  .series-vision li {
+    padding: 8px 0;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .series-vision li strong {
+    color: var(--ink);
+  }
+  .connect-section {
+    background: var(--teal);
+    color: #f8fbfa;
+    border-radius: 20px;
+    padding: 32px;
+    margin: 48px 0;
+    text-align: center;
+  }
+  .connect-section h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    margin: 0 0 12px;
+  }
+  .connect-section p {
+    opacity: 0.85;
+    max-width: 500px;
+    margin: 0 auto 24px;
+  }
+  .connect-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .connect-links a {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: background 0.2s ease;
+  }
+  .connect-links a:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+    .about-portrait {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="about-hero reveal">
+  <p class="eyebrow">About the Author</p>
+  <h1>Randy Pellegrini</h1>
+  <p class="lead">
+    Writing historical thrillers that ask uncomfortable questions about power, knowledge, and who gets to control both.
+  </p>
+</section>
+
+<div class="about-content reveal delay-1">
+  <div class="about-portrait">
+    <img src="/images/randypellegrini.jpg" alt="Randy Pellegrini" loading="lazy" />
+  </div>
+  <div class="about-text">
+    <h2>The Short Version</h2>
+    <p>
+      Randy Pellegrini writes historical thrillers that explore the patterns hiding in plain sight throughout human history. When he's not writing about medieval conspiracies or genetic memory, he's traveling the world to research locations firsthand and wondering why civilizations keep making the same mistakes.
+    </p>
+    <p>
+      His debut novel, <em>The Aethelred Cipher</em>, is the first book in The Architecture of Survival—a 12-book epic spanning 3,200 years from Bronze Age Egypt to the AI era. The series explores what happens when someone figured out the pattern of civilizational collapse three thousand years ago.
+    </p>
+  </div>
+</div>
+
+<section class="about-section reveal delay-1">
+  <h2>Why I Write Historical Thrillers</h2>
+  <p>
+    I've always been fascinated by the patterns in history—not just what happened, but <em>why</em> certain catastrophes seem to repeat across centuries. Why do civilizations collapse in similar ways? Why does knowledge get lost, then rediscovered, then lost again?
+  </p>
+  <p>
+    <em>The Architecture of Survival</em> emerged from a simple question: What if someone was keeping track? What if there was a network that <em>knew</em> the pattern—and worse, profited from it?
+  </p>
+  <p>
+    The series doesn't offer easy answers. Neither network is purely heroic or villainous. That moral ambiguity—the genuine possibility that either approach might be right—is what makes the story worth telling.
+  </p>
+</section>
+
+<section class="about-section reveal delay-1">
+  <h2>The Research Rabbit Hole</h2>
+  <p>
+    For <em>The Aethelred Cipher</em>, I spent months researching everything from medieval cipher systems to plague epidemiology. The goal was always the same: make the fiction feel inevitable, grounded in real history that readers can verify.
+  </p>
+  
+  <div class="research-list">
+    <div class="research-item">
+      <h4>Medieval Cryptography</h4>
+      <p>Every cipher in the book is based on real historical encoding methods.</p>
+    </div>
+    <div class="research-item">
+      <h4>Black Death Timeline</h4>
+      <p>The plague's spread is accurate to historical records and modern epidemiology.</p>
+    </div>
+    <div class="research-item">
+      <h4>Manuscript Preservation</h4>
+      <p>Byzantine and monastic techniques for protecting knowledge across centuries.</p>
+    </div>
+    <div class="research-item">
+      <h4>Trade Networks</h4>
+      <p>14th-century merchant routes and how information traveled along them.</p>
+    </div>
+    <div class="research-item">
+      <h4>Epigenetics</h4>
+      <p>The real science of inherited memory that makes the series premise plausible.</p>
+    </div>
+    <div class="research-item">
+      <h4>Real Conspiracies</h4>
+      <p>Medieval power structures that were fascinating enough without embellishment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-section reveal delay-1">
+  <h2>What You'll Find Here</h2>
+  <p>
+    This site is where I share new releases in The Architecture of Survival, historical research that didn't make it into the books, behind-the-scenes looks at building a 12-book series, and essays on the real science and history behind the fiction.
+  </p>
+  
+  <div class="series-vision">
+    <h3>The Series Vision</h3>
+    <p style="margin-bottom: 16px;">The Architecture of Survival is planned as 12 books, alternating between medieval and modern timelines:</p>
+    <ol>
+      <li><strong>The Aethelred Cipher</strong> — Medieval Germany, 1347-1350 CE (Published)</li>
+      <li><strong>The Genesis Protocol</strong> — Modern Era, 2019-2025 CE (Coming Soon)</li>
+      <li><strong>The First Key</strong> — Bronze Age Egypt, 1200-1177 BCE</li>
+      <li><strong>The Nazarene Protocol</strong> — Roman Judea, 26-70 CE</li>
+      <li><strong>Books 5-12</strong> — Spanning the Renaissance, Enlightenment, and beyond</li>
+    </ol>
+    <p style="margin-top: 16px;">Each book stands alone, but together they build toward answering the central question: Can a conspiracy three thousand years old be stopped?</p>
+  </div>
+</section>
+
+<div class="connect-section reveal delay-2">
+  <h2>Connect With Me</h2>
+  <p>
+    I love hearing from readers. Email me, find me on social media, or send carrier pigeons. I read and respond to everything.
+  </p>
+  <div class="connect-links">
+    <a href="mailto:randypellegrini@gmail.com">Email</a>
+    <a href="https://instagram.com/pellegrinirandy" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="{{ site.xUrl }}" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+    <a href="{{ site.substackUrl }}" target="_blank" rel="noopener noreferrer">Substack</a>
+  </div>
+</div>
+
+<section class="section">
+  <div class="article-cta reveal">
+    <h3>Start Reading</h3>
+    <p>Dive into <em>The Aethelred Cipher</em> and discover what's been hidden in manuscript margins for seven hundred years.</p>
+    <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">Get your copy &rarr;</a>
+  </div>
+</section>
+{% endblock %}

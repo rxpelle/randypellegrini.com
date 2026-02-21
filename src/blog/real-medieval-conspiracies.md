@@ -1,4 +1,5 @@
 ---
+date: 2025-02-21
 title: "5 Real Medieval Conspiracies That Were Stranger Than Fiction"
 description: "From the Templar arrests to the Cadaver Synod to Venetian spies, five real medieval conspiracies that were stranger than anything in fiction and inspired The Aethelred Cipher."
 ogTitle: "5 Real Medieval Conspiracies That Were Stranger Than Fiction"

@@ -1,4 +1,5 @@
 ---
+date: 2025-03-28
 title: "Who Gets to Survive? The Ethics of Genetic Selection"
 heading: "Who Gets to Survive? The Ethics of Genetic Selection"
 description: "From Plato's Republic to modern embryo screening, humanity has been debating who deserves to reproduce for 2,400 years. The Order's philosophy isn't new — it's ancient, and parts of it are happening right now."

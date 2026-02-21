@@ -1,6 +1,7 @@
 ---
 draft: true
 permalink: false
+date: 2025-05-07
 title: "DRAFT: Silence Is Inherited"
 heading: "Silence Is Inherited: How NDAs Outlive the People Who Sign Them"
 description: "The structural mechanics of generational silence. How agreements bind heirs, classification outlasts relevance, and truth decays into conspiracy theory into background noise into nothing."

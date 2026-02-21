@@ -1,6 +1,7 @@
 ---
 draft: true
 permalink: false
+date: 2025-04-17
 title: "DRAFT: Cooperation Is Genetic — And That's the Problem"
 heading: "Cooperation Is Genetic — And That's the Problem"
 description: "The science behind cooperative behavior as a heritable trait. Game theory, altruism genes, and what happens when you remove cooperators from a population."

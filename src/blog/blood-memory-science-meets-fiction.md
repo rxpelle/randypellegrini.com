@@ -1,4 +1,5 @@
 ---
+date: 2025-02-16
 title: "Blood Memory: Where Science Meets Fiction"
 description: "Can trauma be inherited through DNA? Explore the real science of epigenetics behind The Architecture of Survival series, from cherry blossom mice to the Dutch Hunger Winter."
 ogTitle: "Blood Memory: Where Science Meets Fiction"

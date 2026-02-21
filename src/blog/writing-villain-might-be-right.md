@@ -1,4 +1,5 @@
 ---
+date: 2025-04-07
 title: "Writing a Thriller Where the Villain Might Be Right"
 heading: "Writing a Thriller Where the Villain Might Be Right"
 description: "Moral ambiguity as narrative engine. How to build antagonists the reader uncomfortably agrees with — and why the best thrillers make you question which side you're on."

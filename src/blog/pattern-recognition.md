@@ -1,4 +1,5 @@
 ---
+date: 2025-03-13
 title: "Pattern Recognition: The Skill Nobody Teaches You"
 heading: "Pattern Recognition: The Skill Nobody Teaches You"
 description: "Systems thinking, cascade modeling, and why some people see connections others miss. The real analytical framework behind Nefertari's Seven Keys."

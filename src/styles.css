@@ -1025,6 +1025,13 @@ a {
   flex: 1;
 }
 
+.blog-card .blog-date {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+  opacity: 0.8;
+}
+
 .blog-card .blog-read-more {
   color: var(--teal-dark);
   font-weight: 600;

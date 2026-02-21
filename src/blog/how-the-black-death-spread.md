@@ -1,4 +1,5 @@
 ---
+date: 2025-02-06
 title: "How the Black Death Actually Spread"
 heading: "How the Black Death Actually Spread — And What Medieval People Understood That We've Forgotten"
 description: "The Black Death killed up to 200 million people, but medieval people understood more about disease transmission than we give them credit for. Explore the real history of the deadliest pandemic."

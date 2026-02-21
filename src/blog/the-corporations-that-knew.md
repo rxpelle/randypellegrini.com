@@ -1,4 +1,5 @@
 ---
+date: 2025-03-03
 title: "The Corporations That Knew"
 heading: "The Corporations That Knew — And Buried It"
 description: "From tobacco to climate change, the most dangerous conspiracies in history weren't secret. They were corporate. How real cover-ups inspired the villain of The Genesis Protocol."

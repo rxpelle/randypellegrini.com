@@ -1,4 +1,5 @@
 ---
+date: 2025-02-01
 title: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscript Margins"
 description: "Discover how medieval monks used colored dots, physical templates, and manuscript marginalia to build sophisticated cipher systems centuries before modern cryptography."
 ogTitle: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscript Margins"

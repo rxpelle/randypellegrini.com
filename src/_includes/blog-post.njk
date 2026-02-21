@@ -6,7 +6,8 @@ layout: base.njk
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": {{ title | dump | safe }},
-  "description": {{ description | dump | safe }},
+  "description": {{ description | dump | safe }},{% if date %}
+  "datePublished": "{{ date | isoDate }}",{% endif %}
   "author": {
     "@type": "Person",
     "name": "Randy Pellegrini",
@@ -29,7 +30,7 @@ layout: base.njk
   <div class="article-header reveal">
     <p class="eyebrow">{{ bookTag }} &mdash; Essay {{ number }} of {{ collections.blog | length }}</p>
     <h1>{{ heading | default(title) | safe }}</h1>
-    <p class="article-meta">By Randy Pellegrini</p>
+    <p class="article-meta">By Randy Pellegrini{% if date %} · <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>{% endif %}</p>
   </div>
 
   <div class="article-body reveal delay-1">

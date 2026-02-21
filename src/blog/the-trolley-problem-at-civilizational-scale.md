@@ -1,4 +1,5 @@
 ---
+date: 2025-03-08
 title: "The Trolley Problem at Civilizational Scale"
 heading: "The Trolley Problem at Civilizational Scale"
 description: "What happens when the trolley problem isn't five lives versus one — but five billion versus two billion? The moral philosophy behind The Genesis Protocol."

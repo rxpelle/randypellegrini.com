@@ -1,6 +1,7 @@
 ---
 draft: true
 permalink: false
+date: 2025-04-22
 title: "DRAFT: Knowledge Wants to Be Hoarded"
 heading: "Knowledge Wants to Be Hoarded: Centralized vs. Distributed Survival"
 description: "The recurring tension across 3,200 years: concentrate knowledge to control outcomes, or distribute it to enable adaptation. Why distributed systems survive shocks that centralized ones don't."

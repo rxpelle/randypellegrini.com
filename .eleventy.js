@@ -17,6 +17,29 @@ module.exports = function(eleventyConfig) {
     return String(num).padStart(length || 2, "0");
   });
 
+  // Custom filter: format date for display (UTC to avoid timezone shifts)
+  eleventyConfig.addFilter("readableDate", function(dateObj) {
+    if (!dateObj) return "";
+    const date = new Date(dateObj);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC"
+    });
+  });
+
+  // Custom filter: ISO date for datetime attribute
+  eleventyConfig.addFilter("isoDate", function(dateObj) {
+    if (!dateObj) return "";
+    const date = new Date(dateObj);
+    // Use UTC date components to avoid timezone shifts
+    const year = date.getUTCFullYear();
+    const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+    const day = String(date.getUTCDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  });
+
   // Blog collection sorted by post number, excluding drafts
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByTag("blog")

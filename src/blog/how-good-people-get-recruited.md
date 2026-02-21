@@ -1,6 +1,7 @@
 ---
 draft: true
 permalink: false
+date: 2025-05-02
 title: "DRAFT: How Good People Get Recruited Into Bad Systems"
 heading: "How Good People Get Recruited Into Bad Systems"
 description: "The seduction pipeline from Manhattan Project to Theranos. How institutional framing turns atrocity into opportunity — and why the smartest people are most vulnerable."

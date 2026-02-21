@@ -1,4 +1,5 @@
 ---
+date: 2025-03-23
 title: "Every Pandemic Has an NDA"
 heading: "Every Pandemic Has an NDA"
 description: "Government secrecy during health crises is as old as pandemics themselves. From 1918 flu censorship to Tuskegee to gain-of-function debates — what happens when truth and public safety conflict."

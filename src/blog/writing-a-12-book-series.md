@@ -1,4 +1,5 @@
 ---
+date: 2025-02-26
 title: "Writing a 12-Book, 3,200-Year Series"
 heading: 'Writing a 12-Book, 3,200-Year Series: The Architecture Behind <em>The Architecture of Survival</em>'
 description: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind a 12-book saga."
