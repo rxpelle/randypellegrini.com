@@ -1,4 +1,6 @@
 ---
+draft: true
+permalink: false
 title: "DRAFT: The Women Who Noticed"
 heading: "The Women Who Noticed"
 description: "Why survival intelligence clusters in female lineages across history. Midwives, mothers, and the evolutionary pressure that made pattern recognition heritable."
@@ -7,7 +9,6 @@ ogDescription: "Why survival intelligence clusters in female lineages across his
 ogUrl: "https://randypellegrini.com/blog/the-women-who-noticed.html"
 number: 18
 bookTag: "The Series"
-permalink: /blog/the-women-who-noticed.html
 excerpt: "Midwives who closed roads before plague arrived. Mothers who moved families before famine hit. Across history, survival knowledge clusters in female lineages — not by accident, but by evolutionary pressure. Women who noticed things survived to raise the next generation of women who noticed."
 prevPost: "/blog/knowledge-wants-to-be-hoarded.html"
 prevTitle: "Knowledge Wants to Be Hoarded"

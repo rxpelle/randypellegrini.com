@@ -17,11 +17,13 @@ module.exports = function(eleventyConfig) {
     return String(num).padStart(length || 2, "0");
   });
 
-  // Blog collection sorted by post number
+  // Blog collection sorted by post number, excluding drafts
   eleventyConfig.addCollection("blog", function(collectionApi) {
-    return collectionApi.getFilteredByTag("blog").sort((a, b) => {
-      return (a.data.number || 0) - (b.data.number || 0);
-    });
+    return collectionApi.getFilteredByTag("blog")
+      .filter(item => !item.data.draft)
+      .sort((a, b) => {
+        return (a.data.number || 0) - (b.data.number || 0);
+      });
   });
 
   return {

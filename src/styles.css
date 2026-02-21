@@ -587,6 +587,13 @@ a {
   font-style: italic;
 }
 
+.social-proof {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  margin: 0 0 12px;
+}
+
 .section-cta {
   text-align: center;
   margin-top: 32px;

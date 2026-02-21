@@ -8,5 +8,5 @@
     <a href="/#about">About</a>
     <a href="/free-story.html">Free Story</a>
   </nav>
-  <a class="button small" href="{{ headerCtaHref | default('/books.html') }}">{{ headerCta | default("Explore Books") }}</a>
+  <a class="button small" href="{{ headerCtaHref | default(site.amazonUrl) }}" {% if not headerCtaHref %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ headerCta | default("Buy Book 1") }}</a>
 </header>

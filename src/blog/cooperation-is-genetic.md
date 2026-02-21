@@ -1,4 +1,6 @@
 ---
+draft: true
+permalink: false
 title: "DRAFT: Cooperation Is Genetic — And That's the Problem"
 heading: "Cooperation Is Genetic — And That's the Problem"
 description: "The science behind cooperative behavior as a heritable trait. Game theory, altruism genes, and what happens when you remove cooperators from a population."
@@ -7,7 +9,6 @@ ogDescription: "The science behind cooperative behavior as a heritable trait. Wh
 ogUrl: "https://randypellegrini.com/blog/cooperation-is-genetic.html"
 number: 16
 bookTag: "Book 2: The Genesis Protocol"
-permalink: /blog/cooperation-is-genetic.html
 excerpt: "Game theory research shows cooperative behavior has a genetic component. Which raises an uncomfortable question: what happens to a civilization that systematically removes its cooperators? The answer is the fatal flaw in every authoritarian system ever built."
 prevPost: "/blog/the-observer-effect.html"
 prevTitle: "The Observer Effect"
