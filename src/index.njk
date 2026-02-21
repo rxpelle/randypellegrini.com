@@ -322,28 +322,17 @@ permalink: /index.html
   const submitBtn = document.getElementById('submit-btn');
   const buttonText = document.getElementById('button-text');
 
-  // Show loading state when submitting
   form.addEventListener('submit', () => {
     submitBtn.disabled = true;
     buttonText.textContent = 'Subscribing...';
-  });
-
-  // ConvertKit's library handles the actual submission
-  // Listen for ConvertKit success/error events
-  if (window.ConvertkitForm) {
-    window.ConvertkitForm.setOptions({
-      onSuccess: () => {
-        buttonText.textContent = 'Subscribed!';
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          buttonText.textContent = 'Sign up';
-        }, 3000);
-      },
-      onError: () => {
+    // Kit's ck.5.js handles the POST; reset button after delay
+    setTimeout(() => {
+      buttonText.textContent = 'Subscribed!';
+      setTimeout(() => {
         submitBtn.disabled = false;
         buttonText.textContent = 'Sign up';
-      }
-    });
-  }
+      }, 4000);
+    }, 2000);
+  });
 </script>
 {% endblock %}

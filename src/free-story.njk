@@ -118,22 +118,13 @@ permalink: /free-story.html
   form.addEventListener('submit', () => {
     submitBtn.disabled = true;
     buttonText.textContent = 'Sending...';
-  });
-
-  if (window.ConvertkitForm) {
-    window.ConvertkitForm.setOptions({
-      onSuccess: () => {
-        buttonText.textContent = 'Check your email!';
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          buttonText.textContent = 'Send me the story';
-        }, 5000);
-      },
-      onError: () => {
+    setTimeout(() => {
+      buttonText.textContent = 'Check your email!';
+      setTimeout(() => {
         submitBtn.disabled = false;
         buttonText.textContent = 'Send me the story';
-      }
-    });
-  }
+      }, 4000);
+    }, 2000);
+  });
 </script>
 {% endblock %}
