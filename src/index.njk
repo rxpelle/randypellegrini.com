@@ -325,9 +325,9 @@ permalink: /index.html
   form.addEventListener('submit', () => {
     submitBtn.disabled = true;
     buttonText.textContent = 'Subscribing...';
-    // Kit's ck.5.js handles the POST; reset button after delay
     setTimeout(() => {
       buttonText.textContent = 'Subscribed!';
+      form.querySelector('input[type="email"]').value = '';
       setTimeout(() => {
         submitBtn.disabled = false;
         buttonText.textContent = 'Sign up';

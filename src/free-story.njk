@@ -120,6 +120,7 @@ permalink: /free-story.html
     buttonText.textContent = 'Sending...';
     setTimeout(() => {
       buttonText.textContent = 'Check your email!';
+      form.querySelector('input[type="email"]').value = '';
       setTimeout(() => {
         submitBtn.disabled = false;
         buttonText.textContent = 'Send me the story';
