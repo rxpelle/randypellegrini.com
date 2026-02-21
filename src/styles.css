@@ -1406,6 +1406,72 @@ a {
   letter-spacing: 1px;
 }
 
+/* Reviews Page — Marquee Banner */
+.review-marquee {
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+  padding: 14px 0;
+  margin: -8px -28px 0;
+  position: relative;
+}
+
+.review-marquee::before,
+.review-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.review-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, var(--teal-dark), transparent);
+}
+
+.review-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, var(--teal), transparent);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  animation: marquee-scroll 45s linear infinite;
+  width: max-content;
+}
+
+.marquee-phrase {
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  font-style: italic;
+  padding: 0 8px;
+}
+
+.marquee-dot {
+  color: #e8a838;
+  font-size: 0.7rem;
+  padding: 0 12px;
+  opacity: 0.7;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
 /* Reviews Page — Rating Hero */
 .rating-hero {
   text-align: center;
