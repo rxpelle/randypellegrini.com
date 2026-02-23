@@ -1,7 +1,6 @@
 ---
 fullTitle: "Randy Pellegrini | Official Site"
 description: "Official author website for Randy Pellegrini. The Architecture of Survival - a 12-book epic spanning 3,200 years of hidden history, genetic memory, and the battle between knowledge preservation and control."
-convertkit: true
 mainId: "top"
 permalink: /index.html
 ---
@@ -259,17 +258,12 @@ permalink: /index.html
     <form
       id="newsletter-form"
       class="signup"
-      method="post"
-      action="https://app.kit.com/forms/{{ site.convertkitFormId }}/subscriptions"
-      data-sv-form="{{ site.convertkitFormId }}"
-      data-uid="{{ site.convertkitUid }}"
-      data-format="inline"
-      data-version="5"
+      data-newsletter="true"
     >
       <label class="sr-only" for="email">Email address</label>
       <input
         id="email"
-        name="email_address"
+        name="email"
         type="email"
         placeholder="you@email.com"
         required

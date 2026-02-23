@@ -4,7 +4,6 @@ description: "Get 'The Edmund Fragments' free — a 5,000-word prequel to The Ae
 ogTitle: "The Edmund Fragments — Free Prequel Story"
 ogDescription: "A 5,000-word prequel to The Aethelred Cipher. Set 72 years before the novel, follow the monk whose hidden manuscripts change everything."
 ogUrl: "https://randypellegrini.com/free-story.html"
-convertkit: true
 permalink: /free-story.html
 ---
 {% extends "base.njk" %}
@@ -65,17 +64,12 @@ permalink: /free-story.html
     <p>Enter your email and "The Edmund Fragments" will arrive in your inbox. You'll also get occasional updates about new books in the series. Unsubscribe anytime.</p>
     <form
       class="signup"
-      method="post"
-      action="https://app.kit.com/forms/{{ site.convertkitFormId }}/subscriptions"
-      data-sv-form="{{ site.convertkitFormId }}"
-      data-uid="{{ site.convertkitUid }}"
-      data-format="inline"
-      data-version="5"
+      data-newsletter="true"
     >
       <label class="sr-only" for="magnet-email">Email address</label>
       <input
         id="magnet-email"
-        name="email_address"
+        name="email"
         type="email"
         placeholder="you@email.com"
         required

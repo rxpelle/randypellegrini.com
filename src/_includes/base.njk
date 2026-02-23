@@ -28,7 +28,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="alternate" type="application/atom+xml" title="Randy Pellegrini" href="/feed.xml" />
-    {% if convertkit %}<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>{% endif %}
     {% block pageStyles %}{% endblock %}
   </head>
   <body>
@@ -88,12 +87,38 @@
         }
       });
 
-      // Newsletter signup tracking (ConvertKit form submission)
+      // Newsletter signup tracking and submission
       document.addEventListener('submit', function(e) {
         var form = e.target;
-        if (form && form.getAttribute('data-sv-form') === '{{ site.convertkitFormId }}') {
-          gtag('event', 'newsletter_signup', {
-            page_location: window.location.href
+        if (form && form.getAttribute('data-newsletter') === 'true') {
+          e.preventDefault();
+          var emailInput = form.querySelector('input[type="email"]');
+          var btn = form.querySelector('button[type="submit"]');
+          var btnText = btn ? btn.querySelector('span') : null;
+          var msgDiv = form.parentElement.querySelector('#form-messages') || form.nextElementSibling;
+          if (!emailInput || !emailInput.value) return;
+          if (btn) btn.disabled = true;
+          if (btnText) btnText.textContent = 'Sending...';
+          fetch('https://script.google.com/macros/s/AKfycbxLPrYzyozrQrUU8BO7L_CntyiHxPdmAVQxd41xlpBywLYDscTmUD-ZaRwAwHCdyTjC1w/exec', {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify({ action: 'welcome_subscribe', email: emailInput.value })
+          })
+          .then(function(r) { return r.json(); })
+          .then(function(data) {
+            if (data.status === 'ok') {
+              if (btnText) btnText.textContent = 'Subscribed!';
+              if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
+              emailInput.value = '';
+              gtag('event', 'newsletter_signup', { page_location: window.location.href });
+            } else {
+              if (btnText) btnText.textContent = 'Try again';
+              if (btn) btn.disabled = false;
+            }
+          })
+          .catch(function() {
+            if (btnText) btnText.textContent = 'Try again';
+            if (btn) btn.disabled = false;
           });
         }
       });
