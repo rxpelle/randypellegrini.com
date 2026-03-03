@@ -1,0 +1,352 @@
+---
+fullTitle: "Read Your Grounds | Randy Pellegrini"
+description: "Upload a photo of your coffee or tea cup and receive a mystical reading. The ancient art of tasseography meets modern thriller fiction."
+ogTitle: "Read Your Grounds — What Do Your Coffee Grounds Reveal?"
+ogDescription: "Upload a photo of your cup. The patterns will speak. A Genesis Protocol experience."
+ogUrl: "https://randypellegrini.com/read-your-grounds.html"
+permalink: /read-your-grounds.html
+---
+{% extends "base.njk" %}
+
+{% block content %}
+<section class="grounds-hero">
+  <div class="reveal">
+    <p class="eyebrow">The Genesis Protocol</p>
+    <h1>Read Your Grounds</h1>
+    <p class="lead">
+      In <em>The Genesis Protocol</em>, a coffee mug holds the memory of someone who died
+      trying to reveal the truth. A pattern in the residue that everyone else overlooked.
+    </p>
+    <p class="lead" style="color: var(--ink-soft);">
+      Tasseography &mdash; the ancient art of reading tea leaves and coffee grounds &mdash; has been practiced
+      for centuries by those who understand that patterns hide in plain sight. The same principle
+      drives the defensive network: ordinary things encode extraordinary truths.
+    </p>
+    <p class="lead" style="color: var(--ink-soft); font-weight: 600;">
+      What does your cup hold?
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div id="grounds-form-card" class="grounds-form-card reveal">
+    <h2>Upload your cup</h2>
+    <p>Finish your coffee or tea. Photograph what's left. The patterns will speak.</p>
+
+    <form id="grounds-form">
+      <div class="upload-area" id="upload-area">
+        <input
+          type="file"
+          id="cup-image"
+          accept="image/jpeg,image/png,image/webp"
+          capture="environment"
+          aria-label="Upload a photo of your cup"
+        />
+        <div id="upload-placeholder" class="upload-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--ink-soft); opacity: 0.5;">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <p style="margin-top: 12px; color: var(--ink-soft);">
+            Tap to photograph your cup<br>
+            <small>or drag and drop an image here</small>
+          </p>
+        </div>
+        <img id="image-preview" class="image-preview" style="display:none" alt="Your cup" />
+      </div>
+
+      <div class="grounds-fields">
+        <div class="grounds-field">
+          <label class="sr-only" for="grounds-email">Email address</label>
+          <input
+            id="grounds-email"
+            name="email"
+            type="email"
+            placeholder="you@email.com"
+            required
+            aria-label="Email address"
+          />
+        </div>
+        <div class="grounds-field">
+          <label class="sr-only" for="grounds-name">First name</label>
+          <input
+            id="grounds-name"
+            name="firstName"
+            type="text"
+            placeholder="First name (optional)"
+            aria-label="First name"
+          />
+        </div>
+      </div>
+
+      <button class="button" type="submit" id="grounds-submit">
+        <span id="grounds-button-text">Reveal the Pattern</span>
+      </button>
+      <p class="form-note">Your email joins our reader community. One email per month. Unsubscribe anytime.</p>
+    </form>
+  </div>
+
+  <div id="grounds-loading" class="grounds-loading" style="display:none">
+    <div class="grounds-spinner"></div>
+    <p class="grounds-loading-text">Analyzing the pattern architecture&hellip;</p>
+    <p style="color: var(--ink-soft); font-size: 0.9rem; margin-top: 8px;">The residue speaks to those who know how to listen.</p>
+  </div>
+
+  <div id="reading-result" class="reading-result" style="display:none">
+    <div class="reading-card reveal">
+      <p class="eyebrow" style="color: var(--teal);">Your Reading</p>
+      <div id="reading-text" class="reading-text"></div>
+      <div class="share-row">
+        <button class="button small ghost" id="share-copy">Copy Link</button>
+        <a class="button small ghost" id="share-x" href="#" target="_blank" rel="noopener noreferrer">Share on X</a>
+        <button class="button small ghost" id="share-native" style="display:none">Share</button>
+      </div>
+      <div class="grounds-book-cta">
+        <img src="/assets/book2-cover.jpg" alt="The Genesis Protocol" class="grounds-book-cover" loading="lazy" />
+        <div>
+          <p style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px;">
+            The patterns in your cup echo across centuries. Sarah Chen found something far more dangerous in hers.
+          </p>
+          <a class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">
+            Read The Genesis Protocol &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 32px;">
+      <button class="button ghost" id="try-again">Read another cup</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="article-body reveal" style="max-width: 720px; margin: 0 auto;">
+    <h2>The ancient art of tasseography</h2>
+    <p>
+      For centuries, practitioners have read the patterns left behind in cups of tea and coffee.
+      The shapes aren't random &mdash; they're residue maps, traces of fluid dynamics that encode
+      information about the conditions that created them.
+    </p>
+    <p>
+      In <em>The Architecture of Survival</em> series, the defensive network has been reading patterns
+      like these since the Bronze Age. Not in cups, but in civilizations &mdash; the faint signals
+      that precede collapse, visible only to those trained to look.
+    </p>
+    <p>
+      <em>The Genesis Protocol</em> is the second book in the series. When MIT geneticist Sarah Chen
+      discovers that a centuries-old order is preparing to deploy an engineered bioweapon across
+      47 cities, she has 72 hours to memorize everything &mdash; because the patterns she carries
+      in her mind are the only backup system for four billion lives.
+    </p>
+    <div style="text-align: center; margin-top: 24px;">
+      <a class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">Get The Genesis Protocol &rarr;</a>
+      <a class="button ghost" href="/books.html" style="margin-left: 12px;">Explore the series</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block pageScript %}
+<script>
+(function() {
+  // Config — update this URL after deploying the Cloudflare Worker
+  var WORKER_URL = 'https://grounds-reader.randypellegrini.workers.dev';
+
+  // Elements
+  var form = document.getElementById('grounds-form');
+  var formCard = document.getElementById('grounds-form-card');
+  var uploadArea = document.getElementById('upload-area');
+  var fileInput = document.getElementById('cup-image');
+  var placeholder = document.getElementById('upload-placeholder');
+  var preview = document.getElementById('image-preview');
+  var emailInput = document.getElementById('grounds-email');
+  var nameInput = document.getElementById('grounds-name');
+  var submitBtn = document.getElementById('grounds-submit');
+  var buttonText = document.getElementById('grounds-button-text');
+  var loadingEl = document.getElementById('grounds-loading');
+  var resultEl = document.getElementById('reading-result');
+  var readingText = document.getElementById('reading-text');
+  var shareCopy = document.getElementById('share-copy');
+  var shareX = document.getElementById('share-x');
+  var shareNative = document.getElementById('share-native');
+  var tryAgain = document.getElementById('try-again');
+
+  var currentReadingUrl = '';
+
+  // Check for shared reading on page load
+  var params = new URLSearchParams(window.location.search);
+  var sharedId = params.get('reading');
+  if (sharedId) {
+    loadSharedReading(sharedId);
+  }
+
+  // Show native share button if supported
+  if (navigator.share) {
+    shareNative.style.display = '';
+  }
+
+  // File selection
+  fileInput.addEventListener('change', function() {
+    if (fileInput.files && fileInput.files[0]) {
+      showPreview(fileInput.files[0]);
+    }
+  });
+
+  // Drag and drop
+  uploadArea.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    uploadArea.classList.add('dragover');
+  });
+  uploadArea.addEventListener('dragleave', function() {
+    uploadArea.classList.remove('dragover');
+  });
+  uploadArea.addEventListener('drop', function(e) {
+    e.preventDefault();
+    uploadArea.classList.remove('dragover');
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+      fileInput.files = e.dataTransfer.files;
+      showPreview(e.dataTransfer.files[0]);
+    }
+  });
+
+  function showPreview(file) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      preview.src = e.target.result;
+      preview.style.display = 'block';
+      placeholder.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // Form submit
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (!fileInput.files || !fileInput.files[0]) {
+      alert('Please upload a photo of your cup first.');
+      return;
+    }
+
+    if (fileInput.files[0].size > 5 * 1024 * 1024) {
+      alert('Image must be under 5MB.');
+      return;
+    }
+
+    var formData = new FormData();
+    formData.append('image', fileInput.files[0]);
+    formData.append('email', emailInput.value);
+    formData.append('firstName', nameInput.value);
+
+    showLoading();
+
+    fetch(WORKER_URL + '/api/read-grounds', {
+      method: 'POST',
+      body: formData
+    })
+    .then(function(r) {
+      if (r.status === 429) {
+        return r.json().then(function(d) { throw new Error(d.error); });
+      }
+      if (!r.ok) {
+        return r.json().then(function(d) { throw new Error(d.error || 'Something went wrong'); });
+      }
+      return r.json();
+    })
+    .then(function(data) {
+      displayReading(data.id, data.reading);
+      gtag('event', 'grounds_reading_received', { page_location: window.location.href });
+    })
+    .catch(function(err) {
+      hideLoading();
+      formCard.style.display = '';
+      alert(err.message || 'Something went wrong. Please try again.');
+    });
+
+    gtag('event', 'grounds_upload', { page_location: window.location.href });
+  });
+
+  function showLoading() {
+    formCard.style.display = 'none';
+    resultEl.style.display = 'none';
+    loadingEl.style.display = 'block';
+  }
+
+  function hideLoading() {
+    loadingEl.style.display = 'none';
+  }
+
+  function displayReading(id, reading) {
+    hideLoading();
+
+    // Convert markdown bold/italic to HTML
+    var html = reading
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em class="protocol-fragment">$1</em>')
+      .replace(/\n\n/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+    html = '<p>' + html + '</p>';
+
+    readingText.innerHTML = html;
+    resultEl.style.display = 'block';
+
+    // Update URL for sharing
+    var readingUrl = window.location.origin + window.location.pathname + '?reading=' + id;
+    currentReadingUrl = readingUrl;
+    history.pushState(null, '', readingUrl);
+
+    // Set up share links
+    var shareText = 'I just had my coffee grounds read. The patterns revealed something interesting...';
+    shareX.href = 'https://x.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(readingUrl);
+  }
+
+  // Share handlers
+  shareCopy.addEventListener('click', function() {
+    navigator.clipboard.writeText(currentReadingUrl).then(function() {
+      shareCopy.textContent = 'Copied!';
+      setTimeout(function() { shareCopy.textContent = 'Copy Link'; }, 2000);
+    });
+    gtag('event', 'grounds_shared', { method: 'copy', page_location: window.location.href });
+  });
+
+  shareNative.addEventListener('click', function() {
+    navigator.share({
+      title: 'My Coffee Grounds Reading',
+      text: 'I just had my coffee grounds read. The patterns revealed something interesting...',
+      url: currentReadingUrl
+    });
+    gtag('event', 'grounds_shared', { method: 'native', page_location: window.location.href });
+  });
+
+  // Try again
+  tryAgain.addEventListener('click', function() {
+    resultEl.style.display = 'none';
+    formCard.style.display = '';
+    preview.style.display = 'none';
+    placeholder.style.display = '';
+    fileInput.value = '';
+    history.pushState(null, '', window.location.pathname);
+  });
+
+  // Load shared reading
+  function loadSharedReading(id) {
+    formCard.style.display = 'none';
+    showLoading();
+
+    fetch(WORKER_URL + '/api/reading/' + id)
+      .then(function(r) {
+        if (!r.ok) throw new Error('Reading not found');
+        return r.json();
+      })
+      .then(function(data) {
+        displayReading(data.id, data.reading);
+      })
+      .catch(function() {
+        hideLoading();
+        formCard.style.display = '';
+      });
+  }
+})();
+</script>
+{% endblock %}
