@@ -8,10 +8,13 @@ layout: base.njk
   "headline": {{ title | dump | safe }},
   "description": {{ description | dump | safe }},{% if date %}
   "datePublished": "{{ date | isoDate }}",{% endif %}
+  "image": "{{ ogImage | default(site.url + '/assets/book-cover.png') }}",
+  "wordCount": "{{ content | wordCount }}",
   "author": {
     "@type": "Person",
     "name": "Randy Pellegrini",
-    "url": "https://randypellegrini.com"
+    "url": "https://randypellegrini.com",
+    "image": "https://randypellegrini.com/images/randypellegrini.jpg"
   },
   "publisher": {
     "@type": "Person",

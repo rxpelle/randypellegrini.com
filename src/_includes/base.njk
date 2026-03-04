@@ -12,16 +12,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% if fullTitle %}{{ fullTitle }}{% else %}{{ title }} | Randy Pellegrini{% endif %}</title>
     {% if description %}<meta name="description" content="{{ description }}" />{% endif %}
-    {% if ogTitle %}
-    <meta property="og:title" content="{{ ogTitle }}" />
-    <meta property="og:description" content="{{ ogDescription }}" />
+    {%- set _ogTitle = ogTitle or title or fullTitle -%}
+    {%- set _ogDesc = ogDescription or description -%}
+    <meta property="og:title" content="{{ _ogTitle }}" />
+    <meta property="og:description" content="{{ _ogDesc }}" />
     <meta property="og:type" content="{{ ogType | default('website') }}" />
-    <meta property="og:url" content="{{ ogUrl }}" />
+    <meta property="og:url" content="{{ ogUrl | default(site.url + page.url) }}" />
     <meta property="og:site_name" content="Randy Pellegrini" />
-    {% endif %}
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ ogTitle | default(title) }}" />
-    <meta name="twitter:description" content="{{ ogDescription | default(description) }}" />
+    <meta property="og:image" content="{{ ogImage | default(site.url + '/assets/book-cover.png') }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rxpelle" />
+    <meta name="twitter:creator" content="@rxpelle" />
+    <meta name="twitter:title" content="{{ _ogTitle }}" />
+    <meta name="twitter:description" content="{{ _ogDesc }}" />
+    <meta name="twitter:image" content="{{ ogImage | default(site.url + '/assets/book-cover.png') }}" />
     <link rel="canonical" href="{{ ogUrl | default(site.url + page.url) }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

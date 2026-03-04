@@ -217,6 +217,80 @@ headerCtaHref: "#book1"
 {% endblock %}
 
 {% block content %}
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "The Aethelred Cipher",
+    "author": {
+      "@type": "Person",
+      "name": "Randy Pellegrini",
+      "url": "https://randypellegrini.com"
+    },
+    "url": "https://randypellegrini.com/books.html#book1",
+    "workExample": {
+      "@type": "Book",
+      "isbn": "B0GMRN61MG",
+      "bookFormat": "https://schema.org/EBook",
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{ site.amazonUrl }}"
+        }
+      }
+    },
+    "genre": ["Historical Thriller", "Conspiracy Fiction", "Medieval Fiction"],
+    "numberOfPages": 330,
+    "inLanguage": "en",
+    "description": "When a dying monk thrusts an iron key into scribe Thomas of Eltville's hands, he inherits more than an artifact—he becomes the target of a millennia-old conspiracy.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "56",
+      "bestRating": "5"
+    },
+    "isPartOf": {
+      "@type": "BookSeries",
+      "name": "The Architecture of Survival",
+      "url": "https://randypellegrini.com/series.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "The Genesis Protocol",
+    "author": {
+      "@type": "Person",
+      "name": "Randy Pellegrini",
+      "url": "https://randypellegrini.com"
+    },
+    "url": "https://randypellegrini.com/books.html#book2",
+    "workExample": {
+      "@type": "Book",
+      "isbn": "B0GPM973N1",
+      "bookFormat": "https://schema.org/EBook",
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{ site.amazonBook2Url }}"
+        }
+      }
+    },
+    "genre": ["Genetic Thriller", "Conspiracy Fiction", "Science Thriller"],
+    "numberOfPages": 320,
+    "inLanguage": "en",
+    "description": "When geneticist Sarah Chen discovers an engineered bioweapon hidden inside GenVault Corporation, she has forty-three seconds to escape the building.",
+    "isPartOf": {
+      "@type": "BookSeries",
+      "name": "The Architecture of Survival",
+      "url": "https://randypellegrini.com/series.html"
+    }
+  }
+]
+</script>
 <section class="books-hero reveal">
   <p class="eyebrow">The Complete Saga</p>
   <h1>All 12 Books</h1>

@@ -40,6 +40,12 @@ module.exports = function(eleventyConfig) {
     return `${year}-${month}-${day}`;
   });
 
+  // Word count for schema.org
+  eleventyConfig.addFilter("wordCount", function(content) {
+    if (!content) return 0;
+    return content.replace(/<[^>]*>/g, "").split(/\s+/).filter(Boolean).length;
+  });
+
   // Blog collection sorted by post number, excluding drafts
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByTag("blog")

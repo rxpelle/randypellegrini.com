@@ -7,6 +7,29 @@ permalink: /index.html
 {% extends "base.njk" %}
 
 {% block content %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Randy Pellegrini | Official Site",
+  "url": "https://randypellegrini.com",
+  "description": "Official author website for Randy Pellegrini. The Architecture of Survival - a 12-book epic spanning 3,200 years.",
+  "author": {
+    "@type": "Person",
+    "name": "Randy Pellegrini",
+    "url": "https://randypellegrini.com",
+    "image": "https://randypellegrini.com/images/randypellegrini.jpg",
+    "sameAs": [
+      "{{ site.xUrl }}",
+      "{{ site.substackUrl }}",
+      "{{ site.bookbubUrl }}",
+      "https://instagram.com/pellegrinirandy"
+    ],
+    "jobTitle": "Author",
+    "knowsAbout": ["Historical Fiction", "Genetic Memory", "Conspiracy Thrillers"]
+  }
+}
+</script>
 <section class="hero">
   <div class="hero-copy reveal">
     <p class="eyebrow">A 3,200-year saga of genetic memory and hidden knowledge</p>

@@ -1,0 +1,20 @@
+---
+fullTitle: "Page Not Found | Randy Pellegrini"
+description: "The page you're looking for doesn't exist."
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+{% extends "base.njk" %}
+
+{% block content %}
+<section class="section" style="text-align: center; padding: 80px 0;">
+  <h1 style="font-family: 'Fraunces', serif; font-size: 3rem; margin-bottom: 16px;">Page Not Found</h1>
+  <p style="font-size: 1.15rem; color: var(--ink-soft); max-width: 480px; margin: 0 auto 32px;">
+    The page you're looking for has been lost to history. Perhaps the Order got to it first.
+  </p>
+  <div class="cta-row" style="justify-content: center;">
+    <a class="button" href="/">Back to Home</a>
+    <a class="button ghost" href="/books.html">Explore the Books</a>
+  </div>
+</section>
+{% endblock %}
