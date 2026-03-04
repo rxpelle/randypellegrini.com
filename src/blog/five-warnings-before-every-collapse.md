@@ -12,6 +12,8 @@ permalink: /blog/five-warnings-before-every-collapse.html
 excerpt: "After tracing the pattern from the Bronze Age through the 2023 banking crisis, I've found something uncomfortable. The same five warning signs appear before every collapse. Every single one. They're all present right now."
 prevPost: "/blog/the-money-dies-first.html"
 prevTitle: "The Money Dies First"
+nextPost: "/blog/i-built-a-free-keyword-tool.html"
+nextTitle: "I Built a Free Keyword Research Tool for Authors"
 ctaText: '<em>The Aethelred Cipher</em> is set during Warning 3 — the Bardi-Peruzzi banking collapse that preceded the Black Death. Thomas, a monk, discovers that some people saw the pattern centuries before he did. They''ve been arguing about what to do with that knowledge since 1177 BCE.'
 ---
 
