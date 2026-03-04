@@ -252,18 +252,15 @@ permalink: /index.html
     </p>
   </div>
   <div class="blog-preview-grid">
-    <div class="blog-preview-card reveal delay-1">
-      <h3><a href="/blog/medieval-cipher-systems.html">Hidden in Plain Sight: Medieval Monks and Encrypted Manuscripts</a></h3>
-      <p>The medieval world took its secrets seriously. And the technology was hiding in the margins.</p>
+    {%- for post in collections.blog | reverse %}
+    {%- if loop.index <= 3 %}
+    <div class="blog-preview-card reveal delay-{{ loop.index0 % 2 + 1 }}">
+      {% if post.data.bookTag %}<span class="blog-book-tag">{{ post.data.bookTag }}</span>{% endif %}
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p>{{ post.data.excerpt | truncate(120) }}</p>
     </div>
-    <div class="blog-preview-card reveal delay-1">
-      <h3><a href="/blog/why-civilizations-collapse.html">Why Civilizations Collapse in the Same Pattern</a></h3>
-      <p>Bronze Age. Rome. The Black Death. The same structure, every time. This isn't a coincidence.</p>
-    </div>
-    <div class="blog-preview-card reveal delay-2">
-      <h3><a href="/blog/blood-memory-science-meets-fiction.html">Blood Memory: Where Science Meets Fiction</a></h3>
-      <p>Mice taught to fear cherry blossoms passed that fear to their grandchildren. The science is real.</p>
-    </div>
+    {%- endif %}
+    {%- endfor %}
   </div>
 </section>
 

@@ -38,10 +38,38 @@ layout: base.njk
   </div>
 
   <div class="article-cta reveal delay-2">
+    {%- if bookTag == "Book 2: The Genesis Protocol" %}
+    <h3>{{ ctaTitle | default("Read The Genesis Protocol") }}</h3>
+    <p>{{ ctaText | safe }}</p>
+    <a class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">Get Book 2 &rarr;</a>
+    {%- else %}
     <h3>{{ ctaTitle | default("Read The Aethelred Cipher") }}</h3>
     <p>{{ ctaText | safe }}</p>
     <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">Get your copy &rarr;</a>
+    {%- endif %}
   </div>
+
+  {%- set _related = [] -%}
+  {%- for post in collections.blog | reverse -%}
+    {%- if post.data.bookTag == bookTag and post.url != page.url and _related.length < 3 -%}
+      {{ "" if _related.push(post) }}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if _related.length > 0 %}
+  <div class="related-essays reveal delay-2">
+    <h3>More from {{ bookTag }}</h3>
+    <div class="related-grid">
+      {%- for post in _related %}
+      <a href="{{ post.url }}" class="related-card">
+        <span class="related-number">{{ post.data.number | padStart(2) }}</span>
+        <strong>{{ post.data.title }}</strong>
+        <span class="related-excerpt">{{ post.data.excerpt | truncate(80) }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <a href="/blog.html" class="related-all">View all essays &rarr;</a>
+  </div>
+  {%- endif %}
 
   <div class="article-nav">
     {% if prevPost %}<a href="{{ prevPost }}">&larr; {{ prevTitle }}</a>{% endif %}
