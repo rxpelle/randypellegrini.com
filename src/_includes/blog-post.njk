@@ -52,6 +52,17 @@ layout: base.njk
     {%- endif %}
   </div>
 
+  <div class="grounds-blog-cta reveal delay-2">
+    <a href="/read-your-grounds.html" class="grounds-blog-cta-link">
+      <span class="grounds-blog-cta-icon">&#9752;</span>
+      <span>
+        <strong>What do your coffee grounds reveal?</strong>
+        <span class="grounds-blog-cta-sub">Upload a photo of your cup and receive a free AI-powered tasseography reading.</span>
+      </span>
+      <span class="grounds-blog-cta-arrow">&rarr;</span>
+    </a>
+  </div>
+
   {%- set _related = [] -%}
   {%- for post in collections.blog | reverse -%}
     {%- if post.data.bookTag == bookTag and post.url != page.url and _related.length < 3 -%}
