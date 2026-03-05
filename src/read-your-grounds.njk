@@ -78,34 +78,9 @@ permalink: /read-your-grounds.html
         <img id="image-preview" class="image-preview" style="display:none" alt="Your cup" />
       </div>
 
-      <div class="grounds-fields">
-        <div class="grounds-field">
-          <label class="sr-only" for="grounds-email">Email address</label>
-          <input
-            id="grounds-email"
-            name="email"
-            type="email"
-            placeholder="you@email.com"
-            required
-            aria-label="Email address"
-          />
-        </div>
-        <div class="grounds-field">
-          <label class="sr-only" for="grounds-name">First name</label>
-          <input
-            id="grounds-name"
-            name="firstName"
-            type="text"
-            placeholder="First name (optional)"
-            aria-label="First name"
-          />
-        </div>
-      </div>
-
       <button class="button" type="submit" id="grounds-submit">
         <span id="grounds-button-text">Reveal the Pattern</span>
       </button>
-      <p class="form-note">Your email joins our reader community. One email per month. Unsubscribe anytime.</p>
     </form>
   </div>
 
@@ -136,6 +111,47 @@ permalink: /read-your-grounds.html
         </div>
       </div>
     </div>
+    <div id="email-capture" class="email-capture-card reveal" style="display:none">
+      <p style="font-family: 'Fraunces', serif; font-size: 1.15rem; margin-bottom: 4px;">
+        Enjoyed your reading?
+      </p>
+      <p style="color: var(--ink-soft); margin-bottom: 16px;">
+        Get the free prequel to the series &mdash; plus your reading delivered to your inbox.
+      </p>
+      <form id="email-capture-form" class="email-capture-form">
+        <div class="grounds-fields">
+          <div class="grounds-field">
+            <label class="sr-only" for="capture-email">Email address</label>
+            <input
+              id="capture-email"
+              name="email"
+              type="email"
+              placeholder="you@email.com"
+              required
+              aria-label="Email address"
+            />
+          </div>
+          <div class="grounds-field">
+            <label class="sr-only" for="capture-name">First name</label>
+            <input
+              id="capture-name"
+              name="firstName"
+              type="text"
+              placeholder="First name (optional)"
+              aria-label="First name"
+            />
+          </div>
+        </div>
+        <button class="button" type="submit" id="capture-submit">
+          <span id="capture-button-text">Send me the free story</span>
+        </button>
+        <p class="form-note" style="margin-top: 8px;">No spam. One email per month. Unsubscribe anytime.</p>
+      </form>
+      <div id="email-capture-success" style="display:none">
+        <p style="color: var(--teal); font-weight: 600;">You're in. Check your inbox for <em>The Edmund Fragments</em>.</p>
+      </div>
+    </div>
+
     <div style="text-align: center; margin-top: 32px;">
       <button class="button ghost" id="try-again">Read another cup</button>
     </div>
@@ -183,8 +199,6 @@ permalink: /read-your-grounds.html
   var fileInput = document.getElementById('cup-image');
   var placeholder = document.getElementById('upload-placeholder');
   var preview = document.getElementById('image-preview');
-  var emailInput = document.getElementById('grounds-email');
-  var nameInput = document.getElementById('grounds-name');
   var submitBtn = document.getElementById('grounds-submit');
   var buttonText = document.getElementById('grounds-button-text');
   var loadingEl = document.getElementById('grounds-loading');
@@ -195,7 +209,17 @@ permalink: /read-your-grounds.html
   var shareNative = document.getElementById('share-native');
   var tryAgain = document.getElementById('try-again');
 
+  // Email capture elements
+  var emailCapture = document.getElementById('email-capture');
+  var emailCaptureForm = document.getElementById('email-capture-form');
+  var emailCaptureSuccess = document.getElementById('email-capture-success');
+  var captureEmail = document.getElementById('capture-email');
+  var captureName = document.getElementById('capture-name');
+  var captureSubmit = document.getElementById('capture-submit');
+  var captureButtonText = document.getElementById('capture-button-text');
+
   var currentReadingUrl = '';
+  var currentReadingId = '';
 
   // Check for shared reading on page load
   var params = new URLSearchParams(window.location.search);
@@ -259,8 +283,6 @@ permalink: /read-your-grounds.html
 
     var formData = new FormData();
     formData.append('image', fileInput.files[0]);
-    formData.append('email', emailInput.value);
-    formData.append('firstName', nameInput.value);
 
     showLoading();
 
@@ -278,7 +300,7 @@ permalink: /read-your-grounds.html
       return r.json();
     })
     .then(function(data) {
-      displayReading(data.id, data.reading);
+      displayReading(data.id, data.reading, false);
       gtag('event', 'grounds_reading_received', { page_location: window.location.href });
     })
     .catch(function(err) {
@@ -300,8 +322,11 @@ permalink: /read-your-grounds.html
     loadingEl.style.display = 'none';
   }
 
-  function displayReading(id, reading) {
+  function displayReading(id, reading, isShared) {
     hideLoading();
+
+    // Store reading ID for email subscription
+    currentReadingId = id;
 
     // Convert markdown bold/italic to HTML
     var html = reading
@@ -313,6 +338,13 @@ permalink: /read-your-grounds.html
 
     readingText.innerHTML = html;
     resultEl.style.display = 'block';
+
+    // Show email capture for new readings (not shared links)
+    if (!isShared) {
+      emailCapture.style.display = '';
+      emailCaptureForm.style.display = '';
+      emailCaptureSuccess.style.display = 'none';
+    }
 
     // Update URL for sharing
     var readingUrl = window.location.origin + window.location.pathname + '?reading=' + id;
@@ -342,6 +374,44 @@ permalink: /read-your-grounds.html
     gtag('event', 'grounds_shared', { method: 'native', page_location: window.location.href });
   });
 
+  // Email capture form
+  emailCaptureForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var email = captureEmail.value;
+    var firstName = captureName.value;
+
+    if (!email) {
+      alert('Please enter your email address.');
+      return;
+    }
+
+    captureSubmit.disabled = true;
+    captureButtonText.textContent = 'Subscribing...';
+
+    fetch(WORKER_URL + '/api/reading/' + currentReadingId + '/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, firstName: firstName })
+    })
+    .then(function(r) {
+      if (!r.ok) {
+        return r.json().then(function(d) { throw new Error(d.error || 'Something went wrong'); });
+      }
+      return r.json();
+    })
+    .then(function() {
+      emailCaptureForm.style.display = 'none';
+      emailCaptureSuccess.style.display = '';
+      gtag('event', 'grounds_email_captured', { page_location: window.location.href });
+    })
+    .catch(function(err) {
+      captureSubmit.disabled = false;
+      captureButtonText.textContent = 'Send me the free story';
+      alert(err.message || 'Something went wrong. Please try again.');
+    });
+  });
+
   // Try again
   tryAgain.addEventListener('click', function() {
     resultEl.style.display = 'none';
@@ -349,6 +419,15 @@ permalink: /read-your-grounds.html
     preview.style.display = 'none';
     placeholder.style.display = '';
     fileInput.value = '';
+    // Reset email capture
+    emailCapture.style.display = 'none';
+    emailCaptureForm.style.display = '';
+    emailCaptureSuccess.style.display = 'none';
+    captureEmail.value = '';
+    captureName.value = '';
+    captureSubmit.disabled = false;
+    captureButtonText.textContent = 'Send me the free story';
+    currentReadingId = '';
     history.pushState(null, '', window.location.pathname);
   });
 
@@ -363,7 +442,7 @@ permalink: /read-your-grounds.html
         return r.json();
       })
       .then(function(data) {
-        displayReading(data.id, data.reading);
+        displayReading(data.id, data.reading, true);
       })
       .catch(function() {
         hideLoading();
