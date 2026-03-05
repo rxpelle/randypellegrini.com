@@ -92,10 +92,14 @@
       });
 
       // Newsletter signup tracking and submission
+      var _nlLastSubmit = 0;
       document.addEventListener('submit', function(e) {
         var form = e.target;
         if (form && form.getAttribute('data-newsletter') === 'true') {
           e.preventDefault();
+          var now = Date.now();
+          if (now - _nlLastSubmit < 10000) return; // rate limit: 1 submit per 10s
+          _nlLastSubmit = now;
           var emailInput = form.querySelector('input[type="email"]');
           var btn = form.querySelector('button[type="submit"]');
           var btnText = btn ? btn.querySelector('span') : null;
