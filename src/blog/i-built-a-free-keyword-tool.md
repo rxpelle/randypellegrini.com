@@ -14,6 +14,8 @@ prevPost: "/blog/five-warnings-before-every-collapse.html"
 prevTitle: "Five Warnings Before Every Collapse"
 ctaTitle: "Check Out KDP Scout"
 ctaText: 'KDP Scout is free, open-source, and built for indie authors who want real keyword data without paying for it. <a href="https://github.com/rxpelle/kdp-scout">Grab it on GitHub</a>.'
+ctaButtonUrl: "https://github.com/rxpelle/kdp-scout"
+ctaButtonText: "Get KDP Scout"
 ---
 
 I got tired of paying for keyword tools that are basically just Amazon autocomplete with a price tag.

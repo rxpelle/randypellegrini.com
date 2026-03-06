@@ -48,7 +48,7 @@ layout: base.njk
     {%- else %}
     <h3>{{ ctaTitle | default("Read The Aethelred Cipher") }}</h3>
     <p>{{ ctaText | safe }}</p>
-    <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">Get your copy &rarr;</a>
+    <a class="button" href="{{ ctaButtonUrl | default(site.amazonUrl) }}" target="_blank" rel="noopener noreferrer">{{ ctaButtonText | default("Get your copy") }} &rarr;</a>
     {%- endif %}
   </div>
 
