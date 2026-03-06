@@ -5,14 +5,13 @@ heading: "The Money Dies First: How Financial Collapse Precedes Every Civilizati
 description: "From the Bronze Age to Rome to the Black Death, the financial system collapses before the civilization does. Every single time. The money is the canary."
 ogTitle: "The Money Dies First: How Financial Collapse Precedes Every Civilization's Fall"
 ogDescription: "From the Bronze Age to Rome to the Black Death, the financial system collapses before the civilization does. Every single time."
-ogUrl: "https://randypellegrini.com/blog/the-money-dies-first.html"
 number: 21
 bookTag: "The Series"
-permalink: /blog/the-money-dies-first.html
+permalink: /blog/the-money-dies-first/
 excerpt: "We remember the fires, the invasions, the plagues. But when you trace each collapse backward, the same quiet precursor appears every time. The money dies first."
-prevPost: "/blog/writing-villain-might-be-right.html"
+prevPost: "/blog/writing-villain-might-be-right/"
 prevTitle: "Writing a Villain Who Might Be Right"
-nextPost: "/blog/five-warnings-before-every-collapse.html"
+nextPost: "/blog/five-warnings-before-every-collapse/"
 nextTitle: "Five Warnings Before Every Collapse"
 ctaText: '<em>The Aethelred Cipher</em> is set in 1347 — one year after the last great bank failed, and the same year the first plague ship arrived. Thomas, a monk, discovers that the Black Death didn''t destroy a healthy civilization. It finished off one whose financial system was already dead.'
 ---

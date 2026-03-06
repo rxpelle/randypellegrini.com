@@ -5,14 +5,13 @@ heading: "The Corporations That Knew — And Buried It"
 description: "From tobacco to climate change, the most dangerous conspiracies in history weren't secret. They were corporate. How real cover-ups inspired the villain of The Genesis Protocol."
 ogTitle: "The Corporations That Knew"
 ogDescription: "From tobacco to climate change, the most dangerous conspiracies in history weren't secret. They were corporate. How real cover-ups inspired the villain of The Genesis Protocol."
-ogUrl: "https://randypellegrini.com/blog/the-corporations-that-knew.html"
 number: 7
 bookTag: "Book 2: The Genesis Protocol"
-permalink: /blog/the-corporations-that-knew.html
+permalink: /blog/the-corporations-that-knew/
 excerpt: "The most dangerous conspiracies in history weren't hidden in vaults or whispered in dark rooms. They were filed in corporate archives, stamped CONFIDENTIAL, and buried under decades of PR."
-prevPost: "/blog/writing-a-12-book-series.html"
+prevPost: "/blog/writing-a-12-book-series/"
 prevTitle: "Writing a 12-Book Series"
-nextPost: "/blog/the-trolley-problem-at-civilizational-scale.html"
+nextPost: "/blog/the-trolley-problem-at-civilizational-scale/"
 nextTitle: "The Trolley Problem at Civilizational Scale"
 ctaText: '<em>The Aethelred Cipher</em> begins with a monk who discovers that powerful men have been tracking civilizational collapse for centuries—not to prevent it, but to profit from it. The conspiracy he uncovers doesn''t require secret handshakes or hidden temples. It requires something much simpler: an institution willing to bury what it knows.'
 ---

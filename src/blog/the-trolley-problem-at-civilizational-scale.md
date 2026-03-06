@@ -5,14 +5,13 @@ heading: "The Trolley Problem at Civilizational Scale"
 description: "What happens when the trolley problem isn't five lives versus one — but five billion versus two billion? The moral philosophy behind The Genesis Protocol."
 ogTitle: "The Trolley Problem at Civilizational Scale"
 ogDescription: "What happens when the trolley problem isn't five lives versus one — but five billion versus two billion? The moral philosophy behind The Genesis Protocol."
-ogUrl: "https://randypellegrini.com/blog/the-trolley-problem-at-civilizational-scale.html"
 number: 8
 bookTag: "Book 2: The Genesis Protocol"
-permalink: /blog/the-trolley-problem-at-civilizational-scale.html
+permalink: /blog/the-trolley-problem-at-civilizational-scale/
 excerpt: "You're standing at the lever. On one track: two billion people. On the other: five billion. The lever is in your hand. You have thirty seconds. What do you do?"
-prevPost: "/blog/the-corporations-that-knew.html"
+prevPost: "/blog/the-corporations-that-knew/"
 prevTitle: "The Corporations That Knew"
-nextPost: "/blog/pattern-recognition.html"
+nextPost: "/blog/pattern-recognition/"
 nextTitle: "Pattern Recognition"
 ctaTitle: "Read The Aethelred Cipher"
 ctaText: '<em>The Aethelred Cipher</em> is the first book in <em>The Architecture of Survival</em>, a series that asks what happens when the people who see civilizational collapse coming have to decide what to do about it. Thomas, a medieval monk, discovers that powerful men have been making exactly this calculation for centuries. His answer changes everything.'

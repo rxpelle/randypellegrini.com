@@ -5,14 +5,13 @@ heading: "Why Civilizations Collapse in the Same Pattern — Every Single Time"
 description: "From the Bronze Age Collapse to the fall of Rome to the Black Death, civilizations fail in the same six-step pattern. Explore the feedback loop that has shaped 3,200 years of history."
 ogTitle: "Why Civilizations Collapse in the Same Pattern"
 ogDescription: "From the Bronze Age Collapse to the fall of Rome to the Black Death, civilizations fail in the same six-step pattern. Explore the feedback loop that has shaped 3,200 years of history."
-ogUrl: "https://randypellegrini.com/blog/why-civilizations-collapse.html"
 number: 3
 bookTag: "The Series"
-permalink: /blog/why-civilizations-collapse.html
+permalink: /blog/why-civilizations-collapse/
 excerpt: "In 1177 BCE, every major civilization in the Eastern Mediterranean collapsed simultaneously. The same pattern keeps repeating. This isn't a coincidence."
-prevPost: "/blog/how-the-black-death-spread.html"
+prevPost: "/blog/how-the-black-death-spread/"
 prevTitle: "How the Black Death Actually Spread"
-nextPost: "/blog/blood-memory-science-meets-fiction.html"
+nextPost: "/blog/blood-memory-science-meets-fiction/"
 nextTitle: "Blood Memory: Science Meets Fiction"
 ctaText: '<em>The Aethelred Cipher</em> is set at the moment of medieval Europe''s greatest system shock: the Black Death of 1347. Thomas, a young monk, discovers that powerful men have been tracking the collapse pattern across centuries—and positioning themselves to profit from each catastrophe. His choice: expose the system and scatter its secrets, or let the wheel keep turning.'
 ---

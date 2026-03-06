@@ -5,14 +5,13 @@ heading: "Complexity Kills: Why Modern Systems Fail the Same Way Bronze Age Ones
 description: "Supply chain theory, tight coupling, and the 2021 Suez Canal blockage as a Bronze Age Collapse in miniature. Why the most advanced systems are the most fragile."
 ogTitle: "Complexity Kills: Why Modern Systems Fail Like Bronze Age Ones"
 ogDescription: "Supply chain theory, tight coupling, and why the most advanced systems are the most fragile. The Suez Canal blockage as a Bronze Age Collapse in miniature."
-ogUrl: "https://randypellegrini.com/blog/complexity-kills.html"
 number: 13
 bookTag: "The Series"
-permalink: /blog/complexity-kills.html
+permalink: /blog/complexity-kills/
 excerpt: "In March 2021, a single cargo ship got stuck sideways in a canal. Within days, $9.6 billion in trade was frozen, factories across three continents went idle, and the global economy discovered what the Bronze Age learned 3,200 years ago: complexity kills."
-prevPost: "/blog/ethics-of-genetic-selection.html"
+prevPost: "/blog/ethics-of-genetic-selection/"
 prevTitle: "Who Gets to Survive?"
-nextPost: "/blog/writing-villain-might-be-right.html"
+nextPost: "/blog/writing-villain-might-be-right/"
 nextTitle: "Writing a Thriller Where the Villain Might Be Right"
 ctaText: '<em>The Aethelred Cipher</em> is set at the moment when medieval Europe''s most complex system—the network of trade, religion, and governance that connected a continent—met the shock that would destroy it. Thomas, a monk, discovers that some people saw it coming. They''d been seeing it coming for two thousand years.'
 ---

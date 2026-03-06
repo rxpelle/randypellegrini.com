@@ -5,14 +5,13 @@ heading: "Every Pandemic Has an NDA"
 description: "Government secrecy during health crises is as old as pandemics themselves. From 1918 flu censorship to Tuskegee to gain-of-function debates — what happens when truth and public safety conflict."
 ogTitle: "Every Pandemic Has an NDA"
 ogDescription: "Government secrecy during health crises — from 1918 flu censorship to gain-of-function debates. What happens when truth and public safety conflict."
-ogUrl: "https://randypellegrini.com/blog/every-pandemic-has-an-nda.html"
 number: 11
 bookTag: "Book 2: The Genesis Protocol"
-permalink: /blog/every-pandemic-has-an-nda.html
+permalink: /blog/every-pandemic-has-an-nda/
 excerpt: "The 1918 flu killed 50 million people. The U.S. government's official position, for months, was that everything was fine. We've been signing pandemic NDAs ever since."
-prevPost: "/blog/operation-paperclip.html"
+prevPost: "/blog/operation-paperclip/"
 prevTitle: "Operation Paperclip"
-nextPost: "/blog/ethics-of-genetic-selection.html"
+nextPost: "/blog/ethics-of-genetic-selection/"
 nextTitle: "Who Gets to Survive?"
 ctaText: '<em>The Aethelred Cipher</em> takes place during the Black Death of 1347 — a pandemic that killed half of Europe while institutions assured the public that God''s plan was unfolding as intended. Thomas, a monk, discovers that some of those institutions knew exactly what was happening and had been preparing for it. The pattern of suppression started long before the modern era.'
 ---

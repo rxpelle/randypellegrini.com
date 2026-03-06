@@ -5,14 +5,13 @@ heading: "Writing a Thriller Where the Villain Might Be Right"
 description: "Moral ambiguity as narrative engine. How to build antagonists the reader uncomfortably agrees with — and why the best thrillers make you question which side you're on."
 ogTitle: "Writing a Thriller Where the Villain Might Be Right"
 ogDescription: "Moral ambiguity as narrative engine. How to build antagonists the reader uncomfortably agrees with — and why the best thrillers make you question which side you're on."
-ogUrl: "https://randypellegrini.com/blog/writing-villain-might-be-right.html"
 number: 14
 bookTag: "Book 2: The Genesis Protocol"
-permalink: /blog/writing-villain-might-be-right.html
+permalink: /blog/writing-villain-might-be-right/
 excerpt: "The most dangerous villain isn't the one who's wrong. It's the one who makes you realize you might agree with them. Here's how to write that character without losing the reader — or your nerve."
-prevPost: "/blog/complexity-kills.html"
+prevPost: "/blog/complexity-kills/"
 prevTitle: "Complexity Kills"
-nextPost: "/blog/the-money-dies-first.html"
+nextPost: "/blog/the-money-dies-first/"
 nextTitle: "The Money Dies First"
 ctaTitle: "Read The Aethelred Cipher"
 ctaText: '<em>The Aethelred Cipher</em> is the first book in a series where the villains aren''t wrong—they''re just willing to do what the heroes won''t. The Order has been making the hard calculations for three thousand years. Thomas is the first person to challenge not just their methods, but their premise.'

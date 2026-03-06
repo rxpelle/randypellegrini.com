@@ -5,14 +5,13 @@ heading: "Pattern Recognition: The Skill Nobody Teaches You"
 description: "Systems thinking, cascade modeling, and why some people see connections others miss. The real analytical framework behind Nefertari's Seven Keys."
 ogTitle: "Pattern Recognition: The Skill Nobody Teaches You"
 ogDescription: "Systems thinking, cascade modeling, and why some people see connections others miss. The real analytical framework behind Nefertari's Seven Keys."
-ogUrl: "https://randypellegrini.com/blog/pattern-recognition.html"
 number: 9
 bookTag: "The Series"
-permalink: /blog/pattern-recognition.html
+permalink: /blog/pattern-recognition/
 excerpt: "Some people walk into a room and see furniture. Others see the power dynamics, the unspoken tensions, the thing everyone's avoiding. Pattern recognition isn't magic. It's a skill. And almost nobody teaches it."
-prevPost: "/blog/the-trolley-problem-at-civilizational-scale.html"
+prevPost: "/blog/the-trolley-problem-at-civilizational-scale/"
 prevTitle: "The Trolley Problem at Civilizational Scale"
-nextPost: "/blog/operation-paperclip.html"
+nextPost: "/blog/operation-paperclip/"
 nextTitle: "Operation Paperclip Brought More Than Rocket Scientists"
 ctaText: '<em>The Architecture of Survival</em> is built on the idea that pattern recognition—the ability to see systemic connections across time, geography, and scale—is the most important human skill that nobody formally teaches. <em>The Aethelred Cipher</em> follows a monk who learns to see the pattern. What he does with it changes everything.'
 ---

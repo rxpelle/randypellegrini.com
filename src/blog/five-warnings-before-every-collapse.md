@@ -5,14 +5,13 @@ heading: "Five Warnings Before Every Collapse: What 3,200 Years of History Actua
 description: "The same five warning signs appear before every civilizational collapse in recorded history. From Bronze Age debasement to Silicon Valley Bank, the pattern is identical. All five are measurable right now."
 ogTitle: "Five Warnings Before Every Collapse"
 ogDescription: "The same five warning signs appear before every civilizational collapse in recorded history. All five are measurable right now."
-ogUrl: "https://randypellegrini.com/blog/five-warnings-before-every-collapse.html"
 number: 22
 bookTag: "The Series"
-permalink: /blog/five-warnings-before-every-collapse.html
+permalink: /blog/five-warnings-before-every-collapse/
 excerpt: "After tracing the pattern from the Bronze Age through the 2023 banking crisis, I've found something uncomfortable. The same five warning signs appear before every collapse. Every single one. They're all present right now."
-prevPost: "/blog/the-money-dies-first.html"
+prevPost: "/blog/the-money-dies-first/"
 prevTitle: "The Money Dies First"
-nextPost: "/blog/i-built-a-free-keyword-tool.html"
+nextPost: "/blog/i-built-a-free-keyword-tool/"
 nextTitle: "I Built a Free Keyword Research Tool for Authors"
 ctaText: '<em>The Aethelred Cipher</em> is set during Warning 3 — the Bardi-Peruzzi banking collapse that preceded the Black Death. Thomas, a monk, discovers that some people saw the pattern centuries before he did. They''ve been arguing about what to do with that knowledge since 1177 BCE.'
 ---

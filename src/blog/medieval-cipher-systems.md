@@ -4,14 +4,13 @@ title: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscrip
 description: "Discover how medieval monks used colored dots, physical templates, and manuscript marginalia to build sophisticated cipher systems centuries before modern cryptography."
 ogTitle: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscript Margins"
 ogDescription: "Discover how medieval monks used colored dots, physical templates, and manuscript marginalia to build sophisticated cipher systems centuries before modern cryptography."
-ogUrl: "https://randypellegrini.com/blog/medieval-cipher-systems.html"
 number: 1
 bookTag: "Book 1: The Aethelred Cipher"
-permalink: /blog/medieval-cipher-systems.html
+permalink: /blog/medieval-cipher-systems/
 excerpt: "The medieval world took its secrets seriously. And the technology they used was hiding right in front of us — literally, in the margins of manuscripts we've been studying for centuries."
-prevPost: "/blog.html"
+prevPost: "/blog/"
 prevTitle: "All posts"
-nextPost: "/blog/how-the-black-death-spread.html"
+nextPost: "/blog/how-the-black-death-spread/"
 nextTitle: "How the Black Death Actually Spread"
 ctaText: '<em>The Aethelred Cipher</em> follows Thomas, a young monk who discovers that the decorative dots in his monastery''s manuscripts encode a secret that powerful men will kill to protect. Set during the Black Death of 1347, it''s a story about pattern recognition, encrypted knowledge, and the question of whether one person can break a system that has been running for centuries.'
 ---

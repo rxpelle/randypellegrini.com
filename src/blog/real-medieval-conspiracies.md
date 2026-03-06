@@ -4,14 +4,13 @@ title: "5 Real Medieval Conspiracies That Were Stranger Than Fiction"
 description: "From the Templar arrests to the Cadaver Synod to Venetian spies, five real medieval conspiracies that were stranger than anything in fiction and inspired The Aethelred Cipher."
 ogTitle: "5 Real Medieval Conspiracies That Were Stranger Than Fiction"
 ogDescription: "From the Templar arrests to the Cadaver Synod to Venetian spies, five real medieval conspiracies that were stranger than anything in fiction and inspired The Aethelred Cipher."
-ogUrl: "https://randypellegrini.com/blog/real-medieval-conspiracies.html"
 number: 5
 bookTag: "Book 1: The Aethelred Cipher"
-permalink: /blog/real-medieval-conspiracies.html
+permalink: /blog/real-medieval-conspiracies/
 excerpt: "A dead pope put on trial. A nationwide arrest coordinated without telephones. An intelligence service that made the CIA look primitive. All real. All medieval."
-prevPost: "/blog/blood-memory-science-meets-fiction.html"
+prevPost: "/blog/blood-memory-science-meets-fiction/"
 prevTitle: "Blood Memory: Science Meets Fiction"
-nextPost: "/blog/writing-a-12-book-series.html"
+nextPost: "/blog/writing-a-12-book-series/"
 nextTitle: "Writing a 12-Book Series"
 ctaText: '<em>The Aethelred Cipher</em> brings these patterns together in the story of Thomas, a monk who discovers that the most dangerous conspiracy in medieval Europe isn''t political or financial—it''s biological. Set during the Black Death of 1347, it asks what happens when one person sees the pattern that powerful men have hidden for centuries.'
 ---

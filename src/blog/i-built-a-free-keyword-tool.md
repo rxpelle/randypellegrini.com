@@ -5,12 +5,11 @@ heading: "I Built a Free Keyword Research Tool for Self-Published Authors (And O
 description: "Most KDP keyword tools cost money and do what Amazon autocomplete already does for free. So I built KDP Scout — a free, open-source CLI that mines keywords, imports your ad data, and scores everything so you know what's worth targeting."
 ogTitle: "I Built a Free Keyword Research Tool for Authors"
 ogDescription: "Most KDP keyword tools charge you for Amazon autocomplete. So I built a free one. KDP Scout is open-source and does more than most paid tools."
-ogUrl: "https://randypellegrini.com/blog/i-built-a-free-keyword-tool.html"
 number: 23
 bookTag: "Writing & Tools"
-permalink: /blog/i-built-a-free-keyword-tool.html
+permalink: /blog/i-built-a-free-keyword-tool/
 excerpt: "I got tired of paying for keyword tools that are basically just Amazon autocomplete with a price tag. So I built my own. It's free, open-source, and it does more than most paid alternatives."
-prevPost: "/blog/five-warnings-before-every-collapse.html"
+prevPost: "/blog/five-warnings-before-every-collapse/"
 prevTitle: "Five Warnings Before Every Collapse"
 ctaTitle: "Check Out KDP Scout"
 ctaText: 'KDP Scout is free, open-source, and built for indie authors who want real keyword data without paying for it. <a href="https://github.com/rxpelle/kdp-scout">Grab it on GitHub</a>.'

@@ -5,14 +5,13 @@ heading: "Who Gets to Survive? The Ethics of Genetic Selection"
 description: "From Plato's Republic to modern embryo screening, humanity has been debating who deserves to reproduce for 2,400 years. The Order's philosophy isn't new — it's ancient, and parts of it are happening right now."
 ogTitle: "Who Gets to Survive? The Ethics of Genetic Selection"
 ogDescription: "From Plato's Republic to modern embryo screening, the debate over genetic selection is older than you think — and closer than you'd like."
-ogUrl: "https://randypellegrini.com/blog/ethics-of-genetic-selection.html"
 number: 12
 bookTag: "The Series"
-permalink: /blog/ethics-of-genetic-selection.html
+permalink: /blog/ethics-of-genetic-selection/
 excerpt: "Plato proposed state-controlled breeding in 380 BCE. We called it philosophy. The Nazis implemented it in 1933. We called it evil. Silicon Valley is funding it right now. We're still deciding what to call it."
-prevPost: "/blog/every-pandemic-has-an-nda.html"
+prevPost: "/blog/every-pandemic-has-an-nda/"
 prevTitle: "Every Pandemic Has an NDA"
-nextPost: "/blog/complexity-kills.html"
+nextPost: "/blog/complexity-kills/"
 nextTitle: "Complexity Kills"
 ctaText: '<em>The Architecture of Survival</em> is a series about what happens when the power to select who lives and who dies extends across centuries. The Order''s breeding program didn''t start as evil. It started as a rational response to civilizational collapse. <em>The Aethelred Cipher</em> follows the monk who discovers where that rationality leads.'
 ---

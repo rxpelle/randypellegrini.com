@@ -5,14 +5,13 @@ heading: "Operation Paperclip Brought More Than Rocket Scientists"
 description: "The real program that recruited Nazi scientists to America — and the pharmaceutical companies, genetic research programs, and ethical compromises that followed. The history behind Catherine Wells."
 ogTitle: "Operation Paperclip Brought More Than Rocket Scientists"
 ogDescription: "The real program that recruited Nazi scientists to America — and the pharmaceutical companies, genetic research programs, and ethical compromises that followed."
-ogUrl: "https://randypellegrini.com/blog/operation-paperclip.html"
 number: 10
 bookTag: "Book 2: The Genesis Protocol"
-permalink: /blog/operation-paperclip.html
+permalink: /blog/operation-paperclip/
 excerpt: "Everyone knows we brought over Wernher von Braun to build rockets. Fewer people ask about the medical researchers. The ones whose expertise came from experiments no ethical review board would ever approve."
-prevPost: "/blog/pattern-recognition.html"
+prevPost: "/blog/pattern-recognition/"
 prevTitle: "Pattern Recognition"
-nextPost: "/blog/every-pandemic-has-an-nda.html"
+nextPost: "/blog/every-pandemic-has-an-nda/"
 nextTitle: "Every Pandemic Has an NDA"
 ctaText: '<em>The Aethelred Cipher</em> follows a monk who discovers that powerful institutions have been making morally catastrophic decisions in secret for centuries. The conspiracy doesn''t start in a boardroom. It starts in a monastery, during the Black Death, with a pattern hidden in manuscript margins.'
 ---

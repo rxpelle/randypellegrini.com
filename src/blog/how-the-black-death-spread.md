@@ -5,14 +5,13 @@ heading: "How the Black Death Actually Spread — And What Medieval People Under
 description: "The Black Death killed up to 200 million people, but medieval people understood more about disease transmission than we give them credit for. Explore the real history of the deadliest pandemic."
 ogTitle: "How the Black Death Actually Spread"
 ogDescription: "The Black Death killed up to 200 million people, but medieval people understood more about disease transmission than we give them credit for. Explore the real history of the deadliest pandemic."
-ogUrl: "https://randypellegrini.com/blog/how-the-black-death-spread.html"
 number: 2
 bookTag: "Book 1: The Aethelred Cipher"
-permalink: /blog/how-the-black-death-spread.html
+permalink: /blog/how-the-black-death-spread/
 excerpt: "Medieval people weren't as helpless or as ignorant about disease as we've been taught. Some of them understood things that wouldn't be \"discovered\" by modern science for five centuries."
-prevPost: "/blog/medieval-cipher-systems.html"
+prevPost: "/blog/medieval-cipher-systems/"
 prevTitle: "Medieval Monks & Encrypted Secrets"
-nextPost: "/blog/why-civilizations-collapse.html"
+nextPost: "/blog/why-civilizations-collapse/"
 nextTitle: "Why Civilizations Collapse"
 ctaText: 'In <em>The Aethelred Cipher</em>, Thomas discovers that the Black Death wasn''t purely a natural disaster—that powerful men had been tracking disease patterns across centuries, positioning chosen families to survive, and using each catastrophe to strengthen their control. The question he faces: can one person break a system that has been running since before the fall of Rome?'
 ---
