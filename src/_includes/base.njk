@@ -38,9 +38,10 @@
     {% block pageStyles %}{% endblock %}
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="page">
       {% include "header.njk" %}
-      <main{% if mainId %} id="{{ mainId }}"{% endif %}>
+      <main id="{{ mainId | default('main-content') }}">
         {% block content %}{{ content | safe }}{% endblock %}
       </main>
       {% include "footer.njk" %}

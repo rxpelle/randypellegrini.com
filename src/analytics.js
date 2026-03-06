@@ -69,7 +69,7 @@
       .then(function(data) {
         if (data.status === 'ok') {
           if (btnText) btnText.textContent = 'Subscribed!';
-          if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
+          if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
           emailInput.value = '';
           gtag('event', 'newsletter_signup', { page_location: window.location.href });
         } else {

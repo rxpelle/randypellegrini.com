@@ -239,16 +239,16 @@ document.addEventListener('DOMContentLoaded', function() {
     statNumbers.forEach(stat => statsObserver.observe(stat));
   }
 
-  // Mobile menu toggle (if needed)
-  const mobileMenuButton = document.querySelector('#mobile-menu-toggle');
-  const nav = document.querySelector('.nav');
+  // Mobile menu toggle
+  const menuToggle = document.querySelector('#menu-toggle');
+  const mainNav = document.querySelector('#main-nav');
 
-  if (mobileMenuButton && nav) {
-    mobileMenuButton.addEventListener('click', function() {
-      nav.classList.toggle('mobile-open');
-      this.setAttribute('aria-expanded',
-        this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
-      );
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      this.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');
+      mainNav.classList.toggle('open');
     });
   }
 
