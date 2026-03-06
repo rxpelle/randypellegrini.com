@@ -1,0 +1,23 @@
+---json
+{
+  "pagination": {
+    "data": "redirects",
+    "size": 1,
+    "alias": "redirect"
+  },
+  "permalink": "{{ redirect.from }}",
+  "eleventyExcludeFromCollections": true
+}
+---
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0; url={{ redirect.to }}" />
+  <link rel="canonical" href="{{ site.url }}{{ redirect.to }}" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>This page has moved to <a href="{{ redirect.to }}">{{ redirect.to }}</a>.</p>
+</body>
+</html>
