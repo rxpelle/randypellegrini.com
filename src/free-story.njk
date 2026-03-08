@@ -79,6 +79,7 @@ permalink: /free-story/
         <span id="magnet-button-text">Send me the story</span>
       </button>
     </form>
+    <div id="form-messages" style="display: none;"></div>
     <p class="form-note">No spam. One email per month. Unsubscribe anytime.</p>
   </div>
 </section>
@@ -103,23 +104,3 @@ permalink: /free-story/
 </section>
 {% endblock %}
 
-{% block pageScript %}
-<script>
-  const form = document.querySelector('.magnet-form-card form');
-  const submitBtn = document.getElementById('magnet-submit-btn');
-  const buttonText = document.getElementById('magnet-button-text');
-
-  form.addEventListener('submit', () => {
-    submitBtn.disabled = true;
-    buttonText.textContent = 'Sending...';
-    setTimeout(() => {
-      buttonText.textContent = 'Check your email!';
-      form.querySelector('input[type="email"]').value = '';
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        buttonText.textContent = 'Send me the story';
-      }, 4000);
-    }, 2000);
-  });
-</script>
-{% endblock %}

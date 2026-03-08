@@ -58,6 +58,7 @@
       var btnText = btn ? btn.querySelector('span') : null;
       var msgDiv = form.parentElement.querySelector('#form-messages') || form.nextElementSibling;
       if (!emailInput || !emailInput.value) return;
+      var originalBtnText = btnText ? btnText.textContent : '';
       if (btn) btn.disabled = true;
       if (btnText) btnText.textContent = 'Sending...';
       fetch('https://script.google.com/macros/s/AKfycbxLPrYzyozrQrUU8BO7L_CntyiHxPdmAVQxd41xlpBywLYDscTmUD-ZaRwAwHCdyTjC1w/exec', {
@@ -72,6 +73,10 @@
           if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
           emailInput.value = '';
           gtag('event', 'newsletter_signup', { page_location: window.location.href });
+          setTimeout(function() {
+            if (btn) btn.disabled = false;
+            if (btnText) btnText.textContent = originalBtnText;
+          }, 4000);
         } else {
           if (btnText) btnText.textContent = 'Try again';
           if (btn) btn.disabled = false;

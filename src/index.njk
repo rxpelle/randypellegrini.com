@@ -351,24 +351,3 @@ permalink: /
 </section>
 {% endblock %}
 
-{% block pageScript %}
-<script>
-  // Newsletter form UX enhancements
-  const form = document.getElementById('newsletter-form');
-  const submitBtn = document.getElementById('submit-btn');
-  const buttonText = document.getElementById('button-text');
-
-  form.addEventListener('submit', () => {
-    submitBtn.disabled = true;
-    buttonText.textContent = 'Subscribing...';
-    setTimeout(() => {
-      buttonText.textContent = 'Subscribed!';
-      form.querySelector('input[type="email"]').value = '';
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        buttonText.textContent = 'Sign up';
-      }, 4000);
-    }, 2000);
-  });
-</script>
-{% endblock %}
