@@ -15,6 +15,8 @@ ctaTitle: "Check Out KDP Scout"
 ctaText: 'KDP Scout is free, open-source, and built for indie authors who want real keyword data without paying for it. <a href="https://github.com/rxpelle/kdp-scout">Grab it on GitHub</a>.'
 ctaButtonUrl: "https://github.com/rxpelle/kdp-scout"
 ctaButtonText: "Get KDP Scout"
+nextPost: "/blog/i-built-a-free-book-formatting-tool/"
+nextTitle: "I Built a Free Book Formatting Tool for Authors"
 ---
 
 I got tired of paying for keyword tools that are basically just Amazon autocomplete with a price tag.
