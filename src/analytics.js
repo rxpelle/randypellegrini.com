@@ -20,9 +20,16 @@
     if (!link || !link.href) return;
     var href = link.href;
 
-    // Amazon click
+    // Amazon click — identify book by ASIN
     if (href.indexOf('amazon.com') !== -1) {
+      var bookName = 'unknown';
+      if (href.indexOf('B0GJTGCHS2') !== -1 || href.indexOf('B0GMRN61MG') !== -1) {
+        bookName = 'The Aethelred Cipher';
+      } else if (href.indexOf('B0GPM973N1') !== -1) {
+        bookName = 'The Genesis Protocol';
+      }
       gtag('event', 'amazon_click', {
+        book_name: bookName,
         link_url: href,
         link_text: (link.textContent || '').trim().substring(0, 100),
         page_location: window.location.href
