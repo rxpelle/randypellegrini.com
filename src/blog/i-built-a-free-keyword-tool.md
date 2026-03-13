@@ -49,6 +49,23 @@ I built KDP Scout for my own books — *The Aethelred Cipher* and *The Genesis P
 
 If it helps other authors do the same, that's a win. The tool is MIT licensed, which means you can use it, modify it, share it, whatever. No strings.
 
+<div class="book-promo-banner">
+  <div class="book-promo-content">
+    <strong>The books I built this tool for</strong>
+    <span class="book-promo-sub">A medieval plague meets a modern conspiracy. Two timelines. One secret that could rewrite history.</span>
+  </div>
+  <div class="book-promo-links">
+    <a class="book-promo-link" href="/books.html">
+      <span>Book 1: The Aethelred Cipher</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 on Amazon</span>
+    </a>
+    <a class="book-promo-link" href="/books.html#genesis-protocol">
+      <span>Book 2: The Genesis Protocol</span>
+      <span class="book-promo-stars">New Release</span>
+    </a>
+  </div>
+</div>
+
 ## What You Need
 
 Python 3.9 or higher. That's it for the core features.

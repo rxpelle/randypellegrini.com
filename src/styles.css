@@ -2006,6 +2006,62 @@ textarea:focus-visible {
   }
 }
 
+/* ── Book promo banner (inline in blog posts) ──── */
+.book-promo-banner {
+  background: var(--teal);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+.book-promo-content strong {
+  display: block;
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 1.15rem;
+  color: #f8fbfa;
+  margin-bottom: 6px;
+}
+.book-promo-sub {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(248, 251, 250, 0.8);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.book-promo-links {
+  display: flex;
+  gap: 12px;
+}
+.book-promo-link {
+  flex: 1;
+  display: block;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #f8fbfa;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.book-promo-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+.book-promo-link span:first-child {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+.book-promo-stars {
+  display: block;
+  font-size: 0.8rem;
+  color: #fbe3c8;
+}
+@media (max-width: 600px) {
+  .book-promo-links {
+    flex-direction: column;
+  }
+}
+
 /* ── Grounds blog CTA (blog post footer) ───────── */
 .grounds-blog-cta {
   margin: 32px 0 12px;
