@@ -82,7 +82,7 @@
         page_location: window.location.href
       });
 
-      fetch('https://script.google.com/macros/s/AKfycbxLPrYzyozrQrUU8BO7L_CntyiHxPdmAVQxd41xlpBywLYDscTmUD-ZaRwAwHCdyTjC1w/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify({ action: 'welcome_subscribe', email: emailInput.value })
