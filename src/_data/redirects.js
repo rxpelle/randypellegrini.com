@@ -20,6 +20,7 @@ module.exports = function () {
     "five-warnings-before-every-collapse",
     "how-good-people-get-recruited",
     "how-the-black-death-spread",
+    "i-built-a-free-book-formatting-tool",
     "i-built-a-free-keyword-tool",
     "knowledge-wants-to-be-hoarded",
     "medieval-cipher-systems",

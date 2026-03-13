@@ -6,7 +6,9 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '{{ site.gaId }}');
+      var loc = window.location.pathname;
+      if (loc.endsWith('.html')) { loc = loc.replace(/\.html$/, '/'); }
+      gtag('config', '{{ site.gaId }}', { page_path: loc });
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.googletagmanager.com https://script.google.com https://grounds-reader.randypellegrini.workers.dev; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://script.google.com;" />
