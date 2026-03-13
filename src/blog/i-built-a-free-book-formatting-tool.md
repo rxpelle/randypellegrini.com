@@ -15,6 +15,8 @@ ctaTitle: "Check Out Book Formatter"
 ctaText: 'Book Formatter is free, open-source, and built for indie authors who want professional formatting without the price tag. <a href="https://github.com/rxpelle/book-formatter">Grab it on GitHub</a>.'
 ctaButtonUrl: "https://github.com/rxpelle/book-formatter"
 ctaButtonText: "Get Book Formatter"
+nextPost: "/blog/can-bioweapons-target-your-dna/"
+nextTitle: "Can a Bioweapon Target Your DNA?"
 ---
 
 If you've self-published a book, you've hit the formatting wall.
