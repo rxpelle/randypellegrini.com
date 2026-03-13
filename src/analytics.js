@@ -46,6 +46,19 @@
 
   // Newsletter signup tracking and submission
   var _nlLastSubmit = 0;
+
+  // Track email field focus (user intent)
+  document.addEventListener('focusin', function(e) {
+    var input = e.target;
+    if (input && input.type === 'email' && input.closest('[data-newsletter]')) {
+      var formType = input.closest('.tools-signup') ? 'tools' : 'newsletter';
+      gtag('event', 'signup_form_focus', {
+        form_type: formType,
+        page_location: window.location.href
+      });
+    }
+  });
+
   document.addEventListener('submit', function(e) {
     var form = e.target;
     if (form && form.getAttribute('data-newsletter') === 'true') {
@@ -58,9 +71,17 @@
       var btnText = btn ? btn.querySelector('span') : null;
       var msgDiv = form.parentElement.querySelector('#form-messages') || form.nextElementSibling;
       if (!emailInput || !emailInput.value) return;
+      var formType = form.closest('.tools-signup') ? 'tools' : 'newsletter';
       var originalBtnText = btnText ? btnText.textContent : '';
       if (btn) btn.disabled = true;
       if (btnText) btnText.textContent = 'Sending...';
+
+      // Track submit attempt
+      gtag('event', 'signup_form_submit', {
+        form_type: formType,
+        page_location: window.location.href
+      });
+
       fetch('https://script.google.com/macros/s/AKfycbxLPrYzyozrQrUU8BO7L_CntyiHxPdmAVQxd41xlpBywLYDscTmUD-ZaRwAwHCdyTjC1w/exec', {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain' },
@@ -72,17 +93,19 @@
           if (btnText) btnText.textContent = 'Subscribed!';
           if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
           emailInput.value = '';
-          gtag('event', 'newsletter_signup', { page_location: window.location.href });
+          gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
           setTimeout(function() {
             if (btn) btn.disabled = false;
             if (btnText) btnText.textContent = originalBtnText;
           }, 4000);
         } else {
+          gtag('event', 'signup_form_error', { form_type: formType, error: 'server_error', page_location: window.location.href });
           if (btnText) btnText.textContent = 'Try again';
           if (btn) btn.disabled = false;
         }
       })
-      .catch(function() {
+      .catch(function(err) {
+        gtag('event', 'signup_form_error', { form_type: formType, error: 'network_error', page_location: window.location.href });
         if (btnText) btnText.textContent = 'Try again';
         if (btn) btn.disabled = false;
       });
