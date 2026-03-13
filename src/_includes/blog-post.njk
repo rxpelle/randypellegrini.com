@@ -52,6 +52,20 @@ layout: base.njk
     {%- endif %}
   </div>
 
+  {%- if bookTag == "Writing & Tools" %}
+  <div class="article-cta tools-signup reveal delay-2">
+    <h3>Free Tools for Self-Published Authors</h3>
+    <p>I'm building open-source software that replaces the expensive tools indie authors shouldn't have to pay for. Sign up to hear about new releases.</p>
+    <form class="signup" data-newsletter="true">
+      <label class="sr-only" for="tools-email">Email address</label>
+      <input id="tools-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+      <button class="button" type="submit"><span>Get notified</span></button>
+    </form>
+    <div id="form-messages" style="display: none;"></div>
+    <p class="form-note">No spam. Just tool launches. Unsubscribe anytime.</p>
+  </div>
+  {%- endif %}
+
   <div class="grounds-blog-cta reveal delay-2">
     <a href="/read-your-grounds.html" class="grounds-blog-cta-link">
       <span class="grounds-blog-cta-icon">&#9752;</span>

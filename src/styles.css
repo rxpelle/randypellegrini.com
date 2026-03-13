@@ -1246,6 +1246,18 @@ textarea:focus-visible {
   background: #ffd9b0;
 }
 
+.tools-signup {
+  background: #1a3a4a;
+}
+
+.tools-signup .signup {
+  justify-content: center;
+}
+
+.tools-signup .form-note {
+  margin-top: 10px;
+}
+
 .article-nav {
   display: flex;
   justify-content: space-between;
