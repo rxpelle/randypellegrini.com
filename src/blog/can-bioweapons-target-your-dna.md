@@ -5,12 +5,12 @@ heading: "Can a Bioweapon Target Your DNA? The Real Science Behind Genetically T
 description: "The U.S. Director of National Intelligence called gene editing a weapon of mass destruction. The ICRC warns ethnically targeted bioweapons are 'not far off.' Here's what the science actually says — and why the fiction might not be far from the truth."
 ogTitle: "Can a Bioweapon Target Your DNA?"
 ogDescription: "Gene editing as a WMD isn't science fiction. The U.S. intelligence community, the ICRC, and the British Medical Association have all warned it's coming. Here's the real science."
-number: 25
+number: 26
 bookTag: "Book 2: The Genesis Protocol"
 permalink: /blog/can-bioweapons-target-your-dna/
 excerpt: "In 2016, the U.S. Director of National Intelligence added gene editing to the list of weapons of mass destruction. Not hypothetically. Officially. Here's what the science actually says."
-prevPost: "/blog/i-built-a-free-book-formatting-tool/"
-prevTitle: "I Built a Free Book Formatting Tool for Authors"
+prevPost: "/blog/i-built-a-free-cover-generator/"
+prevTitle: "I Built an AI Book Cover Generator (And Open-Sourced It)"
 ctaTitle: "Read The Genesis Protocol"
 ctaText: 'In <em>The Genesis Protocol</em>, a pharmaceutical corporation engineers a pathogen designed to kill four billion people — and calls it a correction. The science in the novel is based on the real research described in this essay. The moral dilemma it creates is worse. <a href="https://www.amazon.com/dp/B0GPM973N1">Available now on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GPM973N1"

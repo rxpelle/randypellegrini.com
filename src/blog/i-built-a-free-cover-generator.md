@@ -14,6 +14,8 @@ prevTitle: "I Built a Free Book Formatting Tool for Authors"
 ctaTitle: "Check Out Cover Generator"
 ctaText: 'Cover Generator is free, open-source, and built for indie authors who want professional covers without the price tag. <a href="https://github.com/rxpelle/cover-generator">Grab it on GitHub</a>.'
 ctaButtonUrl: "https://github.com/rxpelle/cover-generator"
+nextPost: "/blog/can-bioweapons-target-your-dna/"
+nextTitle: "Can a Bioweapon Target Your DNA?"
 ctaButtonText: "Get Cover Generator"
 ---
 

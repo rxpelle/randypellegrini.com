@@ -17,8 +17,6 @@ ctaButtonUrl: "https://github.com/rxpelle/book-formatter"
 nextPost: "/blog/i-built-a-free-cover-generator/"
 nextTitle: "I Built an AI Book Cover Generator (And Open-Sourced It)"
 ctaButtonText: "Get Book Formatter"
-nextPost: "/blog/can-bioweapons-target-your-dna/"
-nextTitle: "Can a Bioweapon Target Your DNA?"
 ---
 
 If you've self-published a book, you've hit the formatting wall.
