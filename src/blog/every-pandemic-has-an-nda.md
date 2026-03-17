@@ -58,7 +58,7 @@ In 1982, the CDC identified a new disease affecting gay men, hemophiliacs, and i
 
 The Reagan administration's response was, for years, silence.
 
-Reagan didn't publicly say the word "AIDS" until 1985—four years into the epidemic, after more than 5,000 Americans had died. His press secretary, Larry Speakes, laughed about the disease in a 1982 press briefing when a reporter asked about it. The exchange, preserved on tape, is one of the most chilling artifacts of institutional indifference in American history.
+Reagan didn't publicly say the word "AIDS" until 1985—four years into the epidemic, after more than 12,000 Americans had died. His press secretary, Larry Speakes, laughed about the disease in a 1982 press briefing when a reporter asked about it. The exchange, preserved on tape, is one of the most chilling artifacts of institutional indifference in American history.
 
 This wasn't an NDA in the legal sense. Nobody signed anything. But the effect was the same: the government possessed information about a lethal epidemic and made a decision—not through conspiracy but through the accumulated weight of institutional indifference—to withhold it from the people who needed it most.
 

@@ -16,7 +16,7 @@ nextTitle: "Knowledge Wants to Be Hoarded"
 ctaText: 'In <em>The Genesis Protocol</em>, THRESHOLD would kill four billion people — and nearly every carrier of the genetic traits that make cooperation possible. The math doesn''t just fail to justify genocide. The math condemns it.'
 ---
 
-In 1981, Robert Axelrod ran a tournament.
+In 1980, Robert Axelrod ran a tournament.
 
 He invited game theorists, economists, mathematicians, and computer scientists to submit strategies for the iterated Prisoner's Dilemma — a game where two players repeatedly choose to cooperate or defect, and the payoffs depend on what both players do. Cooperate together and both benefit moderately. Defect while the other cooperates and you win big. Both defect and both lose.
 
@@ -50,7 +50,7 @@ Cooperation isn't just a choice. It's a capacity. And that capacity has a herita
 
 This is where the research gets uncomfortable.
 
-In the 1970s, the Soviet geneticist Dmitri Belyaev ran a famous experiment on silver foxes. He selectively bred them for a single trait: tameness. Within just a few generations, the tame foxes began exhibiting other changes — floppy ears, curled tails, spotted coats, changes in brain chemistry. Selecting for one behavioral trait produced a cascade of related changes.
+In 1959, the Soviet geneticist Dmitri Belyaev began a famous experiment on silver foxes. He selectively bred them for a single trait: tameness. Within just a few generations, the tame foxes began exhibiting other changes — floppy ears, curled tails, spotted coats, changes in brain chemistry. Selecting for one behavioral trait produced a cascade of related changes.
 
 The same principle works in reverse. If you selectively remove cooperative individuals from a population, you don't just get a less cooperative population. You get a cascade of related changes — increased aggression, reduced social trust, diminished capacity for collective action.
 

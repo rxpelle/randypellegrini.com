@@ -15,7 +15,7 @@ nextTitle: "How the Black Death Actually Spread"
 ctaText: '<em>The Aethelred Cipher</em> follows Thomas, a young monk who discovers that the decorative dots in his monastery''s manuscripts encode a secret that powerful men will kill to protect. Set during the Black Death of 1347, it''s a story about pattern recognition, encrypted knowledge, and the question of whether one person can break a system that has been running for centuries.'
 ---
 
-In 1247, Roger Bacon wrote a letter to Pope Clement IV describing seven methods for hiding messages. He sealed it. The Pope never responded. Bacon spent the next decade imprisoned by his own Franciscan order for "suspected novelties."
+Around 1267, Roger Bacon sent his *Opus Majus* to Pope Clement IV, describing seven methods for hiding messages among its encyclopedic contents. The Pope never responded. According to later tradition, Bacon spent years imprisoned by his own Franciscan order for "suspected novelties"—though modern scholars consider the imprisonment story uncertain, since the earliest account dates from some eighty years after his death.
 
 The medieval world took its secrets seriously.
 

@@ -47,7 +47,7 @@ By then, the intelligence community had already spent four years worrying about 
 
 ## The Bioweapon Problem
 
-Biological weapons have existed for centuries. Mongol armies catapulted plague-infected corpses over city walls. The British distributed smallpox-contaminated blankets. The Soviet Union's Biopreparat program weaponized anthrax, smallpox, and plague at industrial scale during the Cold War — a program so vast that one of its facilities employed 32,000 people.
+Biological weapons have existed for centuries. Mongol armies catapulted plague-infected corpses over city walls. The British distributed smallpox-contaminated blankets. The Soviet Union's Biopreparat program weaponized anthrax, smallpox, and plague at industrial scale during the Cold War — a program so vast that it employed over 30,000 people across dozens of facilities.
 
 These were crude instruments. A weaponized pathogen didn't care whose city it was released in. It killed indiscriminately. It spread unpredictably. It was as dangerous to the attacker as to the target — which is one of the main reasons the Biological Weapons Convention was signed in 1972. Bioweapons were too dangerous even for the people who made them.
 

@@ -28,7 +28,7 @@ They're all present right now.
 
 **Rome, 64 CE:** Nero reduced the denarius from 98% to 93% silver — a 5% haircut — to fund rebuilding Rome after the Great Fire. Trivial in isolation. Catastrophic in precedent. It established that the currency existed to serve the emperor's needs, not the economy's. Every successor exploited this precedent until, by 268 CE, Roman "silver" coins contained 1.75% silver. Bronze discs with a memory of value.
 
-**France, 1716-1720:** John Law convinced the French regent to let him issue paper banknotes to fix the nation's post-war bankruptcy. Within four years, banknote circulation exploded from 159 million to 1.199 billion livres. Share prices in Law's Mississippi Company rose from 500 to 18,000 livres in twelve months, then crashed to 1,000. The word "banque" became so toxic in French that the next central bank was deliberately called a "caisse" — a cash box.
+**France, 1716-1720:** John Law convinced the French regent to let him issue paper banknotes to fix the nation's post-war bankruptcy. Within four years, banknote circulation exploded from 159 million to 1.199 billion livres. Share prices in Law's Mississippi Company rose from 500 to 10,000 livres in twelve months, then crashed to 1,000. The word "banque" became so toxic in French that the next central bank was deliberately called a "caisse" — a cash box.
 
 **Weimar Germany, 1921-1923:** The Reichsbank printed money to pay war reparations and fund government operations. The mark went from 4.2 per dollar (1914) to 4.2 trillion per dollar (November 1923). A loaf of bread cost 200 billion marks. Coffee cost 7,000 marks by the time you finished your first cup — it was 5,000 when you ordered it.
 
@@ -48,7 +48,7 @@ Spain should have become unstoppable. Instead, it deindustrialized. It was cheap
 
 Wealth without production is a death sentence.
 
-**The Bronze Age version:** The palace economies of the Late Bronze Age ran on redistribution — central authorities coordinating production and trade. But the system required tin from Afghanistan, copper from Cyprus, grain from Egypt, and luxury goods from across the Mediterranean. When the trade routes broke, the palaces had no domestic productive capacity to fall back on. Over 5,000 Linear B tablets from Knossos record wool allocations and labor rosters but contain no evidence of currency equivalence — no market mechanism to redirect resources when the central plan failed.
+**The Bronze Age version:** The palace economies of the Late Bronze Age ran on redistribution — central authorities coordinating production and trade. But the system required tin from Afghanistan, copper from Cyprus, grain from Egypt, and luxury goods from across the Mediterranean. When the trade routes broke, the palaces had no domestic productive capacity to fall back on. Over 3,000 Linear B tablets from Knossos record wool allocations and labor rosters but contain no evidence of currency equivalence — no market mechanism to redirect resources when the central plan failed.
 
 ## Warning 3: Risk Concentrates While No One Watches
 

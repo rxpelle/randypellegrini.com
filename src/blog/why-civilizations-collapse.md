@@ -46,7 +46,7 @@ This is the pattern. It played out in 1177 BCE. In 476 CE. In 1347 CE. And the q
 
 ## The Bronze Age Collapse: Where It All Started
 
-The Bronze Age Collapse is the clearest example of the pattern because we can see all five steps in the archaeological record.
+The Bronze Age Collapse is the clearest example of the pattern because we can see all six steps in the archaeological record.
 
 By 1200 BCE, the Eastern Mediterranean was the most interconnected region on Earth. Egyptian, Hittite, Mycenaean, and Mesopotamian civilizations traded goods, exchanged diplomatic letters (the Amarna correspondence), and maintained sophisticated bureaucracies.
 

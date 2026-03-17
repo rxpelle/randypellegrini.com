@@ -52,7 +52,7 @@ The entire arc of American crime statistics in the twentieth century may have be
 
 ## Climate: The Model That Was Right
 
-In 1982, Exxon's own scientists produced internal climate models predicting that continued fossil fuel combustion would raise global temperatures by 1 to 2 degrees Celsius by 2020.
+In 1982, Exxon's own scientists produced internal climate models predicting that continued fossil fuel combustion would raise global temperatures by approximately 2 degrees Celsius by 2050.
 
 They were right. Almost exactly right. Their models tracked observed warming with remarkable precision—better, in some cases, than NASA's contemporary projections.
 
@@ -100,7 +100,7 @@ Most of them stayed quiet. Not because they were bad people, but because the sys
 
 But some of them didn't stay quiet.
 
-Jeffrey Wigand blew the whistle on Brown & Williamson's manipulation of nicotine levels. Clair Patterson spent decades fighting the lead industry after his research on ocean sediments revealed the true scale of atmospheric lead contamination. Climate scientists at Exxon tried to publish their findings through official channels.
+Jeffrey Wigand blew the whistle on Brown & Williamson's manipulation of nicotine levels. Clair Patterson spent decades fighting the lead industry after his research on ocean water and ice cores revealed the true scale of atmospheric lead contamination. Climate scientists at Exxon tried to publish their findings through official channels.
 
 These people paid for it. They lost jobs, faced lawsuits, endured smear campaigns. The system punished them for noticing.
 

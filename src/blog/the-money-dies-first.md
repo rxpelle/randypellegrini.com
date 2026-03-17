@@ -28,7 +28,7 @@ The money dies first.
 
 The Late Bronze Age had no coins. Its "money" was trust — specifically, the trust embedded in a palace redistribution system where rulers coordinated production, storage, and trade across eight interconnected civilizations spanning from Egypt to Mesopotamia.
 
-The currency of this system was bronze itself, an alloy requiring copper (mined primarily in Cyprus) and tin (transported over 1,000 miles from Afghanistan). The Uluburun shipwreck, discovered off Turkey's coast in 1982, tells us what this trade looked like: 354 copper ingots weighing 10 tons, tin in the precise 10:1 ratio needed for bronze production, plus glass, ivory, and gold from at least seven civilizations — all on a single ship.
+The currency of this system was bronze itself, an alloy requiring copper (mined primarily in Cyprus) and tin (transported over 1,000 miles from Afghanistan). The Uluburun shipwreck, discovered off Turkey's coast in 1982, tells us what this trade looked like: 348 copper ingots weighing 10 tons, tin in the precise 10:1 ratio needed for bronze production, plus glass, ivory, and gold from at least seven civilizations — all on a single ship.
 
 This wasn't a loose trade network. It was a deeply interdependent economic web where the failure of any major node threatened the entire system. Eric Cline's *1177 B.C.* describes it as a "small world network" — every major civilization was no more than three hops from every other.
 
@@ -44,7 +44,7 @@ The pattern was already visible: centralized financial systems collapse catastro
 
 If the Bronze Age collapse was sudden, Rome's monetary death was agonizingly slow — and visible to anyone watching.
 
-Under Augustus, the silver denarius contained 4.5 grams of silver at 98% purity. A day's wage for a laborer. A reliable store of value across the known world.
+Under Augustus, the silver denarius contained 3.9 grams of silver at 98% purity. A day's wage for a laborer. A reliable store of value across the known world.
 
 Then Nero, facing the costs of rebuilding Rome after the Great Fire of 64 CE, reduced the denarius to 93% silver and cut its weight by 12.5%. A 5% haircut. Barely noticeable. But it established the principle that would destroy Rome: the currency was a political tool, not a measure of value.
 

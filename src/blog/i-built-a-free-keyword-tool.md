@@ -21,7 +21,7 @@ nextTitle: "I Built a Free Book Formatting Tool for Authors"
 
 I got tired of paying for keyword tools that are basically just Amazon autocomplete with a price tag.
 
-If you've self-published on KDP, you know the drill. You need keywords for your book's backend metadata, for your Amazon Ads campaigns, and for figuring out where your book fits in the market. The standard advice is to pay $97 for Publisher Rocket or $39/month for Helium 10 and call it a day.
+If you've self-published on KDP, you know the drill. You need keywords for your book's backend metadata, for your Amazon Ads campaigns, and for figuring out where your book fits in the market. The standard advice is to pay $199 for Publisher Rocket or $39/month for Helium 10 and call it a day.
 
 But here's what most of those tools actually do: they query Amazon's autocomplete API, dress up the results in a nice UI, and charge you for the privilege. Some add estimated search volume. Some add competition scores. But the core data? It's all coming from the same place you can type into yourself for free.
 
@@ -82,7 +82,7 @@ If you want actual search volume data (instead of estimates), you can optionally
 
 It's a command-line tool. If you've never opened a terminal, there's a learning curve. I didn't build a web dashboard or a pretty GUI because I wanted to keep it simple and free to run — no servers, no subscriptions, no accounts.
 
-It also relies on scraping Amazon autocomplete, which means Amazon could change things at any time. That's true of every keyword tool, paid or free. The difference is you're not out $97 when it happens.
+It also relies on scraping Amazon autocomplete, which means Amazon could change things at any time. That's true of every keyword tool, paid or free. The difference is you're not out $199 when it happens.
 
 ## Try It
 

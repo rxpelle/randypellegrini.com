@@ -14,7 +14,7 @@ prevTitle: "How Good People Get Recruited"
 ctaText: 'In <em>The Genesis Protocol</em>, Sarah Chen signs an agreement that will outlive her. Then she builds a dead man''s switch — because the only thing more dangerous than her silence is the possibility that it might end.'
 ---
 
-In 1953, the British government classified documents related to Operation Mincemeat — a World War II deception operation that planted fake invasion plans on a corpse and floated it to the Spanish coast to mislead the Nazis about the Allied invasion of Sicily.
+In 1943, the British government classified documents related to Operation Mincemeat — a World War II deception operation that planted fake invasion plans on a corpse and floated it to the Spanish coast to mislead the Nazis about the Allied invasion of Sicily. A decade later, in 1953, Ewen Montagu was permitted to publish a partial account of the operation — but the underlying documents remained classified.
 
 The operation was declassified in stages. Some documents were released in the 1990s. Others in the 2010s. A few remain classified today — over eighty years after the war ended, over seventy years after the corpse washed ashore, after everyone involved in the operation has died.
 
@@ -36,7 +36,7 @@ The penalty doesn't track the sensitivity of the information. It tracks the orig
 
 **Classification by default.** In government programs, information is classified at the time of creation. Declassification requires an affirmative act — someone has to review the material, determine it's no longer sensitive, and authorize release. This means the default state of classified information is permanent classification.
 
-The National Archives estimates that it holds over three billion pages of classified documents. The declassification backlog grows every year. At current rates, full declassification of existing materials would take decades — by which time new materials will have been generated and classified.
+The National Archives estimates a backlog of approximately 400 million pages of classified documents awaiting review. The declassification backlog grows every year. At current rates, full declassification of existing materials would take decades — by which time new materials will have been generated and classified.
 
 The system doesn't need a conspiracy to maintain secrecy. It just needs a bureaucracy where classification is easy and declassification is work.
 

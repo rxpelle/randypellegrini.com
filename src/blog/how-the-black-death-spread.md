@@ -28,7 +28,7 @@ But here's what most people don't know: medieval people weren't as helpless or a
 
 The Black Death traveled along trade routes. This seems obvious to us now, but it was observed and documented in real time by medieval chroniclers.
 
-The Italian merchant Gabriele de' Mussis wrote an account of the plague's arrival in 1347, tracing it from the Mongol siege of Caffa (in Crimea) to Genoese ships, to Sicily, to mainland Italy. He understood that the disease moved with trade—with the ships, the merchants, the goods.
+The Italian notary Gabriele de' Mussis, writing from Piacenza, composed an account of the plague's arrival in 1347, tracing it from the Mongol siege of Caffa (in Crimea) to Genoese ships, to Sicily, to mainland Italy. Modern scholars believe he was not actually present at Caffa and wrote from secondhand reports, but his account captured what was widely understood: that the disease moved with trade—with the ships, the merchants, the goods.
 
 Other chroniclers mapped the plague's progression with startling accuracy:
 
@@ -36,8 +36,8 @@ Other chroniclers mapped the plague's progression with startling accuracy:
 - **Late 1347**: Sicily, then Genoa, Venice, and Marseille
 - **Early 1348**: Italy, southern France, eastern Spain
 - **Mid 1348**: Northern France, the Low Countries, southern England
-- **Late 1348**: England, Germany, Scandinavia
-- **1349-1350**: Eastern Europe, Russia
+- **Late 1348**: England, Germany
+- **1349-1350**: Scandinavia, Eastern Europe, Russia
 
 This progression follows the major trade routes of medieval Europe almost exactly. The plague moved fastest along sea routes (Genoa to Marseille in weeks) and slower along overland roads (France to Germany in months).
 
@@ -45,11 +45,11 @@ Medieval people noticed this. And some drew conclusions.
 
 ## Quarantine: A Medieval Invention
 
-The word "quarantine" comes from the Italian *quaranta giorni*—forty days. In 1377, the port city of Ragusa (modern Dubrovnik) required all arriving ships to anchor offshore for forty days before passengers could disembark.
+The word "quarantine" comes from the Italian *quaranta giorni*—forty days—but the practice actually began with a shorter period. In 1377, the port city of Ragusa (modern Dubrovnik) required all arriving ships to anchor offshore for thirty days (*trentina*) before passengers could disembark.
 
-This was not a random number. It was based on observation. City officials had noticed that plague symptoms typically appeared within days of arrival, and that a forty-day isolation period was sufficient to determine whether travelers were infected.
+This was not a random number. It was based on observation. City officials had noticed that plague symptoms typically appeared within days of arrival, and that a thirty-day isolation period was sufficient to determine whether travelers were infected. Venice later extended the waiting period to forty days in 1448, and it was this *quarantina* that gave us the word we use today.
 
-Venice followed with its own quarantine regulations. Milan sealed its borders. Some cities bricked up houses where plague was found—with the inhabitants still inside.
+Venice also implemented its own broader quarantine regulations. Milan sealed its borders. Some cities bricked up houses where plague was found—with the inhabitants still inside.
 
 These measures were brutal. They were also effective. Cities that implemented quarantine early suffered significantly lower mortality rates than those that didn't.
 
@@ -79,7 +79,7 @@ During the Black Death, certain communities survived at significantly higher rat
 
 Medieval Christians noticed the differential survival rate. Their explanation was not "better hygiene practices." Their explanation was conspiracy: the Jews were poisoning wells.
 
-The resulting violence was catastrophic. In February 1349, the city of Strasbourg burned 900 Jews alive. Similar massacres occurred across the Rhineland, in Basel, Cologne, and dozens of smaller towns. Pope Clement VI issued a papal bull in 1348 explicitly stating that Jews were not responsible for the plague. It was largely ignored.
+The resulting violence was catastrophic. In February 1349, the city of Strasbourg burned approximately 2,000 Jews alive. Similar massacres occurred across the Rhineland, in Basel, Cologne, and dozens of smaller towns. Pope Clement VI issued a papal bull in 1348 explicitly stating that Jews were not responsible for the plague. It was largely ignored.
 
 The logic was chilling in its simplicity: *they're surviving while we're dying, therefore they must be causing it.*
 
