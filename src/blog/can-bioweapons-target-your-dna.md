@@ -11,6 +11,8 @@ permalink: /blog/can-bioweapons-target-your-dna/
 excerpt: "In 2016, the U.S. Director of National Intelligence added gene editing to the list of weapons of mass destruction. Not hypothetically. Officially. Here's what the science actually says."
 prevPost: "/blog/i-built-a-free-cover-generator/"
 prevTitle: "I Built an AI Book Cover Generator (And Open-Sourced It)"
+nextPost: "/blog/the-city-that-vanished/"
+nextTitle: "The Ancient Megacity That Vanished"
 ctaTitle: "Read The Genesis Protocol"
 ctaText: 'In <em>The Genesis Protocol</em>, a pharmaceutical corporation engineers a pathogen designed to kill four billion people — and calls it a correction. The science in the novel is based on the real research described in this essay. The moral dilemma it creates is worse. <a href="https://www.amazon.com/dp/B0GPM973N1">Available now on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GPM973N1"
