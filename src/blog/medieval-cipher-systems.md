@@ -1,9 +1,9 @@
 ---
 date: 2025-02-01
-title: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscript Margins"
-description: "Discover how medieval monks used colored dots, physical templates, and manuscript marginalia to build sophisticated cipher systems centuries before modern cryptography."
-ogTitle: "Hidden in Plain Sight: How Medieval Monks Encrypted Secrets in Manuscript Margins"
-ogDescription: "Discover how medieval monks used colored dots, physical templates, and manuscript marginalia to build sophisticated cipher systems centuries before modern cryptography."
+title: "Medieval Cipher Systems: How Monks Hid Secrets in Manuscript Margins"
+description: "Medieval monks built sophisticated cipher systems using colored dots, physical templates, and manuscript marginalia — real encryption methods centuries before modern cryptography."
+ogTitle: "Medieval Cipher Systems: How Monks Hid Secrets in Manuscript Margins"
+ogDescription: "Medieval monks built sophisticated cipher systems using colored dots, physical templates, and manuscript marginalia — real encryption methods centuries before modern cryptography."
 number: 1
 bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/medieval-cipher-systems/
