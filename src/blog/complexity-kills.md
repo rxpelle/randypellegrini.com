@@ -6,7 +6,7 @@ description: "Supply chain theory, tight coupling, and the 2021 Suez Canal block
 ogTitle: "Complexity Kills: Why Modern Systems Fail Like Bronze Age Ones"
 ogDescription: "Supply chain theory, tight coupling, and why the most advanced systems are the most fragile. The Suez Canal blockage as a Bronze Age Collapse in miniature."
 number: 13
-bookTag: "The Series"
+bookTag: "Book 3: The First Key"
 permalink: /blog/complexity-kills/
 excerpt: "In March 2021, a single cargo ship got stuck sideways in a canal. Within days, $9.6 billion in trade was frozen, factories across three continents went idle, and the global economy discovered what the Bronze Age learned 3,200 years ago: complexity kills."
 prevPost: "/blog/ethics-of-genetic-selection/"

@@ -6,7 +6,7 @@ description: "From Plato's Republic to modern embryo screening, humanity has bee
 ogTitle: "Who Gets to Survive? The Ethics of Genetic Selection"
 ogDescription: "From Plato's Republic to modern embryo screening, the debate over genetic selection is older than you think — and closer than you'd like."
 number: 12
-bookTag: "The Series"
+bookTag: "Book 3: The First Key"
 permalink: /blog/ethics-of-genetic-selection/
 excerpt: "Plato proposed state-controlled breeding in 380 BCE. We called it philosophy. The Nazis implemented it in 1933. We called it evil. Silicon Valley is funding it right now. We're still deciding what to call it."
 prevPost: "/blog/every-pandemic-has-an-nda/"

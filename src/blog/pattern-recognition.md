@@ -6,7 +6,7 @@ description: "Systems thinking, cascade modeling, and why some people see connec
 ogTitle: "Pattern Recognition: The Skill Nobody Teaches You"
 ogDescription: "Systems thinking, cascade modeling, and why some people see connections others miss. The real analytical framework behind Nefertari's Seven Keys."
 number: 9
-bookTag: "The Series"
+bookTag: "Book 3: The First Key"
 permalink: /blog/pattern-recognition/
 excerpt: "Some people walk into a room and see furniture. Others see the power dynamics, the unspoken tensions, the thing everyone's avoiding. Pattern recognition isn't magic. It's a skill. And almost nobody teaches it."
 prevPost: "/blog/the-trolley-problem-at-civilizational-scale/"
