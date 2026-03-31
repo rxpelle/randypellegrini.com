@@ -14,6 +14,8 @@ prevTitle: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
 ctaText: '<em>The First Key</em> follows one bloodline across 842 years — from Bronze Age Egypt through the siege of Jerusalem and beyond. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Pre-order now — available April 15, 2026</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
 ctaButtonText: "Pre-order The First Key"
+nextPost: "/blog/i-built-a-free-review-mining-tool/"
+nextTitle: "I Built a Free Review Mining Tool for Authors"
 ---
 
 In 701 BCE, the Assyrian Empire — the most feared military force in the ancient world — marched 200,000 soldiers to the walls of Jerusalem. King Sennacherib had already crushed every city in his path. Lachish was destroyed. The coastal cities surrendered. Judah's king, Hezekiah, was trapped "like a bird in a cage" — Sennacherib's own words, carved into stone you can still see in the British Museum.

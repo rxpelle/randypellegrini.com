@@ -11,12 +11,12 @@ permalink: /blog/i-built-a-free-book-formatting-tool/
 excerpt: "I got tired of paying hundreds of dollars for book formatting software that turns a manuscript into a PDF. So I built my own. It's free, open-source, and it handles paperbacks, ebooks, large print, and hardcovers in one command."
 prevPost: "/blog/i-built-a-free-keyword-tool/"
 prevTitle: "I Built a Free Keyword Research Tool for Authors"
-ctaTitle: "Check Out Book Formatter"
-ctaText: 'Book Formatter is free, open-source, and built for indie authors who want professional formatting without the price tag. <a href="https://github.com/rxpelle/book-formatter">Grab it on GitHub</a>.'
-ctaButtonUrl: "https://github.com/rxpelle/book-formatter"
+ctaTitle: "The Books I Formatted With This Tool"
+ctaText: 'Book Formatter produced every edition of <em>The Aethelred Cipher</em> and <em>The Genesis Protocol</em> — paperback, ebook, and large print. If you want to see the output quality, grab a copy. <a href="https://github.com/rxpelle/book-formatter">Book Formatter is free on GitHub</a>.'
+ctaButtonUrl: "/books/"
 nextPost: "/blog/i-built-a-free-cover-generator/"
 nextTitle: "I Built an AI Book Cover Generator (And Open-Sourced It)"
-ctaButtonText: "Get Book Formatter"
+ctaButtonText: "See my books"
 ---
 
 If you've self-published a book, you've hit the formatting wall.
@@ -84,6 +84,23 @@ I formatted both [*The Aethelred Cipher*](/books/) and *The Genesis Protocol* wi
 
 MIT licensed. Use it, modify it, fork it. No strings.
 
+<div class="book-promo-banner">
+  <div class="book-promo-content">
+    <strong>Formatted with this tool</strong>
+    <span class="book-promo-sub">Every edition — paperback, ebook, and large print — was produced by Book Formatter.</span>
+  </div>
+  <div class="book-promo-links">
+    <a class="book-promo-link" href="/books/">
+      <span>Book 1: The Aethelred Cipher</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 on Amazon</span>
+    </a>
+    <a class="book-promo-link" href="/books/#genesis-protocol">
+      <span>Book 2: The Genesis Protocol</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9 on Amazon</span>
+    </a>
+  </div>
+</div>
+
 ## What You Need
 
 Python 3.9+, Pandoc, and a LaTeX distribution. On a Mac:
@@ -112,4 +129,6 @@ Full docs, installation guide, and source code on GitHub:
 
 **[github.com/rxpelle/book-formatter](https://github.com/rxpelle/book-formatter)**
 
-If you find it useful, the best way to say thanks is to check out [my books](/books/) and leave an honest review. That goes further than any payment.
+If you find it useful, check out the other free tools I've built for indie authors: [KDP Scout](/blog/i-built-a-free-keyword-tool/) (keyword research), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn reviews into ad copy).
+
+And if you're looking for something to read, check out [my books](/books/) and leave an honest review. That goes further than any payment.

@@ -11,10 +11,10 @@ permalink: /blog/i-built-a-free-keyword-tool/
 excerpt: "I got tired of paying for keyword tools that are basically just Amazon autocomplete with a price tag. So I built my own. It's free, open-source, and it does more than most paid alternatives."
 prevPost: "/blog/five-warnings-before-every-collapse/"
 prevTitle: "Five Warnings Before Every Collapse"
-ctaTitle: "Check Out KDP Scout"
-ctaText: 'KDP Scout is free, open-source, and built for indie authors who want real keyword data without paying for it. <a href="https://github.com/rxpelle/kdp-scout">Grab it on GitHub</a>.'
-ctaButtonUrl: "https://github.com/rxpelle/kdp-scout"
-ctaButtonText: "Get KDP Scout"
+ctaTitle: "The Books I Built This For"
+ctaText: 'KDP Scout helped me launch <em>The Aethelred Cipher</em> (4.8 stars, 68 reviews) and <em>The Genesis Protocol</em>. If you like tools built by an author who actually uses them, you might like the books too. <a href="https://github.com/rxpelle/kdp-scout">KDP Scout is free on GitHub</a>.'
+ctaButtonUrl: "/books/"
+ctaButtonText: "See my books"
 nextPost: "/blog/i-built-a-free-book-formatting-tool/"
 nextTitle: "I Built a Free Book Formatting Tool for Authors"
 ---
@@ -55,13 +55,13 @@ If it helps other authors do the same, that's a win. The tool is MIT licensed, w
     <span class="book-promo-sub">A medieval plague meets a modern conspiracy. Two timelines. One secret that could rewrite history.</span>
   </div>
   <div class="book-promo-links">
-    <a class="book-promo-link" href="/books.html">
+    <a class="book-promo-link" href="/books/">
       <span>Book 1: The Aethelred Cipher</span>
-      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 on Amazon</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.7 on Amazon</span>
     </a>
-    <a class="book-promo-link" href="/books.html#genesis-protocol">
+    <a class="book-promo-link" href="/books/#genesis-protocol">
       <span>Book 2: The Genesis Protocol</span>
-      <span class="book-promo-stars">New Release</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9 on Amazon</span>
     </a>
   </div>
 </div>
@@ -90,4 +90,6 @@ The full docs, installation guide, and source code are on GitHub:
 
 **[github.com/rxpelle/kdp-scout](https://github.com/rxpelle/kdp-scout)**
 
-If you find it useful and you're looking for something to read, check out [my books](/books.html). An honest review goes further than any payment.
+If you find it useful, check out the other free tools I've built for indie authors: [Book Formatter](/blog/i-built-a-free-book-formatting-tool/) (replaces Vellum), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers for $0.30), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn Amazon reviews into ad copy).
+
+And if you're looking for something to read, check out [my books](/books/). An honest review goes further than any payment.

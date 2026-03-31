@@ -11,12 +11,12 @@ permalink: /blog/i-built-a-free-cover-generator/
 excerpt: "Your book cover is the most important piece of marketing you'll ever create. It has about two seconds to work — the time it takes a reader scrolling Amazon to decide whether to click or keep moving. I built a tool that generates professional, genre-appropriate covers using AI for less than $0.30."
 prevPost: "/blog/i-built-a-free-book-formatting-tool/"
 prevTitle: "I Built a Free Book Formatting Tool for Authors"
-ctaTitle: "Check Out Cover Generator"
-ctaText: 'Cover Generator is free, open-source, and built for indie authors who want professional covers without the price tag. <a href="https://github.com/rxpelle/cover-generator">Grab it on GitHub</a>.'
-ctaButtonUrl: "https://github.com/rxpelle/cover-generator"
+ctaTitle: "See the Covers This Tool Generated"
+ctaText: 'Cover Generator designed the covers for <em>The Aethelred Cipher</em> and <em>The Genesis Protocol</em>. Check them out — and if the cover caught your eye, the story will too. <a href="https://github.com/rxpelle/cover-generator">Cover Generator is free on GitHub</a>.'
+ctaButtonUrl: "/books/"
 nextPost: "/blog/can-bioweapons-target-your-dna/"
 nextTitle: "Can a Bioweapon Target Your DNA?"
-ctaButtonText: "Get Cover Generator"
+ctaButtonText: "See my books"
 ---
 
 Your book cover is the most important piece of marketing you'll ever create.
@@ -83,11 +83,11 @@ Will I use one of these as my final cover? Maybe — or maybe I'll use them as c
     <span class="book-promo-sub">A medieval plague meets a modern conspiracy. Two timelines. One secret that could rewrite history.</span>
   </div>
   <div class="book-promo-links">
-    <a class="book-promo-link" href="/books.html">
+    <a class="book-promo-link" href="/books/">
       <span>Book 1: The Aethelred Cipher</span>
       <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 on Amazon</span>
     </a>
-    <a class="book-promo-link" href="/books.html#genesis-protocol">
+    <a class="book-promo-link" href="/books/#genesis-protocol">
       <span>Book 2: The Genesis Protocol</span>
       <span class="book-promo-stars">New Release</span>
     </a>
@@ -151,4 +151,4 @@ Full docs, source code, and installation on GitHub:
 
 **[github.com/rxpelle/cover-generator](https://github.com/rxpelle/cover-generator)**
 
-MIT licensed. Free forever. If you find it useful and you're looking for something to read, check out [my books](/books.html). An honest review goes further than any payment.
+MIT licensed. Free forever. If you find it useful and you're looking for something to read, check out [my books](/books/). An honest review goes further than any payment.
