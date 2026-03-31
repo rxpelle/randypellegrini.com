@@ -339,3 +339,27 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+// Newsletter banner dismiss
+(function() {
+  var banner = document.getElementById('site-banner');
+  var closeBtn = document.getElementById('banner-close');
+  if (!banner || !closeBtn) return;
+  if (localStorage.getItem('banner_dismissed')) {
+    banner.classList.add('hidden');
+  }
+  closeBtn.addEventListener('click', function() {
+    banner.classList.add('hidden');
+    localStorage.setItem('banner_dismissed', '1');
+  });
+  // Also hide after successful signup
+  var form = banner.querySelector('form');
+  if (form) {
+    form.addEventListener('submit', function() {
+      setTimeout(function() {
+        banner.classList.add('hidden');
+        localStorage.setItem('banner_dismissed', '1');
+      }, 3000);
+    });
+  }
+})();

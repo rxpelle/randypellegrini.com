@@ -44,6 +44,17 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="page">
       {% include "header.njk" %}
+      <div class="site-banner" id="site-banner">
+        <div class="site-banner-inner">
+          <span class="site-banner-text">Get a <strong>free story</strong> + series updates</span>
+          <form class="site-banner-form" data-newsletter="true">
+            <label class="sr-only" for="banner-email">Email address</label>
+            <input id="banner-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+            <button type="submit"><span>Subscribe</span></button>
+          </form>
+          <button class="site-banner-close" id="banner-close" aria-label="Close banner">&times;</button>
+        </div>
+      </div>
       <main id="{{ mainId | default('main-content') }}">
         {% block content %}{{ content | safe }}{% endblock %}
       </main>
