@@ -13,6 +13,8 @@ prevPost: "/blog/i-built-a-free-review-mining-tool/"
 prevTitle: "I Built a Free Review Mining Tool for Authors"
 ctaTitle: "The Book I'm Launching With This Tool"
 ctaText: '<em>The First Key</em> (Book 3 in The Architecture of Survival) launches April 15, 2026. This is the first book where every launch task is being tracked by Launch Orchestrator. <a href="https://github.com/rxpelle/launch-orchestrator">Grab it on GitHub</a>.'
+nextPost: "/blog/books-like-the-name-of-the-rose/"
+nextTitle: "10 Books Like The Name of the Rose"
 ctaButtonUrl: "/books/"
 ctaButtonText: "See my books"
 ---
