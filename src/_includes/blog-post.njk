@@ -40,6 +40,18 @@ layout: base.njk
     {{ content | safe }}
   </div>
 
+  <div class="article-email-cta reveal delay-2">
+    <h3>Get the free prequel story</h3>
+    <p>The novel only hints at what happened to Brother Edmund. <em>The Edmund Fragments</em> tells the full story &mdash; 5,000 words set 72 years before <em>The Aethelred Cipher</em>. Free, instant delivery.</p>
+    <form class="signup" data-newsletter="true">
+      <label class="sr-only" for="blog-email">Email address</label>
+      <input id="blog-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+      <button class="button" type="submit"><span>Send me the story</span></button>
+    </form>
+    <div id="form-messages" style="display: none;"></div>
+    <p class="form-note">Plus series updates. No spam. Unsubscribe anytime.</p>
+  </div>
+
   <div class="article-cta reveal delay-2">
     {%- if bookTag == "Book 2: The Genesis Protocol" %}
     <h3>{{ ctaTitle | default("Read The Genesis Protocol") }}</h3>
