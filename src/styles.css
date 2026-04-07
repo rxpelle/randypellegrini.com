@@ -1302,6 +1302,46 @@ textarea:focus-visible {
   margin-top: 12px;
 }
 
+.mid-article-signup {
+  background: #f4ece2;
+  border-left: 4px solid #c87941;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 28px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.mid-article-signup strong {
+  color: #3a2413;
+}
+
+.mid-article-signup .signup {
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.mid-article-signup .signup input {
+  flex: 1 1 180px;
+  padding: 10px 12px;
+  border: 1px solid #d4c4b0;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.mid-article-signup .signup button {
+  background: #c87941;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.mid-article-signup .signup button:hover {
+  background: #b5682f;
+}
+
 .tools-signup {
   background: #1a3a4a;
 }

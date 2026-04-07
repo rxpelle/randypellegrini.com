@@ -61,6 +61,16 @@ This is the first book in a planned 12-book series called *The Architecture of S
 
 The Anglo-Saxon period is underexplored in this genre, and the coded manuscript traditions of medieval monasteries are real. I wanted a conspiracy thriller where you could check the history.
 
+<div class="mid-article-signup">
+  <strong>Want a taste before you commit?</strong> <em>The Edmund Fragments</em> is a free 5,000-word prequel — the story the novel only hints at. Enter your email and it's yours instantly.
+  <form class="signup" data-newsletter="true">
+    <label class="sr-only" for="mid-email">Email address</label>
+    <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+    <button class="button" type="submit"><span>Send it</span></button>
+  </form>
+  <div id="form-messages" style="display: none;"></div>
+</div>
+
 ## 6. The Historian by Elizabeth Kostova (2005)
 
 Three generations of scholars trace Vlad the Impaler's legacy across Eastern Europe through mysterious books and letters, discovering the boundary between history and legend is more permeable than they thought. The trail leads through Amsterdam, Istanbul, Budapest, Romanian monasteries, and Cold War border crossings.

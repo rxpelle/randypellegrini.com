@@ -63,6 +63,16 @@ The manuscript isn't a plot device. The series actually excavates what the coded
 
 First in a planned 12-book series spanning ancient Egypt to the present day.
 
+<div class="mid-article-signup">
+  <strong>Want a taste before you commit?</strong> <em>The Edmund Fragments</em> is a free 5,000-word prequel — the story the novel only hints at. Enter your email and it's yours instantly.
+  <form class="signup" data-newsletter="true">
+    <label class="sr-only" for="mid-email">Email address</label>
+    <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+    <button class="button" type="submit"><span>Send it</span></button>
+  </form>
+  <div id="form-messages" style="display: none;"></div>
+</div>
+
 ## 6. The Dante Club by Matthew Pearl (2003)
 
 Boston, 1865. A serial killer is staging murders based on punishments from Dante's *Inferno*. The only people who recognize the pattern are the poets translating Dante into English for the first time — Henry Wadsworth Longfellow, Oliver Wendell Holmes, James Russell Lowell — who must solve the crimes before their literary project is destroyed by scandal.
