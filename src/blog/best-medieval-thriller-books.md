@@ -10,6 +10,8 @@ permalink: /blog/best-medieval-thriller-books/
 excerpt: "The medieval period was violent, paranoid, and full of secrets. These 10 thrillers capture all of it — from monastic murders to political conspiracies to the Black Death."
 prevPost: "/blog/best-historical-conspiracy-novels/"
 prevTitle: "10 Best Historical Conspiracy Novels"
+nextPost: "/blog/books-like-the-book-of-longings/"
+nextTitle: "Books Like The Book of Longings"
 ctaText: '<em>The Aethelred Cipher</em> is set in the most underexplored era of medieval fiction — Anglo-Saxon England before the Norman Conquest. Coded manuscripts, monastic secrets, and a conspiracy spanning 3,200 years. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Grab it on Amazon</a>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
