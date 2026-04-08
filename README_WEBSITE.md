@@ -67,7 +67,7 @@ author_site/
 1. The Aethelred Cipher (1347 CE) - ✅ Complete
 2. The Genesis Protocol (2025 CE) - 🔄 In Progress
 3. The First Key (1177 BCE) - 📋 Outlined
-4. The Nazarene Protocol (26-70 CE) - ✅ Complete
+4. Love Remembers in Silence (26-70 CE) - ✅ Complete
 5. The Augustine Protocol (312-430 CE) - ✅ Complete
 6. The Carolingian Cipher (476-800 CE) - 📋 Outlined
 7. Crusader Bloodlines (1095-1142 CE) - ✅ Complete

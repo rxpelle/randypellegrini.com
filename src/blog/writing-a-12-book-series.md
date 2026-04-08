@@ -50,7 +50,7 @@ The series is designed like a cathedral. Each book is a pillar—self-supporting
 The organizing principle is systems thinking. Each book introduces one new concept from systems dynamics:
 
 - **Book 3** (Bronze Age, 1177 BCE): Feedback loops and interconnection
-- **Book 4** (Roman Judea, 26-70 CE): Distributed vs. centralized systems
+- **Book 4: Love Remembers in Silence** (Roman Judea, 26-70 CE): Distributed vs. centralized systems
 - **Book 5** (Late Rome, 312-430 CE): Institutional co-option
 - **Book 6** (Early Medieval, 476-800 CE): Network topology
 - **Book 1** (Black Death, 1347 CE): The meta-pattern — seeing the system itself
