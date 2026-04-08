@@ -500,6 +500,85 @@ a {
   font-size: 0.9rem;
 }
 
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form-field label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(27, 29, 31, 0.15);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.contact-form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+  outline: none;
+  border-color: var(--accent, #c0703a);
+  box-shadow: 0 0 0 3px rgba(192, 112, 58, 0.15);
+}
+
+.contact-submit {
+  background: var(--accent, #c0703a);
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  justify-self: start;
+}
+
+.contact-submit:hover {
+  opacity: 0.9;
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-form-status {
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
 .site-footer {
   border-top: 1px solid rgba(27, 29, 31, 0.1);
   margin-top: 40px;

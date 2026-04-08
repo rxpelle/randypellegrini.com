@@ -119,6 +119,59 @@
     }
   });
 
+  // Contact form handler
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = contactForm.querySelector('.contact-submit');
+      var btnText = contactForm.querySelector('.contact-btn-text');
+      var statusDiv = contactForm.querySelector('.contact-form-status');
+      var name = document.getElementById('contact-name').value;
+      var email = document.getElementById('contact-email').value;
+      var message = document.getElementById('contact-message').value;
+
+      if (!name || !email || !message) return;
+
+      btn.disabled = true;
+      btnText.textContent = 'Sending...';
+
+      fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ action: 'contact_message', name: name, email: email, message: message })
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.status === 'ok') {
+          btnText.textContent = 'Sent!';
+          statusDiv.style.display = 'block';
+          statusDiv.textContent = 'Thanks! I\'ll get back to you soon.';
+          statusDiv.style.color = '#2e7d32';
+          contactForm.reset();
+          gtag('event', 'contact_form_submit', { page_location: window.location.href });
+          setTimeout(function() {
+            btn.disabled = false;
+            btnText.textContent = 'Send Message';
+          }, 4000);
+        } else {
+          btnText.textContent = 'Try again';
+          statusDiv.style.display = 'block';
+          statusDiv.textContent = 'Something went wrong. Try again or reach out on social media.';
+          statusDiv.style.color = '#c62828';
+          btn.disabled = false;
+        }
+      })
+      .catch(function() {
+        btnText.textContent = 'Try again';
+        statusDiv.style.display = 'block';
+        statusDiv.textContent = 'Network error. Try again or reach out on social media.';
+        statusDiv.style.color = '#c62828';
+        btn.disabled = false;
+      });
+    });
+  }
+
   // Blog scroll depth tracking (only on blog pages)
   if (window.location.pathname.indexOf('/blog/') === 0 && window.location.pathname !== '/blog/') {
     var scrollMarks = { 25: false, 50: false, 75: false, 100: false };
