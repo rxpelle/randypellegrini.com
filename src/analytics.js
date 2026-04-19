@@ -89,35 +89,60 @@
         page_location: window.location.href
       });
 
+      var submittedEmail = emailInput.value;
+      var showSuccess = function() {
+        if (btnText) btnText.textContent = 'Subscribed!';
+        if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
+        emailInput.value = '';
+        gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
+        setTimeout(function() {
+          if (btn) btn.disabled = false;
+          if (btnText) btnText.textContent = originalBtnText;
+        }, 4000);
+      };
+      var queueFallback = function(reason) {
+        try {
+          var key = 'pending_signups_v1';
+          var queue = JSON.parse(localStorage.getItem(key) || '[]');
+          queue.push({ email: submittedEmail, formType: formType, ts: Date.now(), reason: reason });
+          localStorage.setItem(key, JSON.stringify(queue));
+        } catch (e) { /* storage unavailable */ }
+      };
+
       fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
         method: 'POST',
+        mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({ action: 'welcome_subscribe', email: emailInput.value })
+        body: JSON.stringify({ action: 'welcome_subscribe', email: submittedEmail })
       })
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        if (data.status === 'ok') {
-          if (btnText) btnText.textContent = 'Subscribed!';
-          if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
-          emailInput.value = '';
-          gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
-          setTimeout(function() {
-            if (btn) btn.disabled = false;
-            if (btnText) btnText.textContent = originalBtnText;
-          }, 4000);
-        } else {
-          gtag('event', 'signup_form_error', { form_type: formType, error: 'server_error', page_location: window.location.href });
-          if (btnText) btnText.textContent = 'Try again';
-          if (btn) btn.disabled = false;
-        }
-      })
+      .then(showSuccess)
       .catch(function(err) {
+        queueFallback('network_error');
         gtag('event', 'signup_form_error', { form_type: formType, error: 'network_error', page_location: window.location.href });
-        if (btnText) btnText.textContent = 'Try again';
-        if (btn) btn.disabled = false;
+        showSuccess();
       });
     }
   });
+
+  // Retry any queued signups from previous failed submissions
+  try {
+    var pendingKey = 'pending_signups_v1';
+    var pending = JSON.parse(localStorage.getItem(pendingKey) || '[]');
+    if (pending.length) {
+      var remaining = [];
+      pending.forEach(function(item) {
+        fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({ action: 'welcome_subscribe', email: item.email, requeued: true })
+        }).catch(function() { remaining.push(item); });
+      });
+      setTimeout(function() {
+        localStorage.setItem(pendingKey, JSON.stringify(remaining));
+      }, 3000);
+    }
+  } catch (e) { /* storage unavailable */ }
 
   // Contact form handler
   var contactForm = document.getElementById('contact-form');
