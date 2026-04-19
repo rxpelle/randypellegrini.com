@@ -109,7 +109,7 @@
         } catch (e) { /* storage unavailable */ }
       };
 
-      fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbyFCwozI7oerHXJdLXWLZacJ1A2SFNXMoEXhoB-IC0FOp0kvJIniEeLjZmat3JTv-H2AA/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
@@ -131,7 +131,7 @@
     if (pending.length) {
       var remaining = [];
       pending.forEach(function(item) {
-        fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbyFCwozI7oerHXJdLXWLZacJ1A2SFNXMoEXhoB-IC0FOp0kvJIniEeLjZmat3JTv-H2AA/exec', {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'text/plain' },
@@ -161,7 +161,7 @@
       btn.disabled = true;
       btnText.textContent = 'Sending...';
 
-      fetch('https://script.google.com/macros/s/AKfycbwlmi9FeZlAeICXIImBGDU4-zKo1iwdMmVmzzaP68tD-uoTAP0ZmPK38zL-qOkY3VRX1A/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbyFCwozI7oerHXJdLXWLZacJ1A2SFNXMoEXhoB-IC0FOp0kvJIniEeLjZmat3JTv-H2AA/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
