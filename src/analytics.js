@@ -20,18 +20,22 @@
     if (!link || !link.href) return;
     var href = link.href;
 
-    // Amazon click — identify book by ASIN
-    if (href.indexOf('amazon.com') !== -1) {
+    // Amazon click — identify book by ASIN, capture regional storefront
+    var amazonMatch = href.match(/amazon\.([a-z.]{2,})/);
+    if (amazonMatch) {
       var bookName = 'unknown';
       if (href.indexOf('B0GJTGCHS2') !== -1 || href.indexOf('B0GMRN61MG') !== -1) {
         bookName = 'The Aethelred Cipher';
       } else if (href.indexOf('B0GPM973N1') !== -1) {
         bookName = 'The Genesis Protocol';
+      } else if (href.indexOf('B0GSWLM1WV') !== -1 || href.indexOf('B0GWD1BVM6') !== -1) {
+        bookName = 'The First Key';
       }
       gtag('event', 'amazon_click', {
         book_name: bookName,
         link_url: href,
         link_text: (link.textContent || '').trim().substring(0, 100),
+        amazon_tld: amazonMatch[1],
         page_location: window.location.href
       });
       return;

@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/scripts.js");
   eleventyConfig.addPassthroughCopy("src/analytics.js");
+  eleventyConfig.addPassthroughCopy("src/amazon-localize.js");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/CNAME");
