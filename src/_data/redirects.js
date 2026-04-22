@@ -52,5 +52,10 @@ module.exports = function () {
     });
   });
 
+  redirects.push({
+    from: "/blog/i-built-a-free-keyword-tool.htmlThe",
+    to: "/blog/i-built-a-free-keyword-tool/",
+  });
+
   return redirects;
 };
