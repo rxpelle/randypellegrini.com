@@ -340,26 +340,17 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Newsletter banner dismiss
+// Site banner dismiss (Book 4 pre-order)
 (function() {
   var banner = document.getElementById('site-banner');
   var closeBtn = document.getElementById('banner-close');
   if (!banner || !closeBtn) return;
-  if (localStorage.getItem('banner_dismissed')) {
+  var KEY = 'book4_banner_dismissed';
+  if (localStorage.getItem(KEY)) {
     banner.classList.add('hidden');
   }
   closeBtn.addEventListener('click', function() {
     banner.classList.add('hidden');
-    localStorage.setItem('banner_dismissed', '1');
+    localStorage.setItem(KEY, '1');
   });
-  // Also hide after successful signup
-  var form = banner.querySelector('form');
-  if (form) {
-    form.addEventListener('submit', function() {
-      setTimeout(function() {
-        banner.classList.add('hidden');
-        localStorage.setItem('banner_dismissed', '1');
-      }, 3000);
-    });
-  }
 })();

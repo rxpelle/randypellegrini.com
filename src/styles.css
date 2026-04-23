@@ -2516,6 +2516,24 @@ textarea:focus-visible {
 .site-banner-close:hover {
   color: #fff;
 }
+.site-banner-preorder {
+  background: linear-gradient(135deg, #3a2413 0%, #5a3a20 100%);
+}
+.site-banner-cta {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #fbe3c8;
+  color: #3a2413;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.site-banner-cta:hover {
+  background: #fff;
+}
 @media (max-width: 600px) {
   .site-banner-inner {
     flex-direction: column;
