@@ -13,9 +13,9 @@ prevPost: "/blog/can-bioweapons-target-your-dna/"
 prevTitle: "Can a Bioweapon Target Your DNA?"
 nextPost: "/blog/the-oracle-was-getting-high/"
 nextTitle: "The Oracle at Delphi Was Getting High on Geological Fumes"
-ctaText: '<em>The First Key</em> opens in Pi-Ramesses during the Bronze Age Collapse, as physician Nefertari watches the ancient world fall apart and makes a decision that echoes across 3,200 years. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Pre-order now — available April 15, 2026</a>.'
+ctaText: '<em>The First Key</em> opens in Pi-Ramesses during the Bronze Age Collapse, as physician Nefertari watches the ancient world fall apart and makes a decision that echoes across 3,200 years. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Read on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
-ctaButtonText: "Pre-order The First Key"
+ctaButtonText: "Read The First Key"
 ---
 
 Pi-Ramesses was one of the largest cities in the ancient world. Over 300,000 people. Temples covered in turquoise faience tiles. Canals lined with lotus and papyrus, thick with fish. Palace corridors decorated with paintings of Ramesses II's victories at Kadesh.

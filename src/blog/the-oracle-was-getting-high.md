@@ -13,9 +13,9 @@ prevPost: "/blog/the-city-that-vanished/"
 prevTitle: "The Ancient Megacity That Vanished"
 nextPost: "/blog/the-spartan-who-survived/"
 nextTitle: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
-ctaText: '<em>The First Key</em> follows the women who built the defensive network across 842 years — from Bronze Age Egypt through the oracle networks of ancient Greece. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Pre-order now — available April 15, 2026</a>.'
+ctaText: '<em>The First Key</em> follows the women who built the defensive network across 842 years — from Bronze Age Egypt through the oracle networks of ancient Greece. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Read on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
-ctaButtonText: "Pre-order The First Key"
+ctaButtonText: "Read The First Key"
 ---
 
 For over a thousand years, the most powerful people in the ancient world traveled to Delphi to ask a woman sitting on a tripod what the future held. Kings, generals, entire city-states made decisions based on her pronouncements.

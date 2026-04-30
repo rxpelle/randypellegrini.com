@@ -24,6 +24,19 @@ headerCtaHref: "#book1"
     max-width: 680px;
     margin: 0 auto 24px;
   }
+  .books-hero-cta {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8px 0 16px;
+  }
+  .books-hero-note {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin: 0;
+    opacity: 0.85;
+  }
   .book-detail {
     background: var(--panel);
     border-radius: 24px;
@@ -296,8 +309,13 @@ headerCtaHref: "#book1"
   <h1>All 12 Books</h1>
   <p class="lead">
     3,200 years of human history. 138 generations. Two competing networks locked in an
-    existential battle over humanity's survival. Explore the complete timeline.
+    existential battle over humanity's survival. <strong>Books 1&ndash;4 are available now.</strong>
   </p>
+  <div class="books-hero-cta">
+    <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book1" data-source="books_hero">Start with Book 1 on Amazon &rarr;</a>
+    <a class="button outline" href="/free-story/">Or read the free prequel novella</a>
+  </div>
+  <p class="books-hero-note">All four books are free on Kindle Unlimited. Each book stands alone.</p>
 </section>
 
 <!-- Book 1 -->
@@ -614,7 +632,7 @@ headerCtaHref: "#book1"
     <div class="book-detail-info">
       <h2>Book 4: Love Remembers in Silence</h2>
       <p class="book-period">Roman Judea, 26-42 CE</p>
-      <div class="book-status coming-soon">📖 Pre-order now | Releases April 26, 2026 | ~82,000 words</div>
+      <div class="book-status">📖 Available now | Released April 26, 2026 | ~82,000 words</div>
 
       <div class="book-meta">
         <div class="book-meta-item">
@@ -630,7 +648,7 @@ headerCtaHref: "#book1"
           <span class="book-meta-value">~82,000</span>
         </div>
         <div class="book-meta-item">
-          <span class="book-meta-label">Release Date</span>
+          <span class="book-meta-label">Released</span>
           <span class="book-meta-value">April 26, 2026</span>
         </div>
       </div>
@@ -651,7 +669,7 @@ headerCtaHref: "#book1"
       </div>
 
       <div class="button-row">
-        <a class="button" href="{{ site.amazonBook4Url }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book4">Pre-order on Amazon &rarr;</a>
+        <a class="button" href="{{ site.amazonBook4Url }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book4">Read on Amazon &rarr;</a>
         <a class="button outline" href="/love-remembers-in-silence/">Read the Opening Pages</a>
       </div>
 

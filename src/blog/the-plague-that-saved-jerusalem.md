@@ -11,9 +11,9 @@ permalink: /blog/the-plague-that-saved-jerusalem/
 excerpt: "200,000 Assyrian soldiers died in their tents outside Jerusalem. The Bible says divine intervention. The evidence says contaminated water."
 prevPost: "/blog/the-spartan-who-survived/"
 prevTitle: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
-ctaText: '<em>The First Key</em> follows one bloodline across 842 years — from Bronze Age Egypt through the siege of Jerusalem and beyond. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Pre-order now — available April 15, 2026</a>.'
+ctaText: '<em>The First Key</em> follows one bloodline across 842 years — from Bronze Age Egypt through the siege of Jerusalem and beyond. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Read on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
-ctaButtonText: "Pre-order The First Key"
+ctaButtonText: "Read The First Key"
 nextPost: "/blog/i-built-a-free-review-mining-tool/"
 nextTitle: "I Built a Free Review Mining Tool for Authors"
 ---

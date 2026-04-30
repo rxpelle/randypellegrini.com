@@ -12,9 +12,9 @@ excerpt: "I got tired of paying for keyword tools that are basically just Amazon
 prevPost: "/blog/five-warnings-before-every-collapse/"
 prevTitle: "Five Warnings Before Every Collapse"
 ctaTitle: "The Books I Built This For"
-ctaText: 'KDP Scout helped me launch <em>The Aethelred Cipher</em> (4.8 stars, 68 reviews) and <em>The Genesis Protocol</em>. If you like tools built by an author who actually uses them, you might like the books too. <a href="https://github.com/rxpelle/kdp-scout">KDP Scout is free on GitHub</a>.'
-ctaButtonUrl: "/books/"
-ctaButtonText: "See my books"
+ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, four books out, twelve planned. If you like indie tools built by authors who actually use them, you might like the books too. Get the free prequel novella, <em>The Edmund Fragments</em>, instantly when you join the list.'
+ctaButtonUrl: "/free-story/"
+ctaButtonText: "Get the free prequel"
 nextPost: "/blog/i-built-a-free-book-formatting-tool/"
 nextTitle: "I Built a Free Book Formatting Tool for Authors"
 ---
@@ -52,16 +52,16 @@ If it helps other authors do the same, that's a win. The tool is MIT licensed, w
 <div class="book-promo-banner">
   <div class="book-promo-content">
     <strong>The books I built this tool for</strong>
-    <span class="book-promo-sub">A medieval plague meets a modern conspiracy. Two timelines. One secret that could rewrite history.</span>
+    <span class="book-promo-sub">The Architecture of Survival — a 12-book historical thriller series spanning 3,200 years. Four books available now.</span>
   </div>
   <div class="book-promo-links">
     <a class="book-promo-link" href="/books/">
-      <span>Book 1: The Aethelred Cipher</span>
-      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.7 on Amazon</span>
+      <span>Start with Book 1: The Aethelred Cipher</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 on Amazon &middot; Free on Kindle Unlimited</span>
     </a>
-    <a class="book-promo-link" href="/books/#genesis-protocol">
-      <span>Book 2: The Genesis Protocol</span>
-      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9 on Amazon</span>
+    <a class="book-promo-link" href="/free-story/">
+      <span>Or start with the free prequel novella</span>
+      <span class="book-promo-stars">The Edmund Fragments &middot; PDF &amp; EPUB, no purchase required</span>
     </a>
   </div>
 </div>
@@ -92,4 +92,4 @@ The full docs, installation guide, and source code are on GitHub:
 
 If you find it useful, check out the other free tools I've built for indie authors: [Book Formatter](/blog/i-built-a-free-book-formatting-tool/) (replaces Vellum), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers for $0.30), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn Amazon reviews into ad copy).
 
-And if you're looking for something to read, check out [my books](/books/). An honest review goes further than any payment.
+And if you're looking for something to read, [start with the free prequel novella](/free-story/) — *The Edmund Fragments* is a self-contained story set during the 1347 plague, the lead-in to my 12-book series *The Architecture of Survival*. PDF and EPUB, no purchase required.
