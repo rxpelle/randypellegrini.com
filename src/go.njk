@@ -1,0 +1,65 @@
+---
+pagination:
+  data: books
+  size: 1
+  alias: book
+permalink: "/go/{{ book.slug }}/index.html"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Redirecting to {{ book.title }}…</title>
+
+<!-- Fallback redirect for users with JS disabled (3-second delay so the link is clickable). -->
+<meta http-equiv="refresh" content="3;url={{ book.amazonUrl }}" />
+
+<!-- GA4: fire amazon_click event with book + source attribution BEFORE the redirect. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.gaId }}', { send_page_view: false });
+
+  // Parse UTM params and the original referrer so the GA event captures the surface.
+  var params = new URLSearchParams(window.location.search);
+  var amazonUrl = {{ book.amazonUrl | dump | safe }};
+  var dest = amazonUrl;
+  // Forward any UTMs to Amazon (Amazon ignores them but it preserves them in browser back-button history).
+  if (params.toString()) {
+    dest += (amazonUrl.indexOf('?') === -1 ? '?' : '&') + params.toString();
+  }
+
+  gtag('event', 'amazon_click', {
+    book_slug: '{{ book.slug }}',
+    book_title: {{ book.title | dump | safe }},
+    series_position: {{ book.seriesPosition }},
+    utm_source: params.get('utm_source') || '(direct)',
+    utm_medium: params.get('utm_medium') || '(none)',
+    utm_campaign: params.get('utm_campaign') || '(none)',
+    referrer: document.referrer || '(direct)',
+    event_callback: function () {
+      window.location.replace(dest);
+    },
+    event_timeout: 800
+  });
+
+  // Backup: redirect after 800ms even if the GA callback never fires.
+  setTimeout(function () { window.location.replace(dest); }, 800);
+</script>
+
+<style>
+body { font-family: system-ui, -apple-system, sans-serif; max-width: 480px; margin: 80px auto; padding: 0 20px; color: #222; }
+h1 { font-size: 1.2rem; margin: 0 0 8px; }
+a { color: #0a5; }
+.muted { color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Redirecting to {{ book.title }} on Amazon…</h1>
+<p class="muted">If you aren't redirected automatically in a few seconds, <a href="{{ book.amazonUrl }}">click here</a>.</p>
+</body>
+</html>
