@@ -2600,16 +2600,20 @@ textarea:focus-visible {
   gap: 40px;
   align-items: center;
 }
-.timeline-page .timeline-event:nth-child(even) .event-content {
-  order: 2;
-}
-.timeline-page .timeline-event:nth-child(even) .event-marker {
-  order: 1;
-  text-align: left;
-}
 .timeline-page .event-marker {
+  grid-column: 1;
   text-align: right;
   position: relative;
+}
+.timeline-page .event-content {
+  grid-column: 2;
+}
+.timeline-page .timeline-event:nth-child(odd) .event-marker {
+  grid-column: 2;
+  text-align: left;
+}
+.timeline-page .timeline-event:nth-child(odd) .event-content {
+  grid-column: 1;
 }
 .timeline-page .event-year {
   display: inline-block;
@@ -2631,11 +2635,13 @@ textarea:focus-visible {
   height: 4px;
   background: var(--teal);
 }
-.timeline-page .timeline-event:nth-child(odd) .event-year::after {
-  right: -30px;
-}
 .timeline-page .timeline-event:nth-child(even) .event-year::after {
+  right: -30px;
+  left: auto;
+}
+.timeline-page .timeline-event:nth-child(odd) .event-year::after {
   left: -30px;
+  right: auto;
 }
 .timeline-page .event-content {
   background: var(--panel);
@@ -2804,9 +2810,11 @@ textarea:focus-visible {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .timeline-page .timeline-event:nth-child(even) .event-content,
-  .timeline-page .timeline-event:nth-child(even) .event-marker {
-    order: initial;
+  .timeline-page .timeline-event .event-marker,
+  .timeline-page .timeline-event:nth-child(odd) .event-marker,
+  .timeline-page .timeline-event .event-content,
+  .timeline-page .timeline-event:nth-child(odd) .event-content {
+    grid-column: 1;
   }
   .timeline-page .event-marker {
     text-align: center;
