@@ -95,13 +95,25 @@ layout: base.njk
       {{ "" if _related.push(post) }}
     {%- endif -%}
   {%- endfor -%}
+  {%- for post in collections.blog | reverse -%}
+    {%- if post.data.bookTag != bookTag and post.url != page.url and _related.length < 3 -%}
+      {%- set _alreadyIn = false -%}
+      {%- for r in _related -%}
+        {%- if r.url == post.url -%}{%- set _alreadyIn = true -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if not _alreadyIn -%}
+        {{ "" if _related.push(post) }}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
   {%- if _related.length > 0 %}
   <div class="related-essays reveal delay-2">
-    <h3>More from {{ bookTag }}</h3>
+    <h3>Keep reading</h3>
     <div class="related-grid">
       {%- for post in _related %}
       <a href="{{ post.url }}" class="related-card">
         <span class="related-number">{{ post.data.number | padStart(2) }}</span>
+        {% if post.data.bookTag %}<span class="related-book-tag">{{ post.data.bookTag }}</span>{% endif %}
         <strong>{{ post.data.title }}</strong>
         <span class="related-excerpt">{{ post.data.excerpt | truncate(80) }}</span>
       </a>
