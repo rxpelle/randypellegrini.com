@@ -49,19 +49,17 @@ I built KDP Scout for my own books — *The Aethelred Cipher* and *The Genesis P
 
 If it helps other authors do the same, that's a win. The tool is MIT licensed, which means you can use it, modify it, share it, whatever. No strings.
 
+If you got something useful from this — or you're going to fork the repo and not look back — the easiest way to say thanks is to grab the novella that paid for the tool's development. It's free, no upsell, no email-trap. Plague-era historical thriller, ninety pages, the lead-in to a ten-book series.
+
 <div class="book-promo-banner">
   <div class="book-promo-content">
-    <strong>The books I built this tool for</strong>
-    <span class="book-promo-sub">The Architecture of Survival — a 12-book historical thriller series spanning 3,200 years. Four books available now.</span>
+    <strong>The free novella that paid for this tool</strong>
+    <span class="book-promo-sub">The Edmund Fragments — a self-contained ninety-page thriller set during the 1347 plague. The lead-in to <em>The Architecture of Survival</em>, a 10-book historical thriller series.</span>
   </div>
   <div class="book-promo-links">
-    <a class="book-promo-link" href="/books/">
-      <span>Start with Book 1: The Aethelred Cipher</span>
-      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8 on Amazon &middot; Free on Kindle Unlimited</span>
-    </a>
     <a class="book-promo-link" href="/free-story/">
-      <span>Or start with the free prequel novella</span>
-      <span class="book-promo-stars">The Edmund Fragments &middot; PDF &amp; EPUB, no purchase required</span>
+      <span>Get the free novella</span>
+      <span class="book-promo-stars">PDF &amp; EPUB &middot; no purchase required &middot; ninety pages</span>
     </a>
   </div>
 </div>
@@ -90,6 +88,6 @@ The full docs, installation guide, and source code are on GitHub:
 
 **[github.com/rxpelle/kdp-scout](https://github.com/rxpelle/kdp-scout)**
 
-If you find it useful, check out the other free tools I've built for indie authors: [Book Formatter](/blog/i-built-a-free-book-formatting-tool/) (replaces Vellum), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers for $0.30), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn Amazon reviews into ad copy).
+If you'd rather read than code: [grab the free novella](/free-story/). *The Edmund Fragments* — a ninety-page self-contained thriller set during the 1347 plague, the lead-in to my ten-book series *The Architecture of Survival*. PDF and EPUB, no purchase required. Four books are live; the next one comes out when it's ready.
 
-And if you're looking for something to read, [start with the free prequel novella](/free-story/) — *The Edmund Fragments* is a self-contained story set during the 1347 plague, the lead-in to my 12-book series *The Architecture of Survival*. PDF and EPUB, no purchase required.
+If you want more free tools instead: [Book Formatter](/blog/i-built-a-free-book-formatting-tool/) (replaces Vellum), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers for $0.30), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn Amazon reviews into ad copy).
