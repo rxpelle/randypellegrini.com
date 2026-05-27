@@ -27,5 +27,11 @@ module.exports = function () {
       seriesPosition: 4,
       amazonUrl: "https://www.amazon.com/dp/B0GX2TG21Y",
     },
+    {
+      slug: "what-augustine-hid",
+      title: "What Augustine Hid",
+      seriesPosition: 5,
+      amazonUrl: "https://www.amazon.com/dp/B0H34DZVXS",
+    },
   ];
 };
