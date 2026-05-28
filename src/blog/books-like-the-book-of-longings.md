@@ -10,6 +10,8 @@ permalink: /blog/books-like-the-book-of-longings/
 excerpt: "If you finished The Book of Longings and wanted more — fierce women rewriting biblical history, ancient worlds rendered with sensory precision, the untold stories behind familiar scripture — here are 10 books that deliver."
 prevPost: "/blog/best-medieval-thriller-books/"
 prevTitle: "Best Medieval Thriller Books"
+nextPost: "/blog/hippo-regius-vandals-burned-it/"
+nextTitle: "Hippo Regius Was a Real City, and the Vandals Burned It"
 ctaText: '<em>The Architecture of Survival</em> follows the women who carried knowledge through 3,200 years of history — from Bronze Age Egypt through Roman Judea to the present day. The series starts with <em>The Aethelred Cipher</em>. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Start the series on Amazon</a>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
