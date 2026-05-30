@@ -36,11 +36,11 @@ const GRINDS_EMAILS = [
   },
   {
     day: 7,
-    subject: '3,200 years. 12 books. One network.',
+    subject: '3,200 years. 10 books. One network.',
     body: function(name) {
       return (name ? 'Hey ' + name + ',\n\n' : 'Hey,\n\n') +
         'I wanted to give you the full picture of what I\'m building, because the grounds reading you got is just one small piece of it.\n\n' +
-        'The Architecture of Survival is a 12-book series spanning 3,200 years and 111 generations of a single defensive network. The concept: a hidden organization has been detecting civilizational collapse before it happens — reading patterns the way your coffee grounds got read — and engineering humanity\'s survival from the shadows.\n\n' +
+        'The Architecture of Survival is a 10-book series spanning 3,200 years and 111 generations of a single defensive network. The concept: a hidden organization has been detecting civilizational collapse before it happens — reading patterns the way your coffee grounds got read — and engineering humanity\'s survival from the shadows.\n\n' +
         'Each book is a different era, a different crisis, a different protagonist. But the network threads through all of them.\n\n' +
         'Here\'s what\'s out now:\n\n' +
         'Book 1 — The Aethelred Cipher (medieval, 1348)\n' +

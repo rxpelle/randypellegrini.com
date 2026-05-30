@@ -12,7 +12,7 @@ excerpt: "I got tired of paying for keyword tools that are basically just Amazon
 prevPost: "/blog/five-warnings-before-every-collapse/"
 prevTitle: "Five Warnings Before Every Collapse"
 ctaTitle: "The Books I Built This For"
-ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, four books out, twelve planned. If you like indie tools built by authors who actually use them, you might like the books too. Get the free prequel novella, <em>The Edmund Fragments</em>, instantly when you join the list.'
+ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, five books out, ten planned. If you like indie tools built by authors who actually use them, you might like the books too. Get the free prequel novella, <em>The Edmund Fragments</em>, instantly when you join the list.'
 ctaButtonUrl: "/free-story/"
 ctaButtonText: "Get the free prequel"
 nextPost: "/blog/i-built-a-free-book-formatting-tool/"

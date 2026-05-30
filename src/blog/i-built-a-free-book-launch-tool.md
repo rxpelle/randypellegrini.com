@@ -12,7 +12,7 @@ excerpt: "Launching a book is project management. Pre-order setup, ARC distribut
 prevPost: "/blog/i-built-a-free-review-mining-tool/"
 prevTitle: "I Built a Free Review Mining Tool for Authors"
 ctaTitle: "The Book I'm Launching With This Tool"
-ctaText: '<em>The First Key</em> (Book 3 in The Architecture of Survival) launches April 15, 2026. This is the first book where every launch task is being tracked by Launch Orchestrator. <a href="https://github.com/rxpelle/launch-orchestrator">Grab it on GitHub</a>.'
+ctaText: '<em>The First Key</em> (Book 3 in The Architecture of Survival) launched April 15, 2026 — the first book where every launch task ran through Launch Orchestrator. <a href="https://github.com/rxpelle/launch-orchestrator">Grab it on GitHub</a>.'
 nextPost: "/blog/books-like-the-name-of-the-rose/"
 nextTitle: "10 Books Like The Name of the Rose"
 ctaButtonUrl: "/books/"
@@ -73,17 +73,17 @@ The problem isn't motivation. It's sequencing. A book launch is a 30-day project
 
 <div class="book-promo-banner">
   <div class="book-promo-content">
-    <strong>Launching April 15, 2026</strong>
-    <span class="book-promo-sub">The First Key is the first book where every launch task runs through this tool. Pre-order now.</span>
+    <strong>Launched April 15, 2026</strong>
+    <span class="book-promo-sub">The First Key is the first book where every launch task ran through this tool. Available now on Amazon.</span>
   </div>
   <div class="book-promo-links">
     <a class="book-promo-link" href="/books/">
       <span>Book 3: The First Key</span>
-      <span class="book-promo-stars">Pre-order available</span>
+      <span class="book-promo-stars">Available now</span>
     </a>
     <a class="book-promo-link" href="/books/">
       <span>Start with Book 1</span>
-      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.7 on Amazon</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.6 on Amazon</span>
     </a>
   </div>
 </div>
@@ -114,4 +114,4 @@ Full docs and source code on GitHub:
 
 **[github.com/rxpelle/launch-orchestrator](https://github.com/rxpelle/launch-orchestrator)**
 
-If you find it useful, the best way to say thanks is to check out [my books](/books/). Book 3 launches April 15 — and this tool is running the show.
+If you find it useful, the best way to say thanks is to check out [my books](/books/). Book 3 launched April 15 — and this tool ran the show.

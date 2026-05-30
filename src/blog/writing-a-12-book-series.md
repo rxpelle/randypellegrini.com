@@ -1,10 +1,11 @@
 ---
 date: 2025-02-26
-title: "Writing a 12-Book, 3,200-Year Series"
-heading: 'Writing a 12-Book, 3,200-Year Series: The Architecture Behind <em>The Architecture of Survival</em>'
-description: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind a 12-book saga."
-ogTitle: "Writing a 12-Book, 3,200-Year Series"
-ogDescription: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind a 12-book saga."
+updated: 2026-05-05
+title: "Writing a 10-Book, 3,200-Year Series"
+heading: 'Writing a 10-Book, 3,200-Year Series: The Architecture Behind <em>The Architecture of Survival</em>'
+description: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind a 10-book saga."
+ogTitle: "Writing a 10-Book, 3,200-Year Series"
+ogDescription: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind a 10-book saga."
 number: 6
 bookTag: "The Series"
 permalink: /blog/writing-a-12-book-series/
@@ -41,22 +42,24 @@ That's when things got complicated.
 
 ## The Architecture
 
-Twelve books. Twelve eras. One bloodline spanning 111 generations from 1177 BCE to the present day.
+Ten books. Ten eras. One bloodline spanning 111 generations from 1177 BCE to the present day.
 
-Here's the structural challenge: each book needs to work as a standalone novel. A reader should be able to pick up any book in the series and follow the story without having read the others. But readers who follow the complete series should see patterns building across books—echoes, parallels, the same systemic dynamics playing out in different centuries with different characters.
+Here's the structural challenge: each book needs to work as a standalone novel. A reader should be able to pick up any book in the series and follow the story without having read the others. But readers who follow the complete series should see patterns building across books&mdash;echoes, parallels, the same systemic dynamics playing out in different centuries with different characters.
 
-The series is designed like a cathedral. Each book is a pillar—self-supporting, complete. But the arches connecting them reveal the larger structure.
+The series is designed like a cathedral. Each book is a pillar&mdash;self-supporting, complete. But the arches connecting them reveal the larger structure.
 
 The organizing principle is systems thinking. Each book introduces one new concept from systems dynamics:
 
-- **Book 3** (Bronze Age, 1177 BCE): Feedback loops and interconnection
-- **Book 4: Love Remembers in Silence** (Roman Judea, 26-70 CE): Distributed vs. centralized systems
-- **Book 5** (Late Rome, 312-430 CE): Institutional co-option
-- **Book 6** (Early Medieval, 476-800 CE): Network topology
-- **Book 1** (Black Death, 1347 CE): The meta-pattern — seeing the system itself
-- **Book 2** (Modern era, 2018 CE): Complete understanding — the 3,200-year view
+- **Book 3: The First Key** (Bronze Age to Classical Greece, 1200&ndash;335 BCE): Feedback loops and interconnection
+- **Book 4: Love Remembers in Silence** (Roman Judea, 26&ndash;70 CE): Distributed vs. centralized systems
+- **Book 5: What Augustine Hid** (Late-antique North Africa, 387&ndash;430 CE): Institutional co-option
+- **Book 6: The Templar Inheritance** (Crusader Levant &amp; Languedoc, 1140&ndash;1187 CE): Network topology
+- **Book 1: The Aethelred Cipher** (Black Death, 1347 CE): The meta-pattern&mdash;seeing the system itself
+- **Book 2: The Genesis Protocol** (Modern era, 2018&ndash;2025 CE): Complete understanding&mdash;the 3,200-year view
 
-A reader who follows the series from beginning to end will learn systems thinking through story—not through lectures, but through watching characters discover, apply, and teach these concepts across centuries. By the final book, the reader should be able to see the patterns in their own world.
+A reader who follows the series from beginning to end will learn systems thinking through story&mdash;not through lectures, but through watching characters discover, apply, and teach these concepts across centuries. By the final book, the reader should be able to see the patterns in their own world.
+
+> **Author&rsquo;s note (May 2026):** This essay was first published in February 2025 as a defense of a 12-book plan. After two years of outlining, I consolidated the structure to a tight 10 books, each scoped to a 20&ndash;50 year window of historical collapse. Books 7&ndash;10 cover the Conquest of Mexico (1519&ndash;1521), the California Indian catastrophe (1849&ndash;1855), the eugenics era (1933&ndash;1953), and a near-future synthesis (2038&ndash;2100). The cathedral has the same shape; it just has fewer pillars holding more weight.
 
 ## Why Not Chronological?
 
@@ -66,7 +69,7 @@ The books aren't numbered in chronological order. Book 1 is set in 1347. Book 2 
 
 *The Genesis Protocol* (Book 2) jumps to the modern era because it answers the question Book 1 raises: did any of it matter? Did Thomas's sacrifice—scattering knowledge across Europe during the Black Death—change anything?
 
-Then Books 3 through 12 fill in the history. Each one answers questions raised by the books before it while asking new ones. Why was the Order created? What happened between Thomas and Sarah Chen? How did the defensive network survive the Reformation, the Enlightenment, the World Wars?
+Then Books 3 through 10 fill in the history. Each one answers questions raised by the books before it while asking new ones. Why was the Order created? What happened between Thomas and Sarah Chen? How did the defensive network survive the Crusades, the Conquest of Mexico, the eugenics era?
 
 The non-chronological structure mirrors how real historical understanding works. You don't learn history in order. You learn a piece, then fill in the context, then revise your understanding, then fill in more context. The series replicates this process.
 
@@ -103,7 +106,7 @@ For *The Aethelred Cipher*, I researched:
 - Medieval travel (speeds, routes, dangers, costs)
 - Systems thinking translated into medieval conceptual language
 
-Multiply this by twelve books across twelve eras, and you begin to understand the "are you insane?" question.
+Multiply this by ten books across ten eras, and you begin to understand the "are you insane?" question.
 
 The answer, for the record, is "probably, but it's too late to stop now."
 
@@ -123,10 +126,10 @@ That's the series in a sentence. And it's what keeps me writing.
 
 ## Where It Stands
 
-*The Aethelred Cipher* (Book 1) is published and available now. It follows Thomas, Margarethe, and Maria through the Black Death as they discover the Order's breeding program and attempt to scatter its secrets across Europe.
+*The Aethelred Cipher* (Book 1), *The Genesis Protocol* (Book 2), *The First Key* (Book 3), and *Love Remembers in Silence* (Book 4) are all published and available on Amazon.
 
-*The Genesis Protocol* (Book 2) is complete and in revision. It follows Sarah Chen in the modern era as she discovers Thomas's manuscripts and connects a medieval conspiracy to a 21st-century genetics corporation.
+*What Augustine Hid* (Book 5) launches in May 2026.
 
-Books 3 through 6 are in various stages of completion. The remaining books are outlined but unwritten.
+Books 6 through 10 are outlined. Each one will be drafted in turn, with the same scoping rule: a tight 20&ndash;50 year window of historical collapse, a self-contained thriller, and a contribution to the larger pattern.
 
 The series will take years to complete. I'm at peace with that. Some stories require time. This one requires 3,200 years' worth.

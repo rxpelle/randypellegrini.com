@@ -13,9 +13,9 @@ prevPost: "/blog/the-oracle-was-getting-high/"
 prevTitle: "The Oracle at Delphi Was Getting High on Geological Fumes"
 nextPost: "/blog/the-plague-that-saved-jerusalem/"
 nextTitle: "The Plague That Saved Jerusalem"
-ctaText: '<em>The First Key</em> explores what it costs to be the one who survives — across 842 years and one bloodline. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Pre-order now — available April 15, 2026</a>.'
+ctaText: '<em>The First Key</em> explores what it costs to be the one who survives — across 842 years and one bloodline. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Available now on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
-ctaButtonText: "Pre-order The First Key"
+ctaButtonText: "Read The First Key"
 ---
 
 Everyone knows the story of the 300 Spartans at Thermopylae. Leonidas. The narrow pass. The last stand against Xerxes' massive Persian army. "Come and take them." It's one of history's most celebrated acts of defiance.

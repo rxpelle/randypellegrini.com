@@ -12,7 +12,7 @@ prevPost: "/blog/why-civilizations-collapse/"
 prevTitle: "Why Civilizations Collapse"
 nextPost: "/blog/real-medieval-conspiracies/"
 nextTitle: "5 Real Medieval Conspiracies"
-ctaText: '<em>The Architecture of Survival</em> is a 12-book series spanning 3,200 years, from Bronze Age Egypt to the modern era. It follows a single bloodline through 111 generations, exploring how genetic memory, systems thinking, and the conflict between knowledge preservation and knowledge control have shaped human civilization. <em>The Aethelred Cipher</em> is the first published book in the series.'
+ctaText: '<em>The Architecture of Survival</em> is a 10-book series spanning 3,200 years, from Bronze Age Egypt to the modern era. It follows a single bloodline through 111 generations, exploring how genetic memory, systems thinking, and the conflict between knowledge preservation and knowledge control have shaped human civilization. <em>The Aethelred Cipher</em> is the first published book in the series.'
 ---
 
 In 2013, researchers at Emory University taught mice to fear the smell of cherry blossoms.
