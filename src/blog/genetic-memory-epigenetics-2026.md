@@ -11,8 +11,8 @@ permalink: /blog/genetic-memory-epigenetics-2026/
 excerpt: "If genetic memory worked the way the novel says it does, our species would be a wildly different thing than it is. The fiction does not pretend otherwise. It asks: if this one impossible thing were true, what would follow?"
 prevPost: "/blog/he-jiankui-crispr-babies/"
 prevTitle: "He Jiankui's CRISPR Babies — What He Actually Did"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/bureaucracy-is-the-sorcery-of-institutions/"
+nextTitle: "Bureaucracy Is the True Sorcery of Institutions"
 ctaText: '<em>The Architecture of Survival</em> is a 10-book series following two competing networks across 3,200 years of history. Book 1 starts in the year of the Black Death. <a href="https://www.amazon.com/Aethelred-Cipher-ebook/dp/B0GJTGCHS2">Start with The Aethelred Cipher</a>.'
 ctaButtonUrl: "https://www.amazon.com/Aethelred-Cipher-ebook/dp/B0GJTGCHS2"
 ctaButtonText: "Start the Series with Book 1"
