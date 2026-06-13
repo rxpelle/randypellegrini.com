@@ -54,7 +54,7 @@ If you got something useful from this — or you're going to fork the repo and n
 <div class="book-promo-banner">
   <div class="book-promo-content">
     <strong>The free novella that paid for this tool</strong>
-    <span class="book-promo-sub">The Edmund Fragments — a self-contained ninety-page thriller set during the 1347 plague. The lead-in to <em>The Architecture of Survival</em>, a 10-book historical thriller series.</span>
+    <span class="book-promo-sub">The Edmund Fragments — a self-contained ninety-page thriller set during the 1347 plague. The lead-in to <em>The Architecture of Survival</em>, an 8-book historical thriller series.</span>
   </div>
   <div class="book-promo-links">
     <a class="book-promo-link" href="/free-story/">

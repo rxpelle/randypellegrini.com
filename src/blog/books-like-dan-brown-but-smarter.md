@@ -61,7 +61,7 @@ A coded Anglo-Saxon manuscript triggers an investigation into a secret society t
 
 The manuscript isn't a plot device. The series actually excavates what the coded knowledge means, why it was worth protecting, and how a secret can survive across millennia. The Anglo-Saxon cipher traditions are real. The monastic encoding practices are real. I spent years on the research because I wanted readers to be able to check my homework.
 
-First in a planned 10-book series spanning ancient Egypt to the present day.
+First in a planned 8-book series spanning ancient Egypt to the present day.
 
 <div class="mid-article-signup">
   <strong>Want a taste before you commit?</strong> <em>The Edmund Fragments</em> is a free 5,000-word prequel — the story the novel only hints at. Enter your email and it's yours instantly.

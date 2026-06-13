@@ -76,7 +76,7 @@ So you have two kinds of memory standing against each other across three thousan
 
 **The Order remembers through filing — and never forgets.** It externalized its memory into institutions precisely so it would never have to depend on a body at all. Bureaucracy is the Order's substitute for genetic memory: the cold, manufactured version of the very gift the carriers are born with.
 
-One side inherits through flesh and forgets. The other inherits through filing and never forgets. That asymmetry — fragile living memory against tireless institutional memory — is the engine of the entire ten books. Everything else is just the working-out of that single, terrible imbalance.
+One side inherits through flesh and forgets. The other inherits through filing and never forgets. That asymmetry — fragile living memory against tireless institutional memory — is the engine of the entire eight books. Everything else is just the working-out of that single, terrible imbalance.
 
 We were taught to fear the wizard with the staff. But the staff breaks, and the wizard dies. The thing that should frighten you is quieter. It's the form that decides who survives. It's the file that outlives the man. It's the office with no one home and all the power in the world.
 

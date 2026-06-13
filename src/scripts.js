@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navigator.share) {
       navigator.share({
         title: document.title,
-        text: 'Check out The Architecture of Survival - a 10-book epic spanning 3,200 years',
+        text: 'Check out The Architecture of Survival - an 8-book epic spanning 3,200 years',
         url: window.location.href
       }).catch(err => console.log('Share cancelled'));
     } else {
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   console.log('🔮 The Architecture of Survival - Website initialized');
-  console.log('📚 10 books | 3,200 years | 138 generations');
+  console.log('📚 8 books | 3,200 years | 138 generations');
 });
 
 // Add CSS for pulse animation
