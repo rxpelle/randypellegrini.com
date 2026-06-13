@@ -1,7 +1,7 @@
 ---
 date: 2026-06-04
-title: "Genetic Memory in 2026 — What Epigenetics Proves, What It Doesn't, and Why I Built a 10-Book Novel on the Gap"
-heading: "Genetic Memory in 2026 — What Epigenetics Proves, What It Doesn't, and Why I Built a 10-Book Novel on the Gap"
+title: "Genetic Memory in 2026 — What Epigenetics Proves, What It Doesn't, and Why I Built an 8-Book Novel on the Gap"
+heading: "Genetic Memory in 2026 — What Epigenetics Proves, What It Doesn't, and Why I Built an 8-Book Novel on the Gap"
 description: "Real epigenetics shows that parental experience can affect offspring gene expression. It does not show that specific memories are transmitted. The series I'm writing lives in the gap between what is proven and what would be true if a particular kind of inheritance were possible."
 ogTitle: "Genetic Memory in 2026 — What Epigenetics Proves"
 ogDescription: "Real epigenetics shows parental experience affects offspring gene expression. It does not show specific memory transmission. The novel lives in the gap."
@@ -13,7 +13,7 @@ prevPost: "/blog/he-jiankui-crispr-babies/"
 prevTitle: "He Jiankui's CRISPR Babies — What He Actually Did"
 nextPost: "/blog/bureaucracy-is-the-sorcery-of-institutions/"
 nextTitle: "Bureaucracy Is the True Sorcery of Institutions"
-ctaText: '<em>The Architecture of Survival</em> is a 10-book series following two competing networks across 3,200 years of history. Book 1 starts in the year of the Black Death. <a href="https://www.amazon.com/Aethelred-Cipher-ebook/dp/B0GJTGCHS2">Start with The Aethelred Cipher</a>.'
+ctaText: '<em>The Architecture of Survival</em> is an 8-book series following two competing networks across 3,200 years of history. Book 1 starts in the year of the Black Death. <a href="https://www.amazon.com/Aethelred-Cipher-ebook/dp/B0GJTGCHS2">Start with The Aethelred Cipher</a>.'
 ctaButtonUrl: "https://www.amazon.com/Aethelred-Cipher-ebook/dp/B0GJTGCHS2"
 ctaButtonText: "Start the Series with Book 1"
 ---
@@ -76,7 +76,7 @@ The series asks a particular kind of speculative question. Not "is this true?" b
 
 Specifically: if a small subset of the human population could carry specific information across generations in a biological medium, what kind of organizations would those carriers form? What kind of competing organizations would emerge to either exploit them or destroy them? How would those organizations operate across centuries? What would the historical record actually look like, if you re-read it through the lens of two networks running such an operation continuously since the Bronze Age?
 
-This is what the series is doing. It is taking one impossible thing — heritable narrative-level memory — and then being rigorous about the consequences. The Bronze Age collapse from this angle, the Black Death from this angle, the late Roman world from this angle, the Templar period from this angle, the Conquest of Mexico from this angle. The same dynamics, the same pattern, run through ten different historical settings.
+This is what the series is doing. It is taking one impossible thing — heritable narrative-level memory — and then being rigorous about the consequences. The Bronze Age collapse from this angle, the Black Death from this angle, the late Roman world from this angle, the Templar period from this angle, the eugenics era from this angle. The same dynamics, the same pattern, run through eight different historical settings.
 
 The historical settings themselves are not impossible. The Bronze Age collapse really happened. The Black Death really happened. Augustine really wrote *De Civitate Dei*. The Templars really excavated under the Temple Mount. The conquest of Mexico really happened, and the population collapse that followed was real. The eugenics movement of the early twentieth century really existed and really did write the textual basis for the Nazi sterilization program. The CRISPR work being done today is real.
 

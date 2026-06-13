@@ -12,7 +12,7 @@ prevPost: "/blog/books-like-dan-brown-but-smarter/"
 prevTitle: "10 Books Like Dan Brown But Smarter"
 nextPost: "/blog/best-medieval-thriller-books/"
 nextTitle: "Best Medieval Thriller Books"
-ctaText: '<em>The Architecture of Survival</em> is a 10-book series spanning 3,200 years of conspiracy — from ancient Egypt to the present day. It starts with <em>The Aethelred Cipher</em>. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Start the series on Amazon</a>.'
+ctaText: '<em>The Architecture of Survival</em> is an 8-book series spanning 3,200 years of conspiracy — from ancient Egypt to the present day. It starts with <em>The Aethelred Cipher</em>. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Start the series on Amazon</a>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
 ---
@@ -57,7 +57,7 @@ My contribution to this genre — and the reason I've read everything else on th
 
 A coded 10th-century Anglo-Saxon manuscript reveals a secret society that has operated continuously for 3,200 years across 111 generations, from ancient Egypt through medieval England to the present. The cipher is the entry point to a pattern of hidden knowledge embedded in the architecture of history itself.
 
-This is the first book in a planned 10-book series called *The Architecture of Survival*. Each book covers a different era: Bronze Age Egypt, Roman Judea, late-antique North Africa, the Crusader Levant, the Conquest of Mexico, and forward. The conspiracy isn't a backdrop — it's the subject. How does a secret survive across millennia? What kind of organization can operate across 111 generations? What's worth protecting for that long?
+This is the first book in a planned 8-book series called *The Architecture of Survival*. Each book covers a different era: Bronze Age Egypt, Roman Judea, late-antique North Africa, the Crusader Levant, the eugenics era, and forward. The conspiracy isn't a backdrop — it's the subject. How does a secret survive across millennia? What kind of organization can operate across 111 generations? What's worth protecting for that long?
 
 The Anglo-Saxon period is underexplored in this genre, and the coded manuscript traditions of medieval monasteries are real. I wanted a conspiracy thriller where you could check the history.
 
