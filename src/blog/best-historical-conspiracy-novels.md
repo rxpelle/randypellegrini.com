@@ -62,8 +62,7 @@ This is the first book in a planned 8-book series called *The Architecture of Su
 The Anglo-Saxon period is underexplored in this genre, and the coded manuscript traditions of medieval monasteries are real. I wanted a conspiracy thriller where you could check the history.
 
 <div class="mid-article-signup">
-  <strong>Want a taste before you commit?</strong> <em>The Edmund Fragments</em> is a free 5,000-word prequel — the story the novel only hints at. Enter your email and it's yours instantly.
-  <form class="signup" data-newsletter="true">
+  <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">
     <label class="sr-only" for="mid-email">Email address</label>
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>

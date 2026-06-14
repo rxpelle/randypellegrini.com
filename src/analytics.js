@@ -96,7 +96,7 @@
       var submittedEmail = emailInput.value;
       var showSuccess = function() {
         if (btnText) btnText.textContent = 'Subscribed!';
-        if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox for The Edmund Fragments!'; }
+        if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox to confirm your subscription!'; }
         emailInput.value = '';
         gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
         setTimeout(function() {

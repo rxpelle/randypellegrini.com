@@ -52,8 +52,7 @@ I set the medieval thread in Anglo-Saxon England because it's criminally underex
 If you're here because you love the idea that manuscripts can be dangerous, this is the book I wrote for you.
 
 <div class="mid-article-signup">
-  <strong>Want a taste before you commit?</strong> <em>The Edmund Fragments</em> is a free 5,000-word prequel set 72 years before the novel. Enter your email and it's yours instantly.
-  <form class="signup" data-newsletter="true">
+  <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">
     <label class="sr-only" for="mid-email">Email address</label>
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>

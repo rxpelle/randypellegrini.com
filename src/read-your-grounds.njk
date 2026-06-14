@@ -118,7 +118,7 @@ permalink: /read-your-grounds/
         Enjoyed your reading?
       </p>
       <p style="color: var(--ink-soft); margin-bottom: 16px;">
-        Get the free prequel to the series &mdash; plus your reading delivered to your inbox.
+        Get series updates &mdash; plus your reading delivered to your inbox.
       </p>
       <form id="email-capture-form" class="email-capture-form">
         <div class="grounds-fields">
@@ -145,12 +145,12 @@ permalink: /read-your-grounds/
           </div>
         </div>
         <button class="button" type="submit" id="capture-submit">
-          <span id="capture-button-text">Send me the free story</span>
+          <span id="capture-button-text">Send me my reading</span>
         </button>
         <p class="form-note" style="margin-top: 8px;">No spam. One email per month. Unsubscribe anytime.</p>
       </form>
       <div id="email-capture-success" style="display:none">
-        <p style="color: var(--teal); font-weight: 600;">You're in. Check your inbox for <em>The Edmund Fragments</em>.</p>
+        <p style="color: var(--teal); font-weight: 600;">You're in. Check your inbox &mdash; your reading is on its way.</p>
       </div>
     </div>
 
@@ -410,7 +410,7 @@ permalink: /read-your-grounds/
     })
     .catch(function(err) {
       captureSubmit.disabled = false;
-      captureButtonText.textContent = 'Send me the free story';
+      captureButtonText.textContent = 'Send me my reading';
       alert(err.message || 'Something went wrong. Please try again.');
     });
   });
@@ -429,7 +429,7 @@ permalink: /read-your-grounds/
     captureEmail.value = '';
     captureName.value = '';
     captureSubmit.disabled = false;
-    captureButtonText.textContent = 'Send me the free story';
+    captureButtonText.textContent = 'Send me my reading';
     currentReadingId = '';
     history.pushState(null, '', window.location.pathname);
   });

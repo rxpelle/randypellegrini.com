@@ -12,9 +12,9 @@ excerpt: "I got tired of paying for keyword tools that are basically just Amazon
 prevPost: "/blog/five-warnings-before-every-collapse/"
 prevTitle: "Five Warnings Before Every Collapse"
 ctaTitle: "The Books I Built This For"
-ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, five books out, ten planned. If you like indie tools built by authors who actually use them, you might like the books too. Get the free prequel novella, <em>The Edmund Fragments</em>, instantly when you join the list.'
-ctaButtonUrl: "/free-story/"
-ctaButtonText: "Get the free prequel"
+ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, an 8-book historical thriller spanning 3,200 years, five books out. If you like indie tools built by authors who actually use them, you might like the books too. Start with Book 1, <em>The Aethelred Cipher</em>.'
+ctaButtonUrl: "/books/"
+ctaButtonText: "See the books"
 nextPost: "/blog/i-built-a-free-book-formatting-tool/"
 nextTitle: "I Built a Free Book Formatting Tool for Authors"
 ---
@@ -53,13 +53,13 @@ If you got something useful from this — or you're going to fork the repo and n
 
 <div class="book-promo-banner">
   <div class="book-promo-content">
-    <strong>The free novella that paid for this tool</strong>
-    <span class="book-promo-sub">The Edmund Fragments — a self-contained ninety-page thriller set during the 1347 plague. The lead-in to <em>The Architecture of Survival</em>, an 8-book historical thriller series.</span>
+    <strong>The series this tool was built for</strong>
+    <span class="book-promo-sub"><em>The Architecture of Survival</em> — an 8-book historical thriller spanning 3,200 years. It starts with <em>The Aethelred Cipher</em>, set during the 1347 plague.</span>
   </div>
   <div class="book-promo-links">
-    <a class="book-promo-link" href="/free-story/">
-      <span>Get the free novella</span>
-      <span class="book-promo-stars">PDF &amp; EPUB &middot; no purchase required &middot; ninety pages</span>
+    <a class="book-promo-link" href="/books/">
+      <span>Browse the books</span>
+      <span class="book-promo-stars">Five books live &middot; free on Kindle Unlimited</span>
     </a>
   </div>
 </div>
@@ -88,6 +88,6 @@ The full docs, installation guide, and source code are on GitHub:
 
 **[github.com/rxpelle/kdp-scout](https://github.com/rxpelle/kdp-scout)**
 
-If you'd rather read than code: [grab the free novella](/free-story/). *The Edmund Fragments* — a ninety-page self-contained thriller set during the 1347 plague, the lead-in to my ten-book series *The Architecture of Survival*. PDF and EPUB, no purchase required. Four books are live; the next one comes out when it's ready.
+If you'd rather read than code: [start with Book 1](/books/). *The Aethelred Cipher* — a historical thriller set during the 1347 plague, the opening of my series *The Architecture of Survival*. Five books are live; the next one comes out when it's ready.
 
 If you want more free tools instead: [Book Formatter](/blog/i-built-a-free-book-formatting-tool/) (replaces Vellum), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers for $0.30), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn Amazon reviews into ad copy).

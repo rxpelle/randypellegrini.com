@@ -1,21 +1,19 @@
 const GRINDS_EMAILS = [
   {
     day: 0,
-    subject: 'Your reading + a free story (patterns hide in plain sight)',
+    subject: 'Your reading (patterns hide in plain sight)',
     body: function(name) {
       return (name ? 'Hi ' + name + ',\n\n' : 'Hi,\n\n') +
         'So you let an AI read your coffee grounds. I respect that.\n\n' +
         'Hopefully the reading gave you something interesting to think about — or at least made you look at the bottom of your cup differently. That\'s kind of the whole point of the series these readings are tied to. Patterns that everyone else walks past.\n\n' +
-        'Speaking of patterns — I wrote a short prequel to the series called "The Edmund Fragments." It\'s set in 1348, right before the Black Death tears through Europe, and follows a monk who discovers that the manuscript he\'s been copying contains something far more dangerous than scripture.\n\n' +
-        'It\'s yours, free:\n\n' +
-        'PDF: https://randypellegrini.com/assets/downloads/The%20Edmund%20Fragments.pdf\n' +
-        'EPUB: https://randypellegrini.com/assets/downloads/The%20Edmund%20Fragments.epub\n\n' +
-        'It\'s about 5,000 words — a single sitting. And it\'ll set up everything that happens in Book 1.\n\n' +
+        'Speaking of patterns — that\'s the whole engine of the series these readings are tied to. It starts with Book 1, The Aethelred Cipher: a monk in 1348, right before the Black Death tears through Europe, discovers that the manuscript he\'s been copying hides something far more dangerous than scripture.\n\n' +
+        'It\'s $0.99, and free on Kindle Unlimited:\n' +
+        'https://www.amazon.com/Aethelred-Cipher-Conspiracy-Shepherding-Architecture-ebook/dp/B0GJTGCHS2/\n\n' +
         'Oh, and if you want another reading sometime, the page is always open:\n' +
         'https://randypellegrini.com/read-your-grounds.html\n\n' +
         'Thanks for being curious enough to try it.\n\n' +
         'Randy\n\n' +
-        'P.S. The tasseography page is themed around The Genesis Protocol (Book 2), but The Edmund Fragments connects to Book 1 — The Aethelred Cipher. The series threads everything together across 3,200 years. You\'ll see.';
+        'P.S. The tasseography page is themed around The Genesis Protocol (Book 2), but the series begins with Book 1 — The Aethelred Cipher. It threads everything together across 3,200 years. You\'ll see.';
     }
   },
   {
@@ -31,7 +29,7 @@ const GRINDS_EMAILS = [
         'https://www.amazon.com/dp/B0GPM973N1\n\n' +
         'It\'s $2.99 and on Kindle Unlimited.\n\n' +
         'Randy\n\n' +
-        'P.S. Did you read The Edmund Fragments yet? If you haven\'t, no pressure — but it\'s a fast one. Pairs well with coffee.';
+        'P.S. If you haven\'t started The Aethelred Cipher yet — no pressure — but it\'s a fast one. Pairs well with coffee.';
     }
   },
   {
@@ -68,7 +66,7 @@ const GRINDS_EMAILS = [
         '"The genetic memory concept is fascinating. I want to know more about the network."\n' +
         '"I didn\'t expect a medieval thriller to make me think about modern conspiracies this much."\n\n' +
         'I don\'t have a marketing team. I don\'t have a publisher. I have readers who take a chance on a book and then tell other people about it. That\'s it.\n\n' +
-        'So if you\'ve been on the fence — or you downloaded The Edmund Fragments and liked it — here\'s the move:\n\n' +
+        'So if you\'ve been on the fence, here\'s the move:\n\n' +
         'Start with Book 1 ($0.99):\n' +
         'https://www.amazon.com/Aethelred-Cipher-Conspiracy-Shepherding-Architecture-ebook/dp/B0GJTGCHS2/\n\n' +
         'Then grab Book 2 ($2.99):\n' +

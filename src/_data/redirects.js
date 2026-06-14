@@ -4,7 +4,6 @@ module.exports = function () {
     "blog",
     "books",
     "characters",
-    "free-story",
     "read-your-grounds",
     "reviews",
     "series",
