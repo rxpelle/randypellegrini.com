@@ -11,8 +11,8 @@ bookTag: "The Series"
 excerpt: "We treat bureaucracy as the opposite of magic — gray, tedious, soul-deadening. But look closer. A form makes you married. A record makes you dead. An office acts with no hand behind it. Bureaucracy is the spell that lets an institution outlive every mortal who serves it. It is also how the Order survives three thousand years."
 prevPost: "/blog/genetic-memory-epigenetics-2026/"
 prevTitle: "Genetic Memory in 2026 — What Epigenetics Proves and What It Doesn't"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/mustard-gas-race-experiments/"
+nextTitle: "The Gas Chamber at Camp Claiborne"
 ctaText: 'In <em>The Architecture of Survival</em>, the heroes inherit through blood — fragile, mortal, easily lost. The Order inherits through bureaucracy, and never forgets. You can kill a member. You cannot kill the archive. That asymmetry is the engine of the entire series.'
 ---
 
