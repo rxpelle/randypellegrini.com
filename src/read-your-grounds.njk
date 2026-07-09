@@ -84,6 +84,18 @@ permalink: /read-your-grounds/
     </form>
   </div>
 
+  <div id="grounds-newsletter" class="article-email-cta reveal">
+    <h3>No cup handy? Stay in the loop instead</h3>
+    <p>New book releases, research notes, and dispatches from <em>The Architecture of Survival</em> &mdash; straight to your inbox.</p>
+    <form class="signup" data-newsletter="true">
+      <label class="sr-only" for="grounds-newsletter-email">Email address</label>
+      <input id="grounds-newsletter-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+      <button class="button" type="submit"><span>Subscribe</span></button>
+    </form>
+    <div id="form-messages" style="display: none;"></div>
+    <p class="form-note">No spam. One email per month. Unsubscribe anytime.</p>
+  </div>
+
   <div id="grounds-loading" class="grounds-loading" style="display:none">
     <div class="grounds-spinner"></div>
     <p class="grounds-loading-text">Analyzing the pattern architecture&hellip;</p>
@@ -211,6 +223,7 @@ permalink: /read-your-grounds/
   var shareX = document.getElementById('share-x');
   var shareNative = document.getElementById('share-native');
   var tryAgain = document.getElementById('try-again');
+  var newsletterCard = document.getElementById('grounds-newsletter');
 
   // Email capture elements
   var emailCapture = document.getElementById('email-capture');
@@ -342,11 +355,13 @@ permalink: /read-your-grounds/
     readingText.innerHTML = DOMPurify.sanitize(html, { ALLOWED_TAGS: ['p', 'br', 'strong', 'em'], ALLOWED_ATTR: ['class'] });
     resultEl.style.display = 'block';
 
-    // Show email capture for new readings (not shared links)
+    // Show email capture for new readings (not shared links);
+    // hide the standalone newsletter card so only one form is on screen
     if (!isShared) {
       emailCapture.style.display = '';
       emailCaptureForm.style.display = '';
       emailCaptureSuccess.style.display = 'none';
+      newsletterCard.style.display = 'none';
     }
 
     // Update URL for sharing
@@ -419,6 +434,7 @@ permalink: /read-your-grounds/
   tryAgain.addEventListener('click', function() {
     resultEl.style.display = 'none';
     formCard.style.display = '';
+    newsletterCard.style.display = '';
     preview.style.display = 'none';
     placeholder.style.display = '';
     fileInput.value = '';
