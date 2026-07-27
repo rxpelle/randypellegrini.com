@@ -53,7 +53,7 @@ The organizing principle is systems thinking. Each book introduces one new conce
 - **Book 3: The First Key** (Bronze Age to Classical Greece, 1200&ndash;335 BCE): Feedback loops and interconnection
 - **Book 4: Love Remembers in Silence** (Roman Judea, 26&ndash;70 CE): Distributed vs. centralized systems
 - **Book 5: What Augustine Hid** (Late-antique North Africa, 387&ndash;430 CE): Institutional co-option
-- **Book 6: The Templar Inheritance** (Crusader Levant &amp; Languedoc, 1140&ndash;1187 CE): Network topology
+- **Book 6: The Split Pomegranate** (Damascus, Jerusalem &amp; Languedoc, 1140&ndash;1187 CE): Network topology
 - **Book 1: The Aethelred Cipher** (Black Death, 1347 CE): The meta-pattern&mdash;seeing the system itself
 - **Book 2: The Genesis Protocol** (Modern era, 2018&ndash;2025 CE): Complete understanding&mdash;the 3,200-year view
 
