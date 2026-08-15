@@ -33,5 +33,11 @@ module.exports = function () {
       seriesPosition: 5,
       amazonUrl: "https://www.amazon.com/dp/B0H34DZVXS",
     },
+    {
+      slug: "split-pomegranate",
+      title: "The Split Pomegranate",
+      seriesPosition: 6,
+      amazonUrl: "https://www.amazon.com/dp/B0HDK6SGM3",
+    },
   ];
 };
