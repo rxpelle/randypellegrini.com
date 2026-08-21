@@ -10,24 +10,45 @@ permalink: /
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Randy Pellegrini | Official Site",
-  "url": "https://randypellegrini.com",
-  "description": "Official author website for Randy Pellegrini. The Architecture of Survival - an 8-book epic spanning 3,200 years.",
-  "author": {
-    "@type": "Person",
-    "name": "Randy Pellegrini",
-    "url": "https://randypellegrini.com",
-    "image": "https://randypellegrini.com/images/randypellegrini.jpg",
-    "sameAs": [
-      "{{ site.xUrl }}",
-      "{{ site.substackUrl }}",
-      "{{ site.bookbubUrl }}",
-      "https://instagram.com/pellegrinirandy"
-    ],
-    "jobTitle": "Author",
-    "knowsAbout": ["Historical Fiction", "Genetic Memory", "Conspiracy Thrillers"]
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://randypellegrini.com/#website",
+      "name": "Randy Pellegrini | Official Site",
+      "url": "https://randypellegrini.com",
+      "description": "Official author website for Randy Pellegrini. The Architecture of Survival - an 8-book epic spanning 3,200 years.",
+      "author": { "@id": "https://randypellegrini.com/#author" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://randypellegrini.com/#author",
+      "name": "Randy Pellegrini",
+      "url": "https://randypellegrini.com",
+      "image": "https://randypellegrini.com/images/randypellegrini.jpg",
+      "description": "Randy Pellegrini is the author of The Architecture of Survival, an 8-book historical thriller series spanning 3,200 years from Bronze Age Egypt to a near-future synthesis. Six books are published, beginning with The Aethelred Cipher.",
+      "jobTitle": "Author",
+      "sameAs": [
+        "{{ site.xUrl }}",
+        "{{ site.substackUrl }}",
+        "{{ site.bookbubUrl }}",
+        "https://instagram.com/pellegrinirandy",
+        "https://www.goodreads.com/author/show/68192892.Randy_Pellegrini",
+        "https://www.amazon.com/stores/Randy-Pellegrini/author/B0GMFLQFB3",
+        "https://medium.com/@randypellegrini",
+        "https://www.bookbub.com/books/the-split-pomegranate-the-architecture-of-survival-book-6-by-randy-pellegrini"
+      ],
+      "knowsAbout": ["Historical Fiction", "Medieval History", "Genetic Memory", "Conspiracy Thrillers", "Civilizational Collapse"]
+    },
+    {
+      "@type": "BookSeries",
+      "@id": "https://randypellegrini.com/#series",
+      "name": "The Architecture of Survival",
+      "url": "https://randypellegrini.com/series/",
+      "author": { "@id": "https://randypellegrini.com/#author" },
+      "description": "An 8-book historical thriller saga spanning 3,200 years. Two networks founded in Bronze Age Egypt fight across history over one question: is civilizational collapse preventable through shared knowledge, or inevitable? Each book stands alone.",
+      "genre": ["Historical Fiction", "Thriller"]
+    }
+  ]
 }
 </script>
 <section class="hero">

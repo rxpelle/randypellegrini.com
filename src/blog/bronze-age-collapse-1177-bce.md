@@ -94,6 +94,6 @@ The novel is a thriller, so the dramatization involves seven bronze keys, a cons
 
 We are, by every credible measure, currently in a more interconnected and lower-redundancy global system than the Late Bronze Age ever was. Our supply chains are longer. Our financial systems are more coupled. Our food production is more concentrated. Our information networks are more centralized. Our species runs on infrastructure that, in 1177 BCE terms, would have looked like an act of irresponsible cosmic optimism.
 
-Nefertari saw the pattern in time. Whether anyone in our position is seeing ours in time is, as it happens, the central question of the entire ten-book series this novel begins.
+Nefertari saw the pattern in time. Whether anyone in our position is seeing ours in time is, as it happens, the central question of the entire eight-book series this novel begins.
 
 Read her first chapter with that in mind.

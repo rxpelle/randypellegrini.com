@@ -231,78 +231,270 @@ headerCtaHref: "#book1"
 
 {% block content %}
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "name": "The Aethelred Cipher",
-    "author": {
-      "@type": "Person",
-      "name": "Randy Pellegrini",
-      "url": "https://randypellegrini.com"
-    },
-    "url": "https://randypellegrini.com/books.html#book1",
-    "workExample": {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Book",
-      "isbn": "B0GMRN61MG",
+      "@id": "https://randypellegrini.com/books/#book1",
+      "name": "The Aethelred Cipher",
+      "author": {
+        "@id": "https://randypellegrini.com/#author"
+      },
+      "url": "https://randypellegrini.com/books/#book1",
       "bookFormat": "https://schema.org/EBook",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0GJTGCHS2"
+      },
+      "numberOfPages": 330,
+      "inLanguage": "en",
+      "genre": [
+        "Historical Thriller",
+        "Medieval Fiction",
+        "Conspiracy Fiction"
+      ],
+      "description": "Germany, 1347. As the Black Death crosses the Rhine, a dying monk presses an iron key into a young scribe's hands - and every power in Christendom wants it back. Book 1 of The Architecture of Survival.",
+      "position": 1,
+      "isPartOf": {
+        "@type": "BookSeries",
+        "@id": "https://randypellegrini.com/#series",
+        "name": "The Architecture of Survival",
+        "url": "https://randypellegrini.com/series/",
+        "author": {
+          "@id": "https://randypellegrini.com/#author"
+        }
+      },
       "potentialAction": {
         "@type": "ReadAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "{{ site.amazonUrl }}"
+          "urlTemplate": "https://www.amazon.com/dp/B0GJTGCHS2"
         }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.0",
+        "ratingCount": "246",
+        "bestRating": "5"
       }
     },
-    "genre": ["Historical Thriller", "Conspiracy Fiction", "Medieval Fiction"],
-    "numberOfPages": 330,
-    "inLanguage": "en",
-    "description": "When a dying monk thrusts an iron key into scribe Thomas of Eltville's hands, he inherits more than an artifact—he becomes the target of a millennia-old conspiracy.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.6",
-      "ratingCount": "83",
-      "bestRating": "5"
-    },
-    "isPartOf": {
-      "@type": "BookSeries",
-      "name": "The Architecture of Survival",
-      "url": "https://randypellegrini.com/series/"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Book",
-    "name": "The Genesis Protocol",
-    "author": {
-      "@type": "Person",
-      "name": "Randy Pellegrini",
-      "url": "https://randypellegrini.com"
-    },
-    "url": "https://randypellegrini.com/books.html#book2",
-    "workExample": {
+    {
       "@type": "Book",
-      "isbn": "B0GPM973N1",
+      "@id": "https://randypellegrini.com/books/#book2",
+      "name": "The Genesis Protocol",
+      "author": {
+        "@id": "https://randypellegrini.com/#author"
+      },
+      "url": "https://randypellegrini.com/books/#book2",
       "bookFormat": "https://schema.org/EBook",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0GPM973N1"
+      },
+      "numberOfPages": 310,
+      "inLanguage": "en",
+      "genre": [
+        "Medical Thriller",
+        "Techno-Thriller"
+      ],
+      "description": "A geneticist discovers an engineered bioweapon and learns a three-thousand-year-old conspiracy is the least of her problems. Book 2 of The Architecture of Survival.",
+      "position": 2,
+      "isPartOf": {
+        "@type": "BookSeries",
+        "@id": "https://randypellegrini.com/#series",
+        "name": "The Architecture of Survival",
+        "url": "https://randypellegrini.com/series/",
+        "author": {
+          "@id": "https://randypellegrini.com/#author"
+        }
+      },
       "potentialAction": {
         "@type": "ReadAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "{{ site.amazonBook2Url }}"
+          "urlTemplate": "https://www.amazon.com/dp/B0GPM973N1"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "85",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://randypellegrini.com/books/#book3",
+      "name": "The First Key",
+      "author": {
+        "@id": "https://randypellegrini.com/#author"
+      },
+      "url": "https://randypellegrini.com/books/#book3",
+      "bookFormat": "https://schema.org/EBook",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0GSWLM1WV"
+      },
+      "numberOfPages": 320,
+      "inLanguage": "en",
+      "genre": [
+        "Historical Fiction",
+        "Ancient World Fiction"
+      ],
+      "description": "Bronze Age Egypt, 1177 BCE. The origin story: one physician, seven bronze keys, and the split that starts a 3,200-year shadow war. Book 3 of The Architecture of Survival.",
+      "position": 3,
+      "isPartOf": {
+        "@type": "BookSeries",
+        "@id": "https://randypellegrini.com/#series",
+        "name": "The Architecture of Survival",
+        "url": "https://randypellegrini.com/series/",
+        "author": {
+          "@id": "https://randypellegrini.com/#author"
+        }
+      },
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.amazon.com/dp/B0GSWLM1WV"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "25",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://randypellegrini.com/books/#book4",
+      "name": "Love Remembers in Silence",
+      "author": {
+        "@id": "https://randypellegrini.com/#author"
+      },
+      "url": "https://randypellegrini.com/books/#book4",
+      "bookFormat": "https://schema.org/EBook",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0GX2TG21Y"
+      },
+      "numberOfPages": 328,
+      "inLanguage": "en",
+      "genre": [
+        "Historical Fiction",
+        "Biblical Fiction"
+      ],
+      "description": "Roman Judea, 26 CE. Mary of Magdala - merchant, teacher, organizer - and the gospel the world buried for two thousand years. Book 4 of The Architecture of Survival.",
+      "position": 4,
+      "isPartOf": {
+        "@type": "BookSeries",
+        "@id": "https://randypellegrini.com/#series",
+        "name": "The Architecture of Survival",
+        "url": "https://randypellegrini.com/series/",
+        "author": {
+          "@id": "https://randypellegrini.com/#author"
+        }
+      },
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.amazon.com/dp/B0GX2TG21Y"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "26",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://randypellegrini.com/books/#book5",
+      "name": "What Augustine Hid",
+      "author": {
+        "@id": "https://randypellegrini.com/#author"
+      },
+      "url": "https://randypellegrini.com/books/#book5",
+      "bookFormat": "https://schema.org/EBook",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0H34DZVXS"
+      },
+      "numberOfPages": 320,
+      "inLanguage": "en",
+      "genre": [
+        "Historical Fiction",
+        "Religious Historical Fiction"
+      ],
+      "description": "North Africa, 410 CE. A dying courier reaches Augustine's basilica gate carrying a papyrus that predicted the fall of every civilization before Rome. Book 5 of The Architecture of Survival.",
+      "position": 5,
+      "isPartOf": {
+        "@type": "BookSeries",
+        "@id": "https://randypellegrini.com/#series",
+        "name": "The Architecture of Survival",
+        "url": "https://randypellegrini.com/series/",
+        "author": {
+          "@id": "https://randypellegrini.com/#author"
+        }
+      },
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.amazon.com/dp/B0H34DZVXS"
         }
       }
     },
-    "genre": ["Genetic Thriller", "Conspiracy Fiction", "Science Thriller"],
-    "numberOfPages": 320,
-    "inLanguage": "en",
-    "description": "When geneticist Sarah Chen discovers an engineered bioweapon hidden inside GenVault Corporation, she has forty-three seconds to escape the building.",
-    "isPartOf": {
-      "@type": "BookSeries",
-      "name": "The Architecture of Survival",
-      "url": "https://randypellegrini.com/series/"
+    {
+      "@type": "Book",
+      "@id": "https://randypellegrini.com/books/#book6",
+      "name": "The Split Pomegranate",
+      "author": {
+        "@id": "https://randypellegrini.com/#author"
+      },
+      "url": "https://randypellegrini.com/books/#book6",
+      "bookFormat": "https://schema.org/EBook",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ASIN",
+        "value": "B0HDK6SGM3"
+      },
+      "numberOfPages": 273,
+      "inLanguage": "en",
+      "genre": [
+        "Historical Fiction",
+        "Literary Historical Fiction"
+      ],
+      "description": "Damascus, 1140. A Jewish engineer and a Templar mason share an impossible gift, a love carried twenty years in coded seals, and a secret his Order means to own. Book 6 of The Architecture of Survival.",
+      "position": 6,
+      "isPartOf": {
+        "@type": "BookSeries",
+        "@id": "https://randypellegrini.com/#series",
+        "name": "The Architecture of Survival",
+        "url": "https://randypellegrini.com/series/",
+        "author": {
+          "@id": "https://randypellegrini.com/#author"
+        }
+      },
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.amazon.com/dp/B0HDK6SGM3"
+        }
+      }
     }
-  }
-]
+  ]
+}
 </script>
 <section class="books-hero reveal">
   <p class="eyebrow">The Complete Saga</p>

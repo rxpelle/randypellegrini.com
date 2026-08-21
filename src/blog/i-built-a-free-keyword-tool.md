@@ -49,7 +49,7 @@ I built KDP Scout for my own books — *The Aethelred Cipher* and *The Genesis P
 
 If it helps other authors do the same, that's a win. The tool is MIT licensed, which means you can use it, modify it, share it, whatever. No strings.
 
-If you got something useful from this — or you're going to fork the repo and not look back — the easiest way to say thanks is to grab the novella that paid for the tool's development. It's free, no upsell, no email-trap. Plague-era historical thriller, ninety pages, the lead-in to a ten-book series.
+If you got something useful from this — or you're going to fork the repo and not look back — the easiest way to say thanks is to grab the novella that paid for the tool's development. It's free, no upsell, no email-trap. Plague-era historical thriller, ninety pages, the lead-in to an eight-book series.
 
 <div class="book-promo-banner">
   <div class="book-promo-content">
