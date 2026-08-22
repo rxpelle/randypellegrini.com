@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/.nojekyll");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/llms.txt");
+  eleventyConfig.addPassthroughCopy("src/05cb6ad1c6394679add68a9ab03eb884.txt");
   eleventyConfig.addPassthroughCopy("src/favicon.svg");
 
   // Custom filter: zero-pad numbers (e.g. 1 -> "01")
