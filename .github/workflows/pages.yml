@@ -41,3 +41,23 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Notify IndexNow
+        if: success()
+        run: |
+          sleep 30
+          # IndexNow key is intentionally public (hosted at site root per protocol);
+          # read it from the key file in src/ rather than hardcoding.
+          KEYFILE=$(ls src/ | grep -E '^[0-9a-f]{32}\.txt$' | head -1)
+          KEY="${KEYFILE%.txt}"
+          python3 - "$KEY" << 'PYEOF'
+          import json, urllib.request, re, sys
+          key = sys.argv[1]
+          xml = urllib.request.urlopen('https://randypellegrini.com/sitemap.xml').read().decode()
+          urls = re.findall(r'<loc>([^<]+)</loc>', xml)
+          payload = {'host': 'randypellegrini.com', 'key': key, 'keyLocation': f'https://randypellegrini.com/{key}.txt', 'urlList': urls}
+          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=json.dumps(payload).encode(), headers={'Content-Type': 'application/json; charset=utf-8'})
+          try:
+              print('IndexNow:', urllib.request.urlopen(req).status)
+          except Exception as e:
+              print('IndexNow ping failed (non-fatal):', e)
+          PYEOF
