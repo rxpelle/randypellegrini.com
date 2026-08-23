@@ -188,24 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Lazy loading for book cover images
-  const images = document.querySelectorAll('img[loading="lazy"]');
-
-  if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src || img.src;
-          img.classList.add('loaded');
-          observer.unobserve(img);
-        }
-      });
-    });
-
-    images.forEach(img => imageObserver.observe(img));
-  }
-
   // Stats counter animation
   const statNumbers = document.querySelectorAll('.stat-number');
 

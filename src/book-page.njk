@@ -7,7 +7,7 @@ permalink: "{{ book.pageUrl }}"
 eleventyComputed:
   fullTitle: "{{ book.title }} | Book {{ book.seriesPosition }} of The Architecture of Survival | Randy Pellegrini"
   description: "{{ book.metaDescription }}"
-  ogImage: "{{ site.url }}{{ book.cover }}"
+  ogImage: "{{ site.url }}{{ book.ogCover }}"
   ogType: "book"
 ---
 {% extends "base.njk" %}
@@ -221,7 +221,7 @@ eleventyComputed:
       "@id": "{{ site.url }}{{ book.pageUrl }}#book",
       "name": "{{ book.title | safe }}",
       "url": "{{ site.url }}{{ book.pageUrl }}",
-      "image": "{{ site.url }}{{ book.cover }}",
+      "image": "{{ site.url }}{{ book.ogCover }}",
       "author": { "@type": "Person", "name": "Randy Pellegrini", "url": "{{ site.url }}" },
       "bookFormat": "https://schema.org/EBook",
       "inLanguage": "en",
