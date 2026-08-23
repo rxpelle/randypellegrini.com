@@ -50,7 +50,7 @@ By the third month of the siege, the city was full of refugees from the countrys
 
 In Possidius's account, Augustine fell ill in early August, took to his bed, asked that the penitential psalms be written on the walls of his room so he could read them lying down, and refused all visitors for the last ten days of his life. He died on August 28, 430, while the Vandal army was still outside the walls. He was seventy-five years old.
 
-The city did not fall for another eleven months. When it finally did, the Vandals burned much of it but spared, oddly, the basilica and the library. Possidius — who survived the siege and the sack — wrote that the library was preserved, *bibliotheca ecclesiae omnia incolumis*, "the library of the church entirely undamaged."
+The city did not fall for another eleven months. When it finally did, the Vandals burned much of it but spared, oddly, the basilica. As for the library, what Possidius — who survived the siege and the sack — actually recorded was Augustine's standing order about it: *ecclesiae bibliothecam omnesque codices diligenter posteris custodiendos semper iubebat*, "he always gave orders that the library of the church and all the books be carefully preserved for posterity." Whether the building came through the burning is inference. That the books did is fact: we have them.
 
 That is the official version. There is reason to think it is incomplete.
 

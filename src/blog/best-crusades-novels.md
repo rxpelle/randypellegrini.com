@@ -10,8 +10,8 @@ permalink: /blog/best-crusades-novels/
 excerpt: "The Crusades gave fiction its most morally loaded battlefield: two civilizations, three religions, and a narrow strip of coast everyone called holy. These are the ten novels that did it justice."
 prevPost: "/blog/hattin-1187-the-year-jerusalem-fell/"
 prevTitle: "1187: The Year Jerusalem Fell"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/how-to-back-up-a-civilization/"
+nextTitle: "How to Back Up a Civilization"
 ctaText: '<em>The Split Pomegranate</em> is my Crusades novel: a Jewish engineer in Damascus and a Templar mason who share an impossible gift, and a love carried for twenty years in letters and coded seals across the lines of the Second Crusade. It runs from 1140 to 1187 — Damascus, Jerusalem, and the Languedoc — and it stands entirely on its own.'
 ---
 
