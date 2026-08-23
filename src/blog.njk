@@ -20,7 +20,7 @@ permalink: /blog/
   </div>
 
   <div class="blog-grid">
-    {%- for post in collections.blog %}
+    {%- for post in collections.blog | reverse %}
     <article class="blog-card reveal delay-{{ loop.index0 % 2 + 1 }}">
       <span class="blog-number">{{ post.data.number | padStart(2) }}</span>
       {% if post.data.bookTag %}<span class="blog-book-tag">{{ post.data.bookTag }}</span>{% endif %}

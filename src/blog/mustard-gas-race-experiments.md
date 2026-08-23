@@ -11,8 +11,8 @@ permalink: /blog/mustard-gas-race-experiments/
 excerpt: "More than sixty thousand American soldiers were used as chemical test subjects during World War II. Some of them were sorted by the color of their skin — and then told to keep quiet about it for forty years."
 prevPost: "/blog/bureaucracy-is-the-sorcery-of-institutions/"
 prevTitle: "Bureaucracy Is the True Sorcery of Institutions"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/best-black-death-novels/"
+nextTitle: "The 10 Best Black Death and Plague Novels"
 ctaText: 'This is the kind of buried history that feeds <em>The Architecture of Survival</em> — my eight-book series about a family that spends three thousand years guarding a record the powerful keep trying to erase. Five books are out; start with <em>The Aethelred Cipher</em>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
