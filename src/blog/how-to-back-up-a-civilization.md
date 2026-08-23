@@ -10,8 +10,8 @@ permalink: /blog/how-to-back-up-a-civilization/
 excerpt: "The autograph Rule of St. Benedict was rescued from two sackings and then burned in an ordinary fire at its refuge in 896. Nobody panicked, because a century earlier Charlemagne had ordered a copy. That is the whole system in one object: the monks were not guarding originals. They were running redundancy."
 prevPost: "/blog/best-crusades-novels/"
 prevTitle: "The 10 Best Novels Set During the Crusades"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/the-backup-system-had-cats/"
+nextTitle: "The Backup System Had Cats"
 ctaText: '<em>What Augustine Hid</em> is the story of the network''s first node — Augustine''s last thirty years at Hippo, spent preparing a library to outlive a siege he knew he would not. <em>The Aethelred Cipher</em> picks the thread up nine centuries later, in a Rhineland monastery in 1347, in the season the copyists themselves began to die. Each stands alone. <a href="https://www.amazon.com/dp/B0H34DZVXS">Read What Augustine Hid</a> · <a href="https://www.amazon.com/dp/B0GJTGCHS2">Read The Aethelred Cipher</a>.'
 ---
 
