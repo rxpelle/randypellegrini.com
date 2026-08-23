@@ -13,7 +13,7 @@ prevPost: "/blog/how-the-black-death-spread/"
 prevTitle: "How the Black Death Actually Spread"
 nextPost: "/blog/blood-memory-science-meets-fiction/"
 nextTitle: "Blood Memory: Science Meets Fiction"
-ctaText: '<em>The Aethelred Cipher</em> is set at the moment of medieval Europe''s greatest system shock: the Black Death of 1347. Thomas, a young monk, discovers that powerful men have been tracking the collapse pattern across centuries—and positioning themselves to profit from each catastrophe. His choice: expose the system and scatter its secrets, or let the wheel keep turning.'
+ctaText: '<em>The First Key</em> opens in 1177 BCE, as every civilization in the eastern Mediterranean fails at once. Nefertari, a royal physician and scribe, realizes the collapse isn''t random — it''s a cascade with a pattern — and spends her life encoding that pattern so the next civilization gets a warning. Three thousand years of the series flow from her decision.'
 ---
 
 In 1177 BCE, every major civilization in the Eastern Mediterranean collapsed simultaneously.

@@ -13,7 +13,7 @@ prevPost: "/blog/ethics-of-genetic-selection/"
 prevTitle: "Who Gets to Survive?"
 nextPost: "/blog/writing-villain-might-be-right/"
 nextTitle: "Writing a Thriller Where the Villain Might Be Right"
-ctaText: '<em>The Aethelred Cipher</em> is set at the moment when medieval Europe''s most complex system—the network of trade, religion, and governance that connected a continent—met the shock that would destroy it. Thomas, a monk, discovers that some people saw it coming. They''d been seeing it coming for two thousand years.'
+ctaText: '<em>The First Key</em> is set inside the biggest complexity collapse in ancient history — the Bronze Age Collapse of 1177 BCE. Nefertari, a royal physician, watches every system her world depends on fail in cascade, and decides the pattern itself is what has to survive. The series starts where the collapse starts.'
 ---
 
 On March 23, 2021, the Ever Given—a container ship longer than the Empire State Building is tall—turned sideways in the Suez Canal.

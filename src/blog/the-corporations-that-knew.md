@@ -13,7 +13,7 @@ prevPost: "/blog/writing-a-12-book-series/"
 prevTitle: "Writing an 8-Book Series"
 nextPost: "/blog/the-trolley-problem-at-civilizational-scale/"
 nextTitle: "The Trolley Problem at Civilizational Scale"
-ctaText: '<em>The Aethelred Cipher</em> begins with a monk who discovers that powerful men have been tracking civilizational collapse for centuries—not to prevent it, but to profit from it. The conspiracy he uncovers doesn''t require secret handshakes or hidden temples. It requires something much simpler: an institution willing to bury what it knows.'
+ctaText: 'In <em>The Genesis Protocol</em>, GenVault Corporation knows. Its head of research built THRESHOLD, and the woman managing him descends from a network that has been running the same calculus for three thousand years. Sarah Chen has forty-three seconds to get the proof out of the building.'
 ---
 
 When people hear the word "conspiracy," they picture robed figures in candlelit chambers. Secret handshakes. Hidden symbols carved into monuments. The stuff of thrillers and late-night television.

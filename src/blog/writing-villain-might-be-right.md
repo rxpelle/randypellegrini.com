@@ -13,8 +13,8 @@ prevPost: "/blog/complexity-kills/"
 prevTitle: "Complexity Kills"
 nextPost: "/blog/the-money-dies-first/"
 nextTitle: "The Money Dies First"
-ctaTitle: "Read The Aethelred Cipher"
-ctaText: '<em>The Aethelred Cipher</em> is the first book in a series where the villains aren''t wrong—they''re just willing to do what the heroes won''t. The Order has been making the hard calculations for three thousand years. Thomas is the first person to challenge not just their methods, but their premise.'
+ctaTitle: "Read The Genesis Protocol"
+ctaText: 'In <em>The Genesis Protocol</em>, Morrison isn''t wrong about the data — civilizational collapse is coming. He''s wrong about what that justifies. The book lives in the space between those two sentences, and Sarah Chen has to fight a man whose evidence she can''t refute.'
 ---
 
 The easiest villain to write is the one who's wrong.

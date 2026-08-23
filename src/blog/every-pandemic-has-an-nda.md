@@ -13,7 +13,7 @@ prevPost: "/blog/operation-paperclip/"
 prevTitle: "Operation Paperclip"
 nextPost: "/blog/ethics-of-genetic-selection/"
 nextTitle: "Who Gets to Survive?"
-ctaText: '<em>The Aethelred Cipher</em> takes place during the Black Death of 1347 — a pandemic that killed half of Europe while institutions assured the public that God''s plan was unfolding as intended. Thomas, a monk, discovers that some of those institutions knew exactly what was happening and had been preparing for it. The pattern of suppression started long before the modern era.'
+ctaText: 'In <em>The Genesis Protocol</em>, geneticist Sarah Chen finds proof that the pandemic was engineered — and the government''s response isn''t to expose it. It''s an NDA under the Espionage Act. She has to choose between justice and the math that says silence saves more lives than truth.'
 ---
 
 In September 1918, Philadelphia held a parade.

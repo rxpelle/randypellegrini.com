@@ -30,6 +30,12 @@
         bookName = 'The Genesis Protocol';
       } else if (href.indexOf('B0GSWLM1WV') !== -1 || href.indexOf('B0GWD1BVM6') !== -1) {
         bookName = 'The First Key';
+      } else if (href.indexOf('B0GX2TG21Y') !== -1) {
+        bookName = 'Love Remembers in Silence';
+      } else if (href.indexOf('B0H34DZVXS') !== -1) {
+        bookName = 'What Augustine Hid';
+      } else if (href.indexOf('B0HDK6SGM3') !== -1) {
+        bookName = 'The Split Pomegranate';
       }
       gtag('event', 'amazon_click', {
         book_name: bookName,

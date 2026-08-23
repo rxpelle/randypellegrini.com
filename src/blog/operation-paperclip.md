@@ -13,7 +13,7 @@ prevPost: "/blog/pattern-recognition/"
 prevTitle: "Pattern Recognition"
 nextPost: "/blog/every-pandemic-has-an-nda/"
 nextTitle: "Every Pandemic Has an NDA"
-ctaText: '<em>The Aethelred Cipher</em> follows a monk who discovers that powerful institutions have been making morally catastrophic decisions in secret for centuries. The conspiracy doesn''t start in a boardroom. It starts in a monastery, during the Black Death, with a pattern hidden in manuscript margins.'
+ctaText: 'In <em>The Genesis Protocol</em>, the institutions don''t just recruit compromised men — they run a program designed to decide who survives the next collapse. THRESHOLD is what Paperclip logic looks like when it''s aimed at four billion people.'
 ---
 
 Wernher von Braun designed the Saturn V rocket that carried Americans to the moon. He appeared on Walt Disney's television program. He was celebrated as a visionary who helped win the Space Race.

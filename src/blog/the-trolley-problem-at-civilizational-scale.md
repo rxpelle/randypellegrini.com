@@ -13,8 +13,8 @@ prevPost: "/blog/the-corporations-that-knew/"
 prevTitle: "The Corporations That Knew"
 nextPost: "/blog/pattern-recognition/"
 nextTitle: "Pattern Recognition"
-ctaTitle: "Read The Aethelred Cipher"
-ctaText: '<em>The Aethelred Cipher</em> is the first book in <em>The Architecture of Survival</em>, a series that asks what happens when the people who see civilizational collapse coming have to decide what to do about it. Thomas, a medieval monk, discovers that powerful men have been making exactly this calculation for centuries. His answer changes everything.'
+ctaTitle: "Read The Genesis Protocol"
+ctaText: '<em>The Genesis Protocol</em> is the trolley problem at civilizational scale: Morrison''s math says four billion deaths now prevent extinction later. Sarah Chen has to find the flaw in that math before the remaining hubs go live — and decide what to do when the people running the trolley are convinced they''re the heroes.'
 ---
 
 You're standing at a lever.
