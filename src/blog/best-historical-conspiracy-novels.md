@@ -51,15 +51,15 @@ In 1790s France, a novice nun must scatter pieces of a legendary chess set as th
 
 Published before *The Da Vinci Code* existed. Neville built the template: dual timelines, ancient artifact, secret society, female protagonist navigating a conspiracy designed by men. The chess-game-as-conspiracy metaphor is executed better than it has any right to be.
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2024)
+## 5. The Aethelred Cipher by Randy Pellegrini (2026)
 
 My contribution to this genre — and the reason I've read everything else on this list.
 
-A coded 10th-century Anglo-Saxon manuscript reveals a secret society that has operated continuously for 3,200 years across 111 generations, from ancient Egypt through medieval England to the present. The cipher is the entry point to a pattern of hidden knowledge embedded in the architecture of history itself.
+A coded manuscript, surfacing in Mainz as the Black Death arrives in 1347, reveals a secret society that has operated continuously for 3,200 years across 112 generations, from ancient Egypt through medieval Germany to the present. The cipher is the entry point to a pattern of hidden knowledge embedded in the architecture of history itself.
 
-This is the first book in a planned 8-book series called *The Architecture of Survival*. Each book covers a different era: Bronze Age Egypt, Roman Judea, late-antique North Africa, the Crusader Levant, the eugenics era, and forward. The conspiracy isn't a backdrop — it's the subject. How does a secret survive across millennia? What kind of organization can operate across 111 generations? What's worth protecting for that long?
+This is the first book in a planned 8-book series called *The Architecture of Survival*. Each book covers a different era: Bronze Age Egypt, Roman Judea, late-antique North Africa, the Crusader Levant, the eugenics era, and forward. The conspiracy isn't a backdrop — it's the subject. How does a secret survive across millennia? What kind of organization can operate across 112 generations? What's worth protecting for that long?
 
-The Anglo-Saxon period is underexplored in this genre, and the coded manuscript traditions of medieval monasteries are real. I wanted a conspiracy thriller where you could check the history.
+Plague-era Germany is underexplored in this genre, and the coded manuscript traditions of medieval monasteries are real. I wanted a conspiracy thriller where you could check the history.
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

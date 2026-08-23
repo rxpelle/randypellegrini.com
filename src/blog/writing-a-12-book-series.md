@@ -3,9 +3,9 @@ date: 2025-02-26
 updated: 2026-05-05
 title: "Writing an 8-Book, 3,200-Year Series"
 heading: 'Writing an 8-Book, 3,200-Year Series: The Architecture Behind <em>The Architecture of Survival</em>'
-description: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind an 8-book saga."
+description: "How do you plan a story spanning 3,200 years and 112 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind an 8-book saga."
 ogTitle: "Writing an 8-Book, 3,200-Year Series"
-ogDescription: "How do you plan a story spanning 3,200 years and 111 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind an 8-book saga."
+ogDescription: "How do you plan a story spanning 3,200 years and 112 generations? Go behind the scenes of The Architecture of Survival series to explore the ambition, architecture, and research behind an 8-book saga."
 number: 6
 bookTag: "The Series"
 permalink: /blog/writing-a-12-book-series/
@@ -42,7 +42,7 @@ That's when things got complicated.
 
 ## The Architecture
 
-Eight books. Eight eras. One bloodline spanning 111 generations from 1177 BCE to the present day.
+Eight books. Eight eras. One bloodline spanning 112 generations from 1177 BCE to the present day.
 
 Here's the structural challenge: each book needs to work as a standalone novel. A reader should be able to pick up any book in the series and follow the story without having read the others. But readers who follow the complete series should see patterns building across books&mdash;echoes, parallels, the same systemic dynamics playing out in different centuries with different characters.
 
@@ -82,7 +82,7 @@ Characters age, marry, have children, die. Their descendants inherit traits, loc
 I maintain a series bible that currently runs to tens of thousands of words. It tracks:
 
 - Every named character's birth year, death year, relationships, and physical description
-- The custody chain of seven bronze keys across 111 generations
+- The custody chain of seven bronze keys across 112 generations
 - The evolution of encoding methods by era
 - The Order's organizational structure at each point in history
 - Geographic locations of network safe houses, archives, and coordinating centers

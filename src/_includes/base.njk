@@ -25,13 +25,13 @@
     <meta property="og:type" content="{{ ogType | default('website') }}" />
     <meta property="og:url" content="{{ ogUrl | default(site.url + page.url) }}" />
     <meta property="og:site_name" content="Randy Pellegrini" />
-    <meta property="og:image" content="{{ ogImage | default(site.url + '/assets/book-cover.png') }}" />
+    <meta property="og:image" content="{{ ogImage | default(site.url + '/assets/book-cover.jpg') }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@rxpelle" />
     <meta name="twitter:creator" content="@rxpelle" />
     <meta name="twitter:title" content="{{ _ogTitle }}" />
     <meta name="twitter:description" content="{{ _ogDesc }}" />
-    <meta name="twitter:image" content="{{ ogImage | default(site.url + '/assets/book-cover.png') }}" />
+    <meta name="twitter:image" content="{{ ogImage | default(site.url + '/assets/book-cover.jpg') }}" />
     <link rel="canonical" href="{{ ogUrl | default(site.url + page.url) }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,8 +47,8 @@
       {% include "header.njk" %}
       <div class="site-banner site-banner-preorder" id="site-banner">
         <div class="site-banner-inner">
-          <span class="site-banner-text">📖 <strong>Book 4: Love Remembers in Silence</strong> is here &mdash; available now on Amazon for $4.99</span>
-          <a class="site-banner-cta" href="{{ site.amazonBook4Url }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book4" data-source="banner">Read on Amazon &rarr;</a>
+          <span class="site-banner-text">📖 <strong>Book 6: The Split Pomegranate</strong> is here &mdash; available now on Amazon for $4.99</span>
+          <a class="site-banner-cta" href="{{ site.amazonBook6Url }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book6" data-source="banner">Read on Amazon &rarr;</a>
           <button class="site-banner-close" id="banner-close" aria-label="Close banner">&times;</button>
         </div>
       </div>

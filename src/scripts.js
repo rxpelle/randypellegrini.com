@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('🔑 Genesis Protocol Activated');
       console.log('Generation 0: Nefertari (1177 BCE)');
       console.log('First Carrier: Tausret, the Living Key');
-      console.log('Current Generation: 138 (Sarah Chen, 2025 CE)');
+      console.log('Current Generation: 112 (Sarah Chen, 2025 CE)');
       console.log('Years Elapsed: 3,202');
       console.log('Estimated Generations Remaining: Unknown');
 
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   console.log('🔮 The Architecture of Survival - Website initialized');
-  console.log('📚 8 books | 3,200 years | 138 generations');
+  console.log('📚 8 books | 3,200 years | 112 generations');
 });
 
 // Add CSS for pulse animation
@@ -345,7 +345,7 @@ document.head.appendChild(style);
   var banner = document.getElementById('site-banner');
   var closeBtn = document.getElementById('banner-close');
   if (!banner || !closeBtn) return;
-  var KEY = 'book4_banner_dismissed';
+  var KEY = 'book6_banner_dismissed';
   if (localStorage.getItem(KEY)) {
     banner.classList.add('hidden');
   }

@@ -1,0 +1,338 @@
+---
+pagination:
+  data: bookPages
+  size: 1
+  alias: book
+permalink: "{{ book.pageUrl }}"
+eleventyComputed:
+  fullTitle: "{{ book.title }} | Book {{ book.seriesPosition }} of The Architecture of Survival | Randy Pellegrini"
+  description: "{{ book.metaDescription }}"
+  ogImage: "{{ site.url }}{{ book.cover }}"
+  ogType: "book"
+---
+{% extends "base.njk" %}
+
+{% block pageStyles %}
+<style>
+  .bp-hero {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+    padding: 48px 0 32px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .bp-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(27, 29, 31, 0.25);
+  }
+  .bp-hero .eyebrow {
+    color: var(--teal-dark);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin: 0 0 16px;
+  }
+  .bp-hero h1 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    margin: 0 0 16px;
+    line-height: 1.1;
+  }
+  .bp-tagline {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+  .bp-meta {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+  .bp-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .bp-meta-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+  }
+  .bp-meta-value {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .bp-rating {
+    margin: 0 0 20px;
+    font-size: 0.95rem;
+  }
+  .bp-rating .stars {
+    color: #c87941;
+    letter-spacing: 0.1em;
+    margin-right: 8px;
+  }
+  .bp-ku-note {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+  .bp-about {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+  .bp-about h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.8rem;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .bp-about p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin: 0 0 20px;
+  }
+  .bp-series-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 8px 0 24px;
+    font-size: 0.95rem;
+  }
+  .bp-signup {
+    background: linear-gradient(135deg, #3a2413 0%, #5a3a20 100%);
+    color: #f8f3ec;
+    border-radius: 24px;
+    padding: 40px 32px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  .bp-signup h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    color: #fbe3c8;
+    margin: 0 0 12px;
+    font-size: 1.6rem;
+  }
+  .bp-signup p {
+    color: rgba(248, 243, 236, 0.85);
+    max-width: 480px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  }
+  .bp-signup .signup {
+    justify-content: center;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .bp-signup .signup input {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(251, 227, 200, 0.3);
+    color: #f8f3ec;
+  }
+  .bp-signup .signup input::placeholder {
+    color: rgba(248, 243, 236, 0.5);
+  }
+  .bp-signup .signup button {
+    background: #c87941;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .bp-signup .form-note {
+    color: rgba(248, 243, 236, 0.55);
+    margin-top: 12px;
+  }
+  .bp-series {
+    background: var(--panel);
+    border-radius: 24px;
+    padding: 32px;
+    margin: 32px 0;
+    border: 1px solid rgba(27, 29, 31, 0.08);
+  }
+  .bp-series h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    text-align: center;
+    margin: 0 0 24px;
+  }
+  .bp-series-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .bp-series-card {
+    text-align: center;
+    padding: 16px;
+  }
+  .bp-series-card .book-num {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+  .bp-series-card h3 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.05rem;
+    margin: 0 0 8px;
+  }
+  .bp-series-card .era {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+  @media (max-width: 768px) {
+    .bp-hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .bp-cover {
+      max-width: 240px;
+      margin: 0 auto;
+    }
+    .bp-meta {
+      justify-content: center;
+    }
+    .bp-series-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Book",
+      "@id": "{{ site.url }}{{ book.pageUrl }}#book",
+      "name": "{{ book.title | safe }}",
+      "url": "{{ site.url }}{{ book.pageUrl }}",
+      "image": "{{ site.url }}{{ book.cover }}",
+      "author": { "@type": "Person", "name": "Randy Pellegrini", "url": "{{ site.url }}" },
+      "bookFormat": "https://schema.org/EBook",
+      "inLanguage": "en",
+      "genre": ["Historical Fiction", "Thriller"],
+      {% if book.datePublished %}"datePublished": "{{ book.datePublished }}",{% endif %}
+      "abstract": "{{ book.metaDescription | safe }}",
+      "isPartOf": {
+        "@type": "BookSeries",
+        "name": "The Architecture of Survival",
+        "url": "{{ site.url }}/series/",
+        "author": { "@type": "Person", "name": "Randy Pellegrini" }
+      },
+      {% if book.rating %}
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ book.rating.value }}",
+        "ratingCount": "{{ book.rating.count }}",
+        "bestRating": "5"
+      },
+      {% endif %}
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ book.amazonUrl }}",
+        "availability": "https://schema.org/InStock"
+      },
+      "sameAs": "{{ book.amazonUrl }}"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Books", "item": "{{ site.url }}/books/" },
+        { "@type": "ListItem", "position": 3, "name": "{{ book.title | safe }}" }
+      ]
+    }
+  ]
+}
+</script>
+
+<section class="bp-hero reveal">
+  <div class="bp-cover">
+    <img src="{{ book.cover }}" alt="{{ book.title }} book cover" width="{{ book.coverW }}" height="{{ book.coverH }}" fetchpriority="high" />
+  </div>
+  <div>
+    <p class="eyebrow">Book {{ book.seriesPosition }} of The Architecture of Survival</p>
+    <h1>{{ book.title }}</h1>
+    <p class="bp-tagline">{{ book.tagline }}</p>
+
+    <div class="bp-meta">
+      {% for fact in book.facts %}
+      <div class="bp-meta-item">
+        <span class="bp-meta-label">{{ fact.label }}</span>
+        <span class="bp-meta-value">{{ fact.value | safe }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if book.rating %}
+    <p class="bp-rating">
+      <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;{% if book.rating.value >= "4.5" %}&#9733;{% else %}&#9734;{% endif %}</span>
+      {{ book.rating.value }} out of 5 &mdash; {{ book.rating.count }} ratings on Amazon
+    </p>
+    {% endif %}
+
+    <div>
+      <a class="button" href="{{ book.amazonUrl }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book{{ book.seriesPosition }}" data-source="book_page">Read on Amazon &rarr;</a>
+    </div>
+    <p class="bp-ku-note">Free to read with Kindle Unlimited{% if book.audio %} &middot; 🎧 Also available in audio{% endif %}. Every book in the series stands alone.</p>
+  </div>
+</section>
+
+<section class="bp-about reveal delay-1">
+  <h2>About the Book</h2>
+  {% for p in book.paragraphs %}
+  <p>{{ p | safe }}</p>
+  {% endfor %}
+</section>
+
+<nav class="bp-series-nav reveal delay-1" aria-label="Series navigation">
+  {% set prevBook = books[book.seriesPosition - 2] if book.seriesPosition > 1 else null %}
+  {% set nextBook = books[book.seriesPosition] %}
+  <span>{% if prevBook %}<a class="text-link" href="{{ prevBook.pageUrl }}">&larr; Book {{ prevBook.seriesPosition }}: {{ prevBook.title }}</a>{% endif %}</span>
+  <span>{% if nextBook %}<a class="text-link" href="{{ nextBook.pageUrl }}">Book {{ nextBook.seriesPosition }}: {{ nextBook.title }} &rarr;</a>{% endif %}</span>
+</nav>
+
+<section class="bp-signup reveal delay-2">
+  <h2>Get series updates</h2>
+  <p>Subscribe for new releases and behind-the-scenes updates from The Architecture of Survival series.</p>
+  <form class="signup" data-newsletter="true">
+    <label class="sr-only" for="bp-email">Email address</label>
+    <input id="bp-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
+    <button class="button" type="submit"><span>Notify me</span></button>
+  </form>
+  <div id="form-messages" style="display: none;"></div>
+  <p class="form-note">No spam. Unsubscribe anytime.</p>
+</section>
+
+<section class="bp-series reveal delay-2">
+  <h2>More in the Series</h2>
+  <div class="bp-series-grid">
+    {% for b in books %}
+      {% if b.seriesPosition != book.seriesPosition %}
+        <div class="bp-series-card">
+          <div class="book-num">Book {{ b.seriesPosition }}</div>
+          <h3>{{ b.title }}</h3>
+          <div class="era">{{ b.era }}</div>
+          <a class="button" href="{{ b.pageUrl }}">About the book</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p style="text-align: center; margin: 20px 0 0;"><a class="text-link" href="/reading-order/">Not sure where to start? See the reading order &rarr;</a></p>
+</section>
+{% endblock %}

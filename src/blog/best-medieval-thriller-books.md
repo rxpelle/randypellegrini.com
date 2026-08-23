@@ -12,7 +12,7 @@ prevPost: "/blog/best-historical-conspiracy-novels/"
 prevTitle: "10 Best Historical Conspiracy Novels"
 nextPost: "/blog/books-like-the-book-of-longings/"
 nextTitle: "Books Like The Book of Longings"
-ctaText: '<em>The Aethelred Cipher</em> is set in the most underexplored era of medieval fiction — Anglo-Saxon England before the Norman Conquest. Coded manuscripts, monastic secrets, and a conspiracy spanning 3,200 years. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Grab it on Amazon</a>.'
+ctaText: '<em>The Aethelred Cipher</em> is set in Mainz in 1347, as the Black Death arrives in Europe. Coded manuscripts, monastic secrets, and a conspiracy spanning 3,200 years. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Grab it on Amazon</a>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
 ---
@@ -51,13 +51,13 @@ An epic following the construction of a cathedral in fictional Kingsbridge, Engl
 
 Follett makes cathedral construction into a thriller, which sounds impossible until you read it. The engineering is real. The politics are lethal. The ambitions of master builders, monks, and noblewomen collide across 40 years. It's 1,000 pages and it earns every one.
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2024)
+## 5. The Aethelred Cipher by Randy Pellegrini (2026)
 
-Mine. Set in the Anglo-Saxon period — before the Norman Conquest, before the England most medieval fiction depicts even exists.
+Mine. Set in Mainz in 1347, the year the Black Death arrives in Europe and starts killing half of everyone.
 
-A coded manuscript from the reign of Aethelred the Unready reveals a secret society operating since ancient Egypt. The medieval thread runs through monastic scriptoriums where monks embed hidden messages in illuminated manuscripts — a practice that's historically documented. The cipher traditions are real. The encoding methods are real. I built the thriller on a foundation of actual monastic practice.
+A dying monk presses an iron key into a scribe's hands, and the coded trail leads through manuscript marginalia to a secret society operating since ancient Egypt. The medieval thread runs through monastic scriptoriums where monks embed hidden messages in illuminated manuscripts — a practice that's historically documented. The cipher traditions are real. The encoding methods are real. I built the thriller on a foundation of actual monastic practice.
 
-The Anglo-Saxon period is criminally underused in fiction. Most "medieval" novels start after 1066. This one goes earlier, into the wilder, less familiar England of the 10th century, where literacy itself was a form of power.
+Plague-year Germany is a setting most medieval thrillers avoid — the scale of the dying is hard to write around. This one leans into it: quarantine lines, emptying scriptoriums, and a scribe discovering that literacy itself is a form of power.
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

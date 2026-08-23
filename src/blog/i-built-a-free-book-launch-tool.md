@@ -83,7 +83,7 @@ The problem isn't motivation. It's sequencing. A book launch is a 30-day project
     </a>
     <a class="book-promo-link" href="/books/">
       <span>Start with Book 1</span>
-      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.6 on Amazon</span>
+      <span class="book-promo-stars">&#9733;&#9733;&#9733;&#9733;&#9734; 248 ratings on Amazon</span>
     </a>
   </div>
 </div>

@@ -53,13 +53,13 @@ Published fifteen years before *The Da Vinci Code*, this may be the original his
 
 A chess set instead of a Holy Grail, but the same architecture of ancient secrets and modern treasure hunts. Neville did it first, with stronger female leads and more inventive plotting. If you've only read Brown, this will feel like discovering the source code.
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2024)
+## 5. The Aethelred Cipher by Randy Pellegrini (2026)
 
 This is my book, so take this with appropriate salt — but I wrote it because I wanted a conspiracy thriller where the history actually holds up.
 
-A coded Anglo-Saxon manuscript triggers an investigation into a secret society that's been operating continuously for 3,200 years across 111 generations. From monastic scriptoriums to modern-day catacombs, the cipher reveals a pattern of hidden knowledge embedded in history itself.
+A coded manuscript surfaces in plague-year Germany, 1347, and triggers an investigation into a secret society that's been operating continuously for 3,200 years across 112 generations. From monastic scriptoriums to Black Death quarantine lines, the cipher reveals a pattern of hidden knowledge embedded in history itself.
 
-The manuscript isn't a plot device. The series actually excavates what the coded knowledge means, why it was worth protecting, and how a secret can survive across millennia. The Anglo-Saxon cipher traditions are real. The monastic encoding practices are real. I spent years on the research because I wanted readers to be able to check my homework.
+The manuscript isn't a plot device. The series actually excavates what the coded knowledge means, why it was worth protecting, and how a secret can survive across millennia. The medieval cipher traditions are real. The monastic encoding practices are real. I spent years on the research because I wanted readers to be able to check my homework.
 
 First in a planned 8-book series spanning ancient Egypt to the present day.
 

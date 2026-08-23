@@ -8,7 +8,7 @@ layout: base.njk
   "headline": {{ title | dump | safe }},
   "description": {{ description | dump | safe }},{% if date %}
   "datePublished": "{{ date | isoDate }}",{% endif %}
-  "image": "{{ ogImage | default(site.url + '/assets/book-cover.png') }}",
+  "image": "{{ ogImage | default(site.url + '/assets/book-cover.jpg') }}",
   "wordCount": "{{ content | wordCount }}",
   "author": {
     "@type": "Person",

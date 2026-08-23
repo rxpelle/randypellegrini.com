@@ -53,6 +53,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>{{ site.url }}/reading-order/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {%- for b in books %}
+  <url>
+    <loc>{{ site.url }}{{ b.pageUrl }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {%- endfor %}
   {%- for post in collections.blog %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>

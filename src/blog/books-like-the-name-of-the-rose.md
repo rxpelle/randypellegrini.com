@@ -12,7 +12,7 @@ prevPost: "/blog/i-built-a-free-book-launch-tool/"
 prevTitle: "I Built a Free Book Launch Planner for Authors"
 nextPost: "/blog/books-like-dan-brown-but-smarter/"
 nextTitle: "Books Like Dan Brown But Smarter"
-ctaText: 'If coded manuscripts and monastic conspiracies are your thing, <em>The Aethelred Cipher</em> was built for readers like you. A secret society hiding knowledge across 3,200 years, starting in the scriptoriums of Anglo-Saxon England. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Grab it on Amazon</a>.'
+ctaText: 'If coded manuscripts and monastic conspiracies are your thing, <em>The Aethelred Cipher</em> was built for readers like you. A secret society hiding knowledge across 3,200 years, and a cipher hidden in the marginalia of plague-era monastic manuscripts. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Grab it on Amazon</a>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
 ---
@@ -41,13 +41,13 @@ The *New York Times* explicitly compared it to *The Name of the Rose*, and the c
 
 The difference is setting. Pears places his mystery at the exact hinge point between the medieval and modern worlds. The old ways of knowing (faith, authority, tradition) are being challenged by the new (experiment, observation, reason). It's the same tension Eco explored, just 300 years later.
 
-## 3. The Aethelred Cipher by Randy Pellegrini (2024)
+## 3. The Aethelred Cipher by Randy Pellegrini (2026)
 
 Full disclosure — this one's mine. But I wrote it specifically because I wanted more of what *The Name of the Rose* gave me, and I couldn't find enough of it.
 
-A coded 10th-century Anglo-Saxon manuscript surfaces, and the trail leads through monastic scriptoriums, forgotten catacombs, and a conspiracy that's been operating for over a thousand years. The cipher isn't a MacGuffin — the series actually excavates what the coded knowledge means and why it was worth protecting across 111 generations.
+A coded manuscript surfaces in Mainz in 1347, and the trail leads through monastic scriptoriums, plague-emptied streets, and a conspiracy that's been operating for over two thousand years. The cipher isn't a MacGuffin — the series actually excavates what the coded knowledge means and why it was worth protecting across 112 generations.
 
-I set the medieval thread in Anglo-Saxon England because it's criminally underexplored in fiction. The monks in pre-Norman England really did embed hidden messages in illuminated manuscripts. The tradition of encoded monastic knowledge is real, and I wanted to build a thriller around that fact.
+I set the medieval thread in Black Death Germany because Eco's monastery showed what a scriptorium under pressure looks like — and no pressure compares to 1347. Medieval monks really did embed hidden messages in illuminated manuscripts. The tradition of encoded monastic knowledge is real, and I wanted to build a thriller around that fact.
 
 If you're here because you love the idea that manuscripts can be dangerous, this is the book I wrote for you.
 
