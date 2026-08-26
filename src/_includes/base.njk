@@ -101,6 +101,26 @@
       </main>
       {% include "footer.njk" %}
     </div>
+
+    <div id="exit-popup" class="exit-popup-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-popup-title">
+      <div class="exit-popup-card">
+        <button type="button" id="exit-popup-close" class="exit-popup-close" aria-label="Close">&times;</button>
+        <p class="eyebrow" style="color: var(--teal);">Before you go</p>
+        <h2 id="exit-popup-title">Take a free story with you</h2>
+        <p>
+          <em>The Edmund Fragments</em> &mdash; a 5,000-word prequel to The Architecture of Survival.
+          A monk, a manuscript, and the winter before the Black Death. Free when you join the reader list.
+        </p>
+        <form data-newsletter="true" class="exit-popup-form">
+          <label class="sr-only" for="exit-popup-email">Email address</label>
+          <input id="exit-popup-email" type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
+          <button class="button" type="submit"><span>Send me the story</span></button>
+        </form>
+        <div class="form-messages" style="display:none"></div>
+        <p class="form-note">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+
     <script src="/scripts.js"></script>
     <script src="/amazon-localize.js"></script>
     <script src="/analytics.js"></script>

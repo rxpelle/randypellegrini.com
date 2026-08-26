@@ -141,6 +141,57 @@
     }
   });
 
+  // Exit-intent popup (desktop only — no reliable exit signal on touch, and
+  // entry/exit interstitials on mobile risk Google's interstitial penalty)
+  (function() {
+    var overlay = document.getElementById('exit-popup');
+    if (!overlay) return;
+    var closeBtn = document.getElementById('exit-popup-close');
+    var KEY_DONE = 'rp_exit_popup_done_v1';
+    var KEY_SNOOZE = 'rp_exit_popup_snooze_v1';
+    var shown = false;
+
+    function suppressed() {
+      try {
+        if (localStorage.getItem(KEY_DONE)) return true;
+        if (localStorage.getItem('grounds_reader_sub_v1')) return true;
+        var until = parseInt(localStorage.getItem(KEY_SNOOZE) || '0', 10);
+        return Date.now() < until;
+      } catch (e) { return true; }
+    }
+
+    function show() {
+      if (shown || suppressed()) return;
+      shown = true;
+      overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      gtag('event', 'exit_popup_shown', { page_location: window.location.href });
+    }
+
+    function hide(reason) {
+      overlay.style.display = 'none';
+      document.body.style.overflow = '';
+      try { localStorage.setItem(KEY_SNOOZE, String(Date.now() + 30 * 24 * 60 * 60 * 1000)); } catch (e) {}
+      if (reason) gtag('event', 'exit_popup_dismissed', { method: reason, page_location: window.location.href });
+    }
+
+    if (window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      document.addEventListener('mouseout', function(e) {
+        if (!e.relatedTarget && e.clientY <= 0) show();
+      });
+    }
+
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) hide('backdrop'); });
+    if (closeBtn) closeBtn.addEventListener('click', function() { hide('close'); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && shown && overlay.style.display !== 'none') hide('esc');
+    });
+    overlay.addEventListener('submit', function() {
+      try { localStorage.setItem(KEY_DONE, '1'); } catch (e) {}
+      setTimeout(function() { hide(); }, 3500);
+    });
+  })();
+
   // Retry any queued signups from previous failed submissions
   try {
     var pendingKey = 'pending_signups_v1';

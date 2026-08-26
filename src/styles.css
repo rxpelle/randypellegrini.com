@@ -2136,6 +2136,69 @@ textarea:focus-visible {
   margin: 16px 0 24px;
 }
 
+/* Exit-intent popup */
+.exit-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 12, 14, 0.55);
+  padding: 20px;
+}
+
+.exit-popup-card {
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 20px;
+  max-width: 460px;
+  width: 100%;
+  padding: 36px 32px 28px;
+  position: relative;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.exit-popup-card h2 {
+  font-family: "Fraunces", "Times New Roman", serif;
+  margin: 6px 0 12px;
+}
+
+.exit-popup-card p {
+  color: var(--ink-soft);
+}
+
+.exit-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.exit-popup-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.exit-popup-form input[type="email"] {
+  flex: 1 1 200px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 1rem;
+}
+
 /* Tease gate: blurred remainder of the reading behind the email form */
 #reading-veil {
   position: relative;
