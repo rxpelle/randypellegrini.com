@@ -69,7 +69,7 @@ First in a planned 8-book series spanning ancient Egypt to the present day.
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>
   </form>
-  <div id="form-messages" style="display: none;"></div>
+  <div class="form-messages" style="display: none;"></div>
 </div>
 
 ## 6. The Dante Club by Matthew Pearl (2003)

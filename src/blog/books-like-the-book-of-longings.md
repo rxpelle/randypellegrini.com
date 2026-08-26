@@ -65,7 +65,7 @@ If *The Book of Longings* made you want more ancient women refusing to let knowl
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>
   </form>
-  <div id="form-messages" style="display: none;"></div>
+  <div class="form-messages" style="display: none;"></div>
 </div>
 
 ## 6. Nefertiti by Michelle Moran (2007)

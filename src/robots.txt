@@ -1,4 +1,28 @@
 User-agent: *
 Allow: /
 
+# AI crawlers are explicitly welcome on this site.
+# Structured summary for AI systems: https://randypellegrini.com/llms.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://randypellegrini.com/sitemap.xml

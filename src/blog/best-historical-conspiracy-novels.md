@@ -67,7 +67,7 @@ Plague-era Germany is underexplored in this genre, and the coded manuscript trad
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>
   </form>
-  <div id="form-messages" style="display: none;"></div>
+  <div class="form-messages" style="display: none;"></div>
 </div>
 
 ## 6. The Historian by Elizabeth Kostova (2005)

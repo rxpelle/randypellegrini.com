@@ -10,16 +10,8 @@ layout: base.njk
   "datePublished": "{{ date | isoDate }}",{% endif %}
   "image": "{{ ogImage | default(site.url + '/assets/book-cover.jpg') }}",
   "wordCount": "{{ content | wordCount }}",
-  "author": {
-    "@type": "Person",
-    "name": "Randy Pellegrini",
-    "url": "https://randypellegrini.com",
-    "image": "https://randypellegrini.com/images/randypellegrini.jpg"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "Randy Pellegrini"
-  },
+  "author": { "@id": "https://randypellegrini.com/#author" },
+  "publisher": { "@id": "https://randypellegrini.com/#author" },
   "url": "{{ ogUrl | default(site.url + page.url) }}",
   "mainEntityOfPage": "{{ ogUrl | default(site.url + page.url) }}",
   "isPartOf": {
@@ -48,7 +40,7 @@ layout: base.njk
       <input id="blog-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
       <button class="button" type="submit"><span>Subscribe</span></button>
     </form>
-    <div id="form-messages" style="display: none;"></div>
+    <div class="form-messages" style="display: none;"></div>
     <p class="form-note">Plus series updates. No spam. Unsubscribe anytime.</p>
   </div>
 
@@ -79,7 +71,7 @@ layout: base.njk
       <input id="tools-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
       <button class="button" type="submit"><span>Get notified</span></button>
     </form>
-    <div id="form-messages" style="display: none;"></div>
+    <div class="form-messages" style="display: none;"></div>
     <p class="form-note">No spam. Just tool launches. Unsubscribe anytime.</p>
   </div>
   {%- endif %}

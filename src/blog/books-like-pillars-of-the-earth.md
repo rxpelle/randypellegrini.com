@@ -51,7 +51,7 @@ If what you loved in *Pillars* was watching competence compound over decades, th
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>
   </form>
-  <div id="form-messages" style="display: none;"></div>
+  <div class="form-messages" style="display: none;"></div>
 </div>
 
 ## 5. The Split Pomegranate by Randy Pellegrini (2026)

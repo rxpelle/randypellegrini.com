@@ -13,15 +13,196 @@ permalink: /reviews/
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "The Aethelred Cipher",
-  "author": { "@type": "Person", "name": "Randy Pellegrini" },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.0",
-    "ratingCount": "248",
-    "bestRating": "5"
-  }
+  "@graph": [
+    {
+      "@type": "Book",
+      "@id": "{{ site.url }}{{ books[0].pageUrl }}#book",
+      "name": "{{ books[0].title }}",
+      "url": "{{ site.url }}{{ books[0].pageUrl }}",
+      "author": { "@id": "{{ site.url }}/#author" },
+      "isPartOf": { "@id": "{{ site.url }}/#series" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ books[0].rating.value }}",
+        "ratingCount": "{{ books[0].rating.count }}",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Book",
+      "@id": "{{ site.url }}{{ books[1].pageUrl }}#book",
+      "name": "{{ books[1].title }}",
+      "url": "{{ site.url }}{{ books[1].pageUrl }}",
+      "author": { "@id": "{{ site.url }}/#author" },
+      "isPartOf": { "@id": "{{ site.url }}/#series" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ books[1].rating.value }}",
+        "ratingCount": "{{ books[1].rating.count }}",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "name": "Great Read",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Michaela Barbee" },
+      "datePublished": "2026-02-17",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "This novel is ambitious, intelligent, and completely immersive. The blend of medieval history, secret orders, genetic memory, and plague-era suspense makes it feel both epic and intimate at the same time. The historical detail feels rich without being overwhelming, and the larger philosophical conflict about knowledge, control, and survival lingers long after the final page."
+    },
+    {
+      "@type": "Review",
+      "name": "A Smart, Atmospheric Medieval Thriller",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Amy Walls" },
+      "datePublished": "2026-02-16",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "The Aethelred Cipher by Randy Pellegrini is a gripping blend of historical intrigue and conspiracy that pulls you straight into the shadows of the Black Death. Pellegrini weaves architecture, coded secrets, and high-stakes danger into a story that feels both intelligent and cinematic. A strong start to The Architecture of Survival series."
+    },
+    {
+      "@type": "Review",
+      "name": "A Novel that Turns the Black Death Into a Mirror for Our Own Age",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Tamber" },
+      "datePublished": "2026-02-16",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "What makes The Aethelred Cipher stand out is the way it takes a familiar historical moment, the Black Death, and reframes it through a lens that feels fresh. The author builds a layered conspiracy full of hidden motives. You are being invited to consider how knowledge, secrecy, and survival shape entire civilizations."
+    },
+    {
+      "@type": "Review",
+      "name": "THE AETHELRED CIPHER",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Freedom" },
+      "datePublished": "2026-02-16",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "This book was both gripping and thought-provoking. Set against the devastation of the Black Death, the story combines suspense, history, and big ideas about survival, knowledge, and the power of passing wisdom across generations. What stood out most was the deeper message: that true resilience comes from sharing knowledge, not controlling it."
+    },
+    {
+      "@type": "Review",
+      "name": "Medieval Mystery and Mayhem",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Melissa C." },
+      "datePublished": "2026-02-17",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "The Aethelred Cipher starts with a bang, a dying monk in a monastery, and a top-secret manuscript given to Thomas for safekeeping and a special mission. Readers will find this novel interesting and a great escape to foreign places, secrets, and mayhem."
+    },
+    {
+      "@type": "Review",
+      "name": "Great evening read!",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "CrystalL" },
+      "datePublished": "2026-02-14",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Love a good mystery action thriller combo! A cat and mouse vibe. As the reader you are definitely on the ride with them. Very layered. The author does a great job at making history relevant to the reader. Great read."
+    },
+    {
+      "@type": "Review",
+      "name": "A good read!",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Hannah" },
+      "datePublished": "2026-02-21",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "A very interesting read for anyone interested in historical context, conspiracy theories, adventure, and/or continuous story telling! Overall it has a captivating plot that just keeps giving. I can't wait to read more!"
+    },
+    {
+      "@type": "Review",
+      "name": "Gripping",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Katie Top" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "A book full of medieval intrigue - it grabs you from the first scene."
+    },
+    {
+      "@type": "Review",
+      "name": "A Good Adventure Tale",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Izzard" },
+      "datePublished": "2026-02-18",
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "This is a fun story. There is danger, adventure, knife fights, conspiracy, companionship, intrigue, and the plague. What isn't to like? The story is thought-provoking, and the villain is believable. The characters show good development."
+    },
+    {
+      "@type": "Review",
+      "name": "Conspiracies",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[0].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Myra Murphy" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "Was enjoyable. I liked the twists and intrigue."
+    },
+    {
+      "@type": "Review",
+      "name": "The Genesis Protocol",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Felix Baltar" },
+      "datePublished": "2026-03-01",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "In The Genesis Protocol, the second installment of The Architecture of Survival series, science, morality, and power collide in a thriller that feels disturbingly plausible. The Genesis Protocol is not merely a biotech thriller; it is a meditation on power, responsibility, and the perilous space between calculation and conscience. In a world increasingly shaped by genetic innovation and corporate influence, its warnings feel less like fiction and more like foresight."
+    },
+    {
+      "@type": "Review",
+      "name": "This is book 2",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Tammy Lynn Bush" },
+      "datePublished": "2026-03-01",
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "Are you interested in bio weapons, secret organizations, and human genetics? Then this is the book for you."
+    },
+    {
+      "@type": "Review",
+      "name": "Science meets history, myth and mystery",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Jean A. Donnel" },
+      "datePublished": "2026-03-30",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Conspiracy, mystery, science meeting science fiction, it's all there and more. Myself? I enjoyed the book. Read and decide for yourself."
+    },
+    {
+      "@type": "Review",
+      "name": "Smart, Intense, Hard to put down",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Tanglewood121" },
+      "datePublished": "2026-03-23",
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "The Genesis Protocol delivers a gripping techno-thriller that blends genetic science, conspiracy, and high-stakes moral dilemmas. The story moves fast from page one, pulling you into a world where data, biology, and power collide with chilling plausibility. If you enjoy thought-provoking thrillers with real scientific grounding, this is a strong read."
+    },
+    {
+      "@type": "Review",
+      "name": "What a thriller!",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "redhead" },
+      "datePublished": "2026-03-03",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "I normally don't read these types of books but this one caught my eye and I am so glad I read it because right off the bat it starts with a bang. It is filled with action and turns everywhere that have you not able to put it down. Great book!"
+    },
+    {
+      "@type": "Review",
+      "name": "The Genesis Protocol",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Cindy L." },
+      "datePublished": "2026-03-24",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "The Genesis Protocol was a strong continuation of the series. If you enjoyed the first book, this one definitely builds on it with higher stakes and a deeper look into the bigger picture. Overall, a solid follow-up and an enjoyable read for anyone who likes fast-paced, suspense-driven stories with an ongoing mystery."
+    },
+    {
+      "@type": "Review",
+      "name": "Smart, high-stakes thriller that keeps you guessing!",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Madeline" },
+      "datePublished": "2026-03-22",
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "Randy Pellegrini has a way of building tension that feels very grounded and real, making the survival aspect of the plot feel incredibly urgent. It's a fast-paced read with a unique perspective on architecture and survival that I haven't seen before. If you're looking for a thriller that's as intelligent as it is exciting, this is definitely one to add to your list."
+    },
+    {
+      "@type": "Review",
+      "name": "Great read",
+      "itemReviewed": { "@id": "{{ site.url }}{{ books[1].pageUrl }}#book" },
+      "author": { "@type": "Person", "name": "Sherri barnett" },
+      "datePublished": "2026-03-10",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "I enjoyed this book. It was very suspenseful, and mind boggling. To think that this actually exists. You have to really have quiet time to read or you will miss something."
+    }
+  ]
 }
 </script>
 <div class="review-marquee" aria-hidden="true">
@@ -84,16 +265,16 @@ permalink: /reviews/
 <section class="section">
   <div class="section-header reveal">
     <p class="eyebrow">The Aethelred Cipher</p>
-    <h2>Reader Reviews</h2>
+    <h1>Reader Reviews</h1>
   </div>
 
   <div class="rating-hero reveal">
     <div class="rating-hero-score">
-      <span class="rating-number">4.0</span>
+      <span class="rating-number">{{ books[0].rating.value }}</span>
       <span class="rating-max">/ 5</span>
     </div>
     <div class="rating-hero-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-    <p class="rating-hero-count">From 248 ratings on Amazon</p>
+    <p class="rating-hero-count">From {{ books[0].rating.count }} ratings on Amazon</p>
     <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
   </div>
 </section>
@@ -243,7 +424,7 @@ permalink: /reviews/
 
   <div class="rating-hero reveal">
     <div class="rating-hero-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-    <p class="rating-hero-count">4.9 out of 5 &mdash; 30 ratings on Amazon</p>
+    <p class="rating-hero-count">{{ books[1].rating.value }} out of 5 &mdash; {{ books[1].rating.count }} ratings on Amazon</p>
     <a class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
   </div>
 </section>

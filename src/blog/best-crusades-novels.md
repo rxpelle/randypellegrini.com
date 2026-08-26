@@ -51,7 +51,7 @@ I wrote it the way Madeline Miller and Anita Diamant write the past: intimate, e
     <input id="mid-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Send it</span></button>
   </form>
-  <div id="form-messages" style="display: none;"></div>
+  <div class="form-messages" style="display: none;"></div>
 </div>
 
 ## 5. Count Bohemond by Alfred Duggan (1964)

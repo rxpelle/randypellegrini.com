@@ -86,7 +86,7 @@
       var emailInput = form.querySelector('input[type="email"]');
       var btn = form.querySelector('button[type="submit"]');
       var btnText = btn ? btn.querySelector('span') : null;
-      var msgDiv = form.parentElement.querySelector('#form-messages') || form.nextElementSibling;
+      var msgDiv = form.parentElement ? form.parentElement.querySelector('.form-messages') : null;
       if (!emailInput || !emailInput.value) return;
       var formType = form.closest('.tools-signup') ? 'tools' : 'newsletter';
       var originalBtnText = btnText ? btnText.textContent : '';
@@ -102,13 +102,20 @@
       var submittedEmail = emailInput.value;
       var showSuccess = function() {
         if (btnText) btnText.textContent = 'Subscribed!';
-        if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.textContent = 'Check your inbox to confirm your subscription!'; }
+        if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.style.color = '#2e7d32'; msgDiv.textContent = 'Check your inbox to confirm your subscription!'; }
         emailInput.value = '';
         gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
         setTimeout(function() {
           if (btn) btn.disabled = false;
           if (btnText) btnText.textContent = originalBtnText;
         }, 4000);
+      };
+      // Note: the endpoint requires no-cors, so the response is opaque — a resolved
+      // fetch means network-level success; a rejected fetch means it never arrived.
+      var showError = function() {
+        if (btnText) btnText.textContent = originalBtnText;
+        if (btn) btn.disabled = false;
+        if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'alert'); msgDiv.style.color = '#c62828'; msgDiv.textContent = 'Something went wrong and your signup didn\'t go through. Please try again.'; }
       };
       var queueFallback = function(reason) {
         try {
@@ -129,7 +136,7 @@
       .catch(function(err) {
         queueFallback('network_error');
         gtag('event', 'signup_form_error', { form_type: formType, error: 'network_error', page_location: window.location.href });
-        showSuccess();
+        showError();
       });
     }
   });

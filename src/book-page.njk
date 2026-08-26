@@ -222,18 +222,13 @@ eleventyComputed:
       "name": "{{ book.title | safe }}",
       "url": "{{ site.url }}{{ book.pageUrl }}",
       "image": "{{ site.url }}{{ book.ogCover }}",
-      "author": { "@type": "Person", "name": "Randy Pellegrini", "url": "{{ site.url }}" },
+      "author": { "@id": "{{ site.url }}/#author" },
       "bookFormat": "https://schema.org/EBook",
       "inLanguage": "en",
       "genre": ["Historical Fiction", "Thriller"],
       {% if book.datePublished %}"datePublished": "{{ book.datePublished }}",{% endif %}
       "abstract": "{{ book.metaDescription | safe }}",
-      "isPartOf": {
-        "@type": "BookSeries",
-        "name": "The Architecture of Survival",
-        "url": "{{ site.url }}/series/",
-        "author": { "@type": "Person", "name": "Randy Pellegrini" }
-      },
+      "isPartOf": { "@id": "{{ site.url }}/#series" },
       {% if book.rating %}
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -315,7 +310,7 @@ eleventyComputed:
     <input id="bp-email" name="email" type="email" placeholder="you@email.com" required aria-label="Email address" />
     <button class="button" type="submit"><span>Notify me</span></button>
   </form>
-  <div id="form-messages" style="display: none;"></div>
+  <div class="form-messages" style="display: none;"></div>
   <p class="form-note">No spam. Unsubscribe anytime.</p>
 </section>
 
