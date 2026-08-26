@@ -2136,6 +2136,26 @@ textarea:focus-visible {
   margin: 16px 0 24px;
 }
 
+/* Tease gate: blurred remainder of the reading behind the email form */
+#reading-veil {
+  position: relative;
+  max-height: 260px;
+  overflow: hidden;
+}
+
+.reading-veiled {
+  filter: blur(7px);
+  user-select: none;
+  pointer-events: none;
+  margin-top: 0;
+}
+
+.reading-veil-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--panel) 90%);
+}
+
 .reading-text .protocol-fragment {
   display: block;
   margin-top: 20px;

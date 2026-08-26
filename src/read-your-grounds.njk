@@ -106,7 +106,11 @@ permalink: /read-your-grounds/
     <div class="reading-card reveal">
       <p class="eyebrow" style="color: var(--teal);">Your Reading</p>
       <div id="reading-text" class="reading-text"></div>
-      <div class="share-row">
+      <div id="reading-veil" style="display:none" aria-hidden="true">
+        <div id="reading-veil-text" class="reading-text reading-veiled"></div>
+        <div class="reading-veil-fade"></div>
+      </div>
+      <div class="share-row" id="share-row">
         <button class="button small ghost" id="share-copy">Copy Link</button>
         <a class="button small ghost" id="share-x" href="#" target="_blank" rel="noopener noreferrer">Share on X</a>
         <button class="button small ghost" id="share-native" style="display:none">Share</button>
@@ -126,11 +130,11 @@ permalink: /read-your-grounds/
       </div>
     </div>
     <div id="email-capture" class="email-capture-card reveal" style="display:none">
-      <p style="font-family: 'Fraunces', serif; font-size: 1.15rem; margin-bottom: 4px;">
-        Enjoyed your reading?
+      <p id="capture-headline" style="font-family: 'Fraunces', serif; font-size: 1.15rem; margin-bottom: 4px;">
+        The grounds have more to say.
       </p>
-      <p style="color: var(--ink-soft); margin-bottom: 16px;">
-        Get series updates &mdash; plus your reading delivered to your inbox.
+      <p id="capture-sub" style="color: var(--ink-soft); margin-bottom: 16px;">
+        Enter your email and I&rsquo;ll unlock the rest of your reading &mdash; free, along with a short prequel story from the series.
       </p>
       <form id="email-capture-form" class="email-capture-form">
         <div class="grounds-fields">
@@ -157,12 +161,12 @@ permalink: /read-your-grounds/
           </div>
         </div>
         <button class="button" type="submit" id="capture-submit">
-          <span id="capture-button-text">Send me my reading</span>
+          <span id="capture-button-text">Unlock my full reading</span>
         </button>
         <p class="form-note" style="margin-top: 8px;">No spam. One email per month. Unsubscribe anytime.</p>
       </form>
       <div id="email-capture-success" style="display:none">
-        <p style="color: var(--teal); font-weight: 600;">You're in. Check your inbox &mdash; your reading is on its way.</p>
+        <p style="color: var(--teal); font-weight: 600;">You're in. Your full reading is unlocked above &mdash; and there's a free story on its way to your inbox.</p>
       </div>
     </div>
 
@@ -234,8 +238,41 @@ permalink: /read-your-grounds/
   var captureSubmit = document.getElementById('capture-submit');
   var captureButtonText = document.getElementById('capture-button-text');
 
+  var veilEl = document.getElementById('reading-veil');
+  var veilText = document.getElementById('reading-veil-text');
+  var shareRow = document.getElementById('share-row');
+  var captureHeadline = document.getElementById('capture-headline');
+  var captureSub = document.getElementById('capture-sub');
+
   var currentReadingUrl = '';
   var currentReadingId = '';
+  var fullReadingHtml = '';
+  var isGated = false;
+  // Returning subscribers skip the gate on future readings.
+  var GATE_KEY = 'grounds_reader_sub_v1';
+  function hasSubscribed() {
+    try { return !!localStorage.getItem(GATE_KEY); } catch (e) { return false; }
+  }
+  function markSubscribed() {
+    try { localStorage.setItem(GATE_KEY, '1'); } catch (e) {}
+  }
+
+  function renderReadingHtml(text) {
+    var html = text
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em class="protocol-fragment">$1</em>')
+      .replace(/\n\n/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+    return DOMPurify.sanitize('<p>' + html + '</p>', { ALLOWED_TAGS: ['p', 'br', 'strong', 'em'], ALLOWED_ATTR: ['class'] });
+  }
+
+  function unlockReading() {
+    isGated = false;
+    readingText.innerHTML = fullReadingHtml;
+    veilEl.style.display = 'none';
+    veilText.innerHTML = '';
+    shareRow.style.display = '';
+  }
 
   // Check for shared reading on page load
   var params = new URLSearchParams(window.location.search);
@@ -344,23 +381,43 @@ permalink: /read-your-grounds/
     // Store reading ID for email subscription
     currentReadingId = id;
 
-    // Convert markdown bold/italic to HTML
-    var html = reading
-      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/\*(.+?)\*/g, '<em class="protocol-fragment">$1</em>')
-      .replace(/\n\n/g, '</p><p>')
-      .replace(/\n/g, '<br>');
-    html = '<p>' + html + '</p>';
-
-    readingText.innerHTML = DOMPurify.sanitize(html, { ALLOWED_TAGS: ['p', 'br', 'strong', 'em'], ALLOWED_ATTR: ['class'] });
+    fullReadingHtml = renderReadingHtml(reading);
     resultEl.style.display = 'block';
+
+    // Tease gate: new readings from non-subscribers see the first paragraph,
+    // the rest blurred behind the email form. Shared links and returning
+    // subscribers get the full reading.
+    var paragraphs = reading.split(/\n\n+/);
+    isGated = !isShared && !hasSubscribed() && paragraphs.length > 1;
+
+    if (isGated) {
+      readingText.innerHTML = renderReadingHtml(paragraphs[0]);
+      veilText.innerHTML = renderReadingHtml(paragraphs.slice(1).join('\n\n'));
+      veilEl.style.display = '';
+      shareRow.style.display = 'none';
+      captureHeadline.textContent = 'The grounds have more to say.';
+      captureSub.textContent = 'Enter your email and I’ll unlock the rest of your reading — free, along with a short prequel story from the series.';
+      captureButtonText.textContent = 'Unlock my full reading';
+      gtag('event', 'grounds_gate_shown', { page_location: window.location.href });
+    } else {
+      unlockReading();
+    }
 
     // Show email capture for new readings (not shared links);
     // hide the standalone newsletter card so only one form is on screen
     if (!isShared) {
-      emailCapture.style.display = '';
-      emailCaptureForm.style.display = '';
-      emailCaptureSuccess.style.display = 'none';
+      if (isGated || !hasSubscribed()) {
+        if (!isGated) {
+          captureHeadline.textContent = 'Enjoyed your reading?';
+          captureSub.textContent = 'Get series updates — plus your reading delivered to your inbox.';
+          captureButtonText.textContent = 'Send me my reading';
+        }
+        emailCapture.style.display = '';
+        emailCaptureForm.style.display = '';
+        emailCaptureSuccess.style.display = 'none';
+      } else {
+        emailCapture.style.display = 'none';
+      }
       newsletterCard.style.display = 'none';
     }
 
@@ -419,13 +476,18 @@ permalink: /read-your-grounds/
       return r.json();
     })
     .then(function() {
+      markSubscribed();
+      if (isGated) {
+        unlockReading();
+        gtag('event', 'grounds_gate_unlocked', { page_location: window.location.href });
+      }
       emailCaptureForm.style.display = 'none';
       emailCaptureSuccess.style.display = '';
       gtag('event', 'grounds_email_captured', { page_location: window.location.href });
     })
     .catch(function(err) {
       captureSubmit.disabled = false;
-      captureButtonText.textContent = 'Send me my reading';
+      captureButtonText.textContent = isGated ? 'Unlock my full reading' : 'Send me my reading';
       alert(err.message || 'Something went wrong. Please try again.');
     });
   });
@@ -438,14 +500,18 @@ permalink: /read-your-grounds/
     preview.style.display = 'none';
     placeholder.style.display = '';
     fileInput.value = '';
-    // Reset email capture
+    // Reset email capture + gate
     emailCapture.style.display = 'none';
     emailCaptureForm.style.display = '';
     emailCaptureSuccess.style.display = 'none';
     captureEmail.value = '';
     captureName.value = '';
     captureSubmit.disabled = false;
-    captureButtonText.textContent = 'Send me my reading';
+    veilEl.style.display = 'none';
+    veilText.innerHTML = '';
+    shareRow.style.display = '';
+    isGated = false;
+    fullReadingHtml = '';
     currentReadingId = '';
     history.pushState(null, '', window.location.pathname);
   });
