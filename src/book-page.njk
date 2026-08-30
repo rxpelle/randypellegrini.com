@@ -237,12 +237,19 @@ eleventyComputed:
         "bestRating": "5"
       },
       {% endif %}
+      {% if book.amazonUrl %}
       "offers": {
         "@type": "Offer",
         "url": "{{ book.amazonUrl }}",
-        "availability": "https://schema.org/InStock"
+        "availability": "{% if book.comingSoon %}https://schema.org/PreOrder{% else %}https://schema.org/InStock{% endif %}"
       },
       "sameAs": "{{ book.amazonUrl }}"
+      {% else %}
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/PreOrder"
+      }
+      {% endif %}
     },
     {
       "@type": "BreadcrumbList",
@@ -281,10 +288,17 @@ eleventyComputed:
     </p>
     {% endif %}
 
+    {% if book.amazonUrl %}
     <div>
-      <a class="button" href="{{ book.amazonUrl }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book{{ book.seriesPosition }}" data-source="book_page">Read on Amazon &rarr;</a>
+      <a class="button" href="{{ book.amazonUrl }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book{{ book.seriesPosition }}" data-source="book_page">{% if book.comingSoon %}Preorder on Amazon &rarr;{% else %}Read on Amazon &rarr;{% endif %}</a>
     </div>
-    <p class="bp-ku-note">Free to read with Kindle Unlimited{% if book.audio %} &middot; 🎧 Also available in audio{% endif %}. Every book in the series stands alone.</p>
+    <p class="bp-ku-note">{% if not book.comingSoon %}Free to read with Kindle Unlimited{% if book.audio %} &middot; 🎧 Also available in audio{% endif %}. {% endif %}Every book in the series stands alone.</p>
+    {% elif book.comingSoon %}
+    <div>
+      <a class="button" href="#bp-email" data-track="notify_click" data-book="book{{ book.seriesPosition }}" data-source="book_page">Coming {{ book.releaseLabel }} &mdash; get notified &darr;</a>
+    </div>
+    <p class="bp-ku-note">Releasing {{ book.releaseLabel }}. Every book in the series stands alone.</p>
+    {% endif %}
   </div>
 </section>
 

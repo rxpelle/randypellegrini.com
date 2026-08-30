@@ -181,5 +181,39 @@ module.exports = function () {
         "The Split Pomegranate is a literary historical novel about what we agree to preserve and what we agree to become &mdash; two people holding something ancient against the fire, told the way Madeline Miller and Anita Diamant tell the past: intimate, exacting, and lit from within. It is Book 6 of The Architecture of Survival, and it stands entirely on its own.",
       ],
     },
+    {
+      slug: "nobody-lied-to-her",
+      title: "Nobody Lied to Her",
+      seriesPosition: 7,
+      amazonUrl: null, // set on launch day (Sept 8) when the ASIN exists
+      comingSoon: true,
+      releaseLabel: "September 8, 2026",
+      pageUrl: "/nobody-lied-to-her/",
+      cover: "/assets/book7-cover.jpg",
+      ogCover: "/assets/book7-cover-og.jpg",
+      coverW: 600,
+      coverH: 960,
+      era: "Berlin & America, 1927–1955",
+      tagline:
+        "The Nazis got their sterilization law from America. This is the novel of the woman who spent twenty-two years proving it — and what it cost her to be right.",
+      metaDescription:
+        "In 1933, a Berlin physician finds American names in the footnotes of the Nazi sterilization law. Book 7 of The Architecture of Survival — the American law that wrote the Nazi one.",
+      facts: [
+        { label: "Setting", value: "Berlin &amp; America, 1927&ndash;1955" },
+        { label: "Length", value: "~95,000 words" },
+        { label: "Release", value: "September 8, 2026" },
+      ],
+      datePublished: "2026-09-08",
+      audio: false,
+      rating: null,
+      paragraphs: [
+        "In 1933, a Berlin physician read the new German sterilization law and found American names in the footnotes. Rachel Morgenstern was twenty-five years old. She had a hospital post she was about to lose, a father who would not leave, and a habit of reading documents more carefully than the people who wrote them. It took her twenty-two years to prove what those footnotes meant.",
+        "The trail ran from a card index on Long Island holding half a million American families &mdash; to a Virginia courtroom where a young woman named Carrie Buck was sterilized by order of the Supreme Court, in a case her own lawyer had been hired to lose &mdash; to a room at Nuremberg where German physicians defended themselves by reading American law aloud.",
+        "She was right about all of it. She was right for twenty-two years, against the evidence of her own profession, and at a cost she never once wrote down. And nobody lied to her. Not once, in any of it. That is the part she could never make anybody understand. A novel of the American law that wrote the Nazi one.",
+      ],
+    },
+    // Book 8 — the series finale, releasing October 13, 2026. Title reveal pending
+    // Randy's confirmation (working title in book_8_synthesis_protocol/README.md).
+    // When confirmed: uncomment, set slug/title/cover, and flip series surfaces.
   ];
 };

@@ -10,8 +10,8 @@ permalink: /blog/the-backup-system-had-cats/
 excerpt: "One night in Deventer around 1420, a cat urinated on an unfinished manuscript. The scribe did not start the page over. He left it blank, drew a small pointing hand, added a sketch of the offender, and wrote a curse that has now outlived the cat by six hundred years."
 prevPost: "/blog/how-to-back-up-a-civilization/"
 prevTitle: "How to Back Up a Civilization"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/who-was-carrie-buck/"
+nextTitle: "Who Was Carrie Buck?"
 ctaText: '<em>The Aethelred Cipher</em> begins in a Rhineland monastery in 1347 — among exactly these men, at exactly these desks, in the year the Black Death crossed the Rhine and a dying monk pressed an iron key into a young scribe''s hands. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Read on Amazon</a>.'
 ---
 

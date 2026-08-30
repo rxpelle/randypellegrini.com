@@ -55,7 +55,11 @@ layout: base.njk
     {%- if ctaButtonUrl %}
     <a class="button" href="{{ ctaButtonUrl }}" target="_blank" rel="noopener noreferrer">{{ ctaButtonText | default("Get your copy") }} &rarr;</a>
     {%- elif ctaBook %}
+    {%- if ctaBook.amazonUrl %}
     <a class="button" href="{{ ctaBook.amazonUrl }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book{{ ctaBook.seriesPosition }}" data-source="blog_cta">Get Book {{ ctaBook.seriesPosition }} &rarr;</a>
+    {%- else %}
+    <a class="button" href="{{ ctaBook.pageUrl }}" data-track="notify_click" data-book="book{{ ctaBook.seriesPosition }}" data-source="blog_cta">Coming {{ ctaBook.releaseLabel }} &mdash; learn more &rarr;</a>
+    {%- endif %}
     {%- else %}
     <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">{{ ctaButtonText | default("Get your copy") }} &rarr;</a>
     {%- endif %}
