@@ -421,10 +421,12 @@ permalink: /read-your-grounds/
       newsletterCard.style.display = 'none';
     }
 
-    // Update URL for sharing
+    // Update URL for sharing. replaceState, not pushState: GA4 enhanced
+    // measurement counts browser history events as page views, which inflated
+    // this page's view count by ~45%.
     var readingUrl = window.location.origin + window.location.pathname + '?reading=' + id;
     currentReadingUrl = readingUrl;
-    history.pushState(null, '', readingUrl);
+    history.replaceState(null, '', readingUrl);
 
     // Set up share links
     var shareText = 'I just had my coffee grounds read. The patterns revealed something interesting...';
@@ -513,7 +515,7 @@ permalink: /read-your-grounds/
     isGated = false;
     fullReadingHtml = '';
     currentReadingId = '';
-    history.pushState(null, '', window.location.pathname);
+    history.replaceState(null, '', window.location.pathname);
   });
 
   // Load shared reading
