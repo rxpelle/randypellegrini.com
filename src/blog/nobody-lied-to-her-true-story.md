@@ -10,8 +10,8 @@ permalink: /blog/nobody-lied-to-her-true-story/
 excerpt: "The novel's central claim sounds like fiction: that the Nazi sterilization law of 1933 had American fingerprints on it. It isn't fiction. Here's the documented chain — the model law, the card index, the Heidelberg degree, and the Nuremberg defense."
 prevPost: "/blog/who-was-carrie-buck/"
 prevTitle: "Who Was Carrie Buck?"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/how-to-read-coffee-grounds/"
+nextTitle: "How to Read Coffee Grounds"
 ctaText: '<em>Nobody Lied to Her</em> — Book 7 of The Architecture of Survival, releasing September 8, 2026 — follows Rachel Morgenstern, a Berlin physician who finds the American names in the footnotes in 1933 and spends twenty-two years proving what they mean. Rachel is invented. The footnotes are not.'
 ---
 

@@ -13,7 +13,10 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="robots" content="noindex" />
+  {# No "noindex" here: it contradicts the canonical below. noindex tells Google
+     to drop the page, canonical tells it to fold this URL's signals into the
+     target. Combining them stranded /read-your-grounds.html as a separately
+     indexed URL ranking at position 1.7 while the real page sat at 7.7. #}
   <meta http-equiv="refresh" content="0; url={{ redirect.to }}" />
   <link rel="canonical" href="{{ site.url }}{{ redirect.to }}" />
   <title>Redirecting...</title>
