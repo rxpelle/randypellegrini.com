@@ -3,7 +3,7 @@ pagination:
   data: books
   size: 1
   alias: book
-permalink: "/go/{{ book.slug }}/index.html"
+permalink: "/review/{{ book.slug }}/index.html"
 eleventyExcludeFromCollections: true
 ---
 <!DOCTYPE html>
@@ -11,12 +11,15 @@ eleventyExcludeFromCollections: true
 <head>
 <meta charset="utf-8" />
 <meta name="robots" content="noindex,nofollow" />
-<title>Redirecting to {{ book.title }}…</title>
+<title>Review {{ book.title }}…</title>
 
-<!-- Fallback redirect for users with JS disabled (3-second delay so the link is clickable). -->
-<meta http-equiv="refresh" content="3;url={{ book.linkUrl }}" />
+<!--
+  One-click review target for ebook back matter. Printed into the books, so the URL
+  must stay stable forever — the ASIN is resolved here at build time, not in the
+  manuscript. A book without an ASIN yet lands on its own page instead of a dead link.
+-->
+<meta http-equiv="refresh" content="3;url={{ book.reviewUrl }}" />
 
-<!-- GA4: fire amazon_click event with book + source attribution BEFORE the redirect. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,16 +27,10 @@ eleventyExcludeFromCollections: true
   gtag('js', new Date());
   gtag('config', '{{ site.gaId }}', { send_page_view: false });
 
-  // Parse UTM params and the original referrer so the GA event captures the surface.
   var params = new URLSearchParams(window.location.search);
-  var amazonUrl = {{ book.linkUrl | dump | safe }};
-  var dest = amazonUrl;
-  // Forward any UTMs to Amazon (Amazon ignores them but it preserves them in browser back-button history).
-  if (params.toString()) {
-    dest += (amazonUrl.indexOf('?') === -1 ? '?' : '&') + params.toString();
-  }
+  var dest = {{ book.reviewUrl | dump | safe }};
 
-  gtag('event', 'amazon_click', {
+  gtag('event', 'review_click', {
     book_slug: '{{ book.slug }}',
     book_title: {{ book.title | dump | safe }},
     series_position: {{ book.seriesPosition }},
@@ -41,13 +38,10 @@ eleventyExcludeFromCollections: true
     utm_medium: params.get('utm_medium') || '(none)',
     utm_campaign: params.get('utm_campaign') || '(none)',
     referrer: document.referrer || '(direct)',
-    event_callback: function () {
-      window.location.replace(dest);
-    },
+    event_callback: function () { window.location.replace(dest); },
     event_timeout: 800
   });
 
-  // Backup: redirect after 800ms even if the GA callback never fires.
   setTimeout(function () { window.location.replace(dest); }, 800);
 </script>
 
@@ -59,7 +53,7 @@ a { color: #0a5; }
 </style>
 </head>
 <body>
-<h1>Redirecting to {{ book.title }} on Amazon…</h1>
-<p class="muted">If you aren't redirected automatically in a few seconds, <a href="{{ book.linkUrl }}">click here</a>.</p>
+<h1>Taking you to the review page for {{ book.title }}…</h1>
+<p class="muted">Thank you — reviews are how readers find these books. If you aren't redirected in a few seconds, <a href="{{ book.reviewUrl }}">click here</a>.</p>
 </body>
 </html>

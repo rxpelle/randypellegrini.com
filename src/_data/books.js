@@ -6,7 +6,7 @@
 // keeps the generator from overwriting it while the rest of the data stays usable.
 
 module.exports = function () {
-  return [
+  const books = [
     {
       slug: "aethelred-cipher",
       title: "The Aethelred Cipher",
@@ -212,8 +212,25 @@ module.exports = function () {
         "She was right about all of it. She was right for twenty-two years, against the evidence of her own profession, and at a cost she never once wrote down. And nobody lied to her. Not once, in any of it. That is the part she could never make anybody understand. A novel of the American law that wrote the Nazi one.",
       ],
     },
-    // Book 8 — the series finale, releasing October 13, 2026. Title reveal pending
-    // Randy's confirmation (working title in book_8_synthesis_protocol/README.md).
-    // When confirmed: uncomment, set slug/title/cover, and flip series surfaces.
+    // Book 8 — the series finale. On hold pending Randy's rewrite; no date, no
+    // title reveal. When confirmed: uncomment, set slug/title/cover, and flip
+    // series surfaces.
   ];
+
+  // Derived link fields. Books without an ASIN yet (pre-launch) must never emit an
+  // empty redirect target — /go/nobody-lied-to-her/ was shipping url="" — so they
+  // fall back to their own landing page until amazonUrl is filled in.
+  return books.map((b) => {
+    const asin = (b.amazonUrl && (b.amazonUrl.match(/\/dp\/([A-Z0-9]{10})/) || [])[1]) || null;
+    return {
+      ...b,
+      asin,
+      linkUrl: b.amazonUrl || b.pageUrl,
+      // One-click "write a review" target. Stable per slug, so back matter printed
+      // in an ebook keeps working once the ASIN exists.
+      reviewUrl: asin
+        ? `https://www.amazon.com/review/create-review?asin=${asin}`
+        : b.pageUrl,
+    };
+  });
 };

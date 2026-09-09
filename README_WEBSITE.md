@@ -1,6 +1,6 @@
 # The Architecture of Survival - Author Website
 
-Complete author website for Randy Pellegrini's 12-book epic spanning 3,200 years.
+Complete author website for Randy Pellegrini's 8-book epic spanning 3,200 years.
 
 ## 📁 Site Structure
 

@@ -13,7 +13,7 @@ prevPost: "/blog/bureaucracy-is-the-sorcery-of-institutions/"
 prevTitle: "Bureaucracy Is the True Sorcery of Institutions"
 nextPost: "/blog/best-black-death-novels/"
 nextTitle: "The 10 Best Black Death and Plague Novels"
-ctaText: 'This is the kind of buried history that feeds <em>The Architecture of Survival</em> — my eight-book series about a family that spends three thousand years guarding a record the powerful keep trying to erase. Five books are out; start with <em>The Aethelred Cipher</em>.'
+ctaText: 'This is the kind of buried history that feeds <em>The Architecture of Survival</em> — my eight-book series about a family that spends three thousand years guarding a record the powerful keep trying to erase. Six books are out; start with <em>The Aethelred Cipher</em>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
 ---
