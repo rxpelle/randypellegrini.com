@@ -64,6 +64,46 @@
   // Newsletter signup tracking and submission
   var _nlLastSubmit = 0;
 
+  // Optional first-name field. Injected rather than added to markup because the
+  // signup forms live in 14 templates with inconsistent ids, and submission is
+  // already fetch-only — a visitor without JS cannot subscribe either way, so
+  // this adds no failure mode. Kept optional: a required name costs signups.
+  function addNameField(form) {
+    if (form.querySelector('input[name="first_name"]')) return;
+    var emailInput = form.querySelector('input[type="email"]');
+    if (!emailInput) return;
+
+    var id = (emailInput.id ? emailInput.id + '-name' : 'first-name-' + Math.random().toString(36).slice(2, 8));
+
+    var label = document.createElement('label');
+    label.className = 'sr-only';
+    label.setAttribute('for', id);
+    label.textContent = 'First name (optional)';
+
+    var input = document.createElement('input');
+    input.id = id;
+    input.name = 'first_name';
+    input.type = 'text';
+    input.placeholder = 'First name (optional)';
+    input.setAttribute('aria-label', 'First name (optional)');
+    input.autocomplete = 'given-name';
+    input.maxLength = 40;
+
+    emailInput.parentNode.insertBefore(label, emailInput);
+    emailInput.parentNode.insertBefore(input, emailInput);
+  }
+
+  function initNameFields() {
+    var forms = document.querySelectorAll('form[data-newsletter="true"]');
+    for (var i = 0; i < forms.length; i++) addNameField(forms[i]);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNameFields);
+  } else {
+    initNameFields();
+  }
+
   // Track email field focus (user intent)
   document.addEventListener('focusin', function(e) {
     var input = e.target;
@@ -100,10 +140,13 @@
       });
 
       var submittedEmail = emailInput.value;
+      var nameInput = form.querySelector('input[name="first_name"]');
+      var submittedName = nameInput ? nameInput.value.trim().slice(0, 40) : '';
       var showSuccess = function() {
         if (btnText) btnText.textContent = 'Subscribed!';
         if (msgDiv) { msgDiv.style.display = 'block'; msgDiv.setAttribute('role', 'status'); msgDiv.style.color = '#2e7d32'; msgDiv.textContent = 'Check your inbox to confirm your subscription!'; }
         emailInput.value = '';
+        if (nameInput) nameInput.value = '';
         gtag('event', 'newsletter_signup', { form_type: formType, page_location: window.location.href });
         setTimeout(function() {
           if (btn) btn.disabled = false;
@@ -121,7 +164,7 @@
         try {
           var key = 'pending_signups_v1';
           var queue = JSON.parse(localStorage.getItem(key) || '[]');
-          queue.push({ email: submittedEmail, formType: formType, ts: Date.now(), reason: reason });
+          queue.push({ email: submittedEmail, first_name: submittedName, formType: formType, ts: Date.now(), reason: reason });
           localStorage.setItem(key, JSON.stringify(queue));
         } catch (e) { /* storage unavailable */ }
       };
@@ -130,7 +173,7 @@
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({ action: 'welcome_subscribe', email: submittedEmail })
+        body: JSON.stringify({ action: 'welcome_subscribe', email: submittedEmail, first_name: submittedName })
       })
       .then(showSuccess)
       .catch(function(err) {
