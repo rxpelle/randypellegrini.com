@@ -116,19 +116,6 @@ permalink: /read-your-grounds/
         <a class="button small ghost" id="share-x" href="#" target="_blank" rel="noopener noreferrer">Share on X</a>
         <button class="button small ghost" id="share-native" style="display:none">Share</button>
       </div>
-      <div class="grounds-book-cta">
-        <a href="https://www.amazon.com/dp/B0GPM973N1" target="_blank" rel="noopener noreferrer" aria-label="Buy The Genesis Protocol on Amazon">
-          <img src="/assets/book2-cover.webp" alt="The Genesis Protocol" class="grounds-book-cover" width="600" height="954" loading="lazy" />
-        </a>
-        <div>
-          <p style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px;">
-            The patterns in your cup echo across centuries. Sarah Chen found something far more dangerous in hers.
-          </p>
-          <a class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">
-            Read The Genesis Protocol &rarr;
-          </a>
-        </div>
-      </div>
     </div>
     <div id="email-capture" class="email-capture-card reveal" style="display:none">
       <p id="capture-headline" style="font-family: 'Fraunces', serif; font-size: 1.15rem; margin-bottom: 4px;">
@@ -168,6 +155,25 @@ permalink: /read-your-grounds/
       </form>
       <div id="email-capture-success" style="display:none">
         <p style="color: var(--teal); font-weight: 600;">You're in. Your full reading is unlocked above &mdash; welcome note on its way to your inbox.</p>
+      </div>
+    </div>
+
+    <!-- Book card sits BELOW the email ask (2026-10-15): email is the primary
+         conversion for this audience; Amazon is secondary. When a Book 1 promo
+         is live (Apps Script ?action=promo) the JS swaps this card to Book 1. -->
+    <div id="grounds-book-card" class="reading-card reveal grounds-book-card">
+      <div class="grounds-book-cta">
+        <a id="grounds-book-cover-link" href="https://www.amazon.com/dp/B0GPM973N1" target="_blank" rel="noopener noreferrer" aria-label="Buy The Genesis Protocol on Amazon">
+          <img id="grounds-book-cover" src="/assets/book2-cover.webp" alt="The Genesis Protocol" class="grounds-book-cover" width="600" height="954" loading="lazy" />
+        </a>
+        <div>
+          <p id="grounds-book-pitch" style="font-family: 'Fraunces', serif; font-size: 1.1rem; margin-bottom: 8px;">
+            The patterns in your cup echo across centuries. Sarah Chen found something far more dangerous in hers.
+          </p>
+          <a id="grounds-book-button" class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">
+            Read The Genesis Protocol &rarr;
+          </a>
+        </div>
       </div>
     </div>
 
@@ -289,6 +295,34 @@ permalink: /read-your-grounds/
     veilText.innerHTML = '';
     shareRow.style.display = '';
   }
+
+
+  // Book 1 promo flag — one switch in Apps Script (GET ?action=promo). While a
+  // Book 1 free/discount run is live, the post-reading book card pitches Book 1
+  // at the promo price instead of full-price Book 2.
+  var PROMO_URL = 'https://script.google.com/macros/s/AKfycbyFCwozI7oerHXJdLXWLZacJ1A2SFNXMoEXhoB-IC0FOp0kvJIniEeLjZmat3JTv-H2AA/exec?action=promo';
+  fetch(PROMO_URL)
+    .then(function(r) { return r.json(); })
+    .then(function(p) {
+      if (!p || !p.active) return;
+      var url = p.url || 'https://www.amazon.com/dp/B0GJTGCHS2';
+      var price = String(p.price || 'FREE');
+      var isFree = price.toUpperCase() === 'FREE';
+      var cover = document.getElementById('grounds-book-cover');
+      var coverLink = document.getElementById('grounds-book-cover-link');
+      var pitch = document.getElementById('grounds-book-pitch');
+      var btn = document.getElementById('grounds-book-button');
+      cover.src = '/assets/book-cover.webp';
+      cover.alt = 'The Aethelred Cipher';
+      coverLink.href = url;
+      coverLink.setAttribute('aria-label', 'Get The Aethelred Cipher on Amazon');
+      pitch.textContent = 'Right now Book 1 of the series, The Aethelred Cipher, is ' + (isFree ? 'free' : price) +
+        ' on Kindle' + (p.untilText ? ' through ' + p.untilText : '') +
+        '. A dying monk, an iron key, and the Black Death one valley away.';
+      btn.href = url;
+      btn.textContent = (isFree ? 'Get Book 1 free' : 'Get Book 1 for ' + price) + ' \u2192';
+    })
+    .catch(function() {});
 
   // Check for shared reading on page load
   var params = new URLSearchParams(window.location.search);

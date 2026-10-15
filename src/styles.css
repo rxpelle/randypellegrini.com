@@ -2249,6 +2249,16 @@ textarea:focus-visible {
   border-top: 1px solid rgba(27, 29, 31, 0.08);
 }
 
+/* Standalone book card below the email ask (2026-10-15) */
+.grounds-book-card {
+  margin-top: 24px;
+}
+
+.grounds-book-card .grounds-book-cta {
+  padding-top: 0;
+  border-top: 0;
+}
+
 .grounds-book-cover {
   width: 100px;
   border-radius: 8px;
