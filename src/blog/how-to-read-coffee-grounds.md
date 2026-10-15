@@ -10,8 +10,8 @@ permalink: /blog/how-to-read-coffee-grounds/
 excerpt: "Coffee grounds reading is older than most of the countries that practice it. Here's the actual method — the ritual, the geography of the cup, and what the symbols mean — without the mystical fog."
 prevPost: "/blog/nobody-lied-to-her-true-story/"
 prevTitle: "The True Story Behind Nobody Lied to Her"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/best-knights-templar-novels/"
+nextTitle: "The 10 Best Knights Templar Novels"
 ctaText: '<em>The Genesis Protocol</em> opens with a coffee mug. A woman is dead, and the pattern in the residue at the bottom of her cup is the one thing nobody else thought to look at. The novel is about pattern-reading at civilizational scale — the faint signals that precede collapse, visible only to people trained to look for them. Coffee grounds are where that habit starts.'
 ---
 
