@@ -46,7 +46,7 @@ Eschiva bint Yehiel is a Jewish engineer in Damascus who can lay a hand on worke
 I wrote it the way Madeline Miller and Anita Diamant write the past: intimate, exacting, lit from within. It's Book 6 of The Architecture of Survival, and it stands entirely on its own.
 
 <div class="entry-book-cta">
-  <a href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer" aria-label="The Split Pomegranate on Amazon"><img src="/assets/book6-cover.webp" alt="The Split Pomegranate cover" loading="lazy" /></a>
+  <a href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer" aria-label="The Split Pomegranate on Amazon"><img src="/assets/book6-cover.webp" alt="The Split Pomegranate cover" loading="lazy" style="width:72px;height:auto" /></a>
   <div>
     <a class="button small" href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer">Get <em>The Split Pomegranate</em> on Amazon &rarr;</a>
     <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 6 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>

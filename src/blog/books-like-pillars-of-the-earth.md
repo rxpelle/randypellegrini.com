@@ -63,7 +63,7 @@ They meet across the lines of the Second Crusade, and what follows is a love car
 If Follett's masons had secrets worth killing for, this is that book.
 
 <div class="entry-book-cta">
-  <a href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer" aria-label="The Split Pomegranate on Amazon"><img src="/assets/book6-cover.webp" alt="The Split Pomegranate cover" loading="lazy" /></a>
+  <a href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer" aria-label="The Split Pomegranate on Amazon"><img src="/assets/book6-cover.webp" alt="The Split Pomegranate cover" loading="lazy" style="width:72px;height:auto" /></a>
   <div>
     <a class="button small" href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer">Get <em>The Split Pomegranate</em> on Amazon &rarr;</a>
     <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 6 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>

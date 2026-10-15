@@ -60,7 +60,7 @@ The novel spans 842 years and follows 13 generations of women who carried knowle
 If *The Book of Longings* made you want more ancient women refusing to let knowledge die, this is the prequel to everything.
 
 <div class="entry-book-cta">
-  <a href="https://www.amazon.com/dp/B0GSWLM1WV" target="_blank" rel="noopener noreferrer" aria-label="The First Key on Amazon"><img src="/assets/book3-cover.webp" alt="The First Key cover" loading="lazy" /></a>
+  <a href="https://www.amazon.com/dp/B0GSWLM1WV" target="_blank" rel="noopener noreferrer" aria-label="The First Key on Amazon"><img src="/assets/book3-cover.webp" alt="The First Key cover" loading="lazy" style="width:72px;height:auto" /></a>
   <div>
     <a class="button small" href="https://www.amazon.com/dp/B0GSWLM1WV" target="_blank" rel="noopener noreferrer">Get <em>The First Key</em> on Amazon &rarr;</a>
     <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 3 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
