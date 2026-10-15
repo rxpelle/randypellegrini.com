@@ -33,22 +33,57 @@ eleventyExcludeFromCollections: true
     dest += (amazonUrl.indexOf('?') === -1 ? '?' : '&') + params.toString();
   }
 
-  gtag('event', 'amazon_click', {
-    book_slug: '{{ book.slug }}',
-    book_title: {{ book.title | dump | safe }},
-    series_position: {{ book.seriesPosition }},
-    utm_source: params.get('utm_source') || '(direct)',
-    utm_medium: params.get('utm_medium') || '(none)',
-    utm_campaign: params.get('utm_campaign') || '(none)',
-    referrer: document.referrer || '(direct)',
-    event_callback: function () {
-      window.location.replace(dest);
-    },
-    event_timeout: 800
+  // Storefront localization (2026-10-15): same logic as analytics.js. Email
+  // and back-matter links come through /go/, and most of those clickers are
+  // outside the US, so swap amazon.com for the visitor's Kindle storefront.
+  var STOREFRONTS = { GB: 'co.uk', CA: 'ca', AU: 'com.au', DE: 'de', FR: 'fr', IT: 'it', ES: 'es', NL: 'nl', JP: 'co.jp', BR: 'com.br', MX: 'com.mx', IN: 'in' };
+  var loc = null;
+  try { loc = sessionStorage.getItem('rp_loc_v1'); } catch (err) {}
+  var locReady = loc || !window.fetch ? Promise.resolve(loc) :
+    fetch('https://grounds-reader.randypellegrini.workers.dev/cdn-cgi/trace')
+      .then(function (r) { return r.text(); })
+      .then(function (t) {
+        var m = t.match(/^loc=([A-Z]{2})$/m);
+        if (m) { loc = m[1]; try { sessionStorage.setItem('rp_loc_v1', loc); } catch (err) {} }
+        return loc;
+      })
+      .catch(function () { return null; });
+  function localize(url) {
+    var tld = STOREFRONTS[loc];
+    if (!tld) return url;
+    return url.replace(/^(https?:\/\/)(www\.)?amazon\.com\/(dp|gp\/product)\//, '$1www.amazon.' + tld + '/$3/');
+  }
+  var redirected = false;
+  function go() {
+    if (redirected) return;
+    redirected = true;
+    window.location.replace(localize(dest));
+  }
+
+  // Wait briefly (max 400ms) for the country lookup so the event records the
+  // storefront actually used, then fire the GA event and redirect.
+  Promise.race([locReady, new Promise(function (r) { setTimeout(r, 400); })]).then(function () {
+    var finalUrl = localize(dest);
+    var tldMatch = finalUrl.match(/amazon\.([a-z.]{2,})\//);
+    gtag('event', 'amazon_click', {
+      book_slug: '{{ book.slug }}',
+      book_title: {{ book.title | dump | safe }},
+      series_position: {{ book.seriesPosition }},
+      utm_source: params.get('utm_source') || '(direct)',
+      utm_medium: params.get('utm_medium') || '(none)',
+      utm_campaign: params.get('utm_campaign') || '(none)',
+      referrer: document.referrer || '(direct)',
+      amazon_tld: tldMatch ? tldMatch[1] : 'com',
+      storefront_loc: loc || '(unknown)',
+      event_callback: go,
+      event_timeout: 800
+    });
+    // Backup: redirect after 800ms even if the GA callback never fires.
+    setTimeout(go, 800);
   });
 
-  // Backup: redirect after 800ms even if the GA callback never fires.
-  setTimeout(function () { window.location.replace(dest); }, 800);
+  // Hard backup: never leave a visitor stranded on this page.
+  setTimeout(go, 1500);
 </script>
 
 <style>

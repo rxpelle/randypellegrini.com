@@ -15,9 +15,46 @@
     'bookbub.com': 'bookbub'
   };
 
+  // 0. Amazon storefront localization (added 2026-10-15)
+  // Search Console shows most Amazon clicks come from outside the US (UK, CA,
+  // AU, DE, FR, the Balkans...). amazon.com cannot sell a Kindle book to a UK
+  // or EU account, so at click time the host is swapped to the visitor's own
+  // Kindle storefront. Country comes from Cloudflare's trace endpoint on the
+  // grounds-reader Worker (plain text, CORS *), cached for the session.
+  // Unknown or unmapped countries stay on amazon.com. The amazon_click event
+  // below records amazon_tld, so localized clicks are measurable in GA4.
+  var STOREFRONTS = { GB: 'co.uk', CA: 'ca', AU: 'com.au', DE: 'de', FR: 'fr', IT: 'it', ES: 'es', NL: 'nl', JP: 'co.jp', BR: 'com.br', MX: 'com.mx', IN: 'in' };
+  var LOC_KEY = 'rp_loc_v1';
+  var visitorLoc = null;
+  try { visitorLoc = sessionStorage.getItem(LOC_KEY); } catch (err) {}
+  if (!visitorLoc && window.fetch) {
+    fetch('https://grounds-reader.randypellegrini.workers.dev/cdn-cgi/trace')
+      .then(function(r) { return r.text(); })
+      .then(function(t) {
+        var m = t.match(/^loc=([A-Z]{2})$/m);
+        if (m) {
+          visitorLoc = m[1];
+          try { sessionStorage.setItem(LOC_KEY, visitorLoc); } catch (err) {}
+        }
+      })
+      .catch(function() {});
+  }
+  function localizeAmazonUrl(href) {
+    var tld = STOREFRONTS[visitorLoc];
+    if (!tld) return href;
+    return href.replace(/^(https?:\/\/)(www\.)?amazon\.com\/(dp|gp\/product)\//, '$1www.amazon.' + tld + '/$3/');
+  }
+
   document.addEventListener('click', function(e) {
     var link = e.target.closest('a');
     if (!link || !link.href) return;
+    if (/amazon\.com\//.test(link.href)) {
+      var localized = localizeAmazonUrl(link.href);
+      if (localized !== link.href) {
+        link.href = localized;
+        link.setAttribute('data-storefront', visitorLoc);
+      }
+    }
     var href = link.href;
 
     // Amazon click — identify book by ASIN, capture regional storefront
