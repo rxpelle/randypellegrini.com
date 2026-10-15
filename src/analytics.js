@@ -42,7 +42,8 @@
   function localizeAmazonUrl(href) {
     var tld = STOREFRONTS[visitorLoc];
     if (!tld) return href;
-    return href.replace(/^(https?:\/\/)(www\.)?amazon\.com\/(dp|gp\/product)\//, '$1www.amazon.' + tld + '/$3/');
+    if (!/\/(dp|gp\/product)\//.test(href)) return href; // only product pages (any slug before /dp/)
+    return href.replace(/^(https?:\/\/)(www\.)?amazon\.com\//, '$1www.amazon.' + tld + '/');
   }
 
   document.addEventListener('click', function(e) {

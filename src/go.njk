@@ -51,7 +51,8 @@ eleventyExcludeFromCollections: true
   function localize(url) {
     var tld = STOREFRONTS[loc];
     if (!tld) return url;
-    return url.replace(/^(https?:\/\/)(www\.)?amazon\.com\/(dp|gp\/product)\//, '$1www.amazon.' + tld + '/$3/');
+    if (!/\/(dp|gp\/product)\//.test(url)) return url; // only product pages (any slug before /dp/)
+    return url.replace(/^(https?:\/\/)(www\.)?amazon\.com\//, '$1www.amazon.' + tld + '/');
   }
   var redirected = false;
   function go() {
