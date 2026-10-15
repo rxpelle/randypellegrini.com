@@ -2921,3 +2921,34 @@ textarea:focus-visible {
     display: none;
   }
 }
+
+/* ── Inline buy block for Randy's own entry in listicle posts (2026-10-15) ── */
+.entry-book-cta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0 28px;
+  padding: 16px 20px;
+  border: 1px solid rgba(27, 29, 31, 0.08);
+  border-radius: 14px;
+  background: rgba(27, 29, 31, 0.02);
+}
+.entry-book-cta img {
+  width: 72px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(27, 29, 31, 0.15);
+  flex-shrink: 0;
+}
+.entry-book-cta .entry-book-note {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+@media (max-width: 600px) {
+  .entry-book-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -41,7 +41,7 @@ The *New York Times* explicitly compared it to *The Name of the Rose*, and the c
 
 The difference is setting. Pears places his mystery at the exact hinge point between the medieval and modern worlds. The old ways of knowing (faith, authority, tradition) are being challenged by the new (experiment, observation, reason). It's the same tension Eco explored, just 300 years later.
 
-## 3. The Aethelred Cipher by Randy Pellegrini (2026)
+## 3. [The Aethelred Cipher](https://www.amazon.com/dp/B0GJTGCHS2) by Randy Pellegrini (2026)
 
 Full disclosure — this one's mine. But I wrote it specifically because I wanted more of what *The Name of the Rose* gave me, and I couldn't find enough of it.
 
@@ -50,6 +50,14 @@ A coded manuscript surfaces in Mainz in 1347, and the trail leads through monast
 I set the medieval thread in Black Death Germany because Eco's monastery showed what a scriptorium under pressure looks like — and no pressure compares to 1347. Medieval monks really did embed hidden messages in illuminated manuscripts. The tradition of encoded monastic knowledge is real, and I wanted to build a thriller around that fact.
 
 If you're here because you love the idea that manuscripts can be dangerous, this is the book I wrote for you.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer" aria-label="The Aethelred Cipher on Amazon"><img src="/assets/book-cover.webp" alt="The Aethelred Cipher cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer">Get <em>The Aethelred Cipher</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 1 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

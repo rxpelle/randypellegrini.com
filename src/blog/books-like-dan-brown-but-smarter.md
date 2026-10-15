@@ -53,7 +53,7 @@ Published fifteen years before *The Da Vinci Code*, this may be the original his
 
 A chess set instead of a Holy Grail, but the same architecture of ancient secrets and modern treasure hunts. Neville did it first, with stronger female leads and more inventive plotting. If you've only read Brown, this will feel like discovering the source code.
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2026)
+## 5. [The Aethelred Cipher](https://www.amazon.com/dp/B0GJTGCHS2) by Randy Pellegrini (2026)
 
 This is my book, so take this with appropriate salt — but I wrote it because I wanted a conspiracy thriller where the history actually holds up.
 
@@ -62,6 +62,14 @@ A coded manuscript surfaces in plague-year Germany, 1347, and triggers an invest
 The manuscript isn't a plot device. The series actually excavates what the coded knowledge means, why it was worth protecting, and how a secret can survive across millennia. The medieval cipher traditions are real. The monastic encoding practices are real. I spent years on the research because I wanted readers to be able to check my homework.
 
 First in a planned 8-book series spanning ancient Egypt to the present day.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer" aria-label="The Aethelred Cipher on Amazon"><img src="/assets/book-cover.webp" alt="The Aethelred Cipher cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer">Get <em>The Aethelred Cipher</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 1 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

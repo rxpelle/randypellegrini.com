@@ -51,7 +51,7 @@ In 1790s France, a novice nun must scatter pieces of a legendary chess set as th
 
 Published before *The Da Vinci Code* existed. Neville built the template: dual timelines, ancient artifact, secret society, female protagonist navigating a conspiracy designed by men. The chess-game-as-conspiracy metaphor is executed better than it has any right to be.
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2026)
+## 5. [The Aethelred Cipher](https://www.amazon.com/dp/B0GJTGCHS2) by Randy Pellegrini (2026)
 
 My contribution to this genre — and the reason I've read everything else on this list.
 
@@ -60,6 +60,14 @@ A coded manuscript, surfacing in Mainz as the Black Death arrives in 1347, revea
 This is the first book in a planned 8-book series called *The Architecture of Survival*. Each book covers a different era: Bronze Age Egypt, Roman Judea, late-antique North Africa, the Crusader Levant, the eugenics era, and forward. The conspiracy isn't a backdrop — it's the subject. How does a secret survive across millennia? What kind of organization can operate across 112 generations? What's worth protecting for that long?
 
 Plague-era Germany is underexplored in this genre, and the coded manuscript traditions of medieval monasteries are real. I wanted a conspiracy thriller where you could check the history.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer" aria-label="The Aethelred Cipher on Amazon"><img src="/assets/book-cover.webp" alt="The Aethelred Cipher cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer">Get <em>The Aethelred Cipher</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 1 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

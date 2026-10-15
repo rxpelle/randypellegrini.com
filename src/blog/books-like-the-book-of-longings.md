@@ -49,7 +49,7 @@ Three women during World War II — a New York socialite, a Polish political pri
 
 Not biblical, but the same DNA as *The Book of Longings*: women's stories erased by history, reconstructed through fiction. The Ravensbrück experiments were real. The women who survived were real. Kelly gives them what history didn't — a voice, a full accounting, a refusal to be reduced to statistics.
 
-## 5. The First Key by Randy Pellegrini (2026)
+## 5. [The First Key](https://www.amazon.com/dp/B0GSWLM1WV) by Randy Pellegrini (2026)
 
 This is mine, so take it with appropriate bias — but I wrote it because I couldn't find enough fiction about the women who built the systems that survived.
 
@@ -58,6 +58,14 @@ Nefertari, a royal physician in Bronze Age Egypt, watches civilization collapse 
 The novel spans 842 years and follows 13 generations of women who carried knowledge through the ancient world — from Egypt through Israel, Babylon, Greece, and Persia. Each chapter follows a different woman inheriting fragments she doesn't fully understand, facing an enemy that keeps evolving.
 
 If *The Book of Longings* made you want more ancient women refusing to let knowledge die, this is the prequel to everything.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0GSWLM1WV" target="_blank" rel="noopener noreferrer" aria-label="The First Key on Amazon"><img src="/assets/book3-cover.webp" alt="The First Key cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0GSWLM1WV" target="_blank" rel="noopener noreferrer">Get <em>The First Key</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 3 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

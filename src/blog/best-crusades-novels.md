@@ -37,13 +37,21 @@ Saladin's story, dictated by the sultan himself to Ibn Yakub, his Jewish scribe 
 
 The frame matters: a Jewish scribe recording a Muslim sultan's war against Christian invaders, all three traditions tangled in one manuscript. Second book of Ali's Islam Quintet; it stands alone.
 
-## 4. The Split Pomegranate by Randy Pellegrini (2026)
+## 4. [The Split Pomegranate](https://www.amazon.com/dp/B0HDK6SGM3) by Randy Pellegrini (2026)
 
 Mine. Damascus, Jerusalem, and the Languedoc, 1140 to 1187 — the years between the Second Crusade and the fall of Jerusalem.
 
 Eschiva bint Yehiel is a Jewish engineer in Damascus who can lay a hand on worked stone or metal and know the maker, the year, the flaw waiting inside it. Brother Guilhem of Carcassonne, a Templar mason, can do the same impossible thing. When they meet across the lines of the Second Crusade, each recognizes in the other the one truth neither can say aloud — and begins a love carried for twenty years in letters and coded seals, while the Order that shelters Guilhem moves to turn an ancient inheritance into a registry of bloodlines it can own.
 
 I wrote it the way Madeline Miller and Anita Diamant write the past: intimate, exacting, lit from within. It's Book 6 of The Architecture of Survival, and it stands entirely on its own.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer" aria-label="The Split Pomegranate on Amazon"><img src="/assets/book6-cover.webp" alt="The Split Pomegranate cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer">Get <em>The Split Pomegranate</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 6 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

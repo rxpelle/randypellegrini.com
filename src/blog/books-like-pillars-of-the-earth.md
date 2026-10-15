@@ -54,13 +54,21 @@ If what you loved in *Pillars* was watching competence compound over decades, th
   <div class="form-messages" style="display: none;"></div>
 </div>
 
-## 5. The Split Pomegranate by Randy Pellegrini (2026)
+## 5. [The Split Pomegranate](https://www.amazon.com/dp/B0HDK6SGM3) by Randy Pellegrini (2026)
 
 Mine — and I wrote it in open debt to this genre. Eschiva bint Yehiel is a Jewish engineer in twelfth-century Damascus who builds the hidden water systems of a great city. Brother Guilhem of Carcassonne is a Templar mason raising fortresses in the Holy Land. Both can do something impossible: lay a hand on worked stone or metal and know the maker, the year, the flaw waiting inside it.
 
 They meet across the lines of the Second Crusade, and what follows is a love carried for twenty years in letters and coded seals — while the order sheltering Guilhem moves to own what the two of them guard. The engineering is real. What the builders can read in the stone is the fiction.
 
 If Follett's masons had secrets worth killing for, this is that book.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer" aria-label="The Split Pomegranate on Amazon"><img src="/assets/book6-cover.webp" alt="The Split Pomegranate cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0HDK6SGM3" target="_blank" rel="noopener noreferrer">Get <em>The Split Pomegranate</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 6 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 ## 6. Sarum by Edward Rutherfurd (1987)
 

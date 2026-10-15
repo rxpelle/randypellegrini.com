@@ -51,13 +51,21 @@ An epic following the construction of a cathedral in fictional Kingsbridge, Engl
 
 Follett makes cathedral construction into a thriller, which sounds impossible until you read it. The engineering is real. The politics are lethal. The ambitions of master builders, monks, and noblewomen collide across 40 years. It's 1,000 pages and it earns every one.
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2026)
+## 5. [The Aethelred Cipher](https://www.amazon.com/dp/B0GJTGCHS2) by Randy Pellegrini (2026)
 
 Mine. Set in Mainz in 1347, the year the Black Death arrives in Europe and starts killing half of everyone.
 
 A dying monk presses an iron key into a scribe's hands, and the coded trail leads through manuscript marginalia to a secret society operating since ancient Egypt. The medieval thread runs through monastic scriptoriums where monks embed hidden messages in illuminated manuscripts — a practice that's historically documented. The cipher traditions are real. The encoding methods are real. I built the thriller on a foundation of actual monastic practice.
 
 Plague-year Germany is a setting most medieval thrillers avoid — the scale of the dying is hard to write around. This one leans into it: quarantine lines, emptying scriptoriums, and a scribe discovering that literacy itself is a form of power.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer" aria-label="The Aethelred Cipher on Amazon"><img src="/assets/book-cover.webp" alt="The Aethelred Cipher cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer">Get <em>The Aethelred Cipher</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 1 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 <div class="mid-article-signup">
   <strong>Like what you're reading?</strong> Get new book releases, research notes, and series dispatches straight to your inbox.  <form class="signup" data-newsletter="true">

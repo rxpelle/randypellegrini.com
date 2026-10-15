@@ -54,13 +54,21 @@ Maitland's medieval England is superstitious, wet, and mean, and she refuses to 
   <div class="form-messages" style="display: none;"></div>
 </div>
 
-## 5. The Aethelred Cipher by Randy Pellegrini (2026)
+## 5. [The Aethelred Cipher](https://www.amazon.com/dp/B0GJTGCHS2) by Randy Pellegrini (2026)
 
 Mine. Mainz, 1347 — the year the Black Death arrives in the Rhineland, one year before most of the histories say it should.
 
 A dying monk presses an iron key into the hands of Thomas, a young scribe, and the coded trail leads through manuscript marginalia to a secret society that has been tracking plagues — and the people who survive them — since ancient Egypt. The cipher tradition is real: medieval monks genuinely embedded hidden messages in illuminated manuscripts. The plague epidemiology is as accurate as I could make it. The conspiracy is the fiction that ties them together.
 
 I wrote it because I wanted a plague novel where the disease isn't a backdrop — it's an intelligence test, and someone is grading it.
+
+<div class="entry-book-cta">
+  <a href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer" aria-label="The Aethelred Cipher on Amazon"><img src="/assets/book-cover.webp" alt="The Aethelred Cipher cover" loading="lazy" /></a>
+  <div>
+    <a class="button small" href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer">Get <em>The Aethelred Cipher</em> on Amazon &rarr;</a>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 1 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+  </div>
+</div>
 
 ## 6. The Last Hours by Minette Walters (2017)
 
