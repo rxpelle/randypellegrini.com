@@ -10,8 +10,8 @@ permalink: /blog/best-knights-templar-novels/
 excerpt: "The Templars were a monastery, an army, and a bank, and then one Friday in 1307 they were a crime. No wonder novelists can't leave them alone. These are the ten books that earned the obsession."
 prevPost: "/blog/how-to-read-coffee-grounds/"
 prevTitle: "How to Read Coffee Grounds: A Complete Guide to Tasseography"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/books-like-the-historian/"
+nextTitle: "10 Books Like The Historian by Elizabeth Kostova"
 ctaText: '<em>The Split Pomegranate</em> is my Templar novel — though the Templar in it is a mason, not a knight. Brother Guilhem of Carcassonne builds for the Order in the Holy Land and can read a stone the way other men read a face. Across the lines of the Second Crusade he meets a Jewish engineer in Damascus who can do the same, and the Order that shelters him turns out to want what the two of them guard. 1140 to 1187, Damascus to Hattin. <a href="https://www.amazon.com/dp/B0HDK6SGM3">It is on Amazon</a> and it stands on its own.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
