@@ -103,6 +103,57 @@ eleventyComputed:
     line-height: 1.85;
     margin: 0 0 20px;
   }
+  .bp-praise {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 8px 0 32px;
+  }
+  .bp-praise h2 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.8rem;
+    margin: 0 0 24px;
+    text-align: center;
+  }
+  .bp-praise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+  }
+  .bp-praise-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 22px;
+    border-left: 3px solid #c87941;
+    background: rgba(200, 121, 65, 0.05);
+    border-radius: 0 6px 6px 0;
+  }
+  .bp-praise-item blockquote {
+    margin: 0 0 12px;
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .bp-praise-item blockquote::before { content: "\201C"; }
+  .bp-praise-item blockquote::after { content: "\201D"; }
+  .bp-praise-item figcaption {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+  .bp-praise-src {
+    font-weight: 400;
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+  .bp-praise-more {
+    margin: 24px 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
   .bp-series-nav {
     display: flex;
     justify-content: space-between;
@@ -237,6 +288,18 @@ eleventyComputed:
         "bestRating": "5"
       },
       {% endif %}
+      {% if book.praise %}
+      "review": [
+        {%- for p in book.praise %}
+        {
+          "@type": "Review",
+          "reviewBody": "{{ p.quote }}",
+          "author": { "@type": "Person", "name": "{{ p.source }}" },
+          "publisher": { "@type": "Organization", "name": "Amazon" }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ],
+      {% endif %}
       {% if book.amazonUrl %}
       "offers": {
         "@type": "Offer",
@@ -308,6 +371,23 @@ eleventyComputed:
   <p>{{ p | safe }}</p>
   {% endfor %}
 </section>
+
+{% if book.praise %}
+<section class="bp-praise reveal delay-1" aria-labelledby="bp-praise-heading">
+  <h2 id="bp-praise-heading">What Readers Are Saying</h2>
+  <div class="bp-praise-grid">
+    {% for p in book.praise %}
+    <figure class="bp-praise-item">
+      <blockquote>{{ p.quote | safe }}</blockquote>
+      <figcaption>{{ p.source }}<span class="bp-praise-src"> &middot; Amazon reader review</span></figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  {% if book.amazonUrl %}
+  <p class="bp-praise-more"><a class="text-link" href="{{ book.amazonUrl }}#customerReviews" target="_blank" rel="noopener noreferrer" data-track="review_click" data-book="book{{ book.seriesPosition }}" data-source="book_page_praise">Read all {{ book.rating.count if book.rating else "" }} reviews on Amazon &rarr;</a></p>
+  {% endif %}
+</section>
+{% endif %}
 
 <nav class="bp-series-nav reveal delay-1" aria-label="Series navigation">
   {% set prevBook = books[book.seriesPosition - 2] if book.seriesPosition > 1 else null %}

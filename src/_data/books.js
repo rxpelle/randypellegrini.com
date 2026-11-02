@@ -4,6 +4,13 @@
 // When adding a book: append here, rebuild, and the /go/ + landing pages are generated.
 // Book 4 has a hand-built page (love-remembers-in-silence.njk) — customPage: true
 // keeps the generator from overwriting it while the rest of the data stays usable.
+//
+// praise[]: verbatim pull-quotes from that book's Amazon customer reviews, shown
+// in the "What Readers Are Saying" block on the landing page and emitted as
+// schema.org Review nodes (publisher: Amazon — they are reader reviews, not press).
+// Quote exactly; never edit a reviewer's words. Source transcripts live under
+// plague_novel/<book>/reviews/amazon_customer_reviews_<date>.md.
+// rating{}: live Amazon figures — refresh with bsr-snapshot/run.sh, last set 2026-11-02 from the live product pages.
 
 module.exports = function () {
   const books = [
@@ -30,7 +37,7 @@ module.exports = function () {
       ],
       datePublished: "2026-01",
       audio: true,
-      rating: { value: "4.0", count: "248" },
+      rating: { value: "4.0", count: "267" },
       paragraphs: [
         "When a dying monk named Brother Hamo thrusts an iron key into scribe Thomas of Eltville's hands during a deadly attack by the Order's Gray Robes, Thomas inherits more than an artifact. He becomes the target of a millennia-old conspiracy that has been engineering bloodlines for over 2,500 years.",
         "The Black Death rages across Europe, killing half the population. But Thomas begins experiencing impossible “memories” that don't belong to him&mdash;ancient Egyptian hieroglyphs, medical knowledge centuries ahead of his time, and fragments of a genetic protocol designed to preserve human consciousness across generations.",
@@ -60,7 +67,7 @@ module.exports = function () {
       ],
       datePublished: "2026-03",
       audio: true,
-      rating: { value: "4.7", count: "85" },
+      rating: { value: "4.7", count: "86" },
       paragraphs: [
         "When geneticist Dr. Sarah Chen discovers an engineered bioweapon hidden inside GenVault Corporation's laboratories, she has forty-three seconds to escape the building before security locks down. What she carries out&mdash;Morrison's classified archive&mdash;is proof that THRESHOLD, a program designed to reduce the global population by four billion, is real and already deployed.",
         "Dr. James Morrison, GenVault's head of research, built THRESHOLD after his daughter Emily's death convinced him that humanity's next collapse was inevitable. His solution: engineer a targeted pathogen and deploy it through forty-seven hubs worldwide. Catherine Wells&mdash;his superior, a descendant of the Order's three-thousand-year bloodline&mdash;has been managing Morrison and the program from the shadows.",
@@ -174,7 +181,29 @@ module.exports = function () {
       ],
       datePublished: "2026-08-08",
       audio: false,
-      rating: null,
+      rating: { value: "4.6", count: "14" },
+      praise: [
+        {
+          quote:
+            "This is a properly ambitious piece of historical fantasy: patient, intelligent, grim where it needs to be, and unusually interested in the practical labour of survival.",
+          source: "Grace C.",
+        },
+        {
+          quote:
+            "It works well as a standalone story while still feeling like part of a much larger saga.",
+          source: "Michaela Sanderson",
+        },
+        {
+          quote:
+            "Pellegrini excels at letting precise, vivid details drive the story, using authentic historical craft and quiet, internal tensions to build suspense.",
+          source: "Natalia Pontes",
+        },
+        {
+          quote:
+            "There was a lot more underneath the story than I expected, and those deeper themes are what stayed with me after I finished.",
+          source: "E.J.S.",
+        },
+      ],
       paragraphs: [
         "Eschiva bint Yehiel is a Jewish engineer in twelfth-century Damascus &mdash; she lays a hand to worked stone or metal and knows the maker, the year, the flaw waiting inside it. She builds the secret water of a great city, keeps a seal-trade for a cover, and lets no one close enough to learn what she truly guards: one chamber of a network six hundred years old that has carried forbidden knowledge through every collapse, and that she has protected alone since her mother died.",
         "Brother Guilhem of Carcassonne, a Templar mason, can do the same impossible thing with his hands. When the two meet across the lines of the Second Crusade, each recognizes in the other the one truth neither can say aloud &mdash; and begins a love carried for twenty years in letters and coded seals, while the Order that shelters Guilhem moves to turn the network's inheritance into a registry of bloodlines it can own and breed.",
