@@ -1,10 +1,10 @@
 ---
 date: 2025-02-06
-title: "How the Black Death Actually Spread"
-heading: "How the Black Death Actually Spread — And What Medieval People Understood That We've Forgotten"
-description: "The Black Death killed up to 200 million people, but medieval people understood more about disease transmission than we give them credit for. Explore the real history of the deadliest pandemic."
-ogTitle: "How the Black Death Actually Spread"
-ogDescription: "The Black Death killed up to 200 million people, but medieval people understood more about disease transmission than we give them credit for. Explore the real history of the deadliest pandemic."
+title: "How Did the Black Death Spread? What Medieval People Actually Knew"
+heading: "How Did the Black Death Spread? And What Medieval People Understood That We've Forgotten"
+description: "How did the Black Death spread across Europe after 1347? Rats, fleas, ships and trade roads, yes. But medieval doctors and towns understood more about transmission than the textbooks admit."
+ogTitle: "How Did the Black Death Spread? What Medieval People Actually Knew"
+ogDescription: "How did the Black Death spread across Europe after 1347? Rats, fleas, ships and trade roads, and a medieval understanding of transmission the textbooks skip."
 number: 2
 bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/how-the-black-death-spread/
@@ -12,7 +12,7 @@ excerpt: "Medieval people weren't as helpless or as ignorant about disease as we
 prevPost: "/blog/medieval-cipher-systems/"
 prevTitle: "Medieval Monks & Encrypted Secrets"
 nextPost: "/blog/why-civilizations-collapse/"
-nextTitle: "Why Civilizations Collapse"
+nextTitle: "Why Do Civilizations Collapse?"
 ctaText: 'In <em>The Aethelred Cipher</em>, Thomas discovers that the Black Death wasn''t purely a natural disaster—that powerful men had been tracking disease patterns across centuries, positioning chosen families to survive, and using each catastrophe to strengthen their control. The question he faces: can one person break a system that has been running since before the fall of Rome?'
 ---
 

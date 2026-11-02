@@ -1,16 +1,16 @@
 ---
 date: 2025-02-11
-title: "Why Civilizations Collapse in the Same Pattern"
-heading: "Why Civilizations Collapse in the Same Pattern — Every Single Time"
-description: "From the Bronze Age Collapse to the fall of Rome to the Black Death, civilizations fail in the same six-step pattern. Explore the feedback loop that has shaped 3,200 years of history."
-ogTitle: "Why Civilizations Collapse in the Same Pattern"
-ogDescription: "From the Bronze Age Collapse to the fall of Rome to the Black Death, civilizations fail in the same six-step pattern. Explore the feedback loop that has shaped 3,200 years of history."
+title: "Why Do Civilizations Collapse? The Same 6 Signs, Every Time"
+heading: "Why Do Civilizations Collapse? The Same Six Signs, Every Single Time"
+description: "Why do civilizations collapse? From the Bronze Age to Rome to the Black Death, the same six-step failure pattern repeats. Here are the signs, in order, and why the people living through them never see it coming."
+ogTitle: "Why Do Civilizations Collapse? The Same 6 Signs, Every Time"
+ogDescription: "Why do civilizations collapse? From the Bronze Age to Rome to the Black Death, the same six-step pattern repeats. Here are the signs, in order."
 number: 3
 bookTag: "Book 3: The First Key"
 permalink: /blog/why-civilizations-collapse/
 excerpt: "In 1177 BCE, every major civilization in the Eastern Mediterranean collapsed simultaneously. The same pattern keeps repeating. This isn't a coincidence."
 prevPost: "/blog/how-the-black-death-spread/"
-prevTitle: "How the Black Death Actually Spread"
+prevTitle: "How Did the Black Death Spread?"
 nextPost: "/blog/blood-memory-science-meets-fiction/"
 nextTitle: "Blood Memory: Science Meets Fiction"
 ctaText: '<em>The First Key</em> opens in 1177 BCE, as every civilization in the eastern Mediterranean fails at once. Nefertari, a royal physician and scribe, realizes the collapse isn''t random — it''s a cascade with a pattern — and spends her life encoding that pattern so the next civilization gets a warning. Three thousand years of the series flow from her decision.'

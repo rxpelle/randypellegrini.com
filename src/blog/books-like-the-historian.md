@@ -10,8 +10,8 @@ permalink: /blog/books-like-the-historian/
 excerpt: "The Historian is a vampire novel in which almost nobody gets bitten. What it's really about is the archive — a book handed down, a trail of letters, a library that turns out to be a trap. Here are ten books built the same way."
 prevPost: "/blog/best-knights-templar-novels/"
 prevTitle: "The 10 Best Knights Templar Novels"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/books-like-the-red-tent/"
+nextTitle: "10 Books Like The Red Tent"
 ctaText: 'If <em>The Historian</em> was your book, <em>The Aethelred Cipher</em> starts in the same place: a dying scholar, a document he shouldn&rsquo;t have had, and a trail through the libraries of Europe that someone has been guarding for a very long time. Mainz, 1347, with the Black Death one valley away. <a href="https://www.amazon.com/dp/B0GJTGCHS2">It is on Amazon</a> and it is Book 1 of a series that each stands on its own.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"

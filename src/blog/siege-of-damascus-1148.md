@@ -9,7 +9,7 @@ bookTag: "Book 6: The Split Pomegranate"
 permalink: /blog/siege-of-damascus-1148/
 excerpt: "The Second Crusade marched two thousand miles, lost most of its men getting there, and then spent four days attacking the one Muslim city that was allied with the crusaders. It remains one of the strangest strategic decisions of the medieval world."
 prevPost: "/blog/best-black-death-novels/"
-prevTitle: "The 10 Best Black Death and Plague Novels"
+prevTitle: "The 10 Best Black Death Novels, Ranked"
 nextPost: "/blog/books-like-pillars-of-the-earth/"
 nextTitle: "9 Books Like The Pillars of the Earth"
 ctaText: '<em>The Split Pomegranate</em> opens in the Damascus of these years — told from inside the walls. Eschiva bint Yehiel is a Jewish engineer who builds the hidden water systems of the city, and when the crusade comes through the orchards in 1148, what she guards matters more than any army knows. The siege is history. What was hidden under the city is the fiction.'

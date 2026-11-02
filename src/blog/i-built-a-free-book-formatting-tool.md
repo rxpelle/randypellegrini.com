@@ -1,10 +1,10 @@
 ---
 date: 2026-03-10
-title: "I Built a Free Book Formatting Tool for Authors"
+title: "Free Book Formatting Tool: An Open-Source Vellum and Atticus Alternative"
 heading: "I Built a Free Book Formatting Tool for Self-Published Authors (And Open-Sourced It)"
-description: "Vellum costs $250. Atticus costs $150. Book Formatter costs nothing. It takes a markdown or Word file and generates print-ready PDFs, EPUBs, large-print editions, and hardcovers — all with one command."
-ogTitle: "I Built a Free Book Formatting Tool for Authors"
-ogDescription: "Vellum costs $250. Atticus costs $150. Book Formatter costs nothing. One command to format your book for every platform."
+description: "Looking for a free Vellum or Atticus alternative? Book Formatter is open source and turns a Markdown or Word manuscript into print-ready PDF, EPUB, large print and hardcover in one command. How it works and what it produced."
+ogTitle: "Free Book Formatting Tool: An Open-Source Vellum and Atticus Alternative"
+ogDescription: "A free, open-source Vellum and Atticus alternative. One command turns a manuscript into print PDF, EPUB, large print and hardcover."
 number: 24
 bookTag: "Writing & Tools"
 permalink: /blog/i-built-a-free-book-formatting-tool/

@@ -10,7 +10,7 @@ bookTag: "Book 2: The Genesis Protocol"
 permalink: /blog/every-pandemic-has-an-nda/
 excerpt: "The 1918 flu killed 50 million people. The U.S. government's official position, for months, was that everything was fine. We've been signing pandemic NDAs ever since."
 prevPost: "/blog/operation-paperclip/"
-prevTitle: "Operation Paperclip"
+prevTitle: "What Was Operation Paperclip?"
 nextPost: "/blog/ethics-of-genetic-selection/"
 nextTitle: "Who Gets to Survive?"
 ctaText: 'In <em>The Genesis Protocol</em>, geneticist Sarah Chen finds proof that the pandemic was engineered — and the government''s response isn''t to expose it. It''s an NDA under the Espionage Act. She has to choose between justice and the math that says silence saves more lives than truth.'

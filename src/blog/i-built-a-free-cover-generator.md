@@ -10,7 +10,7 @@ bookTag: "Writing & Tools"
 permalink: /blog/i-built-a-free-cover-generator/
 excerpt: "Your book cover is the most important piece of marketing you'll ever create. It has about two seconds to work — the time it takes a reader scrolling Amazon to decide whether to click or keep moving. I built a tool that generates professional, genre-appropriate covers using AI for less than $0.30."
 prevPost: "/blog/i-built-a-free-book-formatting-tool/"
-prevTitle: "I Built a Free Book Formatting Tool for Authors"
+prevTitle: "Free Book Formatting Tool (Vellum & Atticus Alternative)"
 ctaTitle: "See the Covers This Tool Generated"
 ctaText: 'Cover Generator designed the covers for <em>The Aethelred Cipher</em> and <em>The Genesis Protocol</em>. Check them out — and if the cover caught your eye, the story will too. <a href="https://github.com/rxpelle/cover-generator">Cover Generator is free on GitHub</a>.'
 ctaButtonUrl: "/books/"

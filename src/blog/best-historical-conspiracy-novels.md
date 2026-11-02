@@ -9,7 +9,7 @@ bookTag: "The Series"
 permalink: /blog/best-historical-conspiracy-novels/
 excerpt: "The best historical conspiracy novels don't just invent secret societies — they make you wonder if the real ones are still operating. Here are 10 that blur the line between fiction and history."
 prevPost: "/blog/books-like-dan-brown-but-smarter/"
-prevTitle: "10 Books Like Dan Brown But Smarter"
+prevTitle: "10 Books Like Dan Brown"
 nextPost: "/blog/best-medieval-thriller-books/"
 nextTitle: "Best Medieval Thriller Books"
 ctaText: '<em>The Architecture of Survival</em> is an 8-book series spanning 3,200 years of conspiracy — from ancient Egypt to the present day. It starts with <em>The Aethelred Cipher</em>. <a href="https://www.amazon.com/dp/B0GJTGCHS2">Start the series on Amazon</a>.'

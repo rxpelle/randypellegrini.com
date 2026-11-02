@@ -1,9 +1,10 @@
 ---
 date: 2026-04-04
-title: "10 Books Like Dan Brown But Smarter"
-description: "Love the conspiracy thrillers and code-breaking but want more depth? These 10 books deliver secret societies and hidden knowledge with real historical research behind them."
-ogTitle: "10 Books Like Dan Brown But Smarter"
-ogDescription: "Love conspiracy thrillers but want more depth? These 10 books deliver secret societies and code-breaking with real research behind them."
+heading: "10 Books Like Dan Brown, For Readers Who Want the Research to Hold Up"
+title: "10 Books Like Dan Brown (For Readers Who Want Smarter Thrillers)"
+description: "Looking for books like Dan Brown? These 10 conspiracy thrillers deliver the codes, secret societies and hidden history of The Da Vinci Code, with research that holds up and prose that rewards a closer read."
+ogTitle: "10 Books Like Dan Brown (For Readers Who Want Smarter Thrillers)"
+ogDescription: "Looking for books like Dan Brown? 10 conspiracy thrillers with the codes, secret societies and hidden history of The Da Vinci Code, and research that holds up."
 number: 34
 bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/books-like-dan-brown-but-smarter/

@@ -1,10 +1,10 @@
 ---
 date: 2025-03-18
-title: "Operation Paperclip Brought More Than Rocket Scientists"
-heading: "Operation Paperclip Brought More Than Rocket Scientists"
-description: "The real program that recruited Nazi scientists to America — and the pharmaceutical companies, genetic research programs, and ethical compromises that followed. The history behind Catherine Wells."
-ogTitle: "Operation Paperclip Brought More Than Rocket Scientists"
-ogDescription: "The real program that recruited Nazi scientists to America — and the pharmaceutical companies, genetic research programs, and ethical compromises that followed."
+title: "What Was Operation Paperclip? The Nazi Scientists America Recruited"
+heading: "What Was Operation Paperclip? It Brought More Than Rocket Scientists"
+description: "What was Operation Paperclip? The real U.S. program that recruited Nazi scientists after World War II, including the medical researchers nobody talks about. Who they were, what they did, and what followed."
+ogTitle: "What Was Operation Paperclip? The Nazi Scientists America Recruited"
+ogDescription: "What was Operation Paperclip? The real U.S. program that recruited Nazi scientists after WWII, including the medical researchers nobody talks about."
 number: 10
 bookTag: "Book 2: The Genesis Protocol"
 permalink: /blog/operation-paperclip/

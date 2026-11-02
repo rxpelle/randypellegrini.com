@@ -12,7 +12,7 @@ excerpt: "Pi-Ramesses was one of the largest cities on Earth — 300,000 people,
 prevPost: "/blog/can-bioweapons-target-your-dna/"
 prevTitle: "Can a Bioweapon Target Your DNA?"
 nextPost: "/blog/the-oracle-was-getting-high/"
-nextTitle: "The Oracle at Delphi Was Getting High on Geological Fumes"
+nextTitle: "Was the Oracle of Delphi High?"
 ctaText: '<em>The First Key</em> opens in Pi-Ramesses during the Bronze Age Collapse, as physician Nefertari watches the ancient world fall apart and makes a decision that echoes across 3,200 years. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Read on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
 ctaButtonText: "Read The First Key"

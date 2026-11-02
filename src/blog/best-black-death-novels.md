@@ -1,9 +1,10 @@
 ---
 date: 2026-08-19
-title: "The 10 Best Black Death and Plague Novels"
-description: "From a sealed English village to time-traveling historians, these are the 10 best novels about the Black Death and the plagues that shaped history — ranked by someone who writes them."
-ogTitle: "The 10 Best Black Death and Plague Novels"
-ogDescription: "From a sealed English village to time-traveling historians, these are the 10 best novels about the Black Death and the plagues that shaped history."
+heading: "The 10 Best Black Death and Plague Novels, Ranked"
+title: "The 10 Best Black Death Novels, Ranked (2026)"
+description: "The 10 best Black Death novels, ranked: Year of Wonders, Doomsday Book, Company of Liars, World Without End and six more. Which to read first, and which one plague historians still argue about."
+ogTitle: "The 10 Best Black Death Novels, Ranked (2026)"
+ogDescription: "The 10 best Black Death novels, ranked: Year of Wonders, Doomsday Book, Company of Liars, World Without End and six more. Which to read first."
 number: 48
 bookTag: "Book 1: The Aethelred Cipher"
 permalink: /blog/best-black-death-novels/

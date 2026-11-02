@@ -1,16 +1,16 @@
 ---
 date: 2026-03-25
-title: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
-heading: "The Spartan Who Survived Thermopylae — And Wished He Hadn't"
+title: "Aristodemos: The Spartan Who Survived Thermopylae"
+heading: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
 description: "Everyone knows the story of the 300 Spartans. Almost nobody talks about Aristodemos — the one who followed orders, survived, and was destroyed for it."
-ogTitle: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
+ogTitle: "Aristodemos: The Spartan Who Survived Thermopylae"
 ogDescription: "Everyone knows the 300 Spartans. Almost nobody talks about Aristodemos — the one who survived and was destroyed for it."
 number: 29
 bookTag: "Book 3: The First Key"
 permalink: /blog/the-spartan-who-survived/
 excerpt: "Aristodemos followed his king's direct order to fall back. Sparta branded him a coward. He spent the rest of his life trying to die."
 prevPost: "/blog/the-oracle-was-getting-high/"
-prevTitle: "The Oracle at Delphi Was Getting High on Geological Fumes"
+prevTitle: "Was the Oracle of Delphi High?"
 nextPost: "/blog/the-plague-that-saved-jerusalem/"
 nextTitle: "The Plague That Saved Jerusalem"
 ctaText: '<em>The First Key</em> explores what it costs to be the one who survives — across 842 years and one bloodline. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Available now on Amazon</a>.'

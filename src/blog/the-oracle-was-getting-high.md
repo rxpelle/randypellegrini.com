@@ -1,9 +1,9 @@
 ---
 date: 2026-03-25
-title: "The Oracle at Delphi Was Getting High on Geological Fumes"
-heading: "The Oracle at Delphi Was Literally Getting High on Geological Fumes"
+title: "Was the Oracle of Delphi High? The Geology Behind the Prophecies"
+heading: "The Oracle at Delphi Was Getting High on Geological Fumes"
 description: "For over a thousand years, the most powerful people in the ancient world made decisions based on a woman inhaling toxic gases from a geological fault. In 2001, geologists proved the ancient sources were right."
-ogTitle: "The Oracle at Delphi Was Getting High on Geological Fumes"
+ogTitle: "Was the Oracle of Delphi High? The Geology Behind the Prophecies"
 ogDescription: "For over a thousand years, kings and generals made decisions based on a woman inhaling toxic gases. In 2001, geologists proved the ancient sources were right."
 number: 28
 bookTag: "Book 3: The First Key"
@@ -12,7 +12,7 @@ excerpt: "The Pythia was inhaling ethylene gas from a geological fault. It was p
 prevPost: "/blog/the-city-that-vanished/"
 prevTitle: "The Ancient Megacity That Vanished"
 nextPost: "/blog/the-spartan-who-survived/"
-nextTitle: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
+nextTitle: "Aristodemos: The Spartan Who Survived Thermopylae"
 ctaText: '<em>The First Key</em> follows the women who built the defensive network across 842 years — from Bronze Age Egypt through the oracle networks of ancient Greece. <a href="https://www.amazon.com/dp/B0GSWLM1WV">Read on Amazon</a>.'
 ctaButtonUrl: "https://www.amazon.com/dp/B0GSWLM1WV"
 ctaButtonText: "Read The First Key"

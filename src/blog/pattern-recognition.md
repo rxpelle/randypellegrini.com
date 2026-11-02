@@ -12,7 +12,7 @@ excerpt: "Some people walk into a room and see furniture. Others see the power d
 prevPost: "/blog/the-trolley-problem-at-civilizational-scale/"
 prevTitle: "The Trolley Problem at Civilizational Scale"
 nextPost: "/blog/operation-paperclip/"
-nextTitle: "Operation Paperclip Brought More Than Rocket Scientists"
+nextTitle: "What Was Operation Paperclip?"
 ctaText: '<em>The Architecture of Survival</em> is built on the idea that pattern recognition—the ability to see systemic connections across time, geography, and scale—is the most important human skill that nobody formally teaches. <em>The Aethelred Cipher</em> follows a monk who learns to see the pattern. What he does with it changes everything.'
 ---
 

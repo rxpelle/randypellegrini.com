@@ -16,7 +16,7 @@ ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Surv
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the books"
 nextPost: "/blog/i-built-a-free-book-formatting-tool/"
-nextTitle: "I Built a Free Book Formatting Tool for Authors"
+nextTitle: "Free Book Formatting Tool (Vellum & Atticus Alternative)"
 ---
 
 I got tired of paying for keyword tools that are basically just Amazon autocomplete with a price tag.

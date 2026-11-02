@@ -11,7 +11,7 @@ excerpt: "The medieval world took its secrets seriously. And the technology they
 prevPost: "/blog/"
 prevTitle: "All posts"
 nextPost: "/blog/how-the-black-death-spread/"
-nextTitle: "How the Black Death Actually Spread"
+nextTitle: "How Did the Black Death Spread?"
 ctaText: '<em>The Aethelred Cipher</em> follows Thomas, a young monk who discovers that the decorative dots in his monastery''s manuscripts encode a secret that powerful men will kill to protect. Set during the Black Death of 1347, it''s a story about pattern recognition, encrypted knowledge, and the question of whether one person can break a system that has been running for centuries.'
 ---
 
