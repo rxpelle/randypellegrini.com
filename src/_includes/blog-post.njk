@@ -7,7 +7,8 @@ layout: base.njk
   "@type": "BlogPosting",
   "headline": {{ title | dump | safe }},
   "description": {{ description | dump | safe }},{% if date %}
-  "datePublished": "{{ date | isoDate }}",{% endif %}
+  "datePublished": "{{ date | isoDate }}",
+  "dateModified": "{{ (updated or date) | isoDate }}",{% endif %}
   "image": "{{ ogImage | default(site.url + '/assets/book-cover.jpg') }}",
   "wordCount": "{{ content | wordCount }}",
   "author": { "@id": "https://randypellegrini.com/#author" },
@@ -21,11 +22,29 @@ layout: base.njk
   }
 }
 </script>
+{%- set _items = content | listItems %}
+{%- if _items.length >= 3 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ title | dump | safe }},
+  "url": "{{ ogUrl | default(site.url + page.url) }}",
+  "numberOfItems": {{ _items.length }},
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {%- for it in _items %}
+    { "@type": "ListItem", "position": {{ it.position }}, "name": {{ it.name | dump | safe }} }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
 <div class="article-container">
   <div class="article-header reveal">
     <p class="eyebrow">{{ bookTag }} &mdash; Essay {{ number }} of {{ collections.blog | length }}</p>
     <h1>{{ heading | default(title) | safe }}</h1>
-    <p class="article-meta">By Randy Pellegrini{% if date %} · <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>{% endif %}</p>
+    <p class="article-meta">By Randy Pellegrini{% if date %} · <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>{% endif %}{% if updated %} · Updated <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time>{% endif %}</p>
   </div>
 
   <div class="article-body reveal delay-1">
@@ -91,23 +110,7 @@ layout: base.njk
     </a>
   </div>
 
-  {%- set _related = [] -%}
-  {%- for post in collections.blog | reverse -%}
-    {%- if post.data.bookTag == bookTag and post.url != page.url and _related.length < 3 -%}
-      {{ "" if _related.push(post) }}
-    {%- endif -%}
-  {%- endfor -%}
-  {%- for post in collections.blog | reverse -%}
-    {%- if post.data.bookTag != bookTag and post.url != page.url and _related.length < 3 -%}
-      {%- set _alreadyIn = false -%}
-      {%- for r in _related -%}
-        {%- if r.url == post.url -%}{%- set _alreadyIn = true -%}{%- endif -%}
-      {%- endfor -%}
-      {%- if not _alreadyIn -%}
-        {{ "" if _related.push(post) }}
-      {%- endif -%}
-    {%- endif -%}
-  {%- endfor -%}
+  {%- set _related = collections.blog | relatedPosts(page.url) -%}
   {%- if _related.length > 0 %}
   <div class="related-essays reveal delay-2">
     <h3>Keep reading</h3>

@@ -1,6 +1,7 @@
 ---
 date: 2026-08-19
 heading: "The 10 Best Black Death and Plague Novels, Ranked"
+updated: 2026-11-02
 title: "The 10 Best Black Death Novels, Ranked (2026)"
 description: "The 10 best Black Death novels, ranked: Year of Wonders, Doomsday Book, Company of Liars, World Without End and six more. Which to read first, and which one plague historians still argue about."
 ogTitle: "The 10 Best Black Death Novels, Ranked (2026)"

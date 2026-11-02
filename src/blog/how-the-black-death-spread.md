@@ -1,5 +1,6 @@
 ---
 date: 2025-02-06
+updated: 2026-11-02
 title: "How Did the Black Death Spread? What Medieval People Actually Knew"
 heading: "How Did the Black Death Spread? And What Medieval People Understood That We've Forgotten"
 description: "How did the Black Death spread across Europe after 1347? Rats, fleas, ships and trade roads, yes. But medieval doctors and towns understood more about transmission than the textbooks admit."

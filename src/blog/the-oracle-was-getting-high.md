@@ -1,5 +1,6 @@
 ---
 date: 2026-03-25
+updated: 2026-11-02
 title: "Was the Oracle of Delphi High? The Geology Behind the Prophecies"
 heading: "The Oracle at Delphi Was Getting High on Geological Fumes"
 description: "For over a thousand years, the most powerful people in the ancient world made decisions based on a woman inhaling toxic gases from a geological fault. In 2001, geologists proved the ancient sources were right."

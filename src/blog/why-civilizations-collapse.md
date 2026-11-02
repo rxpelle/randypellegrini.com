@@ -1,5 +1,6 @@
 ---
 date: 2025-02-11
+updated: 2026-11-02
 title: "Why Do Civilizations Collapse? The Same 6 Signs, Every Time"
 heading: "Why Do Civilizations Collapse? The Same Six Signs, Every Single Time"
 description: "Why do civilizations collapse? From the Bronze Age to Rome to the Black Death, the same six-step failure pattern repeats. Here are the signs, in order, and why the people living through them never see it coming."

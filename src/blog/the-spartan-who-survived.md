@@ -1,5 +1,6 @@
 ---
 date: 2026-03-25
+updated: 2026-11-02
 title: "Aristodemos: The Spartan Who Survived Thermopylae"
 heading: "The Spartan Who Survived Thermopylae and Wished He Hadn't"
 description: "Everyone knows the story of the 300 Spartans. Almost nobody talks about Aristodemos — the one who followed orders, survived, and was destroyed for it."

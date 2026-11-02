@@ -1,6 +1,7 @@
 ---
 date: 2026-04-04
 heading: "10 Books Like Dan Brown, For Readers Who Want the Research to Hold Up"
+updated: 2026-11-02
 title: "10 Books Like Dan Brown (For Readers Who Want Smarter Thrillers)"
 description: "Looking for books like Dan Brown? These 10 conspiracy thrillers deliver the codes, secret societies and hidden history of The Da Vinci Code, with research that holds up and prose that rewards a closer read."
 ogTitle: "10 Books Like Dan Brown (For Readers Who Want Smarter Thrillers)"

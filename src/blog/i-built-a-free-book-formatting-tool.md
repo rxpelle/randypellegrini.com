@@ -1,5 +1,6 @@
 ---
 date: 2026-03-10
+updated: 2026-11-02
 title: "Free Book Formatting Tool: An Open-Source Vellum and Atticus Alternative"
 heading: "I Built a Free Book Formatting Tool for Self-Published Authors (And Open-Sourced It)"
 description: "Looking for a free Vellum or Atticus alternative? Book Formatter is open source and turns a Markdown or Word manuscript into print-ready PDF, EPUB, large print and hardcover in one command. How it works and what it produced."

@@ -68,7 +68,7 @@
   {%- for post in collections.blog %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | dateToRfc3339 }}</lastmod>
+    <lastmod>{{ (post.data.updated or post.date) | dateToRfc3339 }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

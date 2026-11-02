@@ -1,5 +1,6 @@
 ---
 date: 2025-03-18
+updated: 2026-11-02
 title: "What Was Operation Paperclip? The Nazi Scientists America Recruited"
 heading: "What Was Operation Paperclip? It Brought More Than Rocket Scientists"
 description: "What was Operation Paperclip? The real U.S. program that recruited Nazi scientists after World War II, including the medical researchers nobody talks about. Who they were, what they did, and what followed."
