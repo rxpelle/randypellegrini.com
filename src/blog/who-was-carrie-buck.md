@@ -12,7 +12,7 @@ prevPost: "/blog/the-backup-system-had-cats/"
 prevTitle: "The Backup System Had Cats"
 nextPost: "/blog/nobody-lied-to-her-true-story/"
 nextTitle: "The True Story Behind Nobody Lied to Her"
-ctaText: '<em>Nobody Lied to Her</em> — Book 7 of The Architecture of Survival, releasing September 8, 2026 — opens with Carrie&rsquo;s case and follows a Berlin physician who finds American names in the footnotes of the Nazi sterilization law. The court records, the card index, and the Nuremberg testimony in the novel are real. Rachel Morgenstern is the fiction that walks you through them.'
+ctaText: '<em>Nobody Lied to Her</em> — Book 7 of The Architecture of Survival, coming soon — opens with Carrie&rsquo;s case and follows a Berlin physician who finds American names in the footnotes of the Nazi sterilization law. The court records, the card index, and the Nuremberg testimony in the novel are real. Rachel Morgenstern is the fiction that walks you through them.'
 ---
 
 In 1927, the United States Supreme Court ruled 8–1 that the state of Virginia could sterilize a 20-year-old woman against her will. Justice Oliver Wendell Holmes Jr. — Civil War veteran, giant of American law — wrote the opinion. It runs barely five paragraphs, and it contains the most notorious sentence in the Court's history:

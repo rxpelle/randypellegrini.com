@@ -214,9 +214,9 @@ module.exports = function () {
       slug: "nobody-lied-to-her",
       title: "Nobody Lied to Her",
       seriesPosition: 7,
-      amazonUrl: null, // set on launch day (Sept 8) when the ASIN exists
+      amazonUrl: null, // set on launch day when the ASIN exists
       comingSoon: true,
-      releaseLabel: "September 8, 2026",
+      releaseLabel: "soon",
       pageUrl: "/nobody-lied-to-her/",
       cover: "/assets/book7-cover.jpg",
       ogCover: "/assets/book7-cover-og.jpg",
@@ -230,9 +230,8 @@ module.exports = function () {
       facts: [
         { label: "Setting", value: "Berlin &amp; America, 1927&ndash;1955" },
         { label: "Length", value: "~95,000 words" },
-        { label: "Release", value: "September 8, 2026" },
+        { label: "Release", value: "Coming soon" },
       ],
-      datePublished: "2026-09-08",
       audio: false,
       rating: null,
       paragraphs: [

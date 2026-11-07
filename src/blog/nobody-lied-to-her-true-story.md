@@ -12,7 +12,7 @@ prevPost: "/blog/who-was-carrie-buck/"
 prevTitle: "Who Was Carrie Buck?"
 nextPost: "/blog/how-to-read-coffee-grounds/"
 nextTitle: "How to Read Coffee Grounds"
-ctaText: '<em>Nobody Lied to Her</em> — Book 7 of The Architecture of Survival, releasing September 8, 2026 — follows Rachel Morgenstern, a Berlin physician who finds the American names in the footnotes in 1933 and spends twenty-two years proving what they mean. Rachel is invented. The footnotes are not.'
+ctaText: '<em>Nobody Lied to Her</em> — Book 7 of The Architecture of Survival, coming soon — follows Rachel Morgenstern, a Berlin physician who finds the American names in the footnotes in 1933 and spends twenty-two years proving what they mean. Rachel is invented. The footnotes are not.'
 ---
 
 *Nobody Lied to Her* is built on one claim, and readers keep asking whether it's real: **did the Nazis actually get their sterilization law from America?**
