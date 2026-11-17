@@ -12,7 +12,7 @@ excerpt: "I got tired of paying for keyword tools that are basically just Amazon
 prevPost: "/blog/five-warnings-before-every-collapse/"
 prevTitle: "Five Warnings Before Every Collapse"
 ctaTitle: "The Books I Built This For"
-ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, an 8-book historical thriller spanning 3,200 years, five books out. If you like indie tools built by authors who actually use them, you might like the books too. Start with Book 1, <em>The Aethelred Cipher</em>.'
+ctaText: 'KDP Scout was built for my own series — <em>The Architecture of Survival</em>, an 8-book historical thriller spanning 3,200 years, six books out. If you like indie tools built by authors who actually use them, you might like the books too. Start with Book 1, <em>The Aethelred Cipher</em>.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the books"
 nextPost: "/blog/i-built-a-free-book-formatting-tool/"
@@ -59,19 +59,36 @@ If you got something useful from this — or you're going to fork the repo and n
   <div class="book-promo-links">
     <a class="book-promo-link" href="/books/">
       <span>Browse the books</span>
-      <span class="book-promo-stars">Five books live &middot; free on Kindle Unlimited</span>
+      <span class="book-promo-stars">Six books live &middot; free on Kindle Unlimited</span>
     </a>
   </div>
 </div>
 
+## Update, November 2026
+
+I wrote this post in March. Since then KDP Scout has picked up more than I expected, partly because other authors and developers started using it and sending fixes.
+
+What's new:
+
+- **Eight Amazon stores, not one.** Mining, tracking and trending now work on .com, .ca, .com.au, .de, .co.uk, .fr, .es and .it.
+- **Reverse ASIN lookup.** Give it a book's ASIN and it shows which keywords that book ranks for. This is the fastest way I know to learn from a competitor.
+- **Category finder.** Give it a keyword and it pulls the category paths from the search results, then estimates how many sales a day it would take to reach the top 20 in each one.
+- **Backend keyword check.** `validate-keywords` checks your seven KDP keyword slots against the byte limit, flags words you're wasting because they already appear in your title, and catches stray multi-byte characters.
+- **Trending, with no seed needed.** `kdp-scout trending` pulls rising terms from Amazon bestseller lists and Google suggestions.
+- **A setup check.** `kdp-scout doctor` tests your Python, virtual environment, database, config and network in one pass, and prints a one-line fix for anything that fails. An outside contributor wrote it, and it answers most of the install questions I used to get.
+
+Two smaller changes. A contributor caught autocomplete quietly returning Amazon department names instead of real search suggestions, and that's fixed. And the tool now needs **Python 3.10 or newer**, because 3.9 is past end of life.
+
 ## What You Need
 
-Python 3.9 or higher. That's it for the core features.
+Python 3.10 or higher. That's it for the core features. (On a Mac the built-in `python3` may still be 3.9. `brew install python@3.13` fixes that.)
 
 ```bash
 git clone https://github.com/rxpelle/kdp-scout.git
 cd kdp-scout
+python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
+kdp-scout doctor
 ```
 
 If you want actual search volume data (instead of estimates), you can optionally connect a DataForSEO API key — but it's not required. The free tier covers everything most authors need.
@@ -88,6 +105,6 @@ The full docs, installation guide, and source code are on GitHub:
 
 **[github.com/rxpelle/kdp-scout](https://github.com/rxpelle/kdp-scout)**
 
-If you'd rather read than code: [start with Book 1](/books/). *The Aethelred Cipher* — a historical thriller set during the 1347 plague, the opening of my series *The Architecture of Survival*. Five books are live; the next one comes out when it's ready.
+If you'd rather read than code: [start with Book 1](/books/). *The Aethelred Cipher* — a historical thriller set during the 1347 plague, the opening of my series *The Architecture of Survival*. Six books are live; the next one comes out when it's ready.
 
 If you want more free tools instead: [Book Formatter](/blog/i-built-a-free-book-formatting-tool/) (replaces Vellum), [Cover Generator](/blog/i-built-a-free-cover-generator/) (AI-powered covers for $0.30), and [Review Miner](/blog/i-built-a-free-review-mining-tool/) (turn Amazon reviews into ad copy).
