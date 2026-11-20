@@ -47,6 +47,7 @@ module.exports = function () {
     },
     {
       slug: "genesis-protocol",
+      sampleUrl: "/the-genesis-protocol/chapter-1/",
       title: "The Genesis Protocol",
       seriesPosition: 2,
       amazonUrl: "https://www.amazon.com/dp/B0GPM973N1",

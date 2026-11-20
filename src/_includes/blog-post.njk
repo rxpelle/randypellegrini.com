@@ -82,7 +82,7 @@ layout: base.njk
     {%- else %}
     <a class="button" href="{{ site.amazonUrl }}" target="_blank" rel="noopener noreferrer">{{ ctaButtonText | default("Get your copy") }} &rarr;</a>
     {%- endif %}
-    <p style="margin-top: 12px;"><a class="inline-link" href="{{ ctaBook.pageUrl if ctaBook else '/the-aethelred-cipher/' }}">More about {{ ctaBookTitle }} &rarr;</a></p>
+    <p style="margin-top: 12px;">{% if ctaBook and ctaBook.sampleUrl %}<a class="inline-link" href="{{ ctaBook.sampleUrl }}">Read Chapter 1 free</a> &middot; {% endif %}<a class="inline-link" href="{{ ctaBook.pageUrl if ctaBook else '/the-aethelred-cipher/' }}">More about {{ ctaBookTitle }} &rarr;</a></p>
   </div>
 
   {%- if bookTag == "Writing & Tools" %}

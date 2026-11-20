@@ -173,6 +173,7 @@ permalink: /read-your-grounds/
           <a id="grounds-book-button" class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">
             Read The Genesis Protocol &rarr;
           </a>
+          <p style="margin-top: 10px;"><a id="grounds-book-sample" class="inline-link" href="/the-genesis-protocol/chapter-1/">Or read Chapter 1 free</a></p>
         </div>
       </div>
     </div>
@@ -232,6 +233,7 @@ permalink: /read-your-grounds/
       <a class="button" href="{{ site.amazonBook2Url }}" target="_blank" rel="noopener noreferrer">Get The Genesis Protocol &rarr;</a>
       <a class="button ghost" href="/books/" style="margin-left: 12px;">Explore the series</a>
     </div>
+    <p style="text-align: center; margin-top: 14px;"><a class="inline-link" href="/the-genesis-protocol/chapter-1/">Read Chapter 1 of The Genesis Protocol free</a></p>
   </div>
 </section>
 {% endblock %}
@@ -322,6 +324,8 @@ permalink: /read-your-grounds/
       var coverLink = document.getElementById('grounds-book-cover-link');
       var pitch = document.getElementById('grounds-book-pitch');
       var btn = document.getElementById('grounds-book-button');
+      var sample = document.getElementById('grounds-book-sample');
+      if (sample) sample.href = '/the-aethelred-cipher/chapter-1/';
       cover.src = '/assets/book-cover.webp';
       cover.alt = 'The Aethelred Cipher';
       coverLink.href = url;
