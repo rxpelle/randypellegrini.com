@@ -1,0 +1,107 @@
+---
+pagination:
+  data: coffeeSymbols
+  size: 1
+  alias: sym
+permalink: "/coffee-symbols/{{ sym.slug }}/"
+eleventyComputed:
+  title: "{{ sym.name }} in Coffee Grounds: Meaning"
+  fullTitle: "{{ sym.name }} in Coffee Grounds Meaning | Coffee Cup Reading Symbols"
+  description: "What does a {{ sym.name | lower }} mean in coffee grounds? {{ sym.short }} How its position in the cup changes the reading."
+  ogTitle: "What a {{ sym.name }} Means in Your Coffee Cup"
+  ogDescription: "{{ sym.short }}"
+---
+{% extends "base.njk" %}
+
+{% block pageStyles %}
+<style>
+  .sym-short { font-size: 1.15rem; }
+  .sym-table { width: 100%; border-collapse: collapse; margin: 8px 0 24px; }
+  .sym-table th, .sym-table td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .sym-table th { width: 34%; font-weight: 600; }
+  .sym-book { margin: 32px 0; padding: 20px 22px; border-radius: 14px; background: var(--panel); border: 1px solid var(--border); }
+  .sym-book h2 { margin-top: 0; }
+  .sym-try { text-align: center; margin: 36px 0 8px; }
+  .sym-related a { margin-right: 14px; }
+</style>
+{% endblock %}
+
+{% block content %}
+{%- set goUrl = "/go/" + sym.book.go + "/?utm_source=grounds&utm_medium=symbol&utm_campaign=symbol-" + sym.slug -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "DefinedTerm",
+      "name": {{ sym.name | dump | safe }},
+      "description": {{ sym.short | dump | safe }},
+      "url": "https://randypellegrini.com/coffee-symbols/{{ sym.slug }}/",
+      "inDefinedTermSet": "https://randypellegrini.com/coffee-symbols/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": {{ ("What does a " + (sym.name | lower) + " mean in coffee grounds?") | dump | safe }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ (sym.short + " " + sym.intro) | dump | safe }} }
+        },
+        {
+          "@type": "Question",
+          "name": {{ ("Does it matter where the " + (sym.name | lower) + " appears in the cup?") | dump | safe }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ ("Yes. Readers take the handle as you and the present, and read the rim as the near future and the base as the distant future or the past. " + sym.position[0][0] + ": " + sym.position[0][1] + " " + sym.position[3][0] + ": " + sym.position[3][1]) | dump | safe }} }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<div class="article-container">
+  <div class="article-header reveal">
+    <p class="eyebrow"><a href="/coffee-symbols/">Coffee cup symbols</a> · Tasseography</p>
+    <h1>{{ sym.name }} in Coffee Grounds: Meaning</h1>
+  </div>
+
+  <div class="article-body reveal delay-1">
+    <div class="quick-answer"><p class="sym-short"><strong>Short answer:</strong> {{ sym.short }}</p></div>
+
+    <p>{{ sym.intro }}</p>
+
+    <h2>Where the {{ sym.name | lower }} sits in the cup</h2>
+    <p>Readers take the handle as you and the present, and read clockwise from it. The rim is the near future, the middle is weeks to months away, and the base is the distant future or the past.</p>
+    <table class="sym-table">
+      {% for row in sym.position %}<tr><th>{{ row[0] }}</th><td>{{ row[1] }}</td></tr>{% endfor %}
+    </table>
+
+    <h2>Variations</h2>
+    <table class="sym-table">
+      {% for row in sym.variants %}<tr><th>{{ row[0] }}</th><td>{{ row[1] }}</td></tr>{% endfor %}
+    </table>
+
+    <h2>A question to sit with</h2>
+    <p>{{ sym.question }}</p>
+    <p>Meanings drift between the Turkish, Greek and Levantine traditions, and a good reader weighs every symbol against the person holding the cup. There is no single authoritative dictionary. For the whole method, see the <a href="/blog/how-to-read-coffee-grounds/">guide to reading coffee grounds</a>.</p>
+
+    <div class="sym-book">
+      <h2>The {{ sym.name | lower }} in my novels</h2>
+      <p>{{ sym.book.text }}</p>
+      <p>
+        <a class="button small" href="{{ goUrl }}"><em>{{ sym.book.title }}</em> on Amazon &rarr;</a>
+        {% if sym.book.sample %}<a class="button small ghost" href="{{ sym.book.sample }}" style="margin-left: 8px;">Read Chapter 1 free</a>{% endif %}
+      </p>
+      <p class="entry-book-note">Free to read with Kindle Unlimited · Every book in <a href="/books/">the series</a> stands alone.</p>
+    </div>
+
+    <div class="sym-try">
+      <p><strong>Have a cup in front of you?</strong></p>
+      <a class="button" href="/read-your-grounds/">Get a free reading of your grounds &rarr;</a>
+    </div>
+
+    <p class="sym-related"><strong>Related symbols:</strong>
+      {% for r in sym.related %}{% for s in coffeeSymbols %}{% if s.slug == r %}<a href="/coffee-symbols/{{ s.slug }}/">{{ s.name }}</a>{% endif %}{% endfor %}{% endfor %}
+      <a href="/coffee-symbols/">All symbols</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

@@ -34,6 +34,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>{{ site.url }}/coffee-symbols/</loc>
+    <lastmod>2026-11-20T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {%- for s in coffeeSymbols %}
+  <url>
+    <loc>{{ site.url }}/coffee-symbols/{{ s.slug }}/</loc>
+    <lastmod>2026-11-20T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {%- endfor %}
+  <url>
     <loc>{{ site.url }}/the-aethelred-cipher/chapter-1/</loc>
     <lastmod>2026-11-20T00:00:00Z</lastmod>
     <changefreq>yearly</changefreq>

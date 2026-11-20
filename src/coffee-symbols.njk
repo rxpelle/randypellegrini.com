@@ -1,0 +1,51 @@
+---
+title: "Coffee Cup Reading Symbols and Their Meanings"
+fullTitle: "Coffee Cup Reading Symbols and Meanings | Tasseography Dictionary"
+description: "What the symbols in your coffee grounds mean: key, eye, snake, heart, letter and book, with how each one's position in the cup changes the reading."
+ogTitle: "What the Symbols in Your Coffee Cup Mean"
+ogDescription: "Key, eye, snake, heart, letter and book: traditional coffee cup reading meanings, and how position in the cup changes them."
+permalink: /coffee-symbols/
+---
+{% extends "base.njk" %}
+
+{% block pageStyles %}
+<style>
+  .sym-list { list-style: none; padding: 0; margin: 24px 0; }
+  .sym-list li { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .sym-list a.sym-name { font-family: 'Fraunces', serif; font-size: 1.25rem; font-weight: 600; }
+  .sym-list p { margin: 4px 0 0; }
+</style>
+{% endblock %}
+
+{% block content %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": "Coffee cup reading symbols",
+  "url": "https://randypellegrini.com/coffee-symbols/",
+  "hasDefinedTerm": [
+    {% for s in coffeeSymbols %}{ "@type": "DefinedTerm", "name": {{ s.name | dump | safe }}, "description": {{ s.short | dump | safe }}, "url": "https://randypellegrini.com/coffee-symbols/{{ s.slug }}/" }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+<div class="article-container">
+  <div class="article-header reveal">
+    <p class="eyebrow">Tasseography</p>
+    <h1>Coffee Cup Reading Symbols</h1>
+  </div>
+  <div class="article-body reveal delay-1">
+    <p>Every shape in the grounds has a traditional reading, and where it sits in the cup changes what it means. These pages cover one symbol each: the common meaning, how position shifts it, and the variations readers look for. Meanings differ between the Turkish, Greek and Levantine traditions, so treat them as a starting point for a conversation rather than a verdict.</p>
+    <ul class="sym-list">
+      {% for s in coffeeSymbols %}
+      <li><a class="sym-name" href="/coffee-symbols/{{ s.slug }}/">{{ s.name }}</a><p>{{ s.short }}</p></li>
+      {% endfor %}
+    </ul>
+    <p>The full method, including the ritual, the three zones of the cup and thirty common symbols, is in the <a href="/blog/how-to-read-coffee-grounds/">guide to reading coffee grounds</a>.</p>
+    <div class="sym-try" style="text-align:center; margin: 32px 0 8px;">
+      <a class="button" href="/read-your-grounds/">Get a free reading of your grounds &rarr;</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

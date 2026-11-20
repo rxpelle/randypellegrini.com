@@ -61,7 +61,7 @@ So a bird near the rim on the handle side is news reaching you soon. The same bi
 
 ## What the symbols mean
 
-There is no single authoritative dictionary, and any guide that claims otherwise is selling something. Meanings drift between Turkish, Greek, and Levantine traditions, and good readers weight them against the person in front of them. That said, this is the common core.
+There is no single authoritative dictionary, and any guide that claims otherwise is selling something. Meanings drift between Turkish, Greek, and Levantine traditions, and good readers weight them against the person in front of them. That said, this is the common core. Some symbols have their own page with position and variations: see [coffee cup symbols](/coffee-symbols/).
 
 ### Movement and news
 
@@ -93,18 +93,18 @@ There is no single authoritative dictionary, and any guide that claims otherwise
 | Symbol | Traditional meaning |
 |---|---|
 | **Fish** | Luck and abundance; one of the most favorable signs in the cup |
-| **Snake** | Ambiguous by design — an enemy, or hidden knowledge. Read the surroundings |
+| **[Snake](/coffee-symbols/snake/)** | Ambiguous by design — an enemy, or hidden knowledge. Read the surroundings |
 | **Dog** | Loyalty, a friend who shows up |
 | **Cat** | Independence, or deception close to home |
 | **Tree** | Growth, family, roots, health |
-| **Eye** | Being watched — or protection, the *nazar* warding something off |
-| **Heart** | Love, an attachment, an emotional matter taking priority |
+| **[Eye](/coffee-symbols/eye/)** | Being watched — or protection, the *nazar* warding something off |
+| **[Heart](/coffee-symbols/heart/)** | Love, an attachment, an emotional matter taking priority |
 
 ### Objects and terrain
 
 | Symbol | Traditional meaning |
 |---|---|
-| **Key** | An opening, a solution, access to something previously closed |
+| **[Key](/coffee-symbols/key/)** | An opening, a solution, access to something previously closed |
 | **Door** | Opportunity — but one you have to walk through |
 | **Mountain** | An obstacle, or an achievement, depending on whether you're below or atop it |
 | **Clouds** | Confusion, matters obscured, not yet time to decide |
