@@ -2962,3 +2962,17 @@ textarea:focus-visible {
   background: var(--panel);
 }
 .quick-answer p { margin: 0; }
+
+/* Visible in-text links inside articles (2026-11-20). The global `a` reset
+   (color: inherit; no underline) made links in post text invisible. */
+.article-body p a:not(.button):not(.text-link),
+.article-body li a:not(.button):not(.text-link) {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.article-body p a:not(.button):not(.text-link):hover,
+.article-body li a:not(.button):not(.text-link):hover {
+  color: var(--accent);
+}
