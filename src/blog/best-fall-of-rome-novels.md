@@ -10,8 +10,8 @@ permalink: /blog/best-fall-of-rome-novels/
 excerpt: "Rome did not fall on a date. It fell on a lot of ordinary afternoons, and the people living through them mostly kept the ledgers going. These are the ten novels that get that feeling right."
 prevPost: "/blog/books-like-the-red-tent/"
 prevTitle: "10 Books Like The Red Tent"
-nextPost: null
-nextTitle: null
+nextPost: "/blog/best-bioterror-pandemic-thrillers/"
+nextTitle: "The 10 Best Bioterror and Pandemic Thrillers"
 ctaText: '<em>What Augustine Hid</em> is set in the last twenty years of the empire in Africa: Augustine at Hippo, the refugees from the sack of 410 arriving at his gate, the Vandals crossing from Spain, and the one document he binds into <em>The City of God</em> so that it will outlive everything else. <a href="https://www.amazon.com/dp/B0H34DZVXS">It is on Amazon</a>, and it stands on its own.'
 ctaButtonUrl: "/books/"
 ctaButtonText: "See the series"
