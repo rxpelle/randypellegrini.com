@@ -16,6 +16,7 @@ module.exports = function () {
   const books = [
     {
       slug: "aethelred-cipher",
+      sampleUrl: "/the-aethelred-cipher/chapter-1/",
       title: "The Aethelred Cipher",
       seriesPosition: 1,
       amazonUrl: "https://www.amazon.com/Aethelred-Cipher-ebook/dp/B0GJTGCHS2",

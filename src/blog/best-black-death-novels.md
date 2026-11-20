@@ -1,7 +1,7 @@
 ---
 date: 2026-08-19
 heading: "The 10 Best Black Death and Plague Novels, Ranked"
-updated: 2026-11-02
+updated: 2026-11-20
 title: "The 10 Best Black Death Novels, Ranked (2026)"
 description: "The 10 best Black Death novels, ranked: Year of Wonders, Doomsday Book, Company of Liars, World Without End and six more. Which to read first, and which one plague historians still argue about."
 ogTitle: "The 10 Best Black Death Novels, Ranked (2026)"
@@ -22,6 +22,10 @@ The Black Death killed something like half of Europe in four years. It ended ser
 And for how enormous it was, the fiction shelf is strangely thin. Plenty of novels use plague as set dressing — a convenient way to empty a castle or orphan a protagonist. Far fewer sit inside the dying and take it seriously.
 
 I write plague fiction, so I've read all of it — the good, the bad, and the merely atmospheric. These are the ten that earn the subject.
+
+<div class="quick-answer">
+  <p><strong>Short answer:</strong> the best novels set during the Black Death itself (1347–1351) are <em>Doomsday Book</em> by Connie Willis, <em>Company of Liars</em> by Karen Maitland, <em>World Without End</em> by Ken Follett and <em>The Last Hours</em> by Minette Walters. The best plague novel overall is Geraldine Brooks's <em>Year of Wonders</em>, which is set in the later outbreak of 1666.</p>
+</div>
 
 *Full disclosure: one of these ten is mine. [The Aethelred Cipher](/go/aethelred-cipher/?utm_source=blog&utm_medium=listicle&utm_campaign=blackdeath-intro) is set in Mainz in 1347, the year the plague arrives, and it's free to read on Kindle Unlimited. It's at #5. The other nine are here because they earned it.*
 
@@ -70,7 +74,7 @@ I wrote it because I wanted a plague novel where the disease isn't a backdrop �
   <a href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer" aria-label="The Aethelred Cipher on Amazon"><img src="/assets/book-cover.webp" alt="The Aethelred Cipher cover" loading="lazy" style="width:72px;height:auto" /></a>
   <div>
     <a class="button small" href="https://www.amazon.com/dp/B0GJTGCHS2" target="_blank" rel="noopener noreferrer">Get <em>The Aethelred Cipher</em> on Amazon &rarr;</a>
-    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; Book 1 of <em>The Architecture of Survival</em> &middot; <a href="/books/">see the series</a></span>
+    <span class="entry-book-note">Free to read on Kindle Unlimited &middot; <a href="/the-aethelred-cipher/chapter-1/">read Chapter 1 free</a> &middot; Book 1 of <em>The Architecture of Survival</em></span>
   </div>
 </div>
 
@@ -111,3 +115,63 @@ A flu kills most of humanity in weeks; twenty years later a traveling Shakespear
 Plague is the one catastrophe that tests everything at once — medicine, faith, government, family, and the story a civilization tells about why it deserves to continue. War lets you pick a side. Plague doesn't. That's why the best plague novels are never really about the disease. They're about the institutions that fail, the strangers who don't, and the records someone keeps so the next generation gets a warning.
 
 That last part is where my series lives.
+
+
+## Frequently Asked Questions
+
+**What is the best novel about the Black Death?**
+
+Geraldine Brooks's Year of Wonders is the best-loved plague novel, though it is set in the 1666 outbreak in Eyam, England. Of the novels set during the Black Death itself (1347–1351), Connie Willis's Doomsday Book is the most powerful: a time-traveling historian lands in 1348 and can save no one.
+
+**Is Year of Wonders about the Black Death?**
+
+Not strictly. Year of Wonders is set during the 1666 plague in the English village of Eyam, about three centuries after the Black Death. It is the same disease, bubonic plague, and the novel is the best fictional portrait of a community choosing quarantine.
+
+**Which Black Death novels are the most historically accurate?**
+
+Year of Wonders stays close to the historical record of Eyam's self-quarantine. Minette Walters's The Last Hours is the most practical, dealing with food, logistics and class inside a sealed estate in 1348. Karen Maitland's Company of Liars refuses to give its 1348 characters modern minds.
+
+**Are there thrillers or mysteries set during the Black Death?**
+
+Yes. Company of Liars by Karen Maitland is a slow-burning horror mystery about nine travelers fleeing the plague across England in 1348. The Aethelred Cipher by Randy Pellegrini is a conspiracy thriller set in Mainz in 1347, about a scribe who inherits an iron key and a cipher hidden in monastic manuscripts.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best novel about the Black Death?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geraldine Brooks's Year of Wonders is the best-loved plague novel, though it is set in the 1666 outbreak in Eyam, England. Of the novels set during the Black Death itself (1347–1351), Connie Willis's Doomsday Book is the most powerful: a time-traveling historian lands in 1348 and can save no one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Year of Wonders about the Black Death?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not strictly. Year of Wonders is set during the 1666 plague in the English village of Eyam, about three centuries after the Black Death. It is the same disease, bubonic plague, and the novel is the best fictional portrait of a community choosing quarantine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Black Death novels are the most historically accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Year of Wonders stays close to the historical record of Eyam's self-quarantine. Minette Walters's The Last Hours is the most practical, dealing with food, logistics and class inside a sealed estate in 1348. Karen Maitland's Company of Liars refuses to give its 1348 characters modern minds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there thrillers or mysteries set during the Black Death?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Company of Liars by Karen Maitland is a slow-burning horror mystery about nine travelers fleeing the plague across England in 1348. The Aethelred Cipher by Randy Pellegrini is a conspiracy thriller set in Mainz in 1347, about a scribe who inherits an iron key and a cipher hidden in monastic manuscripts."
+      }
+    }
+  ]
+}
+</script>

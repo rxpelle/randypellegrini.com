@@ -354,6 +354,7 @@ eleventyComputed:
     {% if book.amazonUrl %}
     <div>
       <a class="button" href="{{ book.amazonUrl }}" target="_blank" rel="noopener noreferrer" data-track="amazon_click" data-book="book{{ book.seriesPosition }}" data-source="book_page">{% if book.comingSoon %}Preorder on Amazon &rarr;{% else %}Read on Amazon &rarr;{% endif %}</a>
+      {% if book.sampleUrl %}<a class="button ghost" href="{{ book.sampleUrl }}" style="margin-left: 12px;" data-track="sample_click" data-book="book{{ book.seriesPosition }}" data-source="book_page">Read Chapter 1 free</a>{% endif %}
     </div>
     <p class="bp-ku-note">{% if not book.comingSoon %}Free to read with Kindle Unlimited{% if book.audio %} &middot; 🎧 Also available in audio{% endif %}. {% endif %}Every book in the series stands alone.</p>
     {% elif book.comingSoon %}

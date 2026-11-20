@@ -2952,3 +2952,13 @@ textarea:focus-visible {
     text-align: center;
   }
 }
+
+/* Quick-answer summary box at the top of reading lists (2026-11-20) */
+.quick-answer {
+  margin: 20px 0 24px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--teal);
+  border-radius: 0 12px 12px 0;
+  background: var(--panel);
+}
+.quick-answer p { margin: 0; }
