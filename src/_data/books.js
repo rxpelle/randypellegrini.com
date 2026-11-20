@@ -33,7 +33,7 @@ module.exports = function () {
       facts: [
         { label: "Setting", value: "Medieval Germany, 1347&ndash;1350 CE" },
         { label: "Generation", value: "90 of 112" },
-        { label: "Length", value: "~78,000 words" },
+        { label: "Length", value: "~55,000 words" },
         { label: "Released", value: "January 2026" },
       ],
       datePublished: "2026-01",
