@@ -23,6 +23,8 @@ And for how enormous it was, the fiction shelf is strangely thin. Plenty of nove
 
 I write plague fiction, so I've read all of it — the good, the bad, and the merely atmospheric. These are the ten that earn the subject.
 
+*Full disclosure: one of these ten is mine. [The Aethelred Cipher](/go/aethelred-cipher/?utm_source=blog&utm_medium=listicle&utm_campaign=blackdeath-intro) is set in Mainz in 1347, the year the plague arrives, and it's free to read on Kindle Unlimited. It's at #5. The other nine are here because they earned it.*
+
 ## 1. Year of Wonders by Geraldine Brooks (2001)
 
 The village of Eyam, England, 1666: plague arrives in a bolt of cloth from London, and the villagers make an extraordinary decision — they seal themselves in. No one leaves until it burns out. The novel follows Anna Frith, a young housemaid, through the year the village voluntarily dies so its neighbors won't.

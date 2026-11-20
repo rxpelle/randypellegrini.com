@@ -25,6 +25,8 @@ It's a hard book to follow. Eco was doing something nobody had really done befor
 
 But some books come close. Some take the same raw ingredients — monasteries, manuscripts, dangerous knowledge, medieval politics — and cook something equally compelling. I've spent years reading in this space (occupational hazard when you write historical conspiracy thrillers), and these are the ones that actually delivered.
 
+*Full disclosure: I wrote #3, [The Aethelred Cipher](/go/aethelred-cipher/?utm_source=blog&utm_medium=listicle&utm_campaign=rose-intro), about a cipher hidden in plague-era monastic manuscripts. If an Eco-style abbey mystery is what you're after, it's free on Kindle Unlimited. The other nine are the books that got me through those three months.*
+
 ## 1. The Cadfael Chronicles by Ellis Peters (1977–1994)
 
 Ellis Peters essentially invented the medieval mystery genre. Brother Cadfael is a Welsh Benedictine monk at Shrewsbury Abbey who solves murders in 12th-century England during the civil war between King Stephen and Empress Matilda. What makes him work as a detective is his backstory — he didn't enter monastic life until his forties, after years as a crusader and sea captain. He's worldly in ways most monks aren't.

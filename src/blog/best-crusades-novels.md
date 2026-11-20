@@ -19,6 +19,8 @@ The Crusades gave fiction its most morally loaded battlefield: two civilizations
 
 I spent three years in this period writing Book 6 of my series, which means I read everything. These are the ten that are worth your time.
 
+*One of these is mine: [The Split Pomegranate](/go/split-pomegranate/?utm_source=blog&utm_medium=listicle&utm_campaign=crusades-intro), a Jewish engineer and a Templar mason in Damascus during the Second Crusade. It stands alone and it's on Kindle Unlimited. The rest are books I'd recommend even if I hadn't written one.*
+
 ## 1. The Land Beyond the Sea by Sharon Kay Penman (2020)
 
 The Kingdom of Jerusalem in its last golden generation: Baldwin IV, the boy king ruling brilliantly while leprosy takes him apart, the factions circling his throne, and the road that ends at the Horns of Hattin in 1187. Penman's final novel, and the best single book ever written about the crusader states.
