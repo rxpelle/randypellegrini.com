@@ -87,7 +87,7 @@ eleventyComputed:
       <h2>The {{ sym.name | lower }} in my novels</h2>
       <p>{{ sym.book.text }}</p>
       <p>
-        <a class="button small" href="{{ goUrl }}"><em>{{ sym.book.title }}</em> on Amazon &rarr;</a>
+        <a class="button small" href="{{ goUrl }}">Get {{ sym.book.title }} &rarr;</a>
         {% if sym.book.sample %}<a class="button small ghost" href="{{ sym.book.sample }}" style="margin-left: 8px;">Read Chapter 1 free</a>{% endif %}
       </p>
       <p class="entry-book-note">Free to read with Kindle Unlimited · Every book in <a href="/books/">the series</a> stands alone.</p>
