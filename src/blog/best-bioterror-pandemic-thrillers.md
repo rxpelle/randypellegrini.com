@@ -20,7 +20,7 @@ A pandemic thriller has two advantages no other thriller gets. The villain is in
 
 The genre is older than most people think. Writers were imagining engineered plagues and escaped microbes decades before anyone had heard of gain-of-function research, and some of them got uncomfortably close to the truth.
 
-I write bioterror fiction, so I've read the shelf. These are the ten that hold up.
+These are the ten that readers of the genre keep coming back to.
 
 <div class="quick-answer">
   <p><strong>Short answer:</strong> the best bioterror and pandemic thrillers are <em>The Andromeda Strain</em> by Michael Crichton, <em>The Cobra Event</em> by Richard Preston, <em>The Stand</em> by Stephen King, <em>The White Plague</em> by Frank Herbert and <em>Outbreak</em> by Robin Cook. For the most realistic engineered-virus plot, start with <em>The Cobra Event</em>.</p>
@@ -103,7 +103,7 @@ Koontz renamed it from the Soviet "Gorki-400" in the original edition, and the c
 
 Commonwealth, Washington, 1918. A mill town in the forest decides to wall itself off from the Spanish flu: guards on the only road, no one in, no one out. Then a cold, hungry soldier comes walking up the road, and the guards have to decide what the quarantine is worth.
 
-There is no lab and no villain here, just the oldest public-health problem there is, and a town learning what it costs to keep people out. It is the closest thing to a historical novel on this list, and the best book I know about the moral weight of quarantine, which matters to anyone who lived through the last few years.
+There is no lab and no villain here, just the oldest public-health problem there is, and a town learning what it costs to keep people out. It is the closest thing to a historical novel on this list, and one of the most serious novels about the moral weight of quarantine, which matters to anyone who lived through the last few years.
 
 ---
 

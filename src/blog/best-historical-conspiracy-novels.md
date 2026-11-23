@@ -21,7 +21,7 @@ There's a specific flavor of historical fiction that I can't get enough of. It's
 
 The best historical conspiracy novels earn that uncertainty. They're built on real events, real organizations, real documents. The conspiracy is fictional, but the history surrounding it is airtight. That's what makes them work.
 
-These are the ten best I've found, spanning from medieval Europe to the modern day.
+These are ten of the best, spanning from medieval Europe to the modern day.
 
 ## 1. Foucault's Pendulum by Umberto Eco (1988)
 
@@ -53,7 +53,7 @@ Published before *The Da Vinci Code* existed. Neville built the template: dual t
 
 ## 5. [The Aethelred Cipher](https://www.amazon.com/dp/B0GJTGCHS2) by Randy Pellegrini (2026)
 
-My contribution to this genre — and the reason I've read everything else on this list.
+My contribution to this genre.
 
 A coded manuscript, surfacing in Mainz as the Black Death arrives in 1347, reveals a secret society that has operated continuously for 3,200 years across 112 generations, from ancient Egypt through medieval Germany to the present. The cipher is the entry point to a pattern of hidden knowledge embedded in the architecture of history itself.
 

@@ -19,7 +19,7 @@ ctaButtonText: "See the series"
 
 *The Historian* is a vampire novel in which almost nobody gets bitten. Six hundred pages, three generations, half the libraries of Eastern Europe, and the vampire himself is mostly a rumor in the margins. That's why people who hated *Twilight* loved it, and why people who wanted a vampire novel threw it across the room. Kostova's actual subject is the archive: a book with a dragon woodcut that keeps turning up in scholars' libraries, a dying mentor who hands it on, letters inside letters, and the slow realization that reading can get you killed.
 
-I've read it three times, and the last time I was taking notes, because the first book of my series starts with the same move: a scholar dies, a document changes hands, and the person left holding it has to go find out what it means. The ten below are the books that scratch the same itch. If you haven't read *Dracula* itself, go read it; Kostova's novel is a long conversation with Stoker, and it's better when you can hear both sides.
+The first book of my series starts with the same move: a scholar dies, a document changes hands, and the person left holding it has to go find out what it means. The ten below are the books that scratch the same itch. If you haven't read *Dracula* itself, go read it; Kostova's novel is a long conversation with Stoker, and it's better when you can hear both sides.
 
 ## 1. People of the Book by Geraldine Brooks (2008)
 
