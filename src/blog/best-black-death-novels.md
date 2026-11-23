@@ -21,7 +21,7 @@ The Black Death killed something like half of Europe in four years. It ended ser
 
 And for how enormous it was, the fiction shelf is strangely thin. Plenty of novels use plague as set dressing — a convenient way to empty a castle or orphan a protagonist. Far fewer sit inside the dying and take it seriously.
 
-I write plague fiction, so I've read all of it — the good, the bad, and the merely atmospheric. These are the ten that earn the subject.
+These are the ten that readers of plague fiction come back to most, the ones that earn the subject.
 
 <div class="quick-answer">
   <p><strong>Short answer:</strong> the best novels set during the Black Death itself (1347–1351) are <em>Doomsday Book</em> by Connie Willis, <em>Company of Liars</em> by Karen Maitland, <em>World Without End</em> by Ken Follett and <em>The Last Hours</em> by Minette Walters. The best plague novel overall is Geraldine Brooks's <em>Year of Wonders</em>, which is set in the later outbreak of 1666.</p>
@@ -39,7 +39,7 @@ The real Eyam did exactly this, and Brooks stays close to the record. What makes
 
 A time-traveling Oxford historian is sent to the fourteenth century by mistake — dropped into 1348 instead of 1320, straight into the Black Death — while an epidemic locks down the Oxford of her own time. Two plagues, seven centuries apart, running in parallel.
 
-It won both the Hugo and the Nebula, and it deserved them. The science fiction machinery is just a delivery mechanism; what it delivers is the most emotionally devastating portrait of the Black Death in fiction. Kivrin arrives knowing exactly what's coming and can save no one. The last hundred pages are as hard as anything I've read.
+It won both the Hugo and the Nebula, and it deserved them. The science fiction machinery is just a delivery mechanism; what it delivers is the most emotionally devastating portrait of the Black Death in fiction. Kivrin arrives knowing exactly what's coming and can save no one. The last hundred pages are famously hard to get through.
 
 ## 3. World Without End by Ken Follett (2007)
 

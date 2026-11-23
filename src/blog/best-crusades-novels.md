@@ -17,9 +17,9 @@ ctaText: '<em>The Split Pomegranate</em> is my Crusades novel: a Jewish engineer
 
 The Crusades gave fiction its most morally loaded battlefield: two civilizations, three religions, and a narrow strip of coast that everyone involved called holy. Two centuries of war produced sieges, betrayals, impossible alliances, and at least one leper king — and yet the era is weirdly underwritten compared to, say, the Tudors, who mostly just executed each other.
 
-I spent three years in this period writing Book 6 of my series, which means I read everything. These are the ten that are worth your time.
+I spent three years in this period writing Book 6 of my series. These are the ten novels about it that readers recommend most.
 
-*One of these is mine: [The Split Pomegranate](/go/split-pomegranate/?utm_source=blog&utm_medium=listicle&utm_campaign=crusades-intro), a Jewish engineer and a Templar mason in Damascus during the Second Crusade. It stands alone and it's on Kindle Unlimited. The rest are books I'd recommend even if I hadn't written one.*
+*One of these is mine: [The Split Pomegranate](/go/split-pomegranate/?utm_source=blog&utm_medium=listicle&utm_campaign=crusades-intro), a Jewish engineer and a Templar mason in Damascus during the Second Crusade. It stands alone and it's on Kindle Unlimited. The other nine are the novels readers of the period recommend most.*
 
 ## 1. The Land Beyond the Sea by Sharon Kay Penman (2020)
 
@@ -86,7 +86,7 @@ Read it as the genre's founding document. Every noble-enemy trope, every desert 
 
 A young Templar sergeant in the 1260s hunts a heretical book stolen from the order's vaults while Sultan Baibars — the Crusades' most underwritten great commander — dismantles the crusader states fortress by fortress. First of a trilogy that runs to the fall of Acre.
 
-Young splits her point of view between Templar and Mamluk, and her Baibars chapters are better than her Templar ones, which I mean as high praise. The late-Crusades period — the long losing endgame — almost never gets fiction this good.
+Young splits her point of view between Templar and Mamluk, giving the Mamluk side, and Baibars himself, real weight. The late-Crusades period — the long losing endgame — almost never gets fiction this good.
 
 ## 9. The Iron Lance by Stephen R. Lawhead (1998)
 
