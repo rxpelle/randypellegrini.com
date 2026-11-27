@@ -30,4 +30,4 @@ Author site for Randy Pellegrini's 8-book series *The Architecture of Survival*.
 ## Style
 - In-text links must stay visible. The global `a` reset hides them, and `.article-body` rules restore them.
 - Plain, reader-first copy. No em-dash pileups, no unverifiable quotes or claims about other authors.
-- Signup forms post to the Apps Script deployment URL in `src/analytics.js`. That URL must not change (see `../personal_assistant/apps-script/CLAUDE.md`).
+- Signup forms post to the Apps Script deployment URL in `src/analytics.js`. That URL must not change (see `../apps-script/CLAUDE.md`).
