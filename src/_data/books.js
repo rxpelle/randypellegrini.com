@@ -32,7 +32,7 @@ module.exports = function () {
         "A dying monk, an iron key, and a cipher hidden in manuscript marginalia as the Black Death reaches Mainz in 1347. Book 1 of The Architecture of Survival.",
       facts: [
         { label: "Setting", value: "Medieval Germany, 1347&ndash;1350 CE" },
-        { label: "Generation", value: "90 of 112" },
+        { label: "Generation", value: "63 of 112" },
         { label: "Length", value: "~55,000 words" },
         { label: "Released", value: "January 2026" },
       ],
@@ -63,7 +63,7 @@ module.exports = function () {
         "Geneticist Sarah Chen has forty-three seconds to escape with proof that the pandemic was engineered. Book 2 of The Architecture of Survival, set 2019–2025.",
       facts: [
         { label: "Setting", value: "Modern Era, 2019&ndash;2025" },
-        { label: "Generation", value: "107 of 112" },
+        { label: "Generation", value: "112 of 112" },
         { label: "Length", value: "~75,000 words" },
         { label: "Released", value: "March 2026" },
       ],
